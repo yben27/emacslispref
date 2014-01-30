@@ -1,0 +1,14 @@
+1/30/14 11:09 PM
+Project Statistics
+
+                 	Segments	 Words	Characters (without spaces)	Characters (including spaces)	
+Total:           	   18824	387261	                    2076985	                      2460733	
+Remaining:       	   17889	377123	                    2019994	                      2393740	
+Unique:          	   18715	386978	                    2075106	                      2458679	
+Unique Remaining:	   17803	376880	                    2018398	                      2391986	
+
+
+Individual File Statistics:
+
+File Name	Total Segments	Remaining Segments	Unique Segments	Unique Remaining Segments	Total Words	Remaining Words	Unique Words	Unique Remaining Words	Total Characters (without spaces)	Remaining Characters (without spaces)	Unique Characters (without spaces)	Unique Remaining Characters (without spaces)	Total Characters (including spaces)	Remaining Characters (including spaces)	Unique Characters (including spaces)	Unique Remaining Characters (including spaces)	
+fr.po    	         18824	             17889	          18715	                    17803	     387261	         377123	      386978	                376880	                          2076985	                              2019994	                           2075106	                                     2018398	                            2460733	                                2393740	                             2458679	                                       2391986	
