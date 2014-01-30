@@ -1504,12 +1504,12 @@ flottante si au moins un argument est une valeur à virgule flottante.</seg>
       <tuv lang="en-us">
         <seg>An abbrev table is represented as an obarray containing a symbol for each abbreviation.  The symbol's name is the abbreviation; its value is the expansion; its function definition is the hook function to do the expansion (@pxref{Defining Abbrevs}); its property list cell typically contains the use count, the number of times the abbreviation has been expanded.  Alternatively, the use count is on the @code{count} property and the system-abbrev flag is on the @code{system-type} property.  Abbrevs with a non-@code{nil} @code{system-type} property are called ``system'' abbrevs.  They are usually defined by modes or packages, instead of by the user, and are treated specially in certain respects.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140130T141634Z">
         <seg>Une table d'abréviation est représentée en tant qu'une liste contenant
 un symbole pour chaque abréviation. Le nom du symbole est
 l'abréviation ; sa valeur est l'expansion ; sa définition de fonction
 est la fonction hook devant faire l'expansion (@pxref{Defining
-Abbrevs}) ; sa cellule de liste de propriété contient typiquement le
+Abbrevs}) ; sa cellule de liste de propriété contient typiquement le
 compteur d'utilisation, le nombre de fois que l'abréviation a été
 développée. Alternativement, le compteur d'utilisation pointe vers la
 propriété @code{count} et le drapeau de system-abbrev pointe vers la
