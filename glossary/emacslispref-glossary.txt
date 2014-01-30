@@ -1,1 +1,2 @@
 Processes	Processus
+string	chaîne de caractères
