@@ -1301,7 +1301,7 @@ gauche, alors que @code{lsh} met des 0 dans ces positions de bit.</seg>
       <tuv lang="en-us">
         <seg>@code{define-abbrev} is the low-level basic function for defining an abbrev in a specified abbrev table.  When major modes predefine standard abbrevs, they should call @code{define-abbrev} and specify @code{t} for @var{system-flag}.  Be aware that any saved non-``system'' abbrevs are restored at startup, i.e. before some major modes are loaded.  Major modes should therefore not assume that when they are first loaded their abbrev tables are empty.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T113207Z">
         <seg>@code{define-abbrev} est la fonction de base de bas niveau pour
 définir les abréviations dans une table d'abréviations indiquée. Si
 les modes majeurs prédéfinissent la norme des abréviations, ils
@@ -1310,7 +1310,7 @@ devraient appeler @code{define-abbrev} et indiquer @code{t} pour
 non-``système'' sont restaurées au démarrage, c.-à-d. avant que les
 modes majeurs sont chargés. C'est pourquoi les modes majeurs ne
 devraient pas assumer que, quand ils sont d'abord chargés, leurs
-tables d'abbréviations soient vides.</seg>
+tables d'abréviations soient vides.</seg>
       </tuv>
     </tu>
     <tu>
