@@ -1485,6 +1485,14 @@ variable @code{abbrev-mode}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Adding to the definition of a function.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025358Z" creationid="jchelary" creationdate="20140131T025358Z">
+        <seg>Ajout à la définition d'une fonction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Advice and coding conventions for Emacs Lisp.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2422,6 +2430,14 @@ les huit bits faibles du binaire modèle; le reste est fait de zéro.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Comment les symboles sont gardés uniques.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>How the editor command loop works,</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025421Z" creationid="jchelary" creationdate="20140131T025421Z">
+        <seg>Comment fonctionne la boucle de commande de l'éditeur,</seg>
       </tuv>
     </tu>
     <tu>
@@ -4676,6 +4692,14 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Writing and using documentation strings.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025452Z" creationid="jchelary" creationdate="20140131T025452Z">
+        <seg>Écriture et utiliser des chaînes de documentation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Writing customization declarations.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4989,6 +5013,14 @@ générée. Pour @code{floor}, voir les @ref{Conversions numériques}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>et</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>and how you can call its subroutines.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025436Z" creationid="jchelary" creationdate="20140131T025436Z">
+        <seg>et comment vous pouvez appeler ses sous-programmes.</seg>
       </tuv>
     </tu>
     <tu>
