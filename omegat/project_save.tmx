@@ -1212,6 +1212,14 @@ un résultat positif même si @var{integer1} est négatif. Contrairement
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@code{nil} and @code{t}</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030031Z" creationid="jchelary" creationdate="20140131T030031Z">
+        <seg>@code{nil} et @code{t}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@code{while} loops.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -1644,12 +1652,12 @@ l'édition que vous critiquez.</seg>
       <tuv lang="en-us">
         <seg>As you use this manual, we ask that you send corrections as soon as you find them.  If you think of a simple, real life example for a function or group of functions, please make an effort to write it up and send it in.  Please reference any comments to the node name and function or variable name, as appropriate.  Also state the number of the edition you are criticizing.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Quand vous vous servez de ce manuel, nous vous demandons d'envoyez les
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025951Z">
+        <seg>Quand vous vous servez de ce manuel, nous vous demandons d'envoyer les
 corrections dès que vous en trouverez. Si vous pensez à un exemple
 simple et réel pour une fonction ou au groupe de fonctions, merci de
 faire l'effort de l'écrire et de l'envoyer. Veuillez mettre en
-référence tous les commentaires du nom du noeud et la fonction ou le
+référence tous les commentaires du nom du nœud et la fonction ou le
 nom de la variable, comme approprié. Énoncer en outre le numéro de
 l'édition que vous critiquez.</seg>
       </tuv>
@@ -2815,6 +2823,14 @@ commandes d'édition.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Lisp history</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030008Z" creationid="jchelary" creationdate="20140131T030008Z">
+        <seg>L'histoire de Lisp</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>List of all error symbols.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -3592,11 +3608,11 @@ version 20.3 d'Emacs, la valeur est 20.</seg>
       <tuv lang="en-us">
         <seg>The manual should be fully correct in what it does cover, and it is therefore open to criticism on anything it says---from specific examples and descriptive text, to the ordering of chapters and sections.  If something is confusing, or you find that you have to look at the sources or experiment to learn something not covered in the manual, then perhaps the manual should be fixed.  Please let us know.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025900Z">
         <seg>Le manuel devrait être entièrement correct dans ce qu'il couvre, et il
 est donc soumis à la critique sur tout ce qu'il indique---des exemples
 spécifiques et du texte descriptif, à l'ordre des chapitres et des
-sections---. Si quelque chose est embrouillé, ou si vous constatez que
+sections---. Si quelque chose est peu clair, ou si vous constatez que
 vous devez regarder les sources ou expérimenter pour apprendre quelque
 chose non couvert dans le manuel, alors peut-être faudrait-il
 l'inclure dans le manuel. Merci de nous faire le savoir.</seg>
@@ -4328,12 +4344,12 @@ relient spécifiquement à l'édition.</seg>
       <tuv lang="en-us">
         <seg>This manual has gone through numerous drafts.  It is nearly complete but not flawless.  There are a few topics that are not covered, either because we consider them secondary (such as most of the individual modes) or because they are yet to be written.  Because we are not able to deal with them completely, we have left out several parts intentionally.  This includes most information about usage on VMS.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025835Z">
         <seg>Ce manuel est passé par de nombreuses ébauches. Il est presque complet
-mais non impeccable. Il y a quelques matières qui ne sont pas
-couvertes parce que nous les considérons secondaires (comme la plupart
-des différents modes) ou parce qu'elles doivent encore être
-écrites. Puisque nous ne pouvons pas les traiter complètement, nous
+mais non impeccable. Il y a quelques sujets qui ne sont pas
+couverts parce que nous les considérons secondaires (comme la plupart
+des différents modes) ou parce qu'ils doivent encore être
+écrits. Puisque nous ne pouvons pas les traiter complètement, nous
 avons omis plusieurs parties intentionnellement. Ceci inclut la
 plupart des informations sur l'utilisation de VMS.</seg>
       </tuv>
@@ -5657,6 +5673,14 @@ générée. Pour @code{floor}, voir les @ref{Conversions numériques}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>bugs</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025954Z" creationid="jchelary" creationdate="20140131T025954Z">
+        <seg>erreurs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>bugs in this manual</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025755Z" creationid="jchelary" creationdate="20140131T025755Z">
@@ -5710,6 +5734,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>checkdoc-minor-mode</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>cl</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030012Z" creationid="jchelary" creationdate="20140131T030012Z">
+        <seg>cl</seg>
       </tuv>
     </tu>
     <tu>
@@ -6490,6 +6522,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>false</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030100Z" creationid="jchelary" creationdate="20140131T030100Z">
+        <seg>faux</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>file-name-buffer-file-type-alist</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -6606,6 +6646,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>font-lock-defaults</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>fonts in this manual</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030020Z" creationid="jchelary" creationdate="20140131T030020Z">
+        <seg>polices dans ce manuel</seg>
       </tuv>
     </tu>
     <tu>
@@ -7902,6 +7950,14 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>suggestions</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025957Z" creationid="jchelary" creationdate="20140131T025957Z">
+        <seg>suggestions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>symbol</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -8074,6 +8130,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>truncate-partial-width-windows</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>truth value</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030033Z" creationid="jchelary" creationdate="20140131T030033Z">
+        <seg>valeur de vérité</seg>
       </tuv>
     </tu>
     <tu>
