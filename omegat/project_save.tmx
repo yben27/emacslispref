@@ -1492,11 +1492,11 @@ type} est un ensemble d'objets possibles.</seg>
       <tuv lang="en-us">
         <seg>A Lisp expression that you can evaluate is called a @dfn{form}.  Evaluating a form always produces a result, which is a Lisp object.  In the examples in this manual, this is indicated with @samp{@result{}}:</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032755Z">
         <seg>Une expression de Lisp que vous pouvez évaluer s'appelle une
 @dfn{form}. L'évaluation d'un formulaire produit toujours un résultat,
 qui est un objet de Lisp. Dans les exemples en ce manuel, ceci est
-indiqué avec @samp{@result{}} :</seg>
+indiqué avec @samp{@result{}} :</seg>
       </tuv>
     </tu>
     <tu>
@@ -2327,8 +2327,8 @@ ligne séparée avec @samp{@result{}}.</seg>
       <tuv lang="en-us">
         <seg>Examples of Lisp code are formatted like this: @code{(list 1 2 3)}.  Names that represent metasyntactic variables, or arguments to a function being described, are formatted like this: @var{first-number}.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Des exemples du code de Lisp sont composés comme ceci : @code{(list 1
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032542Z">
+        <seg>Des exemples du code de Lisp sont composés comme ceci : @code{(list 1
 2 3)}. Des noms qui représentent des variables, ou des arguments à une
 fonction décrite, sont composés comme ceci : @var{first-number}.</seg>
       </tuv>
@@ -3281,9 +3281,9 @@ qu'un certain minimum (négatif).</seg>
       <tuv lang="en-us">
         <seg>Return non-nil iff @var{object} is one of the two canonical boolean values: @code{t} or @code{nil}.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032750Z">
         <seg>Retourne non-nil si @var{objet} est une des deux valeurs booléennes
-canoniques : @code{t} ou @code{nil}.</seg>
+canoniques : @code{t} ou @code{nil}.</seg>
       </tuv>
     </tu>
     <tu>
