@@ -1,4 +1,4 @@
 Processes	Processus
 string	chaîne de caractères
-abbrev	abbréviation
+abbrev	abréviation
 Save	Enregistrer	Pas "sauver"
