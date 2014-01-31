@@ -898,9 +898,9 @@ x1
 * Math Functions::          Trig, exponential and logarithmic functions.
 * Random Numbers::          Obtaining random integers, predictable or not.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031015Z">
         <seg>* Entiers basiques::                     Représentation et champ des nombres entiers.
-* Nombres à virgule flottante basiques:: Représentation et champ des monbres à virgule flottante.
+* Nombres à virgule flottante basiques:: Représentation et champ des nombres à virgule flottante.
 * Attributs des nombres::                Tester les nombres.
 * Comparaison des nombres::              Attributs d'égalité et d'inégalité.
 * Conversions numériques::               Convertir des nombres à virgule flottante en nombres entiers et vice-versa.
@@ -2377,8 +2377,8 @@ fonction décrite, sont composés comme ceci : @var{first-number}.</seg>
       <tuv lang="en-us">
         <seg>Float Basics</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Nombres à virgule flottante basiques</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030727Z">
+        <seg>Nombres basiques à virgule flottante</seg>
       </tuv>
     </tu>
     <tu>
@@ -2529,17 +2529,17 @@ ce manuel est indépendant.</seg>
       <tuv lang="en-us">
         <seg>GNU Emacs supports two numeric data types: @dfn{integers} and @dfn{floating point numbers}.  Integers are whole numbers such as @minus{}3, 0, 7, 13, and 511.  Their values are exact.  Floating point numbers are numbers with fractional parts, such as @minus{}4.5, 0.0, or 2.71828.  They can also be expressed in exponential notation: 1.5e2 equals 150; in this example, @samp{e2} stands for ten to the second power, and that is multiplied by 1.5.  Floating point values are not exact; they have a fixed, limited amount of precision.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>GNU Emacs supporte deux types de données numériques: @dfn{entiers} et
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030712Z">
+        <seg>GNU Emacs supporte deux types de données numériques : @dfn{entiers} et
 @dfn{nombres à virgule flottante}. Les nombres entiers sont des
 nombres entiers tels que @minus{}3, 0, 7, 13, et 511. Leurs valeurs
 sont exactes. Les nombres à virgule flottante sont des nombres avec
 les parties partielles, telles que le @minus{}4.5, 0.0, ou
 2.71828. Ils peuvent également être exprimés en notation
-exponentielle: 1.5e2 est égal à 150; dans cet exemple, le @samp{e2}
+exponentielle : 1.5e2 est égal à 150 ; dans cet exemple, le @samp{e2}
 représente dix à la puissance deux, le tout est multiplié par 1.5. Les
-valeurs à virgule flottante ne sont pas exactes; elles sont fixe et
-limitée en précision.</seg>
+valeurs à virgule flottante ne sont pas exactes ; elles sont fixes et
+limitées en précision.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3126,8 +3126,8 @@ Vous pouvez l'employer comme n'importe quel autre langage de programmation.</seg
       <tuv lang="en-us">
         <seg>Non-ASCII Characters</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Charactères non-ASCII</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030951Z">
+        <seg>Caractères non-ASCII</seg>
       </tuv>
     </tu>
     <tu>
@@ -3265,8 +3265,8 @@ qu'un certain minimum (négatif).</seg>
       <tuv lang="en-us">
         <seg>Representation and range of floating point.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Représentation et champ des monbres à virgule flottante.</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030742Z">
+        <seg>Représentation et champ des nombres à virgule flottante.</seg>
       </tuv>
     </tu>
     <tu>
