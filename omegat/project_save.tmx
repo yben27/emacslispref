@@ -293,6 +293,34 @@ nombre entier binaire.)</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>(count-loop (done)
+  (if (pending)
+      (fixit)
+    (setq done t)))</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030317Z" creationid="jchelary" creationdate="20140131T030317Z">
+        <seg>(count-loop (done)
+  (if (pending)
+      (fixit)
+    (setq done t)))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(count-loop (i 0 10)
+  (prin1 i) (princ " ")
+  (prin1 (aref vector i))
+  (terpri))</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030313Z" creationid="jchelary" creationdate="20140131T030313Z">
+        <seg>(count-loop (i 0 10)
+  (prin1 i) (princ " ")
+  (prin1 (aref vector i))
+  (terpri))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>(defvar fuzz-factor 1.0e-6)
 (defun approx-equal (x y)
   (or (and (= x 0) (= y 0))
@@ -739,6 +767,18 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
       <tuv lang="fr-fr">
         <seg>(symbol-name 'toto)
      @result{} "toto"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(third '(a b c))
+     @expansion{} (car (cdr (cdr '(a b c))))
+     @result{} c</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030203Z" creationid="jchelary" creationdate="20140131T030203Z">
+        <seg>(third '(a b c))
+     @expansion{} (car (cdr (cdr '(a b c))))
+     @result{} c</seg>
       </tuv>
     </tu>
     <tu>
@@ -1304,11 +1344,11 @@ arguments optionnels et restants.</seg>
       <tuv lang="en-us">
         <seg>A @dfn{variable} is a name that can hold a value.  Although nearly all variables can be set by the user, certain variables exist specifically so that users can change them; these are called @dfn{user options}.  Ordinary variables and user options are described using a format like that for functions except that there are no arguments.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030406Z">
         <seg>Une @dfn{variable} est un nom qui peut contenir une valeur. Bien que
 presque toutes les variables puissent être initialisées par
 l'utilisateur, certaines variables existent spécifiquement de sorte
-que les utilisateurs puissent les changer ; celles-ci s'appellent
+que les utilisateurs puissent les changer ; celles-ci s'appellent
 @dfn{users options}. Des variables ordinaires et les options
 d'utilisateur sont décrites en utilisant un format comme pour des
 fonctions sauf qu'il n'y a aucun argument.</seg>
@@ -1601,9 +1641,9 @@ commencement.</seg>
       <tuv lang="en-us">
         <seg>As far as the Lisp reader is concerned, @samp{()} and @samp{nil} are identical: they stand for the same object, the symbol @code{nil}.  The different ways of writing the symbol are intended entirely for human readers.  After the Lisp reader has read either @samp{()} or @samp{nil}, there is no way to determine which representation was actually written by the programmer.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030122Z">
         <seg>En ce qui concerne le lecteur Lisp, @samp{()} et @samp{nil} sont
-identiques : ils représentent le même objet, le symbole
+identiques : ils représentent le même objet, le symbole
 @code{nil}. Les différentes manières d'écrire le symbole sont prévues
 entièrement pour les lecteurs humains. Après que le lecteur Lisp ait
 lu l'un ou l'autre, @samp{()} ou @samp{nil}, il n'y a aucune manière
@@ -2653,10 +2693,10 @@ retourne toujours @minus{}1457731, et le second renvoie toujours
       <tuv lang="en-us">
         <seg>In Lisp, the symbol @code{nil} has three separate meanings: it is a symbol with the name @samp{nil}; it is the logical truth value @var{false}; and it is the empty list---the list of zero elements.  When used as a variable, @code{nil} always has the value @code{nil}.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>En Lisp, le symbole @code{nil} a trois significations distinctes: il
-est un symbole nommé @samp{nil} ; c'est la vraie valeur logique
-@var{false} ; et c'est la liste vide---la liste de zéro élément. Une
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030113Z">
+        <seg>En Lisp, le symbole @code{nil} a trois significations distinctes : il
+est un symbole nommé @samp{nil} ; c'est la vraie valeur logique
+@var{false} ; et c'est la liste vide---la liste de zéro élément. Une
 fois utilisé comme variable, @code{nil} a toujours la valeur
 @code{nil}.</seg>
       </tuv>
@@ -2741,11 +2781,11 @@ de Lisp également.</seg>
       <tuv lang="en-us">
         <seg>In this special form, the arguments @var{from} and @var{to} are optional, but must both be present or both absent.  If they are present, @var{inc} may optionally be specified as well.  These arguments are grouped with the argument @var{var} into a list, to distinguish them from @var{body}, which includes all remaining elements of the form.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030353Z">
         <seg>Sous ce formulaire spécial, les arguments @var{from} et @var{to} sont
 facultatif, mais il faut qu'ils soient tous deux présents ou tous deux
 absents. S'ils sont présents, @var{inc} peut aussi bien être indiqué
-optionnellement. Ces arguments sont groupés avec l'argument @var{var}
+de manière optionnelle. Ces arguments sont groupés avec l'argument @var{var}
 dans une liste, pour les distinguer de @var{body}, qui inclut tous les
 éléments restants de la forme.</seg>
       </tuv>
@@ -4269,10 +4309,10 @@ d'abrévations @var{table}, la laissant vide. Elle renvoie toujours
       <tuv lang="en-us">
         <seg>This imaginary special form implements a loop that executes the @var{body} forms and then increments the variable @var{var} on each iteration.  On the first iteration, the variable has the value @var{from}; on subsequent iterations, it is incremented by one (or by @var{inc} if that is given).  The loop exits before executing @var{body} if @var{var} equals @var{to}.  Here is an example:</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030311Z">
         <seg>Ce formulaire spécial imaginaire met en application une boucle qui
 exécute la forme @var{body} et qui ensuite incrémente la variable
-@var{var} à chacun itération. Sur la première itération, la variable
+@var{var} à chaque itération. Sur la première itération, la variable
 a la valeur @var{from} ; sur des itérations suivantes, elle est
 incrémentée de un (ou par @var{inc} si elle est donnée). La boucle est
 arrêtée avant l'exécution de @var{body} si @var{var} est égale à
@@ -8114,6 +8154,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>transient-mark-mode</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>true</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030132Z" creationid="jchelary" creationdate="20140131T030132Z">
+        <seg>vrai</seg>
       </tuv>
     </tu>
     <tu>
