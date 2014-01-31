@@ -2377,16 +2377,16 @@ fonction décrite, sont composés comme ceci : @var{first-number}.</seg>
       <tuv lang="en-us">
         <seg>Float Basics</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030727Z">
-        <seg>Nombres basiques à virgule flottante</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031545Z">
+        <seg>Introduction aux nombres à virgule flottante</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-us">
         <seg>Floating Point Basics</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Nombres à virgule flottante basiques</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031611Z">
+        <seg>Introduction aux nombres à virgule flottante</seg>
       </tuv>
     </tu>
     <tu>
@@ -2883,10 +2883,10 @@ vers la droite avec @code{lsh} ressemble à ceci:</seg>
       <tuv lang="en-us">
         <seg>In this implementation, the largest 29-bit binary integer value is 268,435,455 in decimal.  In binary, it looks like this:</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Dans cette exemple, la plus grande valeur de nombre entier binaire de
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031444Z">
+        <seg>Dans cet exemple, la plus grande valeur de nombre entier binaire de
 29 bits est 268 435 455 en décimale. En binaire, elle ressemble à
-ceci:</seg>
+ceci :</seg>
       </tuv>
     </tu>
     <tu>
@@ -2918,8 +2918,8 @@ dans une liste, pour les distinguer de @var{body}, qui inclut tous les
       <tuv lang="en-us">
         <seg>Integer Basics</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Entiers basiques</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031533Z">
+        <seg>Introduction aux entiers</seg>
       </tuv>
     </tu>
     <tu>
@@ -3050,9 +3050,9 @@ le texte affiché est montré dans le secteur d'écho.</seg>
       <tuv lang="en-us">
         <seg>Many of the functions described in this chapter accept markers for arguments in place of numbers.  (@xref{Markers}.)  Since the actual arguments to such functions may be either numbers or markers, we often give these arguments the name @var{number-or-marker}.  When the argument value is a marker, its position value is used and its buffer is ignored.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031454Z">
         <seg>Plusieurs des fonctions décrites dans ce chapitre acceptent des
-marqueurs commes arguments au lieu des nombres. (@xref{Markers}.)
+marqueurs comme arguments au lieu des nombres. (@xref{Markers}.)
 Puisque les arguments réels à de telles fonctions peuvent être des
 nombres ou des marqueurs, nous donnons souvent à ces arguments le nom
 de @var{number-or-marker}. Quand la valeur d'argument est un marqueur,
@@ -4151,11 +4151,11 @@ produit. Si aucun argument n'est donné, @code{*} retourne 1.</seg>
       <tuv lang="en-us">
         <seg>This function returns @var{x} raised to power @var{y}.  If both arguments are integers and @var{y} is positive, the result is an integer; in this case, overflow causes truncation, so watch out.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031355Z">
         <seg>Cette fonction renvoie @var{x} à la puissance @var{y}. Si tout les
 deux les arguments sont des nombres entiers et @var{y} est positif, le
 résultat est nombre entier ; dans ce cas, le débordement cause
-l'abrèviation, alors attention.</seg>
+l'abréviation, alors attention.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8310,6 +8310,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030033Z" creationid="jchelary" creationdate="20140131T030033Z">
         <seg>valeur de vérité</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>two's complement</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031421Z" creationid="jchelary" creationdate="20140131T031421Z">
+        <seg>complément à deux</seg>
       </tuv>
     </tu>
     <tu>
