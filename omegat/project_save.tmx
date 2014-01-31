@@ -1625,6 +1625,14 @@ variable @code{abbrev-mode}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Abbrevs</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Abbrevs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Abbrevs And Abbrev Expansion</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4730,6 +4738,14 @@ nombres sous leur forme binaire.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Top</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Top</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Trig, exponential and logarithmic functions.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -5039,6 +5055,14 @@ entier):</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>abbrev</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>abbrev</seg>
       </tuv>
     </tu>
     <tu>
