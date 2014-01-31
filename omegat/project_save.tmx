@@ -1220,6 +1220,14 @@ un résultat positif même si @var{integer1} est négatif. Contrairement
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@hfil</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T024906Z" creationid="jchelary" creationdate="20140131T024906Z">
+        <seg>@hfil</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@minus{}1 is represented as 29 ones.  (This is called @dfn{two's complement} notation.)</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2104,8 +2112,8 @@ qu'elles sont traditionnelles en Lisp et utilisées généralement.</seg>
       <tuv lang="en-us">
         <seg>Evaluation</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Evaluation</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T024956Z">
+        <seg>Évaluation</seg>
       </tuv>
     </tu>
     <tu>
@@ -2749,8 +2757,8 @@ matériel.</seg>
       <tuv lang="en-us">
         <seg>Iteration</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Iteration</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025015Z">
+        <seg>Itération</seg>
       </tuv>
     </tu>
     <tu>
