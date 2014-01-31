@@ -406,8 +406,8 @@ pêcher en radians entre le vecteur @code{[@var{x}, @var{y}]} et l'axis
       <tuv lang="en-us">
         <seg>(inclusive) whose cosine is @var{arg}; if, however, @var{arg} is out of range (outside [@minus{}1, 1]), it signals a @code{domain-error} error.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(inclus) dont le cosinus est @var{arg} ; si, cependant, @var{arg} est
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032424Z">
+        <seg>(inclus) dont le cosinus est @var{arg} ; si, cependant, @var{arg} est
 hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
 @code{domaine-error}.</seg>
       </tuv>
@@ -416,8 +416,8 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
       <tuv lang="en-us">
         <seg>(inclusive) whose sine is @var{arg}; if, however, @var{arg} is out of range (outside [@minus{}1, 1]), it signals a @code{domain-error} error.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(inclus) dont le sinus est @var{arg} ; si, cependant, @var{arg} est
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032419Z">
+        <seg>(inclus) dont le sinus est @var{arg} ; si, cependant, @var{arg} est
 hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
 @code{domaine-error}.</seg>
       </tuv>
@@ -1863,9 +1863,9 @@ ordinaires de Lisp.</seg>
       <tuv lang="en-us">
         <seg>Because the symbols used for abbrevs are not interned in the usual obarray, they will never appear as the result of reading a Lisp expression; in fact, normally they are never used except by the code that handles abbrevs.  Therefore, it is safe to use them in an extremely nonstandard way.  @xref{Creating Symbols}.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032521Z">
         <seg>Puisque les symboles utilisés pour les abréviations ne sont pas
-compris dans la liste habituel, ils n'apparaîtront jamais comme le
+compris dans la liste habituelle, ils n'apparaîtront jamais comme le
 résultat de lecture d'une expression Lisp ; en fait, normalement ils
 ne sont jamais utilisés excepté par le code qui traite ces
 abréviations. Par conséquent, il est prudent de les utiliser d'une
@@ -2582,10 +2582,10 @@ relient spécifiquement à l'édition.</seg>
       <tuv lang="en-us">
         <seg>Here are two examples of @code{lsh}, shifting a pattern of bits one place to the left.  We show only the low-order eight bits of the binary pattern; the rest are all zero.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032313Z">
         <seg>Voici deux exemples de @code{lsh}, décalant une combinaison de
 chiffres binaires d'une place vers la gauche. Nous montrons seulement
-les huit bits faibles du binaire modèle; le reste est fait de zéro.</seg>
+les huit bits faibles du binaire modèle ; le reste est fait de zéro.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2801,13 +2801,13 @@ tentative de changer leurs valeurs a comme conséquence une erreur
       <tuv lang="en-us">
         <seg>In Emacs, pseudo-random numbers are generated from a ``seed'' number.  Starting from any given seed, the @code{random} function always generates the same sequence of numbers.  Emacs always starts with the same seed value, so the sequence of values of @code{random} is actually the same in each Emacs run! For example, in one operating system, the first call to @code{(random)} after you start Emacs always returns @minus{}1457731, and the second one always returns @minus{}7692030.  This repeatability is helpful for debugging.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032455Z">
         <seg>Dans Emacs, des nombres pseudo-aléatoires sont produits à partir de
-``graine'' de nombre.  À partir de n'importe quelle graine donnée, la
+``graine'' de nombre. À partir de n'importe quelle graine donnée, la
 fonction @code{random} produit toujours le même ordre de
 nombres. Emacs démarre toujours par la même valeur de graine, ainsi la
 séquence des valeurs de @code{random} est réellement les mêmes dans
-chaque passe d'Emacs ! Par exemple, dans un logiciel d'exploitation,
+chaque passe d'Emacs ! Par exemple, dans un logiciel d'exploitation,
 le premier appel à @code{(random)}, après que vous démarriez Emacs,
 retourne toujours @minus{}1457731, et le second renvoie toujours
 @minus{}7692030. Cette répétition est utile pour la correction.</seg>
@@ -2853,8 +2853,8 @@ description, pour représenter les valeurs des arguments.</seg>
       <tuv lang="en-us">
         <seg>In binary, in the 29-bit implementation, the argument looks like this:</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>En binaire, dans l'exécution de 29 bits, l'argument ressemble à ceci:</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032337Z">
+        <seg>En binaire, dans l'exécution de 29 bits, l'argument ressemble à ceci :</seg>
       </tuv>
     </tu>
     <tu>
@@ -3185,8 +3185,8 @@ qu'un certain minimum (négatif).</seg>
       <tuv lang="en-us">
         <seg>On the other hand, shifting one place to the right looks like this:</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>D'autre part, le décalage d'une place vers la droite ressemble à ceci:</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032323Z">
+        <seg>D'autre part, le décalage d'une place vers la droite ressemble à ceci :</seg>
       </tuv>
     </tu>
     <tu>
@@ -3354,10 +3354,10 @@ canoniques : @code{t} ou @code{nil}.</seg>
       <tuv lang="en-us">
         <seg>Shifting a pattern of bits two places to the left produces results like this (with 8-bit binary numbers):</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032319Z">
         <seg>Lorsqu'on décale de deux places une combinaison de chiffres binaires
 vers la gauche, on produit les résultats suivants (avec des nombres
-binaires de 8 bits):</seg>
+binaires de 8 bits) :</seg>
       </tuv>
     </tu>
     <tu>
@@ -3703,25 +3703,25 @@ n'est pas fourni, alors le numéro 19 est appliqué par défaut.</seg>
       <tuv lang="en-us">
         <seg>The function @code{lsh}, like all Emacs Lisp arithmetic functions, does not check for overflow, so shifting left can discard significant bits and change the sign of the number.  For example, left shifting 268,435,455 produces @minus{}2 on a 29-bit machine:</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032334Z">
         <seg>La fonction @code{lsh}, comme toutes les fonctions arithmétiques
 d'Emacs Lisp, ne vérifie pas le débordement, ainsi de décalage à
 gauche peut changer le bit fort et changer le signe du nombre. Par
 exemple, le décalage à gauche de 268.435.455 produit @minus{}2 sur une
-machine de 29 bits :</seg>
+machine de 29 bits :</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-us">
         <seg>The functions @code{ffloor}, @code{fceiling}, @code{fround}, and @code{ftruncate} take a floating point argument and return a floating point result whose value is a nearby integer.  @code{ffloor} returns the nearest integer below; @code{fceiling}, the nearest integer above; @code{ftruncate}, the nearest integer in the direction towards zero; @code{fround}, the nearest integer.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032308Z">
         <seg>Les fonctions @code{ffloor}, @code{fceiling}, @code{fround}, et
 @code{ftruncate} prennent un argument à virgule flottante et renvoient
 un monbre à virgule flottante représentant la valeur d'un nombre
 entier voisin. @code{ffloor} renvoie le nombre entier le plus proche
-inférieur; @code{fceiling}, le nombre entier le plus proche supérieur;
-@code{ftruncate}, le nombre entier le plus proche de zéro;
+inférieur ; @code{fceiling}, le nombre entier le plus proche supérieur ;
+@code{ftruncate}, le nombre entier le plus proche de zéro ;
 @code{fround}, le nombre entier le plus proche.</seg>
       </tuv>
     </tu>
@@ -4151,10 +4151,10 @@ produit. Si aucun argument n'est donné, @code{*} retourne 1.</seg>
       <tuv lang="en-us">
         <seg>This function returns @var{x} raised to power @var{y}.  If both arguments are integers and @var{y} is positive, the result is an integer; in this case, overflow causes truncation, so watch out.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031355Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032439Z">
         <seg>Cette fonction renvoie @var{x} à la puissance @var{y}. Si tout les
 deux les arguments sont des nombres entiers et @var{y} est positif, le
-résultat est nombre entier ; dans ce cas, le débordement cause
+résultat est nombre entier ; dans ce cas, le débordement cause
 l'abréviation, alors attention.</seg>
       </tuv>
     </tu>
@@ -4466,8 +4466,8 @@ Lisp, correspondant à la version d'Emacs @value{EMACSVER}.</seg>
       <tuv lang="en-us">
         <seg>This is the exponential function; it returns</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>C'est la fonction exponentielle ; elle retourne</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032429Z">
+        <seg>C'est la fonction exponentielle ; elle retourne</seg>
       </tuv>
     </tu>
     <tu>
