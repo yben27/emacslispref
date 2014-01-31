@@ -4423,9 +4423,9 @@ grand que son deuxième argument. Elle renvoie @code{t} si oui,
       <tuv lang="en-us">
         <seg>This function undefines all the abbrevs in abbrev table @var{table}, leaving it empty.  It always returns @code{nil}.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T111933Z">
         <seg>Cette fonction élimine toutes les abréviations dans la table
-d'abrévations @var{table}, la laissant vide. Elle renvoie toujours
+d'abréviations @var{table}, la laissant vide. Elle renvoie toujours
 @code{nil}.</seg>
       </tuv>
     </tu>
