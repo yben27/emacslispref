@@ -761,6 +761,24 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>(setq x1 '(a b c))
+     @result{} (a b c)
+(setcdr x1 (cons 'd (cdr x1)))
+     @result{} (d b c)
+x1
+     @result{} (a d b c)</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030553Z" creationid="jchelary" creationdate="20140131T030553Z">
+        <seg>(setq x1 '(a b c))
+     @result{} (a b c)
+(setcdr x1 (cons 'd (cdr x1)))
+     @result{} (d b c)
+x1
+     @result{} (a d b c)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>(symbol-name 'foo)
      @result{} "foo"</seg>
       </tuv>
@@ -927,6 +945,90 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
       </tuv>
       <tuv lang="fr-fr">
         <seg>+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>--- ---        --- ---      --- ---
+x1---&gt; |   |   |----&gt; |   |   |--&gt; |   |   |--&gt; nil
+        --- ---        --- ---      --- ---
+         |        --&gt;   |            |
+         |       |      |            |
+          --&gt; a  |       --&gt; b        --&gt; c
+                 |
+       --- ---   |
+x2--&gt; |   |   |--
+       --- ---
+        |
+        |
+         --&gt; z</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030536Z" creationid="jchelary" creationdate="20140131T030536Z">
+        <seg>--- ---        --- ---      --- ---
+x1---&gt; |   |   |----&gt; |   |   |--&gt; |   |   |--&gt; nil
+        --- ---        --- ---      --- ---
+         |        --&gt;   |            |
+         |       |      |            |
+          --&gt; a  |       --&gt; b        --&gt; c
+                 |
+       --- ---   |
+x2--&gt; |   |   |--
+       --- ---
+        |
+        |
+         --&gt; z</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>--------------        -------------       -------------
+| car  | cdr   |      | car  | cdr  |     | car  | cdr  |
+|   a  |   o   |   --&gt;|   b  |   o-------&gt;|   c  |  nil |
+|      |   |   |  |   |      |      |     |      |      |
+ --------- | --   |    -------------       -------------
+           |      |
+     -----         --------
+    |                      |
+    |    ---------------   |
+    |   | car   | cdr   |  |
+     --&gt;|   d   |   o------
+        |       |       |
+         ---------------</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030556Z" creationid="jchelary" creationdate="20140131T030556Z">
+        <seg>--------------        -------------       -------------
+| car  | cdr   |      | car  | cdr  |     | car  | cdr  |
+|   a  |   o   |   --&gt;|   b  |   o-------&gt;|   c  |  nil |
+|      |   |   |  |   |      |      |     |      |      |
+ --------- | --   |    -------------       -------------
+           |      |
+     -----         --------
+    |                      |
+    |    ---------------   |
+    |   | car   | cdr   |  |
+     --&gt;|   d   |   o------
+        |       |       |
+         ---------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>--------------------
+                  |                    |
+ --------------   |   --------------   |    --------------
+| car   | cdr  |  |  | car   | cdr  |   --&gt;| car   | cdr  |
+|   a   |   o-----   |   b   |   o--------&gt;|   c   |  nil |
+|       |      |     |       |      |      |       |      |
+ --------------       --------------        --------------</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030549Z" creationid="jchelary" creationdate="20140131T030549Z">
+        <seg>--------------------
+                  |                    |
+ --------------   |   --------------   |    --------------
+| car   | cdr  |  |  | car   | cdr  |   --&gt;| car   | cdr  |
+|   a   |   o-----   |   b   |   o--------&gt;|   c   |  nil |
+|       |      |     |       |      |      |       |      |
+ --------------       --------------        --------------</seg>
       </tuv>
     </tu>
     <tu>
@@ -1297,6 +1399,28 @@ notation @dfn{two's complement}.)</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>@result{} for</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>@r{Original list head:}                       @r{Reversed list:}
+ -------------        -------------        ------------
+| car  | cdr  |      | car  | cdr  |      | car | cdr  |
+|   a  |  nil |&lt;--   |   b  |   o  |&lt;--   |   c |   o  |
+|      |      |   |  |      |   |  |   |  |     |   |  |
+ -------------    |   --------- | -    |   -------- | -
+                  |             |      |            |
+                   -------------        ------------</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030650Z" creationid="jchelary" creationdate="20140131T030650Z">
+        <seg>@r{Original list head:}                       @r{Reversed list:}
+ -------------        -------------        ------------
+| car  | cdr  |      | car  | cdr  |      | car | cdr  |
+|   a  |  nil |&lt;--   |   b  |   o  |&lt;--   |   c |   o  |
+|      |      |   |  |      |   |  |   |  |     |   |  |
+ -------------    |   --------- | -    |   -------- | -
+                  |             |      |            |
+                   -------------        ------------</seg>
       </tuv>
     </tu>
     <tu>
@@ -3529,8 +3653,8 @@ imprimé à côté de la marge.</seg>
       <tuv lang="en-us">
         <seg>The following two variables have existed since Emacs version 19.23:</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Les deux variables suivantes existent depuis la version 19.23 d'Emacs :</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030441Z">
+        <seg>Les deux variables suivantes existent depuis la version 19.23 d'Emacs :</seg>
       </tuv>
     </tu>
     <tu>
@@ -3816,10 +3940,10 @@ Lisp peut manipuler. Elle est négative.</seg>
       <tuv lang="en-us">
         <seg>The value of this variable is the version of Emacs being run.  It is a string such as @code{"20.3.1"}.  The last number in this string is not really part of the Emacs release version number; it is incremented each time you build Emacs in any given directory.  A value with four numeric components, such as @code{"20.3.9.1"}, indicates an unreleased test version.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030435Z">
         <seg>La valeur de cette variable est la version d'Emacs en cours. C'est une
 chaine telle que @code{"20.3.1"}. Le dernier nombre dans cette chaine
-n'est pas vraiment une partie du nombre de version de sortie d'Emacs;
+n'est pas vraiment une partie du nombre de version de sortie d'Emacs ;
 il est incrémenté chaque fois que vous construisez Emacs dans
 n'importe quel répertoire donné. Une valeur avec quatre composants
 numériques, tels que @code{"20.3.9.1"}, indique une version d'essai
@@ -8466,6 +8590,38 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>x-select-enable-clipboard</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>x1:
+ --------------       --------------       --------------
+| car   | cdr  |     | car   | cdr  |     | car   | cdr  |
+|   a   |   o-------&gt;|   b   |   o-------&gt;|   c   |  nil |
+|       |      |  --&gt;|       |      |     |       |      |
+ --------------  |    --------------       --------------
+                 |
+x2:              |
+ --------------  |
+| car   | cdr  | |
+|   z   |   o----
+|       |      |
+ --------------</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030540Z" creationid="jchelary" creationdate="20140131T030540Z">
+        <seg>x1:
+ --------------       --------------       --------------
+| car   | cdr  |     | car   | cdr  |     | car   | cdr  |
+|   a   |   o-------&gt;|   b   |   o-------&gt;|   c   |  nil |
+|       |      |  --&gt;|       |      |     |       |      |
+ --------------  |    --------------       --------------
+                 |
+x2:              |
+ --------------  |
+| car   | cdr  | |
+|   z   |   o----
+|       |      |
+ --------------</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
