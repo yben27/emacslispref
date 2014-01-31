@@ -1235,11 +1235,11 @@ x2--&gt; |   |   |--
       <tuv lang="en-us">
         <seg>@b{Common Lisp note:} Comparing numbers in Common Lisp always requires @code{=} because Common Lisp implements multi-word integers, and two distinct integer objects can have the same numeric value.  Emacs Lisp can have just one integer object for any given value because it has a limited range of integer values.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031730Z">
         <seg>@b{Common Lisp note:} Comparer des nombres en Common Lisp exige
 toujours @code{=} parce que le Common Lisp met en application des
 nombres entiers pluritermes, et deux objets distincts de nombre entier
-peuvent avoir la même valeur numérique. L'Emacs Lisp peut avoir juste
+peuvent avoir la même valeur numérique. Emacs Lisp peut avoir juste
 un objet de nombre entier pour n'importe quelle valeur donnée parce
 qu'il a un champ limité des valeurs de nombre entier.</seg>
       </tuv>
@@ -1848,11 +1848,11 @@ représentation des nombres entiers dans une future version d'Emacs.</seg>
       <tuv lang="en-us">
         <seg>Because Emacs Lisp is designed for use in an editor, it has special features for scanning and parsing text as well as features for handling files, buffers, displays, subprocesses, and so on.  Emacs Lisp is closely integrated with the editing facilities; thus, editing commands are functions that can also conveniently be called from Lisp programs, and parameters for customization are ordinary Lisp variables.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T024655Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031736Z">
         <seg>Puisque Emacs Lisp est conçu pour l'utilisation dans un éditeur, il a
 des usages spéciaux pour le balayage et l'analyse de texte aussi bien
 que des dispositifs pour manipuler des fichiers, tampons, affichages,
-sous-processus, et ainsi de suite. L'Emacs Lisp est intégré avec
+sous-processus, et ainsi de suite. Emacs Lisp est intégré avec
 beaucoup des facilités d'édition ; ainsi, les commandes d'édition sont
 des fonctions qui peuvent commodément appeler également des programmes
 de Lisp, et les paramètres pour la personnalisation sont des variables
@@ -2393,10 +2393,10 @@ fonction décrite, sont composés comme ceci : @var{first-number}.</seg>
       <tuv lang="en-us">
         <seg>Floating point numbers are useful for representing numbers that are not integral.  The precise range of floating point numbers is machine-specific; it is the same as the range of the C data type @code{double} on the machine you are using.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031637Z">
         <seg>Les nombres à virgule flottante sont utiles pour la représentation des
 nombres qui ne sont pas intégraux. Le champ précis des nombres à
-virgule flottante est propre à la machine; c'est pareil que le champ
+virgule flottante est propre à la machine ; c'est identique au champ
 du type de données de C @code{double} sur la machine que vous
 employée.</seg>
       </tuv>
@@ -3087,7 +3087,7 @@ sa valeur de position est employée et son tampon est ignoré.</seg>
       <tuv lang="en-us">
         <seg>Most modern computers support the @acronym{IEEE} floating point standard, which provides for positive infinity and negative infinity as floating point values.  It also provides for a class of values called NaN or ``not-a-number''; numerical functions return such values in cases where there is no correct answer.  For example, @code{(/ 0.0 0.0)} returns a NaN.  For practical purposes, there's no significant difference between different NaN values in Emacs Lisp, and there's no rule for precisely which NaN value should be used in a particular case, so Emacs Lisp doesn't try to distinguish them (but it does report the sign, if you print it).  Here are the read syntaxes for these special floating point values:</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031646Z">
         <seg>La plupart des ordinateurs modernes soutiennent la norme à virgule
 flottante @acronym{IEEE}, qui prévoit plus l'infini et moins l'infini
 comme valeurs à virgule flottante. Elle prévoit également une classe
@@ -3098,7 +3098,7 @@ pratiques, il n'y a aucune différence significative entre différentes
 valeurs de NaN en Emacs Lisp, et il n'y a aucune règle pour la valeur
 NaN à utiliser dans un cas particulier, ainsi Emacs Lisp n'essaye pas
 de les distinguer (mais rapporte le signal, si vous l'affichez). Voici
-les syntaxes lues pour ces valeurs à virgule flottante spéciales:</seg>
+les syntaxes lues pour ces valeurs à virgule flottante spéciales :</seg>
       </tuv>
     </tu>
     <tu>
@@ -3856,10 +3856,10 @@ exemple:</seg>
       <tuv lang="en-us">
         <seg>The value @code{-0.0} is distinguishable from ordinary zero in @acronym{IEEE} floating point, but Emacs Lisp @code{equal} and @code{=} consider them equal values.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031811Z">
         <seg>La valeur @code{-0.0} est distinguable de l'ordinaire zéro dans la
-virgule flottante de @acronym{IEEE}, mais l'Emacs Lisp @code{equal} et
-@code{=} les considèrent comme valeurs égales.</seg>
+virgule flottante de @acronym{IEEE}, mais en Emacs Lisp @code{equal} et
+@code{=} sont considérés comme valeurs égales.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3954,9 +3954,9 @@ non sortie.</seg>
       <tuv lang="en-us">
         <seg>There are four functions to convert floating point numbers to integers; they differ in how they round.  All accept an argument @var{number} and an optional argument @var{divisor}.  Both arguments may be integers or floating point numbers.  @var{divisor} may also be @code{nil}.  If @var{divisor} is @code{nil} or omitted, these functions convert @var{number} to an integer, or return it unchanged if it already is an integer.  If @var{divisor} is non-@code{nil}, they divide @var{number} by @var{divisor} and convert the result to an integer.  An @code{arith-error} results if @var{divisor} is 0.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031902Z">
         <seg>Il y a quatre fonctions pour convertir des nombres à virgule flottante
-en nombres entiers; ils diffèrent dans la façon dont ils
+en nombres entiers ; ils diffèrent dans la façon dont ils
 arrondissent. Tous acceptent un argument @var{number} et un argument
 facultatif @var{divisor}. Les deux arguments peuvent être des nombres
 entiers ou des nombres à virgule flottante. @var{divisor} peut
@@ -3972,8 +3972,8 @@ renvoient sans changement si c'est déjà un nombre entier. Si
       <tuv lang="en-us">
         <seg>There is another wrinkle: because floating point arithmetic is not exact, it is often a bad idea to check for equality of two floating point values.  Usually it is better to test for approximate equality.  Here's a function to do this:</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Il y a un autre problème: parce que l'arithmétique de virgule
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031702Z">
+        <seg>Il y a un autre problème : parce que l'arithmétique de virgule
 flottante n'est pas exacte, c'est souvent une mauvaise idée de
 vérifier l'égalité de deux valeurs à virgule flottante. Habituellement
 il vaut mieux déterminer l'égalité approximative. Voici une fonction
