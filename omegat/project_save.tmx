@@ -819,11 +819,11 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
 * Version Info::            Which Emacs version is running?
 * Acknowledgements::        The authors, editors, and sponsors of this manual.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025531Z">
         <seg>* Avertissements::              Erreurs et demande d'aide.
 * L'histoire de Lisp::          Emacs Lisp descend de Maclisp.
 * Conventions::                 Comment le manuel est composé.
-* Information de version::      Quelle version d'Emacs fonctionne?
+* Information de version::      Quelle version d'Emacs fonctionne ?
 * Remerciements::               Les auteurs, les rédacteurs, et les commanditaires de ce manuel.</seg>
       </tuv>
     </tu>
@@ -1473,6 +1473,14 @@ variable @code{abbrev-mode}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Abbrevs et expansion d'abbrev</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Accessing files.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025458Z" creationid="jchelary" creationdate="20140131T025458Z">
+        <seg>Accès aux fichiers.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4269,8 +4277,8 @@ table d'abréviations à cette liste.</seg>
       <tuv lang="en-us">
         <seg>This is edition @value{VERSION} of the GNU Emacs Lisp Reference Manual, corresponding to Emacs version @value{EMACSVER}.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>C'est l'édition @value{VERSION} du manuel de référence de GNU Emacs
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025745Z">
+        <seg>Ceci est l'édition @value{VERSION} du manuel de référence de GNU Emacs
 Lisp, correspondant à la version d'Emacs @value{EMACSVER}.</seg>
       </tuv>
     </tu>
@@ -5645,6 +5653,14 @@ générée. Pour @code{floor}, voir les @ref{Conversions numériques}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>bug-lisp-manual@@gnu.org</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>bugs in this manual</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025755Z" creationid="jchelary" creationdate="20140131T025755Z">
+        <seg>erreurs dans ce manuel</seg>
       </tuv>
     </tu>
     <tu>
