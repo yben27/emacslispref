@@ -1,2 +1,3 @@
 Processes	Processus
 string	chaîne de caractères
+abbrev	abbréviation
