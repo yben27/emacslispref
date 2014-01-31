@@ -1652,12 +1652,12 @@ représentation des nombres entiers dans une future version d'Emacs.</seg>
       <tuv lang="en-us">
         <seg>Because Emacs Lisp is designed for use in an editor, it has special features for scanning and parsing text as well as features for handling files, buffers, displays, subprocesses, and so on.  Emacs Lisp is closely integrated with the editing facilities; thus, editing commands are functions that can also conveniently be called from Lisp programs, and parameters for customization are ordinary Lisp variables.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T024655Z">
         <seg>Puisque Emacs Lisp est conçu pour l'utilisation dans un éditeur, il a
 des usages spéciaux pour le balayage et l'analyse de texte aussi bien
 que des dispositifs pour manipuler des fichiers, tampons, affichages,
 sous-processus, et ainsi de suite. L'Emacs Lisp est intégré avec
-beaucoup des facilités d'édition ; ainsi, les commandes d'édition sont
+beaucoup des facilités d'édition ; ainsi, les commandes d'édition sont
 des fonctions qui peuvent commodément appeler également des programmes
 de Lisp, et les paramètres pour la personnalisation sont des variables
 ordinaires de Lisp.</seg>
@@ -2893,11 +2893,11 @@ les syntaxes lues pour ces valeurs à virgule flottante spéciales:</seg>
       <tuv lang="en-us">
         <seg>Most of the GNU Emacs text editor is written in the programming language called Emacs Lisp.  You can write new code in Emacs Lisp and install it as an extension to the editor.  However, Emacs Lisp is more than a mere ``extension language''; it is a full computer programming language in its own right.  You can use it as you would any other programming language.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T024648Z">
         <seg>La majeure partie de l'éditeur de texte GNU Emacs est écrite dans
 le langage de programmation appelé Emacs Lisp. Vous pouvez écrire le
 nouveau code en Emacs Lisp et l'installer comme extension de l'éditeur.
-Cependant, Emacs Lisp est plus qu'un simple ``langage d'extension'' ;
+Cependant, Emacs Lisp est plus qu'un simple ``langage d'extension'' ;
 c'est un langage de programmation complet et autonome d'ordinateur.
 Vous pouvez l'employer comme n'importe quel autre langage de programmation.</seg>
       </tuv>
@@ -3080,6 +3080,14 @@ canoniques : @code{t} ou @code{nil}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Opérations d'arrondissage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Saving Abbrevs in Files</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T024608Z" creationid="jchelary" creationdate="20140131T024541Z">
+        <seg>Enregistrer des abréviations dans les fichiers</seg>
       </tuv>
     </tu>
     <tu>
@@ -3667,6 +3675,8 @@ virgule flottante de @acronym{IEEE}, mais l'Emacs Lisp @code{equal} et
       </tuv>
     </tu>
     <tu>
+      <note>use count =	usage du compteur ?
+		compteur d'usage ?</note>
       <tuv lang="en-us">
         <seg>The value of @var{count}, if specified, initializes the abbrev's usage-count.  If @var{count} is not specified or @code{nil}, the use count is initialized to zero.</seg>
       </tuv>
