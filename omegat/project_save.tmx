@@ -2272,11 +2272,11 @@ nouveau logiciel de GNU qui réclame l'extensibilité.</seg>
       <tuv lang="en-us">
         <seg>Emacs Lisp provides the traditional four arithmetic operations: addition, subtraction, multiplication, and division.  Remainder and modulus functions supplement the division functions.  The functions to add or subtract 1 are provided because they are traditional in Lisp and commonly used.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Le Emacs Lisp fournit les quatre opérations arithmétiques
-traditionnelles: addition, soustraction, multiplication et division.
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031949Z">
+        <seg>Emacs Lisp fournit les quatre opérations arithmétiques
+traditionnelles : addition, soustraction, multiplication et division.
 Les fonctions de reste et de modulo complètent les fonctions de
-division. Les fonctions additionner ou soustraire 1 sont fournis parce
+division. Les fonctions additionner ou soustraire 1 sont fournies parce
 qu'elles sont traditionnelles en Lisp et utilisées généralement.</seg>
       </tuv>
     </tu>
@@ -2435,9 +2435,9 @@ ainsi les deux bits à l'extrême droite de la valeur retournée sont 0.</seg>
       <tuv lang="en-us">
         <seg>For negative arguments, the remainder is in principle machine-dependent since the quotient is; but in practice, all known machines behave alike.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032056Z">
         <seg>Pour des arguments négatifs, le reste est en principe dépendant de la
-machine puisque le quotient est variable; mais dans la pratique,
+machine puisque le quotient est variable ; mais dans la pratique,
 toutes les machines connues se comportent de la même façon.</seg>
       </tuv>
     </tu>
@@ -2772,9 +2772,9 @@ basée sur l'heure courante du jour et sur le numéro du processus
       <tuv lang="en-us">
         <seg>If you want to increment the variable, you must use @code{setq}, like this:</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032010Z">
         <seg>Si vous voulez incrémenter la variable, vous devez employer
-@code{setq}, comme ceci:</seg>
+@code{setq}, comme ceci :</seg>
       </tuv>
     </tu>
     <tu>
@@ -2942,10 +2942,10 @@ dans une liste, pour les distinguer de @var{body}, qui inclut tous les
       <tuv lang="en-us">
         <seg>It is important to note that in Emacs Lisp, arithmetic functions do not check for overflow.  Thus @code{(1+ 268435455)} may evaluate to @minus{}268435456, depending on your hardware.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031958Z">
         <seg>Il est important de noter qu'en Emacs Lisp, les fonctions
 arithmétiques ne vérifient pas le débordement. Ainsi @code{(1+
-268435455)} peut être évaluer à @minus{}268435456, selon votre
+268435455)} peut être évalué à @minus{}268435456, selon votre
 matériel.</seg>
       </tuv>
     </tu>
@@ -3567,8 +3567,8 @@ un exemple :</seg>
       <tuv lang="en-us">
         <seg>The @code{-} function serves two purposes: negation and subtraction.  When @code{-} has a single argument, the value is the negative of the argument.  When there are multiple arguments, @code{-} subtracts each of the @var{more-numbers-or-markers} from @var{number-or-marker}, cumulatively.  If there are no arguments, the result is 0.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>La fonction @code{-} atteint deux objectifs: négation et soustraction.
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032036Z">
+        <seg>La fonction @code{-} atteint deux objectifs : négation et soustraction.
 Quand @code{-} a un argument simple, la valeur est le négatif de
 l'argument. Quand il y a des arguments multiples, @code{-} soustrait
 chacun des @var{more-numbers-or-markers} de @var{number-or-marker}, de
@@ -4764,10 +4764,10 @@ nombres sous leur forme binaire.</seg>
       <tuv lang="en-us">
         <seg>Unlike @code{%}, @code{mod} returns a well-defined result for negative arguments.  It also permits floating point arguments; it rounds the quotient downward (towards minus infinity) to an integer, and uses that quotient to compute the remainder.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032125Z">
         <seg>À la différence de @code{%}, @code{mod} renvoie un résultat bien
 défini pour les arguments négatifs. Il permet également des arguments
-à virgule flottante; il arrondit le quotient à un nombre entier vers
+à virgule flottante ; il arrondit le quotient à un nombre entier vers
 le bas (vers moins l'infini), et utilise ce quotient pour calculer le
 reste.</seg>
       </tuv>
