@@ -1299,6 +1299,14 @@ gauche, alors que @code{lsh} met des 0 dans ces positions de bit.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@code{composition} property, and point display</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051551Z" creationid="jchelary" creationdate="20140216T051551Z">
+        <seg>Propriété @code{composition} et affichage du point</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@code{define-abbrev} is the low-level basic function for defining an abbrev in a specified abbrev table.  When major modes predefine standard abbrevs, they should call @code{define-abbrev} and specify @code{t} for @var{system-flag}.  Be aware that any saved non-``system'' abbrevs are restored at startup, i.e. before some major modes are loaded.  Major modes should therefore not assume that when they are first loaded their abbrev tables are empty.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T113207Z">
@@ -1311,6 +1319,14 @@ non-``système'' sont restaurées au démarrage, c.-à-d. avant que les
 modes majeurs sont chargés. C'est pourquoi les modes majeurs ne
 devraient pas assumer que, quand ils sont d'abord chargés, leurs
 tables d'abréviations soient vides.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>@code{display} property, and point display</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051527Z" creationid="jchelary" creationdate="20140216T051527Z">
+        <seg>Propriété @code{display} et affichage du point</seg>
       </tuv>
     </tu>
     <tu>
@@ -1358,6 +1374,14 @@ un résultat positif même si @var{integer1} est négatif. Contrairement
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030031Z" creationid="jchelary" creationdate="20140131T030031Z">
         <seg>@code{nil} et @code{t}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>@code{no-self-insert} property</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051506Z" creationid="jchelary" creationdate="20140216T051506Z">
+        <seg>Propriété @code{no-self-insert}</seg>
       </tuv>
     </tu>
     <tu>
@@ -2197,6 +2221,14 @@ D. Zuhn.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Display</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051604Z" creationid="jchelary" creationdate="20140216T051604Z">
+        <seg>Affichage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Documentation</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2248,6 +2280,14 @@ appelé Scheme.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Emacs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Emacs Display</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051610Z" creationid="jchelary" creationdate="20140216T051610Z">
+        <seg>Affichage Emacs</seg>
       </tuv>
     </tu>
     <tu>
@@ -3608,6 +3648,22 @@ quand vous appelez la fonction.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The argument @var{hook} is a function or @code{nil}.  If @var{hook} is non-@code{nil}, then it is called with no arguments after the abbrev is replaced with @var{expansion}; point is located at the end of @var{expansion} when @var{hook} is called.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051432Z" creationid="jchelary" creationdate="20140216T051432Z">
+        <seg>L'argument @var{hook} est une fonction ou @code{nil}. Si @var{hook} n'est pas @code{nil} alors il est appelé sans arguments après que l'abbréviation soit remplacée par @var{expansion}. Le point est situé à la fin de @var{expansion} quand @var{hook} est appelée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The argument @var{name} should be a string.  The argument @var{expansion} is normally the desired expansion (a string), or @code{nil} to undefine the abbrev.  If it is anything but a string or @code{nil}, then the abbreviation ``expands'' solely by running @var{hook}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051209Z" creationid="jchelary" creationdate="20140216T051209Z">
+        <seg>L'argument @var{name} doit être une chaîne de caractères. L'argument @var{expansion} est normalement l'expansion souhaitée (une chaîne de caractères), or @code{nil} pour éliminer une abréviation. S'il n'est ni une chaîne de caractères ni @code{nil} alors l'abréviation se "développe" exclusivement en exécutant @var{hook}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The authors, editors, and sponsors of this manual.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4023,6 +4079,14 @@ que des nombres à virgule flottante comme arguments.</seg>
         <seg>Ce dossier d'information contient l'édition @value{VERSION} du Manuel
 de référence GNU Emacs Lisp, correspondant à la version
 @value{EMACSVER} de GNU Emacs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This chapter describes a number of features related to the display that Emacs presents to the user.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051644Z" creationid="jchelary" creationdate="20140216T051644Z">
+        <seg>Ce chapitre décrit des fonctions en rapport avec l'affichage qu'Emacs présente à l'utilisateur.</seg>
       </tuv>
     </tu>
     <tu>
