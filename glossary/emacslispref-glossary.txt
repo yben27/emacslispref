@@ -2,3 +2,4 @@ Processes	Processus
 string	chaîne de caractères
 abbrev	abréviation
 Save	Enregistrer	Pas "sauver"
+expand	??? se développer ?
