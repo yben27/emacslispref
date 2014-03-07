@@ -4568,11 +4568,10 @@ Manual} pour cette information de base.</seg>
       <tuv lang="en-us">
         <seg>This manual describes Emacs Lisp.  Generally speaking, the earlier chapters describe features of Emacs Lisp that have counterparts in many programming languages, and later chapters describe features that are peculiar to Emacs Lisp or relate specifically to editing.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T213159Z" creationid="jchelary" creationdate="20140131T024841Z">
-        <seg>Ce manuel décrit Emacs Lisp. D'une manière générale, les premiers chapitres décrivent les
-caractéristiques d'Emacs Lisp qui ont des équivalences dans beaucoup
-de langages de programmation, et les chapitres suivants décrivent
-les caractéristiques particulières d'Emacs Lisp ou celles qui se
+      <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T213517Z" creationid="jchelary" creationdate="20140131T024841Z">
+        <seg>Ce manuel traite d'Emacs Lisp. D'une manière générale, les premiers chapitres décrivent les
+caractéristiques d'Emacs Lisp communes de nombreux langages de programmation, tandis que les chapitres suivants décrivent
+les caractéristiques particulières d'Emacs Lisp ou encore celles qui se
 réfèrent spécifiquement à l'édition.</seg>
       </tuv>
     </tu>
