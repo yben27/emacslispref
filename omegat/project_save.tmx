@@ -1880,15 +1880,15 @@ représentation des nombres entiers dans une future version d'Emacs.</seg>
       <tuv lang="en-us">
         <seg>Because Emacs Lisp is designed for use in an editor, it has special features for scanning and parsing text as well as features for handling files, buffers, displays, subprocesses, and so on.  Emacs Lisp is closely integrated with the editing facilities; thus, editing commands are functions that can also conveniently be called from Lisp programs, and parameters for customization are ordinary Lisp variables.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031736Z">
-        <seg>Puisque Emacs Lisp est conçu pour l'utilisation dans un éditeur, il a
-des usages spéciaux pour le balayage et l'analyse de texte aussi bien
-que des dispositifs pour manipuler des fichiers, tampons, affichages,
-sous-processus, et ainsi de suite. Emacs Lisp est intégré avec
-beaucoup des facilités d'édition ; ainsi, les commandes d'édition sont
-des fonctions qui peuvent commodément appeler également des programmes
-de Lisp, et les paramètres pour la personnalisation sont des variables
-ordinaires de Lisp.</seg>
+      <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T213011Z">
+        <seg>Puisque Emacs Lisp est conçu pour l'utilisation dans un éditeur, il dispose
+de fonctions spécifiques pour le balayage et l'analyse de texte aussi bien
+que des dispositifs pour manipuler des fichiers, des tampons, des affichages,
+des sous-processus, et ainsi de suite. Emacs Lisp est intégré avec
+de nombreuses fonctions d'édition ; ainsi, les commandes d'édition sont
+des fonctions qui peuvent également être commodément appelées par des programmes
+Lisp, et les paramètres de configuration sont des variables Lisp
+ordinaires.</seg>
       </tuv>
     </tu>
     <tu>
