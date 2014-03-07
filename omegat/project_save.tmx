@@ -1707,8 +1707,8 @@ variable @code{abbrev-mode}.</seg>
       <tuv lang="en-us">
         <seg>After Emacs reads your init file, it initializes @code{auto-save-list-file-name} (if you have not already set it non-@code{nil}) based on this prefix, adding the host name and process ID.  If you set this to @code{nil} in your init file, then Emacs does not initialize @code{auto-save-list-file-name}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T211201Z" creationid="nicoals" creationdate="20140307T211201Z">
-        <seg>Après q'After Emacs reads your init file, it initializes @code{auto-save-list-file-name} (if you have not already set it non-@code{nil}) based on this prefix, adding the host name and process ID.  If you set this to @code{nil} in your init file, then Emacs does not initialize @code{auto-save-list-file-name}.</seg>
+      <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T211732Z" creationid="nicoals" creationdate="20140307T211201Z">
+        <seg>Après qu'Emacs ait lu votre fichier de configuration, il initialise @code{auto-save-list-file-name} (si vous ne l'avez pas déjà réglé en non-@code{nil}) sur la base de ce préfixe, en ajoutant le nom d'hôte et l'ID de processus. Si vous réglez cette option en @code{nil} dans votre fichier de configuration, Emacs n'initialisera pas @code{auto-save-list-file-name}.</seg>
       </tuv>
     </tu>
     <tu>
