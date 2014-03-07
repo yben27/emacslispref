@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.1.0" segtype="paragraph" srclang="en-us"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.0.7" segtype="paragraph" srclang="en-us"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -3884,12 +3884,12 @@ des nombres négatifs à virgule flottante, comme dans @samp{- 1.0}.</seg>
       <tuv lang="en-us">
         <seg>The set of abbrevs currently in effect is recorded in an @dfn{abbrev table}.  Each buffer has a local abbrev table, but normally all buffers in the same major mode share one abbrev table.  There is also a global abbrev table.  Normally both are used.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T210506Z">
         <seg>Actuellement, l'ensemble des abréviations est enregistré dans un
 @dfn{abbrev table}. Chaque tampon a une table locale d'abréviations,
 mais normalement tous les tampons dans le même mode majeur partage une
 table principale d'abréviations. Il y a donc une table d'abréviation
-global. Normalement tous les deux sont employés.</seg>
+globale. Normalement tous les deux sont employés.</seg>
       </tuv>
     </tu>
     <tu>
