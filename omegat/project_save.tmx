@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.0.7" segtype="paragraph" srclang="en-us"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.1.0" segtype="paragraph" srclang="en-us"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -3307,6 +3307,14 @@ qu'un certain minimum (négatif).</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Lire des fichiers de code Lisp depuis Lisp.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Refresh Screen</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T092419Z" creationid="jchelary" creationdate="20140216T092419Z">
+        <seg>Rafraîchissement de l'écran</seg>
       </tuv>
     </tu>
     <tu>
