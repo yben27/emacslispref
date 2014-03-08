@@ -6293,14 +6293,6 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
-        <seg>define-abbrev-table tabname definitions</seg>
-      </tuv>
-      <tuv lang="fr-fr">
-        <seg>define-abbrev-table tabname definitions</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-us">
         <seg>definitions of symbols</seg>
       </tuv>
       <tuv lang="fr-fr">
