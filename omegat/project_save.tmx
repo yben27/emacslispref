@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.1.0" segtype="paragraph" srclang="en-us"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.0.7" segtype="paragraph" srclang="en-us"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -1591,11 +1591,11 @@ dans une série pseudo-aléatoire.</seg>
       <tuv lang="en-us">
         <seg>A non-@code{nil} value of this variable turns on the automatic expansion of abbrevs when their abbreviations are inserted into a buffer.  If the value is @code{nil}, abbrevs may be defined, but they are not expanded automatically.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="nicoals" changedate="20140308T061305Z">
         <seg>Une valeur non-@code{nil} de cette variable active l'expansion
 automatique des abréviations quand elles sont insérées dans un
 tampon. Si la valeur est @code{nil}, des abréviations peuvent être
-définis, mais elles ne sont pas développées automatiquement.</seg>
+définies, mais elles ne sont pas développées automatiquement.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3362,8 +3362,8 @@ canoniques : @code{t} ou @code{nil}.</seg>
       <tuv lang="en-us">
         <seg>Saving abbrevs in files.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Sauver des abréviations dans les fichiers.</seg>
+      <tuv lang="fr-fr" changeid="nicoals" changedate="20140308T061234Z">
+        <seg>Enregistre des abréviations dans les fichiers.</seg>
       </tuv>
     </tu>
     <tu>
