@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.0.7" segtype="paragraph" srclang="en-us"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.6.3_8" segtype="paragraph" srclang="en-us"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -298,7 +298,7 @@ nombre entier binaire.)</seg>
       (fixit)
     (setq done t)))</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030317Z" creationid="jchelary" creationdate="20140131T030317Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030317Z">
         <seg>(count-loop (done)
   (if (pending)
       (fixit)
@@ -312,7 +312,7 @@ nombre entier binaire.)</seg>
   (prin1 (aref vector i))
   (terpri))</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030313Z" creationid="jchelary" creationdate="20140131T030313Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030313Z">
         <seg>(count-loop (i 0 10)
   (prin1 i) (princ " ")
   (prin1 (aref vector i))
@@ -768,7 +768,7 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
 x1
      @result{} (a d b c)</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030553Z" creationid="jchelary" creationdate="20140131T030553Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030553Z">
         <seg>(setq x1 '(a b c))
      @result{} (a b c)
 (setcdr x1 (cons 'd (cdr x1)))
@@ -793,7 +793,7 @@ x1
      @expansion{} (car (cdr (cdr '(a b c))))
      @result{} c</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030203Z" creationid="jchelary" creationdate="20140131T030203Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030203Z">
         <seg>(third '(a b c))
      @expansion{} (car (cdr (cdr '(a b c))))
      @result{} c</seg>
@@ -963,7 +963,7 @@ x2--&gt; |   |   |--
         |
          --&gt; z</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030536Z" creationid="jchelary" creationdate="20140131T030536Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030536Z">
         <seg>--- ---        --- ---      --- ---
 x1---&gt; |   |   |----&gt; |   |   |--&gt; |   |   |--&gt; nil
         --- ---        --- ---      --- ---
@@ -995,7 +995,7 @@ x2--&gt; |   |   |--
         |       |       |
          ---------------</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030556Z" creationid="jchelary" creationdate="20140131T030556Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030556Z">
         <seg>--------------        -------------       -------------
 | car  | cdr   |      | car  | cdr  |     | car  | cdr  |
 |   a  |   o   |   --&gt;|   b  |   o-------&gt;|   c  |  nil |
@@ -1021,7 +1021,7 @@ x2--&gt; |   |   |--
 |       |      |     |       |      |      |       |      |
  --------------       --------------        --------------</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030549Z" creationid="jchelary" creationdate="20140131T030549Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030549Z">
         <seg>--------------------
                   |                    |
  --------------   |   --------------   |    --------------
@@ -1301,7 +1301,7 @@ gauche, alors que @code{lsh} met des 0 dans ces positions de bit.</seg>
       <tuv lang="en-us">
         <seg>@code{composition} property, and point display</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051551Z" creationid="jchelary" creationdate="20140216T051551Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051551Z">
         <seg>Propriété @code{composition} et affichage du point</seg>
       </tuv>
     </tu>
@@ -1325,7 +1325,7 @@ tables d'abréviations soient vides.</seg>
       <tuv lang="en-us">
         <seg>@code{display} property, and point display</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051527Z" creationid="jchelary" creationdate="20140216T051527Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051527Z">
         <seg>Propriété @code{display} et affichage du point</seg>
       </tuv>
     </tu>
@@ -1372,7 +1372,7 @@ un résultat positif même si @var{integer1} est négatif. Contrairement
       <tuv lang="en-us">
         <seg>@code{nil} and @code{t}</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030031Z" creationid="jchelary" creationdate="20140131T030031Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030031Z">
         <seg>@code{nil} et @code{t}</seg>
       </tuv>
     </tu>
@@ -1380,7 +1380,7 @@ un résultat positif même si @var{integer1} est négatif. Contrairement
       <tuv lang="en-us">
         <seg>@code{no-self-insert} property</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051506Z" creationid="jchelary" creationdate="20140216T051506Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051506Z">
         <seg>Propriété @code{no-self-insert}</seg>
       </tuv>
     </tu>
@@ -1396,7 +1396,7 @@ un résultat positif même si @var{integer1} est négatif. Contrairement
       <tuv lang="en-us">
         <seg>@hfil</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T024906Z" creationid="jchelary" creationdate="20140131T024906Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T024906Z">
         <seg>@hfil</seg>
       </tuv>
     </tu>
@@ -1436,7 +1436,7 @@ notation @dfn{two's complement}.)</seg>
                   |             |      |            |
                    -------------        ------------</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030650Z" creationid="jchelary" creationdate="20140131T030650Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030650Z">
         <seg>@r{Original list head:}                       @r{Reversed list:}
  -------------        -------------        ------------
 | car  | cdr  |      | car  | cdr  |      | car | cdr  |
@@ -1675,7 +1675,7 @@ variable @code{abbrev-mode}.</seg>
       <tuv lang="en-us">
         <seg>Accessing files.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025458Z" creationid="jchelary" creationdate="20140131T025458Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025458Z">
         <seg>Accès aux fichiers.</seg>
       </tuv>
     </tu>
@@ -1691,7 +1691,7 @@ variable @code{abbrev-mode}.</seg>
       <tuv lang="en-us">
         <seg>Adding to the definition of a function.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025358Z" creationid="jchelary" creationdate="20140131T025358Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025358Z">
         <seg>Ajout à la définition d'une fonction.</seg>
       </tuv>
     </tu>
@@ -1707,7 +1707,7 @@ variable @code{abbrev-mode}.</seg>
       <tuv lang="en-us">
         <seg>After Emacs reads your init file, it initializes @code{auto-save-list-file-name} (if you have not already set it non-@code{nil}) based on this prefix, adding the host name and process ID.  If you set this to @code{nil} in your init file, then Emacs does not initialize @code{auto-save-list-file-name}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T211732Z" creationid="nicoals" creationdate="20140307T211201Z">
+      <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T211732Z">
         <seg>Après qu'Emacs ait lu votre fichier de configuration, il initialise @code{auto-save-list-file-name} (si vous ne l'avez pas déjà réglé en non-@code{nil}) sur la base de ce préfixe, en ajoutant le nom d'hôte et l'ID de processus. Si vous réglez cette option en @code{nil} dans votre fichier de configuration, Emacs n'initialisera pas @code{auto-save-list-file-name}.</seg>
       </tuv>
     </tu>
@@ -2231,7 +2231,7 @@ D. Zuhn.</seg>
       <tuv lang="en-us">
         <seg>Display</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051604Z" creationid="jchelary" creationdate="20140216T051604Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051604Z">
         <seg>Affichage</seg>
       </tuv>
     </tu>
@@ -2294,7 +2294,7 @@ appelé Scheme.</seg>
       <tuv lang="en-us">
         <seg>Emacs Display</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051610Z" creationid="jchelary" creationdate="20140216T051610Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051610Z">
         <seg>Affichage Emacs</seg>
       </tuv>
     </tu>
@@ -2664,7 +2664,7 @@ les huit bits faibles du binaire modèle ; le reste est fait de zéro.</seg>
       <tuv lang="en-us">
         <seg>How the editor command loop works,</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025421Z" creationid="jchelary" creationdate="20140131T025421Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025421Z">
         <seg>Comment fonctionne la boucle de commande de l'éditeur,</seg>
       </tuv>
     </tu>
@@ -3037,7 +3037,7 @@ commandes d'édition.</seg>
       <tuv lang="en-us">
         <seg>Lisp history</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030008Z" creationid="jchelary" creationdate="20140131T030008Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030008Z">
         <seg>L'histoire de Lisp</seg>
       </tuv>
     </tu>
@@ -3311,9 +3311,17 @@ qu'un certain minimum (négatif).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Recall that the @dfn{sequence} type is the union of two other Lisp types: lists and arrays.  In other words, any list is a sequence, and any array is a sequence.  The common property that all sequences have is that each is an ordered collection of elements.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140413T231822Z">
+        <seg>Il faut se rappeler que le type @dfn{sequence} est .. type is the union of two other Lisp types: lists and arrays.  In other words, any list is a sequence, and any array is a sequence.  The common property that all sequences have is that each is an ordered collection of elements.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Refresh Screen</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T092419Z" creationid="jchelary" creationdate="20140216T092419Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T092419Z">
         <seg>Rafraîchissement de l'écran</seg>
       </tuv>
     </tu>
@@ -3354,7 +3362,7 @@ canoniques : @code{t} ou @code{nil}.</seg>
       <tuv lang="en-us">
         <seg>Saving Abbrevs in Files</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T024608Z" creationid="jchelary" creationdate="20140131T024541Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T024608Z">
         <seg>Enregistrer des abréviations dans les fichiers</seg>
       </tuv>
     </tu>
@@ -3388,6 +3396,14 @@ canoniques : @code{t} ou @code{nil}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Consultez @code{put} pour un exemple.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Sequences, Arrays, and Vectors</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140413T231459Z">
+        <seg>Suites, Tableaux et vecteurs</seg>
       </tuv>
     </tu>
     <tu>
@@ -3666,7 +3682,7 @@ quand vous appelez la fonction.</seg>
       <tuv lang="en-us">
         <seg>The argument @var{hook} is a function or @code{nil}.  If @var{hook} is non-@code{nil}, then it is called with no arguments after the abbrev is replaced with @var{expansion}; point is located at the end of @var{expansion} when @var{hook} is called.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051432Z" creationid="jchelary" creationdate="20140216T051432Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051432Z">
         <seg>L'argument @var{hook} est une fonction ou @code{nil}. Si @var{hook} n'est pas @code{nil} alors il est appelé sans arguments après que l'abbréviation soit remplacée par @var{expansion}. Le point est situé à la fin de @var{expansion} quand @var{hook} est appelée.</seg>
       </tuv>
     </tu>
@@ -3674,7 +3690,7 @@ quand vous appelez la fonction.</seg>
       <tuv lang="en-us">
         <seg>The argument @var{name} should be a string.  The argument @var{expansion} is normally the desired expansion (a string), or @code{nil} to undefine the abbrev.  If it is anything but a string or @code{nil}, then the abbreviation ``expands'' solely by running @var{hook}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051209Z" creationid="jchelary" creationdate="20140216T051209Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051209Z">
         <seg>L'argument @var{name} doit être une chaîne de caractères. L'argument @var{expansion} est normalement l'expansion souhaitée (une chaîne de caractères), or @code{nil} pour éliminer une abréviation. S'il n'est ni une chaîne de caractères ni @code{nil} alors l'abréviation se "développe" exclusivement en exécutant @var{hook}.</seg>
       </tuv>
     </tu>
@@ -4101,7 +4117,7 @@ de référence GNU Emacs Lisp, correspondant à la version
       <tuv lang="en-us">
         <seg>This chapter describes a number of features related to the display that Emacs presents to the user.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051644Z" creationid="jchelary" creationdate="20140216T051644Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051644Z">
         <seg>Ce chapitre décrit des fonctions en rapport avec l'affichage qu'Emacs présente à l'utilisateur.</seg>
       </tuv>
     </tu>
@@ -4576,7 +4592,7 @@ Manual} pour cette information de base.</seg>
       <tuv lang="en-us">
         <seg>This manual describes Emacs Lisp.  Generally speaking, the earlier chapters describe features of Emacs Lisp that have counterparts in many programming languages, and later chapters describe features that are peculiar to Emacs Lisp or relate specifically to editing.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T213517Z" creationid="jchelary" creationdate="20140131T024841Z">
+      <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T213517Z">
         <seg>Ce manuel traite d'Emacs Lisp. D'une manière générale, les premiers chapitres décrivent les
 caractéristiques d'Emacs Lisp communes de nombreux langages de programmation, tandis que les chapitres suivants décrivent
 les caractéristiques particulières d'Emacs Lisp ou encore celles qui se
@@ -4961,7 +4977,7 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
       <tuv lang="en-us">
         <seg>Writing and using documentation strings.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025452Z" creationid="jchelary" creationdate="20140131T025452Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025452Z">
         <seg>Écriture et utiliser des chaînes de documentation.</seg>
       </tuv>
     </tu>
@@ -5286,7 +5302,7 @@ générée. Pour @code{floor}, voir les @ref{Conversions numériques}.</seg>
       <tuv lang="en-us">
         <seg>and how you can call its subroutines.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025436Z" creationid="jchelary" creationdate="20140131T025436Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025436Z">
         <seg>et comment vous pouvez appeler ses sous-programmes.</seg>
       </tuv>
     </tu>
@@ -5918,7 +5934,7 @@ générée. Pour @code{floor}, voir les @ref{Conversions numériques}.</seg>
       <tuv lang="en-us">
         <seg>bugs</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025954Z" creationid="jchelary" creationdate="20140131T025954Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025954Z">
         <seg>erreurs</seg>
       </tuv>
     </tu>
@@ -5926,7 +5942,7 @@ générée. Pour @code{floor}, voir les @ref{Conversions numériques}.</seg>
       <tuv lang="en-us">
         <seg>bugs in this manual</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025755Z" creationid="jchelary" creationdate="20140131T025755Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025755Z">
         <seg>erreurs dans ce manuel</seg>
       </tuv>
     </tu>
@@ -5983,7 +5999,7 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       <tuv lang="en-us">
         <seg>cl</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030012Z" creationid="jchelary" creationdate="20140131T030012Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030012Z">
         <seg>cl</seg>
       </tuv>
     </tu>
@@ -6759,7 +6775,7 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       <tuv lang="en-us">
         <seg>false</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030100Z" creationid="jchelary" creationdate="20140131T030100Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030100Z">
         <seg>faux</seg>
       </tuv>
     </tu>
@@ -6887,7 +6903,7 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       <tuv lang="en-us">
         <seg>fonts in this manual</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030020Z" creationid="jchelary" creationdate="20140131T030020Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030020Z">
         <seg>polices dans ce manuel</seg>
       </tuv>
     </tu>
@@ -8041,6 +8057,14 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>sequence</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140413T231520Z">
+        <seg>Les suites</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>set-buffer-auto-saved</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -8187,7 +8211,7 @@ logarithmes naturels.</seg>
       <tuv lang="en-us">
         <seg>suggestions</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025957Z" creationid="jchelary" creationdate="20140131T025957Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T025957Z">
         <seg>suggestions</seg>
       </tuv>
     </tu>
@@ -8355,7 +8379,7 @@ logarithmes naturels.</seg>
       <tuv lang="en-us">
         <seg>true</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030132Z" creationid="jchelary" creationdate="20140131T030132Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030132Z">
         <seg>vrai</seg>
       </tuv>
     </tu>
@@ -8379,7 +8403,7 @@ logarithmes naturels.</seg>
       <tuv lang="en-us">
         <seg>truth value</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030033Z" creationid="jchelary" creationdate="20140131T030033Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030033Z">
         <seg>valeur de vérité</seg>
       </tuv>
     </tu>
@@ -8387,7 +8411,7 @@ logarithmes naturels.</seg>
       <tuv lang="en-us">
         <seg>two's complement</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031421Z" creationid="jchelary" creationdate="20140131T031421Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031421Z">
         <seg>complément à deux</seg>
       </tuv>
     </tu>
@@ -8687,7 +8711,7 @@ x2:              |
 |       |      |
  --------------</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030540Z" creationid="jchelary" creationdate="20140131T030540Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030540Z">
         <seg>x1:
  --------------       --------------       --------------
 | car   | cdr  |     | car   | cdr  |     | car   | cdr  |
