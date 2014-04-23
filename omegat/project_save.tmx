@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.0.7" segtype="paragraph" srclang="en-us"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.1.1" segtype="paragraph" srclang="en-us"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -2375,18 +2375,18 @@ ligne séparée avec @samp{@result{}}.</seg>
       <tuv lang="en-us">
         <seg>Examples of Lisp code are formatted like this: @code{(list 1 2 3)}.  Names that represent metasyntactic variables, or arguments to a function being described, are formatted like this: @var{first-number}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032542Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120331Z">
         <seg>Des exemples du code de Lisp sont composés comme ceci : @code{(list 1
 2 3)}. Des noms qui représentent des variables, ou des arguments à une
-fonction décrite, sont composés comme ceci : @var{first-number}.</seg>
+fonction décrite, sont composés comme ceci : @var{first-number}.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-us">
         <seg>Expansion: Abbrev Expansion</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Expansion : Expansions d'abréviations</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120331Z">
+        <seg>Expansion : Expansions d'abréviations</seg>
       </tuv>
     </tu>
     <tu>
@@ -2409,8 +2409,8 @@ fonction décrite, sont composés comme ceci : @var{first-number}.</seg>
       <tuv lang="en-us">
         <seg>Files: Abbrev Files</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Fichiers : Fichiers d'abréviations</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120331Z">
+        <seg>Fichiers : Fichiers d'abréviations</seg>
       </tuv>
     </tu>
     <tu>
@@ -2716,10 +2716,10 @@ division qui correspond à @code{mod}, arrondissant en bas.</seg>
       <tuv lang="en-us">
         <seg>If @var{from} and @var{to} are omitted, @var{var} is bound to @code{nil} before the loop begins, and the loop exits if @var{var} is non-@code{nil} at the beginning of an iteration.  Here is an example:</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120331Z">
         <seg>Si @var{from} et @var{to} sont omis, @var{var} est lié à @code{nil}
 avant que la boucle commence, et la boucle est arrêtée si @var{var}
-est non-@code{nil} au début d'une itération. Voici un exemple :</seg>
+est non-@code{nil} au début d'une itération. Voici un exemple :</seg>
       </tuv>
     </tu>
     <tu>
@@ -3503,7 +3503,7 @@ de deux formulaires est indiquée avec le @samp{@equiv{}}.</seg>
       <tuv lang="en-us">
         <seg>Special form descriptions use a more complex notation to specify optional and repeated arguments because they can break the argument list down into separate arguments in more complicated ways.  @samp{@r{[}@var{optional-arg}@r{]}} means that @var{optional-arg} is optional and @samp{@var{repeated-args}@dots{}} stands for zero or more arguments.  Parentheses are used when several arguments are grouped into additional levels of list structure.  Here is an example:</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120331Z">
         <seg>Les descriptions de formulaire spécial emploient une notation plus
 complexe pour indiquer des arguments facultatifs et répétés parce
 qu'elles peuvent démonter la liste d'argument en arguments séparés de
@@ -3512,7 +3512,7 @@ signifie que @var{optional-arg} est facultatif et
 @samp{@var{reapeated-args}@dots{}} représente zéro arguments ou
 plus. Des parenthèses sont employées quand plusieurs arguments sont
 groupés dans les niveaux additionnels de la structure de liste. Voici
-un exemple :</seg>
+un exemple :</seg>
       </tuv>
     </tu>
     <tu>
@@ -3615,8 +3615,8 @@ un exemple :</seg>
       <tuv lang="en-us">
         <seg>Tables: Abbrev Tables</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Tables : Tables d'abréviations</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120331Z">
+        <seg>Tables : Tables d'abréviations</seg>
       </tuv>
     </tu>
     <tu>
@@ -4529,14 +4529,14 @@ d'abréviations @var{table}, la laissant vide. Elle renvoie toujours
       <tuv lang="en-us">
         <seg>This imaginary special form implements a loop that executes the @var{body} forms and then increments the variable @var{var} on each iteration.  On the first iteration, the variable has the value @var{from}; on subsequent iterations, it is incremented by one (or by @var{inc} if that is given).  The loop exits before executing @var{body} if @var{var} equals @var{to}.  Here is an example:</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030311Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120331Z">
         <seg>Ce formulaire spécial imaginaire met en application une boucle qui
 exécute la forme @var{body} et qui ensuite incrémente la variable
 @var{var} à chaque itération. Sur la première itération, la variable
 a la valeur @var{from} ; sur des itérations suivantes, elle est
 incrémentée de un (ou par @var{inc} si elle est donnée). La boucle est
 arrêtée avant l'exécution de @var{body} si @var{var} est égale à
-@var{to}. Voici un exemple :</seg>
+@var{to}. Voici un exemple :</seg>
       </tuv>
     </tu>
     <tu>
@@ -6305,6 +6305,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>define-abbrev table name expansion &amp;optional hook count system-flag</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>define-abbrev-table tabname definitions</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>define-abbrev-table tabname definitions</seg>
       </tuv>
     </tu>
     <tu>
