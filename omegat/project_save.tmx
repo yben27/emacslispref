@@ -4289,8 +4289,8 @@ bogue.</seg>
       <tuv lang="en-us">
         <seg>This function returns the ``exclusive or'' of its arguments: the @var{n}th bit is set in the result if, and only if, the @var{n}th bit is set in an odd number of the arguments.  If there are no arguments, the result is 0, which is an identity element for this operation.  If @code{logxor} is passed just one argument, it returns that argument.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Cette fonction renvoie le ``ou exclusif'' de ses arguments: le
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120909Z">
+        <seg>Cette fonction renvoie le « ou exclusif » de ses arguments : le
 @var{n}ième bit est placé dans le résultat si, et seulement si, le bit
 @var{n}ième bit est placé dans un nombre impair des arguments. S'il
 n'y a aucun argument, le résultat est 0, qui est un élément d'identité
@@ -4302,8 +4302,8 @@ il renvoie cet argument.</seg>
       <tuv lang="en-us">
         <seg>This function returns the ``inclusive or'' of its arguments: the @var{n}th bit is set in the result if, and only if, the @var{n}th bit is set in at least one of the arguments.  If there are no arguments, the result is zero, which is an identity element for this operation.  If @code{logior} is passed just one argument, it returns that argument.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Cette fonction renvoie le ``ou inclus'' de ses arguments: le
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120854Z">
+        <seg>Cette fonction renvoie le « ou inclus » de ses arguments : le
 @var{n}ième bit est placé dans le résultat si, et seulement si, le
 @var{n}ième bit est placé dans au moins un des arguments. S'il n'y a
 aucun argument, le résultat est 0, ce qui est un élément d'identité
@@ -4384,8 +4384,8 @@ Si vous n'indiquez pas @var{base}, la base</seg>
       <tuv lang="en-us">
         <seg>This function returns the logical complement of its argument: the @var{n}th bit is one in the result if, and only if, the @var{n}th bit is zero in @var{integer}, and vice-versa.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Cette fonction renvoie le complément logique de son argument: le
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120915Z">
+        <seg>Cette fonction renvoie le complément logique de son argument : le
 @var{n}ième bit est 1 dans le résultat si, et seulement si, le
 @var{n}ième bit est 0 dans @var{integer}, et vice-versa.</seg>
       </tuv>
