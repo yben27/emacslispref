@@ -219,9 +219,9 @@ nombre entier binaire.)</seg>
         <seg>(ash -5 -2)        ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
      @result{} -2         ;      =  @r{1 1111  1111 1111  1111 1111  1111 1110}</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(ash -5 -2)        ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
-     @result{} -2         ;      =  @r{1 1111  1111 1111  1111 1111  1111 1110}</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>(ash -5 -2)        ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
+     @result{} -2         ;      =  @r{1 1111  1111 1111  1111 1111  1111 1110}</seg>
       </tuv>
     </tu>
     <tu>
@@ -260,11 +260,11 @@ nombre entier binaire.)</seg>
 (ash -5 2)
      @result{} -20</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
         <seg>(ash 5 2)
      @result{} 20
-(lsh -5 2)         ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
-     @result{} -20        ;      =  @r{1 1111  1111 1111  1111 1111  1110 1100}
+(lsh -5 2)         ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
+     @result{} -20        ;      =  @r{1 1111  1111 1111  1111 1111  1110 1100}
 (ash -5 2)
      @result{} -20</seg>
       </tuv>
@@ -439,11 +439,11 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
                    ;  4  =  @r{0 0000  0000 0000  0000 0000  0000 0100}
      @result{} 4          ;  4  =  @r{0 0000  0000 0000  0000 0000  0000 0100}</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(logand 14 13 4)   ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}
-                   ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}
-                   ;  4  =  @r{0 0000  0000 0000  0000 0000  0000 0100}
-     @result{} 4          ;  4  =  @r{0 0000  0000 0000  0000 0000  0000 0100}</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>(logand 14 13 4)   ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}
+                   ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}
+                   ;  4  =  @r{0 0000  0000 0000  0000 0000  0000 0100}
+     @result{} 4          ;  4  =  @r{0 0000  0000 0000  0000 0000  0000 0100}</seg>
       </tuv>
     </tu>
     <tu>
@@ -452,10 +452,10 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
                    ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}
      @result{} 12         ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(logand 14 13)     ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}
-                   ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}
-     @result{} 12         ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>(logand 14 13)     ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}
+                   ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}
+     @result{} 12         ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}</seg>
       </tuv>
     </tu>
     <tu>
@@ -463,9 +463,9 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
         <seg>(logand)
      @result{} -1         ; -1  =  @r{1 1111  1111 1111  1111 1111  1111 1111}</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
         <seg>(logand)
-     @result{} -1         ; -1  =  @r{1 1111  1111 1111  1111 1111  1111 1111}</seg>
+     @result{} -1         ; -1  =  @r{1 1111  1111 1111  1111 1111  1111 1111}</seg>
       </tuv>
     </tu>
     <tu>
@@ -475,11 +475,11 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
                    ;  7  =  @r{0 0000  0000 0000  0000 0000  0000 0111}
      @result{} 15         ; 15  =  @r{0 0000  0000 0000  0000 0000  0000 1111}</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(logior 12 5 7)    ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
-                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
-                   ;  7  =  @r{0 0000  0000 0000  0000 0000  0000 0111}
-     @result{} 15         ; 15  =  @r{0 0000  0000 0000  0000 0000  0000 1111}</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>(logior 12 5 7)    ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+                   ;  7  =  @r{0 0000  0000 0000  0000 0000  0000 0111}
+     @result{} 15         ; 15  =  @r{0 0000  0000 0000  0000 0000  0000 1111}</seg>
       </tuv>
     </tu>
     <tu>
@@ -488,10 +488,10 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
                    ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
      @result{} 13         ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(logior 12 5)      ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
-                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
-     @result{} 13         ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>(logior 12 5)      ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 13         ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}</seg>
       </tuv>
     </tu>
     <tu>
@@ -517,11 +517,11 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
                    ;  7  =  @r{0 0000  0000 0000  0000 0000  0000 0111}
      @result{} 14         ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(logxor 12 5 7)    ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
-                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
-                   ;  7  =  @r{0 0000  0000 0000  0000 0000  0000 0111}
-     @result{} 14         ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>(logxor 12 5 7)    ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+                   ;  7  =  @r{0 0000  0000 0000  0000 0000  0000 0111}
+     @result{} 14         ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}</seg>
       </tuv>
     </tu>
     <tu>
@@ -530,10 +530,10 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
                    ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
      @result{} 9          ;  9  =  @r{0 0000  0000 0000  0000 0000  0000 1001}</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(logxor 12 5)      ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
-                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
-     @result{} 9          ;  9  =  @r{0 0000  0000 0000  0000 0000  0000 1001}</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>(logxor 12 5)      ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 9          ;  9  =  @r{0 0000  0000 0000  0000 0000  0000 1001}</seg>
       </tuv>
     </tu>
     <tu>
@@ -541,9 +541,9 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
         <seg>(lsh -5 -2)        ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
      @result{} 134217726  ;      =  @r{0 0111  1111 1111  1111 1111  1111 1110}</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(lsh -5 -2)        ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
-     @result{} 134217726  ;      =  @r{0 0111  1111 1111  1111 1111  1111 1110}</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>(lsh -5 -2)        ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
+     @result{} 134217726  ;      =  @r{0 0111  1111 1111  1111 1111  1111 1110}</seg>
       </tuv>
     </tu>
     <tu>
@@ -596,9 +596,9 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
         <seg>(lsh 5 -2)         ;   5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
      @result{} 1          ;      =  @r{0 0000  0000 0000  0000 0000  0000 0001}</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(lsh 5 -2)         ;   5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
-     @result{} 1          ;      =  @r{0 0000  0000 0000  0000 0000  0000 0001}</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>(lsh 5 -2)         ;   5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 1          ;      =  @r{0 0000  0000 0000  0000 0000  0000 0001}</seg>
       </tuv>
     </tu>
     <tu>
@@ -620,9 +620,9 @@ hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
         <seg>(lsh 5 2)          ;   5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
      @result{} 20         ;      =  @r{0 0000  0000 0000  0000 0000  0001 0100}</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>(lsh 5 2)          ;   5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
-     @result{} 20         ;      =  @r{0 0000  0000 0000  0000 0000  0001 0100}</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>(lsh 5 2)          ;   5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 20         ;      =  @r{0 0000  0000 0000  0000 0000  0001 0100}</seg>
       </tuv>
     </tu>
     <tu>
@@ -860,12 +860,12 @@ x1
 * Abbrev Expansion::        Controlling expansion; expansion subroutines.
 * Standard Abbrev Tables::  Abbrev tables used by various major modes.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
         <seg>* Mode abbrev::                 Configuration d'Emacs pour l'abréviation.
 * Tables d'abréviations::       Créer et travailler avec des tables d'abréviations.
 * Définir des abréviations::    Spécifier des abréviations et leurs expansions.
 * Fichiers d'abréviations::     Sauver des abréviations dans les fichiers.
-* Expansions d'abréviations::    Contrôler l'expansion ; sous-programmes d'expansions.
+* Expansions d'abréviations::    Contrôler l'expansion ; sous-programmes d'expansions.
 * Tables standard d'abréviations:: Tables d'abréviations employées par divers modes majeurs.</seg>
       </tuv>
     </tu>
@@ -1113,14 +1113,14 @@ x2--&gt; |   |   |--
  0               ; @r{The integer 0.}
 -0               ; @r{The integer 0.}</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>1               ; @r{L'entier 1.}
- 1.              ; @r{L'entier 1.}
-+1               ; @r{Encore l'entier 1.}
--1               ; @r{L'entier @minus{}1.}
- 536870913       ; @r{Encore l'entier 1, dû au débordement.}
- 0               ; @r{L'entier 0.}
--0               ; @r{L'entier 0.}</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>1               ; @r{L'entier 1.}
+ 1.              ; @r{L'entier 1.}
++1               ; @r{Encore l'entier 1.}
+-1               ; @r{L'entier @minus{}1.}
+ 536870913       ; @r{Encore l'entier 1, dû au débordement.}
+ 0               ; @r{L'entier 0.}
+-0               ; @r{L'entier 0.}</seg>
       </tuv>
     </tu>
     <tu>
@@ -1895,10 +1895,10 @@ ordinaires.</seg>
       <tuv lang="en-us">
         <seg>Because the symbols used for abbrevs are not interned in the usual obarray, they will never appear as the result of reading a Lisp expression; in fact, normally they are never used except by the code that handles abbrevs.  Therefore, it is safe to use them in an extremely nonstandard way.  @xref{Creating Symbols}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032521Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
         <seg>Puisque les symboles utilisés pour les abréviations ne sont pas
 compris dans la liste habituelle, ils n'apparaîtront jamais comme le
-résultat de lecture d'une expression Lisp ; en fait, normalement ils
+résultat de lecture d'une expression Lisp ; en fait, normalement ils
 ne sont jamais utilisés excepté par le code qui traite ces
 abréviations. Par conséquent, il est prudent de les utiliser d'une
 manière extrêmement non-standard. @xref{Création de symboles}.</seg>
@@ -2081,8 +2081,8 @@ leurs arguments différemment des fonctions (les arguments ne sont pas
       <tuv lang="en-us">
         <seg>Controlling expansion; expansion subroutines.</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Contrôler l'expansion ; sous-programmes d'expansions.</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
+        <seg>Contrôler l'expansion ; sous-programmes d'expansions.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3313,8 +3313,8 @@ qu'un certain minimum (négatif).</seg>
       <tuv lang="en-us">
         <seg>Recall that the @dfn{sequence} type is the union of two other Lisp types: lists and arrays.  In other words, any list is a sequence, and any array is a sequence.  The common property that all sequences have is that each is an ordered collection of elements.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140413T231822Z">
-        <seg>Il faut se rappeler que le type @dfn{sequence} est .. type is the union of two other Lisp types: lists and arrays.  In other words, any list is a sequence, and any array is a sequence.  The common property that all sequences have is that each is an ordered collection of elements.</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121255Z">
+        <seg>Il faut se rappeler que le type @dfn{sequence} est l'union de deux autres types Lisp : les listes et les tableaux. En d'autres termes, toute liste est une séquence et tout tableau est une séquence. La propriété commune à toutes les séquences et qu'elles sont toutes une collection ordonnée d'éléments.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3455,13 +3455,13 @@ additionnez 1 à 268 435 455, la valeur est le nombre entier négatif
       <tuv lang="en-us">
         <seg>Some examples describe modifications to the contents of a buffer, by showing the ``before'' and ``after'' versions of the text.  These examples show the contents of the buffer in question between two lines of dashes containing the buffer name.  In addition, @samp{@point{}} indicates the location of point.  (The symbol for point, of course, is not part of the text in the buffer; it indicates the place @emph{between} two characters where point is currently located.)</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
         <seg>Quelques exemples décrivent des modifications du contenu d'un tampon,
 en montrant ``l'avant'' et ``l'après'' des versions du texte. Ces
 exemples montrent le contenu du tampon en question entre deux lignes
 de tirets contenant le nom du tampon. En outre, le @samp{@point{}}
 indique l'endroit du point. (Le symbole pour le point, naturellement,
-n'est pas une partie du texte dans le tampon ; il indique l'endroit
+n'est pas une partie du texte dans le tampon ; il indique l'endroit
 @emph{entre} deux caractères où le point est actuellement localisé.)</seg>
       </tuv>
     </tu>
@@ -4529,11 +4529,11 @@ d'abréviations @var{table}, la laissant vide. Elle renvoie toujours
       <tuv lang="en-us">
         <seg>This imaginary special form implements a loop that executes the @var{body} forms and then increments the variable @var{var} on each iteration.  On the first iteration, the variable has the value @var{from}; on subsequent iterations, it is incremented by one (or by @var{inc} if that is given).  The loop exits before executing @var{body} if @var{var} equals @var{to}.  Here is an example:</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120331Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
         <seg>Ce formulaire spécial imaginaire met en application une boucle qui
 exécute la forme @var{body} et qui ensuite incrémente la variable
 @var{var} à chaque itération. Sur la première itération, la variable
-a la valeur @var{from} ; sur des itérations suivantes, elle est
+a la valeur @var{from} ; sur des itérations suivantes, elle est
 incrémentée de un (ou par @var{inc} si elle est donnée). La boucle est
 arrêtée avant l'exécution de @var{body} si @var{var} est égale à
 @var{to}. Voici un exemple :</seg>
@@ -4579,12 +4579,12 @@ modifient pas. C'est identique à @code{(default-value 'abbrev-mode)}.</seg>
       <tuv lang="en-us">
         <seg>This manual attempts to be a full description of Emacs Lisp.  For a beginner's introduction to Emacs Lisp, see @cite{An Introduction to Emacs Lisp Programming}, by Bob Chassell, also published by the Free Software Foundation.  This manual presumes considerable familiarity with the use of Emacs for editing; see @cite{The GNU Emacs Manual} for this basic information.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
         <seg>Ce manuel essaye d'être une description complète d'Emacs Lisp. Pour la
 présentation à un débutant d'Emacs Lisp, voir @cite{An Introduction to
 Emacs Lisp Programming}, par Bob Chassell, également édité par la Free
 Software Foundation. Ce manuel suppose la connaissance parfaite de
-l'utilisation d'Emacs pour l'édition ; voir @cite{The GNU Emacs
+l'utilisation d'Emacs pour l'édition ; voir @cite{The GNU Emacs
 Manual} pour cette information de base.</seg>
       </tuv>
     </tu>
