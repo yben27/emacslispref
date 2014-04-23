@@ -2278,8 +2278,8 @@ appelé Scheme.</seg>
       <tuv lang="en-us">
         <seg>Elisp: (elisp)</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Elisp: (elisp)</seg>
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120726Z">
+        <seg>Elisp : (elisp)</seg>
       </tuv>
     </tu>
     <tu>
@@ -2469,9 +2469,9 @@ employée.</seg>
       <tuv lang="en-us">
         <seg>For example, using 4-bit binary numbers, the ``logical and'' of 13 and 12 is 12: 1101 combined with 1100 produces 1100.  In both the binary numbers, the leftmost two bits are set (i.e., they are 1's), so the leftmost two bits of the returned value are set.  However, for the rightmost two bits, each is zero in at least one of the arguments, so the rightmost two bits of the returned value are 0's.</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120834Z">
         <seg>Par exemple, en utilisant des nombres binaires de 4 bits, le ``et
-logique'' de 13 et 12 est 12: 1101 combiné avec 1100 produit 1100.
+logique'' de 13 et 12 est 12 : 1101 combiné avec 1100 produit 1100.
 Dans les deux nombres binaires, les deux bits à l'extrême gauche sont
 placés (c.-à-d., ils sont à 1), ainsi les deux bits à l'extrême gauche
 de la valeur retournée sont placés. Cependant, pour les deux bits à
@@ -3928,9 +3928,9 @@ globale. Normalement toutes les deux sont employées.</seg>
       <tuv lang="en-us">
         <seg>The syntax for integers in bases other than 10 uses @samp{#} followed by a letter that specifies the radix: @samp{b} for binary, @samp{o} for octal, @samp{x} for hex, or @samp{@var{radix}r} to specify radix @var{radix}.  Case is not significant for the letter that specifies the radix.  Thus, @samp{#b@var{integer}} reads @var{integer} in binary, and @samp{#@var{radix}r@var{integer}} reads @var{integer} in radix @var{radix}.  Allowed values of @var{radix} run from 2 to 36.  For example:</seg>
       </tuv>
-      <tuv lang="fr-fr">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120811Z">
         <seg>La syntaxe pour des nombres entiers dans les bases autres que la base
-10 utilise @samp{#} suivi d'une lettre qui indique la base: @samp{b}
+10 utilise @samp{#} suivi d'une lettre qui indique la base : @samp{b}
 pour binaire, @samp{o} pour octal, @samp{x} pour hex, ou
 @samp{@var{base}r} pour indiquer la base @var{base}. Le cas n'est pas
 significatif pour la lettre qui indique la base. Ainsi, le
@@ -4315,8 +4315,8 @@ il renvoie cet argument.</seg>
       <tuv lang="en-us">
         <seg>This function returns the ``logical and'' of the arguments: the @var{n}th bit is set in the result if, and only if, the @var{n}th bit is set in all the arguments.  (``Set'' means that the value of the bit is 1 rather than 0.)</seg>
       </tuv>
-      <tuv lang="fr-fr">
-        <seg>Cette fonction renvoie le ``et logique'' des arguments: le @var{n}th
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120821Z">
+        <seg>Cette fonction renvoie le ``et logique'' des arguments : le @var{n}th
 bit est placé dans le résultat si, et seulement si, le @var{n}th bit
 est placer dans tous arguments. (``Placer'' veut dire que la valeur du
 bit est 1 plutôt que 0.)</seg>
@@ -8719,15 +8719,15 @@ x2:              |
 |       |      |
  --------------</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030540Z">
-        <seg>x1:
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120743Z">
+        <seg>x1 :
  --------------       --------------       --------------
 | car   | cdr  |     | car   | cdr  |     | car   | cdr  |
 |   a   |   o-------&gt;|   b   |   o-------&gt;|   c   |  nil |
 |       |      |  --&gt;|       |      |     |       |      |
  --------------  |    --------------       --------------
                  |
-x2:              |
+x2 :              |
  --------------  |
 | car   | cdr  | |
 |   z   |   o----
