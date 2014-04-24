@@ -1309,13 +1309,13 @@ gauche, alors que @code{lsh} met des 0 dans ces positions de bit.</seg>
       <tuv lang="en-us">
         <seg>@code{define-abbrev} is the low-level basic function for defining an abbrev in a specified abbrev table.  When major modes predefine standard abbrevs, they should call @code{define-abbrev} and specify @code{t} for @var{system-flag}.  Be aware that any saved non-``system'' abbrevs are restored at startup, i.e. before some major modes are loaded.  Major modes should therefore not assume that when they are first loaded their abbrev tables are empty.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
         <seg>@code{define-abbrev} est la fonction de base de bas niveau pour
 définir les abréviations dans une table d'abréviations indiquée. Si
 les modes majeurs prédéfinissent la norme des abréviations, ils
 devraient appeler @code{define-abbrev} et indiquer @code{t} pour
 @var{system-flag}. Faites attention, les abréviations non sauvés du
-non-« système'' sont restaurées au démarrage, c.-à-d. avant que les
+non-« système » sont restaurées au démarrage, c.-à-d. avant que les
 modes majeurs sont chargés. C'est pourquoi les modes majeurs ne
 devraient pas assumer que, quand ils sont d'abord chargés, leurs
 tables d'abréviations soient vides.</seg>
@@ -1732,7 +1732,7 @@ flottante si au moins un argument est une valeur à virgule flottante.</seg>
       <tuv lang="en-us">
         <seg>An abbrev table is represented as an obarray containing a symbol for each abbreviation.  The symbol's name is the abbreviation; its value is the expansion; its function definition is the hook function to do the expansion (@pxref{Defining Abbrevs}); its property list cell typically contains the use count, the number of times the abbreviation has been expanded.  Alternatively, the use count is on the @code{count} property and the system-abbrev flag is on the @code{system-type} property.  Abbrevs with a non-@code{nil} @code{system-type} property are called ``system'' abbrevs.  They are usually defined by modes or packages, instead of by the user, and are treated specially in certain respects.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
         <seg>Une table d'abréviation est représentée par une liste contenant
 un symbole pour chaque abréviation. Le nom du symbole est
 l'abréviation ; sa valeur est l'expansion ; sa définition de fonction
@@ -1743,7 +1743,7 @@ développée. Alternativement, le compteur d'utilisation pointe vers la
 propriété @code{count} et le drapeau de system-abbrev pointe vers la
 propriété @code{system-type}. Les abréviations avec la propriété
 non-@code{nil} @code{system-type} s'appellent les abréviations de
-« système''. Elles sont habituellement définies par des modes ou des
+« système ». Elles sont habituellement définies par des modes ou des
 paquets, non par l'utilisateur, et traitées spécialement à certains
 égards.</seg>
       </tuv>
@@ -2469,9 +2469,9 @@ employée.</seg>
       <tuv lang="en-us">
         <seg>For example, using 4-bit binary numbers, the ``logical and'' of 13 and 12 is 12: 1101 combined with 1100 produces 1100.  In both the binary numbers, the leftmost two bits are set (i.e., they are 1's), so the leftmost two bits of the returned value are set.  However, for the rightmost two bits, each is zero in at least one of the arguments, so the rightmost two bits of the returned value are 0's.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
         <seg>Par exemple, en utilisant des nombres binaires de 4 bits, le « et
-logique'' de 13 et 12 est 12 : 1101 combiné avec 1100 produit 1100.
+logique » de 13 et 12 est 12 : 1101 combiné avec 1100 produit 1100.
 Dans les deux nombres binaires, les deux bits à l'extrême gauche sont
 placés (c.-à-d., ils sont à 1), ainsi les deux bits à l'extrême gauche
 de la valeur retournée sont placés. Cependant, pour les deux bits à
@@ -2849,9 +2849,9 @@ tentative de changer leurs valeurs a comme conséquence une erreur
       <tuv lang="en-us">
         <seg>In Emacs, pseudo-random numbers are generated from a ``seed'' number.  Starting from any given seed, the @code{random} function always generates the same sequence of numbers.  Emacs always starts with the same seed value, so the sequence of values of @code{random} is actually the same in each Emacs run! For example, in one operating system, the first call to @code{(random)} after you start Emacs always returns @minus{}1457731, and the second one always returns @minus{}7692030.  This repeatability is helpful for debugging.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
         <seg>Dans Emacs, des nombres pseudo-aléatoires sont produits à partir de
-« graine'' de nombre. À partir de n'importe quelle graine donnée, la
+« graine » de nombre. À partir de n'importe quelle graine donnée, la
 fonction @code{random} produit toujours le même ordre de
 nombres. Emacs démarre toujours par la même valeur de graine, ainsi la
 séquence des valeurs de @code{random} est réellement les mêmes dans
@@ -2877,13 +2877,13 @@ fois utilisé comme variable, @code{nil} a toujours la valeur
       <tuv lang="en-us">
         <seg>In a computer, an integer is represented as a binary number, a sequence of @dfn{bits} (digits which are either zero or one).  A bitwise operation acts on the individual bits of such a sequence.  For example, @dfn{shifting} moves the whole sequence left or right one or more places, reproducing the same pattern ``moved over.''</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
         <seg>Dans un ordinateur, un nombre entier est représenté comme nombre
 binaire, une séquence de @dfn{bits} (des chiffres qui sont zéro ou
 un). Une opération de bits agit sur les bits individuels d'une telle
 séquence. Par exemple, le @dfn{shifting} déplace l'ordre entier à
 gauche ou à droite d'une ou plusieures places, pour reproduire le même
-modèle « moved over.''</seg>
+modèle « moved over. »</seg>
       </tuv>
     </tu>
     <tu>
@@ -3135,11 +3135,11 @@ sa valeur de position est employée et son tampon est ignoré.</seg>
       <tuv lang="en-us">
         <seg>Most modern computers support the @acronym{IEEE} floating point standard, which provides for positive infinity and negative infinity as floating point values.  It also provides for a class of values called NaN or ``not-a-number''; numerical functions return such values in cases where there is no correct answer.  For example, @code{(/ 0.0 0.0)} returns a NaN.  For practical purposes, there's no significant difference between different NaN values in Emacs Lisp, and there's no rule for precisely which NaN value should be used in a particular case, so Emacs Lisp doesn't try to distinguish them (but it does report the sign, if you print it).  Here are the read syntaxes for these special floating point values:</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
         <seg>La plupart des ordinateurs modernes soutiennent la norme à virgule
 flottante @acronym{IEEE}, qui prévoit plus l'infini et moins l'infini
 comme valeurs à virgule flottante. Elle prévoit également une classe
-de valeurs appelées NaN ou « not-a-number''; les fonctions numériques
+de valeurs appelées NaN ou « not-a-number »; les fonctions numériques
 renvoient de telles valeurs dans les cas où il n'y a aucune réponse
 correcte. Par exemple, @code{(/ 0.0 0.0)} renvoie NaN. Pour des buts
 pratiques, il n'y a aucune différence significative entre différentes
@@ -3153,11 +3153,11 @@ les syntaxes lues pour ces valeurs à virgule flottante spéciales :</seg>
       <tuv lang="en-us">
         <seg>Most of the GNU Emacs text editor is written in the programming language called Emacs Lisp.  You can write new code in Emacs Lisp and install it as an extension to the editor.  However, Emacs Lisp is more than a mere ``extension language''; it is a full computer programming language in its own right.  You can use it as you would any other programming language.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
         <seg>La majeure partie de l'éditeur de texte GNU Emacs est écrite dans
 le langage de programmation appelé Emacs Lisp. Vous pouvez écrire du
 code en Emacs Lisp et l'installer comme extension de l'éditeur.
-Cependant, Emacs Lisp est plus qu'un simple « langage d'extension'' ;
+Cependant, Emacs Lisp est plus qu'un simple « langage d'extension » ;
 c'est un langage de programmation d'ordinateur complet et autonome.
 Vous pouvez l'employer comme n'importe quel autre langage de programmation.</seg>
       </tuv>
@@ -3455,9 +3455,9 @@ additionnez 1 à 268 435 455, la valeur est le nombre entier négatif
       <tuv lang="en-us">
         <seg>Some examples describe modifications to the contents of a buffer, by showing the ``before'' and ``after'' versions of the text.  These examples show the contents of the buffer in question between two lines of dashes containing the buffer name.  In addition, @samp{@point{}} indicates the location of point.  (The symbol for point, of course, is not part of the text in the buffer; it indicates the place @emph{between} two characters where point is currently located.)</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
         <seg>Quelques exemples décrivent des modifications du contenu d'un tampon,
-en montrant « l'avant'' et « l'après'' des versions du texte. Ces
+en montrant « l'avant » et « l'après » des versions du texte. Ces
 exemples montrent le contenu du tampon en question entre deux lignes
 de tirets contenant le nom du tampon. En outre, le @samp{@point{}}
 indique l'endroit du point. (Le symbole pour le point, naturellement,
@@ -3651,9 +3651,9 @@ manière cumulée. S'il n'y a aucun argument, le résultat est 0.</seg>
       <tuv lang="en-us">
         <seg>The @code{wholenump} predicate (whose name comes from the phrase ``whole-number-p'') tests to see whether its argument is a nonnegative integer, and returns @code{t} if so, @code{nil} otherwise.  0 is considered non-negative.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
         <seg>L'attribut @code{wholenump} (dont le nom vient de l'expression
-« whole-number-p'') teste pour voir si son argument est un nombre
+« whole-number-p ») teste pour voir si son argument est un nombre
 entier non négatif, et renvoie le @code{t} si oui, @code{nil}
 autrement. 0 est considéré non négatif.</seg>
       </tuv>
@@ -4315,10 +4315,10 @@ il renvoie cet argument.</seg>
       <tuv lang="en-us">
         <seg>This function returns the ``logical and'' of the arguments: the @var{n}th bit is set in the result if, and only if, the @var{n}th bit is set in all the arguments.  (``Set'' means that the value of the bit is 1 rather than 0.)</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
-        <seg>Cette fonction renvoie le « et logique'' des arguments : le @var{n}th
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
+        <seg>Cette fonction renvoie le « et logique » des arguments : le @var{n}th
 bit est placé dans le résultat si, et seulement si, le @var{n}th bit
-est placer dans tous arguments. (« Placer'' veut dire que la valeur du
+est placer dans tous arguments. (« Placer » veut dire que la valeur du
 bit est 1 plutôt que 0.)</seg>
       </tuv>
     </tu>
@@ -4752,14 +4752,14 @@ activée dans n'importe quelle mode.</seg>
       <tuv lang="en-us">
         <seg>Throughout this manual, the phrases ``the Lisp reader'' and ``the Lisp printer'' refer to those routines in Lisp that convert textual representations of Lisp objects into actual Lisp objects, and vice versa.  @xref{Printed Representation}, for more details.  You, the person reading this manual, are thought of as ``the programmer'' and are addressed as ``you.'' ``The user'' is the person who uses Lisp programs, including those you write.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
-        <seg>Dans tout ce manuel, les expressions « le lecteur de Lisp'' et
-« l'afficheur de Lisp'' se rapportent à ces routines en Lisp qui
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
+        <seg>Dans tout ce manuel, les expressions « le lecteur de Lisp » et
+« l'afficheur de Lisp » se rapportent à ces routines en Lisp qui
 convertissent les représentations textuelles du Lisp object en objets
 réels de Lisp, et vice-versa. @xref{Printed Representation}, pour plus
 de détails. Vous, la personne lisant ce manuel, êtes considérée comme
-« programmeur'' et êtes nommée en tant que « vous''.
-« L'utilisateur'' est la personne qui emploie le Lisp des programmes,
+« programmeur » et êtes nommée en tant que « vous ».
+« L'utilisateur » est la personne qui emploie le Lisp des programmes,
 y compris ceux que vous écrivez.</seg>
       </tuv>
     </tu>
@@ -4993,9 +4993,9 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
       <tuv lang="en-us">
         <seg>You can read this as ``@code{(car '(1 2))} evaluates to 1.''</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T014948Z">
+      <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
         <seg>Vous pouvez lire ceci en tant que « @code{(car '(1 2))} est évalué à
-1.''</seg>
+1. »</seg>
       </tuv>
     </tu>
     <tu>
