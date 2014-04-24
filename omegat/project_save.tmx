@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.1.1" segtype="paragraph" srclang="en-us"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.0.7" segtype="paragraph" srclang="en-us"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -2735,6 +2735,14 @@ donnant un argument de préfixe rend @var{here} non-@code{nil}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>If @var{hook} is a non-@code{nil} symbol whose @code{no-self-insert} property is non-@code{nil}, @var{hook} can explicitly control whether to insert the self-inserting input character that triggered the expansion.  If @var{hook} returns non-@code{nil} in this case, that inhibits insertion of the character.  By contrast, if @var{hook} returns @code{nil}, @code{expand-abbrev} also returns @code{nil}, as if expansion had not really occurred.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolasfloquet59@gmail.com" changedate="20140418T141940Z" creationid="nicolasfloquet59@gmail.com" creationdate="20140418T141831Z">
+        <seg>Si @var{hook} is a non-@code{nil} symbol whose @code{no-self-insert} property is non-@code{nil}, @var{hook} can explicitly control whether to insert the self-inserting input character that triggered the expansion.  If @var{hook} returns non-@code{nil} in this case, that inhibits insertion of the character.  By contrast, if @var{hook} returns @code{nil}, @code{expand-abbrev} also returns @code{nil}, as if expansion had not really occurred.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>If @var{human} is non-@code{nil}, the description is human-oriented.  System abbrevs are listed and identified as such.  Otherwise the description is a Lisp expression---a call to @code{define-abbrev-table} that would define @var{name} as it is currently defined, but without the system abbrevs.  (The mode or package using @var{name} is supposed to add these to @var{name} separately.)</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -3176,6 +3184,14 @@ Vous pouvez l'employer comme n'importe quel autre langage de programmation.</seg
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030951Z">
         <seg>Caractères non-ASCII</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Normally the function @code{define-abbrev} sets the variable @code{abbrevs-changed} to @code{t}, if it actually changes the abbrev.  (This is so that some commands will offer to save the abbrevs.)  It does not do this for a ``system'' abbrev, since those won't be saved anyway.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolasfloquet59@gmail.com" changedate="20140418T142445Z" creationid="nicolasfloquet59@gmail.com" creationdate="20140418T142445Z">
+        <seg>Habituellement, la fonction @code{define-abbrev} définit la variable @code{abbrevs-changed} en @code{t}, si elle change effectivement l'abbrev.  (C'est un fait que certaines commandes demandent d'enregistrer les abbrevs.)  Il ne l'effectue pas pour un ``system'' abbrev, puisque ceux-ci ne seront pas enregistrer de toute façon.</seg>
       </tuv>
     </tu>
     <tu>
