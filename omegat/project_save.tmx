@@ -5318,6 +5318,14 @@ contacter la maintenance d'Emacs plus rapidement, envoyer le courrier
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>When @code{nil} is used for @var{end}, it stands for the length of the string.  Thus,</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T122214Z" creationid="babac_000" creationdate="20140429T122214Z">
+        <seg>Lorsque @code{nil} est utilisé pour @var{end}, il correspond à la longueur de la chaîne.  Donc,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>When a form is a macro call, it expands into a new form for Lisp to evaluate.  We show the result of the expansion with @samp{@expansion{}}.  We may or may not show the result of the evaluation of the expanded form.</seg>
       </tuv>
       <tuv lang="fr-fr">
