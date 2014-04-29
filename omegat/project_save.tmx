@@ -1613,6 +1613,14 @@ dans une série pseudo-aléatoire.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>A negative number counts from the end of the string, so that @minus{}1 signifies the index of the last character of the string.  For example:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T121743Z" creationid="babac_000" creationdate="20140429T121743Z">
+        <seg>Un nombre négatif compte à partir de la fin de la chaîne, de telle sorte que -1 représente l'indice du dernier caractère de la chaîne. Par exemple:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>A non-@code{nil} value of this variable turns on the automatic expansion of abbrevs when their abbreviations are inserted into a buffer.  If the value is @code{nil}, abbrevs may be defined, but they are not expanded automatically.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicoals" changedate="20140308T061305Z">
@@ -2786,6 +2794,15 @@ les huit bits faibles du binaire modèle ; le reste est fait de zéro.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Voici une description de fonction imaginaire @code{foo}:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Here the index for @samp{a} is 0, the index for @samp{b} is 1, and the index for @samp{c} is 2.  Thus, three letters, @samp{abc}, are copied from the string @code{"abcdefg"}.  The index 3 marks the character position up to which the substring is copied.  The character whose index is 3 is actually the fourth character in the string.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T121655Z" creationid="babac_000" creationdate="20140429T121655Z">
+        <seg>Soit l’indice de @samp{a} égale à 0, l’indice de @samp{b} égale à 1, et l’indice de @samp{c} égale à 2.  Ainsi, les trois lettres, @samp{abc}, sont copiées depuis la chaîne @code{"abcdefg"}.  L'indice 3 marque la position de caractère à laquelle la sous-chaîne est copiée. Le caractère dont l'indice est 3 est en fait le quatrième caractère de la chaîne.
+</seg>
       </tuv>
     </tu>
     <tu>
