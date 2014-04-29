@@ -3098,6 +3098,14 @@ vers la droite avec @code{lsh} ressemble à ceci:</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>In this example, the index for @samp{e} is @minus{}3, the index for @samp{f} is @minus{}2, and the index for @samp{g} is @minus{}1.  Therefore, @samp{e} and @samp{f} are included, and @samp{g} is excluded.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T121951Z" creationid="babac_000" creationdate="20140429T121951Z">
+        <seg>Dans cet exemple, l’indice de @samp{e} est @minus{}3, l’indice de @samp{f} est @minus{}2, et l’indice de @samp{g} est @minus{}1.  Donc, @samp{e} et @samp{f} sont inclus, et @samp{g} est exlcu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>In this implementation, the largest 29-bit binary integer value is 268,435,455 in decimal.  In binary, it looks like this:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031444Z">
