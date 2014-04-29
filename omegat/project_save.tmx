@@ -4589,6 +4589,14 @@ propriétés de toutes les abréviations copiées à 0.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function returns a new string which consists of those characters from @var{string} in the range from (and including) the character at the index @var{start} up to (but excluding) the character at the index @var{end}.  The first character is at index zero.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T121434Z" creationid="babac_000" creationdate="20140429T121434Z">
+        <seg>Cette fonction retourne une nouvelle chaîne qui se compose des caractères de @var{chaine} dans l'intervalle à partir du caractère (et y compris celui-ci) à l’indice @var{debut} jusqu'au caractère (celui-ci non compris) à l’indice @var{fin}. Le premier caractère est à l’indice zéro.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function returns a pseudo-random integer.  Repeated calls return a series of pseudo-random integers.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -8622,6 +8630,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>strings-consed</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>substring string start &amp;optional end</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T121225Z" creationid="babac_000" creationdate="20140429T121225Z">
+        <seg>substring string debut &amp;fin optionnelle</seg>
       </tuv>
     </tu>
     <tu>
