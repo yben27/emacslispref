@@ -5973,6 +5973,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>bytes</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101217Z" creationid="babac_000" creationdate="20140429T101217Z">
+        <seg>Les octets</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>cache-long-line-scans</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -6001,6 +6009,22 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>char-syntax caractère</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>character arrays</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101144Z" creationid="babac_000" creationdate="20140429T101144Z">
+        <seg>Les tableaux de caractères</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>characters</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101204Z" creationid="babac_000" creationdate="20140429T101204Z">
+        <seg>Les caractères</seg>
       </tuv>
     </tu>
     <tu>
@@ -8221,6 +8245,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>string-to-int</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101120Z" creationid="babac_000" creationdate="20140429T101120Z">
+        <seg>Les chaînes de caractères</seg>
       </tuv>
     </tu>
     <tu>
