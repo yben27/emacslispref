@@ -216,6 +216,34 @@ nombre entier binaire.)</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>(aref "abcdefg" 1)
+     @result{} 98           ; @r{@samp{b} is @acronym{ASCII} code 98.}</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180824Z">
+        <seg>(aref "abcdefg" 1)
+     @result{} 98           ; @r{@samp{b} correspond à 98 en code @acronym{ASCII}.}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(arrayp [a])
+     @result{} t
+(arrayp "asdf")
+     @result{} t
+(arrayp (syntax-table))    ;; @r{A char-table.}
+     @result{} t</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180612Z">
+        <seg>(arrayp [a])
+     @result{} t
+(arrayp "asdf")
+     @result{} t
+(arrayp (syntax-table))    ;; @r{Une table de caractères.}
+     @result{} t</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>(ash -5 -2)        ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
      @result{} -2         ;      =  @r{1 1111  1111 1111  1111 1111  1111 1110}</seg>
       </tuv>
@@ -1217,6 +1245,46 @@ x2--&gt; |   |   |--
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>;; @r{Modifying the inside of a shared element.}
+(setcar (aref x 1) 69)
+x @result{} [quux (69 2)]
+y @result{} [foo (69 2)]</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180305Z">
+        <seg>;; @r{Modification du contenu d'un élément partagé.}
+(setcar (aref x 1) 69)
+x @result{} [quux (69 2)]
+y @result{} [foo (69 2)]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>;; @r{Replacing an element of one sequence.}
+(aset x 0 'quux)
+x @result{} [quux (1 2)]
+y @result{} [foo (1 2)]</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180248Z">
+        <seg>;; @r{Remplacement d'un élément d'une séquence.}
+(aset x 0 'quux)
+x @result{} [quux (1 2)]
+y @result{} [foo (1 2)]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>;; @r{We use @code{string} to show clearly which character @code{elt} returns.}
+(string (elt "1234" 2))
+     @result{} "3"</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T175715Z">
+        <seg>;; On utilise les chaînes de caractères pour montrer quel caractère @code{elt} renvoie.
+(string (elt "1234" 2))
+     @result{} "3"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>&gt;b</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -1489,6 +1557,14 @@ notation @dfn{two's complement}.)</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@xref{Definition of safe-length}, for the related function @code{safe-length}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185251Z">
+        <seg>@xref{Definition of safe-length}, pour la fonction apparentée @code{safe-length}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@xref{Lambda Expressions}, for a more complete description of optional and rest arguments.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -1583,6 +1659,38 @@ cl}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>A char-table can also have a @dfn{default value}.  If so, then @code{(aref @var{char-table} @var{c})} returns the default value whenever the char-table does not specify any other non-@code{nil} value.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T191048Z">
+        <seg>Une char-table peut aussi avoir une valeur par défaut. Dans ce cas, @code{(aref @var{char-table} @var{c})} retourne la valeur par défaut quand la char-table ne spécifie pas une valeur autre que @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>A char-table can have a @dfn{parent}, which is another char-table.  If it does, then whenever the char-table specifies @code{nil} for a particular character @var{c}, it inherits the value specified in the parent.  In other words, @code{(aref @var{char-table} @var{c})} returns the value from the parent of @var{char-table} if @var{char-table} itself specifies @code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T190918Z">
+        <seg>Une char-table peut avoir un @dfn{parent} qui est une autre char-table. Si elle en a un, alors quand la char-table spécifie @code{nil} pour un caractère particulier @var{c}, elle hérite de la valeur spécifiée dans la char-table parente. Autremnt dit, @code{(aref char-table c)} retourne la valeur de la char-table parente si @var{char-table}spécifie @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>A char-table can specify an element value for a single character code; it can also specify a value for an entire character set.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192346Z">
+        <seg>Une char-table peut définir la valeur d'un élément pour un seul code de caractère ; il peut aussi définir la valeur pour tout un ensemble de caractères.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>A char-table is much like a vector, except that it is indexed by character codes.  Any valid character code, without modifiers, can be used as an index in a char-table.  You can access a char-table's elements with @code{aref} and @code{aset}, as with any array.  In addition, a char-table can have @dfn{extra slots} to hold additional data not associated with particular character codes.  Char-tables are constants when evaluated.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T190233Z">
+        <seg>Une char-table ressemble à un vecteur mais il est indexé par les codes de caractères. N'importe quel code de caractère valide, sans modificateurs, peut être utilisé comme indice dans une char-table. On peut accéder aux éléments d'une char-table avec @code{aref} et @code{aset}, comme avec n'importe quel tableau. De plus, une char-table peut avoir des cases supplémentaires (@dfn{extra slots}) pour contenir des données supplémentaires qui ne sont pas associées à des codes de caractères particuliers. Les char-tables sont des constantes quand elles sont évaluées.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>A definition says how a symbol will be used.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -1621,6 +1729,22 @@ dans une série pseudo-aléatoire.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>A generic character stands for a character set, or a row of a character set; specifying the generic character as argument is equivalent to specifying the character set name.  @xref{Splitting Characters}, for a description of generic characters.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192640Z">
+        <seg>Un caractère générique signifie un ensemble de caractères ; spécifier le caractère générique comme argument est équivalent à spécifier le nom de l'ensemble de caractères. Pour une description des caractères génériques, @xref{Splitting Characters}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>A list is a sequence of elements, but it is not a single primitive object; it is made of cons cells, one cell per element.  Finding the @var{n}th element requires looking through @var{n} cons cells, so elements farther from the beginning of the list take longer to access.  But it is possible to add elements to the list, or remove elements.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T173802Z">
+        <seg>Une liste est une suite d'éléments mais n'est pas un objet primitif unique. La liste est constituée de cellules cons avec une seule cellule par élément. Pour trouver l'élément @var{n}, il faut passer les @var{n} cellules avant. Donc plus un élément est loin du début de la liste, plus il sera long d'y accéder. Toutefois, il est possible d'ajouter ou d'enlever des éléments à la liste.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>A negative number counts from the end of the string, so that @minus{}1 signifies the index of the last character of the string.  For example:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T121743Z">
@@ -1644,6 +1768,14 @@ définies, mais elles ne sont pas développées automatiquement.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101353Z">
         <seg>Une chaîne en Lisp Emacs est un tableau qui contient une suite ordonnée de caractères. Les chaînes sont utilisées comme noms de symboles, de buffers et de fichiers ; pour envoyer des messages aux utilisateurs ; pour contenir le texte copié entre les buffers ; et pour beaucoup d’autres choses. Puisque les chaînes sont si importantes, Lisp Emacs possède de nombreuses fonctions permettant expressément de les manipuler. Les programmes Lisp Emacs utilisent  plus souvent les chaînes que les caractères individuels.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>A vector, like a string or a number, is considered a constant for evaluation: the result of evaluating it is the same vector.  This does not evaluate or even examine the elements of the vector.  @xref{Self-Evaluating Forms}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185057Z">
+        <seg>Un vecteur, comme une chaîne de caractères ou un nombre, est considéré constant pour évaluation : le résultat de l'évaluation est le même vecteur. Cela n'évalue pas, ni même n'examine, les éléments du vecteur. @xref{Self-Evaluating Forms}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1786,6 +1918,14 @@ flottante si au moins un argument est une valeur à virgule flottante.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>An @dfn{array} is a single primitive object that has a slot for each of its elements.  All the elements are accessible in constant time, but the length of an existing array cannot be changed.  Strings, vectors, char-tables and bool-vectors are the four types of arrays.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T173654Z">
+        <seg>Un tableau @dfn{array} est un objet primitif unique qui dispose d'une case pour chacun de ses éléments. Tout les éléments sont accessibles tout le temps mais la longueur d'un tableau existant peut être changée. Les chaînes de caractères, les vecteurs, les tables de caractères et les vecteurs-booléens représentent les quatre types de tableaux.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>An abbrev table is represented as an obarray containing a symbol for each abbreviation.  The symbol's name is the abbreviation; its value is the expansion; its function definition is the hook function to do the expansion (@pxref{Defining Abbrevs}); its property list cell typically contains the use count, the number of times the abbreviation has been expanded.  Alternatively, the use count is on the @code{count} property and the system-abbrev flag is on the @code{system-type} property.  Abbrevs with a non-@code{nil} @code{system-type} property are called ``system'' abbrevs.  They are usually defined by modes or packages, instead of by the user, and are treated specially in certain respects.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
@@ -1847,6 +1987,30 @@ commencement.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Opérations arithmétiques</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Array Functions</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174203Z">
+        <seg>Fonctions pour les tableaux</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Arrays</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174113Z">
+        <seg>Tableaux</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Arrays in Lisp, like arrays in most languages, are blocks of memory whose elements can be accessed in constant time.  A @dfn{vector} is a general-purpose array of specified length; its elements can be any Lisp objects.  (By contrast, a string can hold only characters as elements.)  Vectors in Emacs are used for obarrays (vectors of symbols), and as part of keymaps (vectors of commands).  They are also used internally as part of the representation of a byte-compiled function; if you print such a function, you will see a vector in it.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T183801Z">
+        <seg>Les tableaux en Lisp, comme dans la majorité des langages, sont des blocs de mémoire dont les éléments ont tous le même temps d'accès. Un @dfn{vector} est un tableau universel d'une longueur donnée ; ses éléments peuvent être n'importe quel objet Lisp. (Par opposition, une chaîne de caractères peut seulement contenir des éléments de type caractère.) Dans Emacs, les vecteurs  sont utilisés pour  les obarrays (vecteurs de symboles), et comme partie de keymaps (vecteurs de commandes). Ils sont aussi utilisés intérieurement en interne comme une partie de la représentation en octet de code ; si vous affichez une telle fonction, vous verrez un vecteur à l'intérieur.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2002,6 +2166,14 @@ manière extrêmement non-standard. @xref{Création de symboles}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Bool-Vectors</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174505Z">
+        <seg>Vecteurs-booléens</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Buffer Text Notation</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2118,6 +2290,14 @@ manière extrêmement non-standard. @xref{Création de symboles}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Avertissements</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Characteristics of arrays in Emacs Lisp.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174136Z">
+        <seg>Caractéristiques des tableaux en Emacs Lisp.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2412,6 +2592,14 @@ appelé Scheme.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Each char-table has a @dfn{subtype} which is a symbol.  The subtype has two purposes: to distinguish char-tables meant for different uses, and to control the number of extra slots.  For example, display tables are char-tables with @code{display-table} as the subtype, and syntax tables are char-tables with @code{syntax-table} as the subtype.  A valid subtype must have a @code{char-table-extra-slots} property which is an integer between 0 and 10.  This integer specifies the number of @dfn{extra slots} in the char-table.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T190601Z">
+        <seg>Chaque char-table possède un sous-type (@dfn{subtype}) qui est un symbole. Le sous-type a deux buts : différencier les char-tables créées pour des usages différents et vérifier le nombre de cases supplémentaires. Par exemple, les tables d'affichage sont des char-tables avec @code{display-table} comme sous-type. Et les tables de syntaxe sont des char-tables avec @code{syntax-table} comme sous-type. Pour être valide, un sous-type doit avoir une propriété @code{char-table-extra-slots} qui soit un entier compris entre 0 et 10. Cet entier spécifie le nombre de cases supplémentaires (@dfn{extra slots} dans la char-table.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Each symbol has a property list</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2643,6 +2831,14 @@ toutes les machines connues se comportent de la même façon.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>For other concatenation functions, see @code{mapconcat} in @ref{Mapping Functions}, @code{concat} in @ref{Creating Strings}, and @code{append} in @ref{Building Lists}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185351Z">
+        <seg>Pour d'autres fonctions de concaténation, voir @code{mapconcat} dans @ref{Mapping Functions}, @code{concat} dans @ref{Creating Strings}, et @code{append} dans @ref{Building Lists}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>For the user-level commands for abbrevs, see @ref{Abbrevs,, Abbrev Mode, emacs, The GNU Emacs Manual}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2688,6 +2884,46 @@ toutes les machines connues se comportent de la même façon.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Fonctions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Functions for Vectors</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184202Z">
+        <seg>Fonctions pour les vecteurs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Functions specifically for arrays.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174219Z">
+        <seg>Fonctions spécifiques aux tableaux.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Functions specifically for vectors.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174313Z">
+        <seg>Fonctions spécifiques aux vecteurs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Functions that Operate on Arrays</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180406Z">
+        <seg>Fonctions qui manipulent des tableaux</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Functions that accept any kind of sequence.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174108Z">
+        <seg>Des fonctions qui acceptent n'importe quel type de suite.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2788,10 +3024,26 @@ relient spécifiquement à l'édition.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Here are examples illustrating these principles:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184140Z">
+        <seg>Voici quelques exemples illustrant ces principes :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Here are other examples:</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Voici d'autres exemples:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Here are some functions that relate to vectors:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184211Z">
+        <seg>Voici quelques fonctions relatives aux vecteurs :</seg>
       </tuv>
     </tu>
     <tu>
@@ -2871,6 +3123,22 @@ les huit bits faibles du binaire modèle ; le reste est fait de zéro.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>How to work with bool-vectors.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174517Z">
+        <seg>Comment travailler avec les vecteurs-booléens.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>How to work with char-tables.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174446Z">
+        <seg>Comment travailler avec les char-tables.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>If @code{logand} is not passed any argument, it returns a value of @minus{}1.  This number is an identity element for @code{logand} because its binary representation consists entirely of ones.  If @code{logand} is passed just one argument, it returns that argument.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2878,6 +3146,22 @@ les huit bits faibles du binaire modèle ; le reste est fait de zéro.</seg>
 @minus{}1. Ce nombre est un élément d'identité pour @code{logand}
 parce que sa représentation binaire consiste entièrement de 1. Si
 @code{logand} est passé à juste un argument, il renvoie cet argument.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>If @var{array} is a string and @var{object} is not a character, a @code{wrong-type-argument} error results.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182931Z">
+        <seg>Si @var{array} est une chaîne de caractères et que @var{object} n'est pas un caractère, il en résultera une erreur @code{wrong-type-argument}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>If @var{array} is a string and @var{object} is not a character, a @code{wrong-type-argument} error results.  The function converts a unibyte string to multibyte if necessary to insert a character.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182651Z">
+        <seg>Si @var{array} est une chaîne de caractères et @var{object} n'est pas un caractère, il en résultera une erreur @code{wrong-type-argument}. La fonction convertit une chaîne de caractères unioctet en multioctet s'il est nécessaire d'insérer un caractère.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2976,6 +3260,14 @@ toutes les machines connues arrondissent en mode standard.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>If the sequence is a string with text properties, the property list in the copy is itself a copy, not shared with the original's property list.  However, the actual values of the properties are shared.  @xref{Text Properties}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185155Z">
+        <seg>Si la suite est une chaîne de caractères avec des propriétés, alors la liste de propriétés de la suite copiée est elle-même une copie. Elle n'est pas partagée avec la liste de propriétés de la suite d'origine. Cependant, les valeurs des propriétés, quant à elles, sont partagées entre les deux listes de propriétés. @xref{Text Properties}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>If this function is called more than once for the same @var{tabname}, subsequent calls add the definitions in @var{definitions} to @var{tabname}, rather than overriding the entire original contents.  (A subsequent call only overrides abbrevs explicitly redefined or undefined in @var{definitions}.)</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -3036,6 +3328,30 @@ s'évaluent toujours eux-mêmes. De sorte que vous n'avez pas besoin de
 les citer pour les employer comme constantes dans un programme. Une
 tentative de changer leurs valeurs a comme conséquence une erreur
 @code{setting-constant}. @xref{Constant Variables}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>In Emacs Lisp, a @dfn{sequence} is either a list or an array.  The common property of all sequences is that they are ordered collections of elements.  This section describes functions that accept any kind of sequence.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174635Z">
+        <seg>En Lisp Emacs, une suite (@dfn{sequence}) est soit une liste soit un tableau. La propriété commune de toutes les suites est qu'elles sont des collections ordonnées d'éléments. Dans cette partie, on décrit des fonctions qui acceptent tout type de suite.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>In Emacs Lisp, the indices of the elements of a vector start from zero and count up from there.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T183924Z">
+        <seg>Dans Lisp Emacs, les indices des éléments d'un vecteur commencent à zéro et le comptage se fait à partir de là.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>In Emacs versions before 21, the @code{vconcat} function allowed integers as arguments, converting them to strings of digits, but that feature has been eliminated.  The proper way to convert an integer to a decimal number in this way is with @code{format} (@pxref{Formatting Strings}) or @code{number-to-string} (@pxref{String Conversion}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185029Z">
+        <seg>Dans les versions d'Emacs antérieures à la 21, la fonction @code{vconcat} autorisait des arguments de type integers en les convertissant en chaîne de caractères contenant des chiffres. Cependant, cette fonctionnalité a été retirée. La manière correcte pour convertir un nombre enier en nombre décimal de cette façon est d'utiliser la fonction @code{format} (@pxref{Formatting Strings}) or @code{number-to-string} (@pxref{String Conversion}). </seg>
       </tuv>
     </tu>
     <tu>
@@ -3148,6 +3464,14 @@ souligner qu'il signifie la liste vide, et nous écrivons @code{nil}
 quand nous souhaitons souligner qu'il signifie la vraie valeur
 @var{false}. C'est une bonne convention à employer dans des programmes
 de Lisp également.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>In this section, we describe the functions that accept all types of arrays.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180424Z">
+        <seg>Dans cette partie, nous allons décrire les fonctions qui acceptent tout type de tableaux.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3480,6 +3804,15 @@ qu'un certain minimum (négatif).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Overall, the key-value pairs passed to @var{function} describe all the values stored in @var{char-table}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T193020Z">
+        <seg>En général, les paires clé-valeur passées à la fonction @var{function} décrivent toutes les valeurs stockées dans @var{char-table}.
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Please mail comments and corrections to</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -3568,6 +3901,30 @@ qu'un certain minimum (négatif).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Refers to the default value.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192438Z">
+        <seg>renvoie à la valeur par défaut.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Refers to the element for character @var{char} (supposing @var{char} is a valid character code).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192523Z">
+        <seg>renvoie à l'élément pour le caractère @var{char} (en supposant que @var{char} est un code caractère valide).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Refers to the value specified for the whole character set @var{charset} (@pxref{Character Sets}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192550Z">
+        <seg>renvoie à la valeur spécifiée pour tout l'ensemble de caractères @var{charset} (@pxref{Character Sets}).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Refresh Screen</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T092419Z">
@@ -3592,11 +3949,35 @@ qu'un certain minimum (négatif).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Return a newly created char-table, with subtype @var{subtype}.  Each element is initialized to @var{init}, which defaults to @code{nil}.  You cannot alter the subtype of a char-table after the char-table is created.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T191143Z">
+        <seg>Retourne une char-table nouvellement créée avec le sous-type @var{subtype}. Chaque élément est initialisé à la valeur @var{init}, qui par défaut est @code{nil}. On ne peut pas changer le sous-type d'une char-table une fois qu'elle est créée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Return non-nil iff @var{object} is one of the two canonical boolean values: @code{t} or @code{nil}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032750Z">
         <seg>Retourne non-nil si @var{objet} est une des deux valeurs booléennes
 canoniques : @code{t} ou @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Returns @code{t} if @var{object} is a list, vector, string, bool-vector, or char-table, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182458Z">
+        <seg>Retourne @code{t} si @var{object} est une liste, un vecteur, une chaîne de caractères, un vecteur-booléen ou une table de chaînes de caractères ; sinon @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Returns a copy of @var{sequence}.  The copy is the same type of object as the original sequence, and it has the same elements in the same order.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182323Z">
+        <seg>Cette fonction retourne une copie de la suite @var{sequence}. Cette copie a le même type que l'objet de la suite d'origine. Elle a également les mêmes éléments dans le même ordre.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3645,6 +4026,47 @@ canoniques : @code{t} ou @code{nil}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Consultez @code{put} pour un exemple.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>See also @code{append} in @ref{Building Lists}, @code{concat} in @ref{Creating Strings}, and @code{vconcat} in @ref{Vector Functions}, for other ways to copy sequences.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180220Z">
+        <seg>Pour les autres façons de copier des listes, voir également @code{append} dans @ref{Building Lists, @code{concat} dans @ref{Creating Strings}, et @code{vconcat} dans @ref{Vector Functions}. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>See also @code{string-bytes}, in @ref{Text Representations}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T175335Z">
+        <seg>Voir aussi @code{string-bytes}, dans @ref{Text Representations}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>See also the function @code{elt}, in @ref{Sequence Functions}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180904Z">
+        <seg>
+Voir aussi la fonction @code{elt}, dans la partie @ref{Sequence Functions}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Sequence Functions</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174040Z">
+        <seg>Fonctions pour les suites</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Sequences</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174522Z">
+        <seg>Suites</seg>
       </tuv>
     </tu>
     <tu>
@@ -3767,6 +4189,14 @@ de deux formulaires est indiquée avec le @samp{@equiv{}}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Special characteristics of Emacs Lisp vectors.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174247Z">
+        <seg>Caractéristiques particulières aux vecteurs Emacs Lisp.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Special form descriptions use a more complex notation to specify optional and repeated arguments because they can break the argument list down into separate arguments in more complicated ways.  @samp{@r{[}@var{optional-arg}@r{]}} means that @var{optional-arg} is optional and @samp{@var{repeated-args}@dots{}} stands for zero or more arguments.  Parentheses are used when several arguments are grouped into additional levels of list structure.  Here is an example:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120331Z">
@@ -3811,6 +4241,14 @@ un exemple :</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Fonctions mathématiques standards</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Storing a new element into the copy does not affect the original @var{sequence}, and vice versa.  However, the elements of the new sequence are not copies; they are identical (@code{eq}) to the elements of the original.  Therefore, changes made within these elements, as found via the copied sequence, are also visible in the original sequence.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180015Z">
+        <seg>Stocker un nouvel élément dans la copie ne change rien à l'originale @var{sequence}, et vice versa. Cependant, les éléments de la nouvelle suite ne sont pas des copies ; ce sont les mêmes (@code{eq}) que ceux de la suite d'origine. Ainsi, les changements effectués sur ces éléments sont visibles dans les deux suites, celle d'origine et celle copiée.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3971,6 +4409,22 @@ manière cumulée. S'il n'y a aucun argument, le résultat est 0.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The @code{append} function also provides a way to convert a vector into a list with the same elements:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185436Z">
+        <seg>La fonction @code{append} fournit aussi la conversion d'un vecteur en une liste contenant les mêmes éléments :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The @code{vconcat} function also allows byte-code function objects as arguments.  This is a special feature to make it easy to access the entire contents of a byte-code function object.  @xref{Byte-Code Objects}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185050Z">
+        <seg>La fonction @code{vconcat} prend aussi comme arguments des objets de fonctions en code octet. C'est une caractéristique particulière pour rendre facile l'accès à tout le contenu d'un objet d'une fonction en code octet. @xref{Byte-Code Objects}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The @code{wholenump} predicate (whose name comes from the phrase ``whole-number-p'') tests to see whether its argument is a nonnegative integer, and returns @code{t} if so, @code{nil} otherwise.  0 is considered non-negative.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
@@ -4065,6 +4519,22 @@ imprimé à côté de la marge.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>La description suit les lignes réussies, parfois avec des exemples.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The elements of vectors and lists may be any Lisp objects.  The elements of strings are all characters.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T173858Z">
+        <seg>Les éléments contenus dans les vecteurs ou les listes peuvent être n'importe quel objet Lisp. Les éléments contenus dans les chaînes de caractères sont tous des caractères.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The following diagram shows the relationship between these types:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T173810Z">
+        <seg>Le schéma suivant montre les relations entre ces types :</seg>
       </tuv>
     </tu>
     <tu>
@@ -4167,6 +4637,14 @@ exige un nombre en tant qu'argument. Voir également
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The general sequence functions @code{copy-sequence} and @code{length} are often useful for objects known to be arrays.  @xref{Sequence Functions}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185149Z">
+        <seg>Les fonctions générales sur les suites, @code{copy-sequence} et @code{length}, sont souvent utiles pour les objets de type tableaux. @xref{Sequence Functions}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The integer @minus{}1 looks like this:</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4260,6 +4738,14 @@ des nombres négatifs à virgule flottante, comme dans @samp{- 1.0}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The return value is always @code{nil}; to make this function useful, @var{function} should have side effects.  For example, here is how to examine each element of the syntax table:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T193115Z">
+        <seg>La valeur en retour est toujours @code{nil} ; pour rendre cette fonction utile, @var{function} devrait avoir des effets secondaires. Par exemple, voici comment examiner chaque élément de la table de syntaxe :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The set of abbrevs currently in effect is recorded in an @dfn{abbrev table}.  Each buffer has a local abbrev table, but normally all buffers in the same major mode share one abbrev table.  There is also a global abbrev table.  Normally both are used.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T210642Z">
@@ -4294,6 +4780,14 @@ exemple:</seg>
         <seg>La valeur @code{-0.0} est distinguable de l'ordinaire zéro dans la
 virgule flottante de @acronym{IEEE}, mais en Emacs Lisp @code{equal} et
 @code{=} sont considérés comme valeurs égales.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The value is a newly constructed vector that is not @code{eq} to any existing vector.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184659Z">
+        <seg>La valeur est un vecteur nouvellement construit qui n'est @code{eq} à aucun vecteur existant.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4424,6 +4918,22 @@ pour faire ceci:</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>There is no argument to specify the length of the char-table, because all char-tables have room for any valid character code as an index.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T191219Z">
+        <seg>Il n'existe pas d'argument pour spécifier la longueur d'une char-table parce que toutes les char-table ont de la place pour n'importe quel code de caractère valide comme indice.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>There is no special function to access default values in a char-table.  To do that, use @code{char-table-range} (see below).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192032Z">
+        <seg>Il n'y a pas de fonction particulière pour accéder aux valeurs par défaut d'une char-table. Pour cela, utilisez @code{char-table-range} (voir ci-dessous).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Therefore,</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4498,12 +5008,28 @@ donné, @code{+} retourne 0.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function calls @var{function} for each element of @var{char-table}.  @var{function} is called with two arguments, a key and a value.  The key is a possible @var{range} argument for @code{char-table-range}---either a valid character or a generic character---and the value is @code{(char-table-range @var{char-table} @var{key})}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192904Z">
+        <seg>Cette fonction appelle @var{function} pour chaque élément de la @var{char-table}. On appelle @var{function} et on lui passe deux arguments, une clé et une valeur. La clé est une valeur possible pour l'argument @var{range} de la fonction @code{char-table-range} --- soit un caractère valide, soit un caractère générique --- et la valeur est @code{(char-table-range @var{char-table} @var{key})}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function creates and returns a new, empty abbrev table---an obarray containing no symbols.  It is a vector filled with zeros.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Cette fonction crée et renvoie une nouvelle table vide
 d'abréviations---une liste ne contient aucun symbole---. C'est un
 vecteur rempli de zéros.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function creates and returns a vector whose elements are the arguments, @var{objects}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184311Z">
+        <seg>Cette fonction crée et retourne un vecteur dont les éléments sont les arguments @var{objects}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4545,6 +5071,30 @@ argument peut être un nombre ou un marqueur.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function does not work for dotted lists.  Trying to copy a circular list may cause an infinite loop.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180051Z">
+        <seg>Cette fonction ne marche pas pour les listes pointées. Copier une liste circulaire risque d'entraîner une boucle infinie.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function fills the array @var{array} with @var{object}, so that each element of @var{array} is @var{object}.  It returns @var{array}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182855Z">
+        <seg>Cette fonction remplit le tableau @var{array} avec @var{object}, de telle façon que chaque élément du tableau @var{array} soit de type @var{object}. Elle renvoie un tableau de type @var{array}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function generalizes @code{aref} (@pxref{Array Functions}) and @code{nth} (@pxref{Definition of nth}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T175831Z">
+        <seg>Cette fonction généralise @code{aref} (@pxref{Array Functions}) et@code{nth} (@pxref{Definition of nth})</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function inserts before point a description of the abbrev table named @var{name}.  The argument @var{name} is a symbol whose value is an abbrev table.  The return value is always @code{nil}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4571,6 +5121,14 @@ si nous continuons,</seg>
       <tuv lang="fr-fr">
         <seg>Cette fonction multiplie ses arguments entre elles, et renvoie le
 produit. Si aucun argument n'est donné, @code{*} retourne 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns @code{t} if @var{object} is a char-table, otherwise @code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T191311Z">
+        <seg>Cette fonction retourne @code{t} si @var{object} est une char-table, sinon @code{nil}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4603,6 +5161,22 @@ produit. Si aucun argument n'est donné, @code{*} retourne 1.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Cette fonction renvoie @code{t} si l'@var{objet} est un symbole et autrement @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns @code{t} if @var{object} is a vector.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184254Z">
+        <seg>Cette fonction retourne @code{t} si @var{object} est un vecteur.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns @code{t} if @var{object} is an array (i.e., a vector, a string, a bool-vector or a char-table).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182307Z">
+        <seg>Cette fonction retourne @code{t} si @var{object} est un tableau (c'est-à-dire un vecteur, une chaîne de caractères, un booléen-vecteur ou une table de caractères).</seg>
       </tuv>
     </tu>
     <tu>
@@ -4654,6 +5228,22 @@ propriétés de toutes les abréviations copiées à 0.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function returns a new vector consisting of @var{length} elements, each initialized to @var{object}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184419Z">
+        <seg>Cette fonction retourne un nouveau vecteur contenant un nombre @var{length} d'éléments, chacun étant initialisé comme un @var{object}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns a new vector containing all the elements of the @var{sequences}.  The arguments @var{sequences} may be true lists, vectors, strings or bool-vectors.  If no @var{sequences} are given, an empty vector is returned.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184618Z">
+        <seg>Cette fonction retourne un nouveau vecteur contenant tous les éléments de l'argument @var{sequences}. Cet argument @var{sequences} peut être des listes, des vecteurs, des chaînes de caractères ou des vecteurs-booléens. Si aucune @var{sequence} n'est donnée alors un vecteur vide est retourné.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function returns a pseudo-random integer.  Repeated calls return a series of pseudo-random integers.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4677,6 +5267,14 @@ bogue.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T110243Z">
         <seg>Cette fonction retourne une chaîne faite de @var{n} répétitions de @var{caractere}.  Si @var{n} est négatif, une erreur est soulevée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns the @var{index}th element of @var{array}.  The first element is at index zero.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182240Z">
+        <seg>Cette fonction retourne l'élément du tableau se situant à l'indice @var{index}. Le premier élément se trouve à l'indice zéro.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4736,6 +5334,22 @@ arrondie vers le bas à un nombre entier.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function returns the contents of extra slot @var{n} of @var{char-table}.  The number of extra slots in a char-table is determined by its subtype.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192241Z">
+        <seg>Cette fonction retourne le contenu du slot supplémentaire numéro @var{n} de @var{char-table}. Le nombre de cases supplémentaires dans une char-table est déterminé par son sous-type.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns the element of @var{sequence} indexed by @var{index}.  Legitimate values of @var{index} are integers ranging from 0 up to one less than the length of @var{sequence}.  If @var{sequence} is a list, out-of-range values behave as for @code{nth}.  @xref{Definition of nth}.  Otherwise, out-of-range values trigger an @code{args-out-of-range} error.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185211Z">
+        <seg>La fonction retourne l'élément d'une suite @var{sequence} ordonnée selon les indices @var{index}. Les indices doivent être des entiers allant de 0 jusqu'à la longueur de la suite moins un. Si @var{sequence} est une liste, les valeurs hors-intervalle donneront le même résultat que la n-ième valeur. @xref{Definition of nth}. Dans les autres cas, les valeurs hors-intervalle lanceront une erreur @code{args-out-of-range} (argument-hors-intervalle).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function returns the integer remainder after division of @var{dividend} by @var{divisor}.  The arguments must be integers or markers.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4786,6 +5400,22 @@ Si vous n'indiquez pas @var{base}, la base</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function returns the number of elements in @var{sequence}.  If @var{sequence} is a dotted list, a @code{wrong-type-argument} error is signaled.  Circular lists may cause an infinite loop.  For a char-table, the value returned is always one more than the maximum Emacs character code.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182407Z">
+        <seg>Cette fonction retourne le nombre d'éléments dans une suite @var{sequence}. Si une suite @var{sequence} est une liste pointée, une erreur @code{wrong-type-argument} (mauvais-type-d-argument) est signalée. Les listes circulaires peuvent entraîner une boucle infinie. Pour une table de chaînes de caractères, la valeur retournée est toujours supérieure d'un au code caractère maximum d'Emacs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns the parent of @var{char-table}.  The parent is always either @code{nil} or another char-table.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192059Z">
+        <seg>Cette fonction retourne le parent de @var{char-table}. Le parent est toujours soit @code{nil}, soit une autre char-table.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function returns the smallest of its arguments.  If any of the arguments is floating-point, the value is returned as floating point, even if it was given as an integer.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4800,6 +5430,14 @@ flottante, même si elle était donnée comme nombre entier.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Cette fonction renvoie la chaîne correspondant au nom du symbole. Par exemple :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns the subtype symbol of @var{char-table}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T191344Z">
+        <seg>Cette fonction retourne le symbole du sous-type de @var{char-table}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4848,6 +5486,38 @@ inférieure, et renvoie cette valeur comme nombre à virgule flottante.</seg>
       <tuv lang="fr-fr">
         <seg>Cette fonction arrondit @var{float} à la valeur intégrale proche de
 zéro, et renvoie cette valeur comme nombre à virgule flottante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function sets the @var{index}th element of @var{array} to be @var{object}.  It returns @var{object}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182231Z">
+        <seg>Cette fonction définit le @var{index}-ième élément du tableau @var{array} comme un @var{object}. Elle retourne @var{object}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function sets the default value of generic character @var{char} in @var{char-table} to @var{new-default}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T191947Z">
+        <seg>Cette fonction définit @var{new-default} comme la valeur par défaut du caractère générique @var{char} d'une char-table.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function sets the parent of @var{char-table} to @var{new-parent}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192137Z">
+        <seg>Cette fonction définit @var{new-parent} comme parent de @var{char-table}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function stores @var{value} in extra slot @var{n} of @var{char-table}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192335Z">
+        <seg>Cette fonction stocke @var{value} dans la case supplémentaire numéro @var{n} de @var{char-table}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5124,6 +5794,14 @@ il signale une erreur @code{domain-error}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This returns the value specified in @var{char-table} for a range of characters @var{range}.  Here are the possibilities for @var{range}:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192437Z">
+        <seg>Cette fonction retourne la valeur spécifiée dans @var{char-table} pour la gamme de caractères @var{range}. Voici les valeurs possibles de @var{range} :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This section describes how to create and manipulate abbrev tables.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -5308,6 +5986,30 @@ mot `Variable' est remplacée par `User Option'.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Variables</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Vector Functions</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174301Z">
+        <seg>Fonctions pour les vecteurs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Vectors</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174225Z">
+        <seg>Vecteurs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Vectors are printed with square brackets surrounding the elements.  Thus, a vector whose elements are the symbols @code{a}, @code{b} and @code{a} is printed as @code{[a b a]}.  You can write vectors in the same way in Lisp input.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184000Z">
+        <seg>Les vecteurs sont affichés avec des crochets autour des éléments  Ainsi, un vecteur dont les éléments sont les symboles @code{a}, @code{b} et @code{a} sont affichés de la façon suivante @code{[a b a]}. On peut écrire des vecteurs de la même façon en saisie Lisp.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5552,6 +6254,46 @@ entier):</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>^</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>_____________________________________________
+         |                                             |
+         |          Sequence                           |
+         |  ______   ________________________________  |
+         | |      | |                                | |
+         | | List | |             Array              | |
+         | |      | |    ________       ________     | |
+         | |______| |   |        |     |        |    | |
+         |          |   | Vector |     | String |    | |
+         |          |   |________|     |________|    | |
+         |          |  ____________   _____________  | |
+         |          | |            | |             | | |
+         |          | | Char-table | | Bool-vector | | |
+         |          | |____________| |_____________| | |
+         |          |________________________________| |
+         |_____________________________________________|</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T173828Z">
+        <seg>          _____________________________________________
+         |                                             |
+         |             Suite                           |
+         |  ______   ________________________________  |
+         | |      | |                                | |
+         | |Liste | |            Tableau             | |
+         | |      | |    ________       __________   | |
+         | |______| |   |        |     |  Chaîne  |  | |
+         |          |   |Vecteur |     |   de     |  | |
+         |          |   |        |     |caractères|  | |
+         |          |   |________|     |__________|  | |
+         |          |  ____________   _____________  | |
+         |          | |  Table de  | |   Vecteur   | | |
+         |          | | chaînes de | |   Booléen   | | |
+         |          | | caractères | |             | | |
+         |          | |____________| |_____________| | |
+         |          |________________________________| |
+         |_____________________________________________|</seg>
       </tuv>
     </tu>
     <tu>
@@ -6411,6 +7153,22 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>char-syntax caractère</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>char-table length</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174954Z">
+        <seg></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>char-tables</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T190132Z">
+        <seg>Les char-tables</seg>
       </tuv>
     </tu>
     <tu>
@@ -7731,10 +8489,26 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>length sequence</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T175008Z">
+        <seg>length sequence </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>lisp-mode-abbrev-table</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>lisp-mode-abbrev-table</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>list length</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174943Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
@@ -8523,6 +9297,14 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>sequence length</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174951Z">
+        <seg></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>set-buffer-auto-saved</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -8647,6 +9429,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T110534Z">
         <seg>string &amp;rest caracteres</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>string length</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174940Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
@@ -8999,6 +9789,22 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>vc-prefix-map</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>vector (type)</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T183057Z">
+        <seg>Le type vector</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>vector length</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174946Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
