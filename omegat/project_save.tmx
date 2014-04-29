@@ -2002,6 +2002,14 @@ manière extrêmement non-standard. @xref{Création de symboles}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>But we recommend @code{copy-sequence} for this purpose (@pxref{Sequence Functions}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T122616Z" creationid="babac_000" creationdate="20140429T122616Z">
+        <seg>Mais on recommande @code{copy-sequence} pour faire cela (voir la section @pxref{Fonctions sur les suites}).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>C-]</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -3417,6 +3425,14 @@ Vous pouvez l'employer comme n'importe quel autre langage de programmation.</seg
       </tuv>
       <tuv lang="fr-fr">
         <seg>Obtention des nombres entiers aléatoires, prévisibles ou pas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Omitting the argument @var{end} is equivalent to specifying @code{nil}.  It follows that @code{(substring @var{string} 0)} returns a copy of all of @var{string}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T122445Z" creationid="babac_000" creationdate="20140429T122445Z">
+        <seg>Omettre l’argument @var{end} équivaut à indiquer @code{nil}.  Il en va que @code{(substring @var{string} 0)} retourne une copie entière de @var{string}.</seg>
       </tuv>
     </tu>
     <tu>
