@@ -1394,6 +1394,14 @@ un résultat positif même si @var{integer1} est négatif. Contrairement
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@code{substring} also accepts a vector for the first argument.  For example:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T122758Z" creationid="babac_000" creationdate="20140429T122758Z">
+        <seg>@code{substring} accepte aussi un vecteur comme premier argument. Par exemple :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@code{while} loops.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2956,6 +2964,14 @@ différemment les arguments négatifs. C'est parce que la fonction de
 Lisp @code{/} est implémentée en utilisant l'opérateur de division de
 C qui permet l'arrondi en fonction de la machine. Du côté pratique,
 toutes les machines connues arrondissent en mode standard.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>If the characters copied from @var{string} have text properties, the properties are copied into the new string also.  @xref{Text Properties}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T122731Z" creationid="babac_000" creationdate="20140429T122731Z">
+        <seg>Si les caractères copiés depuis @var{string} possèdent des propriétés textuelles, les propriétés sont également copiées dans la nouvelle chaîne.  Voir la section @xref{Text Properties}.</seg>
       </tuv>
     </tu>
     <tu>
