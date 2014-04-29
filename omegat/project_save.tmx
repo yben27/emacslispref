@@ -1348,6 +1348,14 @@ d'Emacs.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@code{format}: Emacs's analogue of @code{printf}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102827Z" creationid="babac_000" creationdate="20140429T102827Z">
+        <seg>@code{format}: equivalent Emacs du @code{printf}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@code{if}, @code{cond}, @code{when}, @code{unless}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -1482,6 +1490,22 @@ arguments optionnels et restants.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@xref{Strings of Events}, for special considerations for strings of keyboard character events.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101505Z" creationid="babac_000" creationdate="20140429T101505Z">
+        <seg>@xref{Strings of Events}, pour des informations particulières sur les chaînes des événements liés aux caractères clavier.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>@xref{Text}, for information about functions that display strings or copy them into buffers.  @xref{Character Type}, and @ref{String Type}, for information about the syntax of characters and strings.  @xref{Non-ASCII Characters}, for functions to convert between text representations and to encode and decode character codes.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105145Z" creationid="babac_000" creationdate="20140429T105145Z">
+        <seg>&gt;@xref{Text}, pour plus d’informations sur les fonctions qui affichent des chaînes ou les copient dans une mémoire tampon. Voir la section @xref{Character Type}, et @xref{String Type}, pour plus d’informations sur la syntaxe des chaînes et des caractères. @xref{Non-ASCII Characters}, les fonctions pour faire des conversions entre des représentations textuelles et pour coder et décoder des codes caractères.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>A @dfn{symbol} is an object with a unique name.  This chapter describes symbols, their components, their property lists, and how they are created and interned.  Separate chapters describe the use of symbols as variables and as function names; see @ref{Variables}, and @ref{Functions}.  For the precise read syntax for symbols, see @ref{Symbol Type}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -1596,6 +1620,14 @@ dans une série pseudo-aléatoire.</seg>
 automatique des abréviations quand elles sont insérées dans un
 tampon. Si la valeur est @code{nil}, des abréviations peuvent être
 définies, mais elles ne sont pas développées automatiquement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>A string in Emacs Lisp is an array that contains an ordered sequence of characters.  Strings are used as names of symbols, buffers, and files; to send messages to users; to hold text being copied between buffers; and for many other purposes.  Because strings are so important, Emacs Lisp has many functions expressly for manipulating them.  Emacs Lisp programs use strings more often than individual characters.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101353Z" creationid="babac_000" creationdate="20140429T101353Z">
+        <seg>Une chaîne en Lisp Emacs est un tableau qui contient une suite ordonnée de caractères. Les chaînes sont utilisées comme noms de symboles, de buffers et de fichiers ; pour envoyer des messages aux utilisateurs ; pour contenir le texte copié entre les buffers ; et pour beaucoup d’autres choses. Puisque les chaînes sont si importantes, Lisp Emacs possède de nombreuses fonctions permettant expressément de les manipuler. Les programmes Lisp Emacs utilisent  plus souvent les chaînes que les caractères individuels.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1718,6 +1750,14 @@ variable @code{abbrev-mode}.</seg>
       <tuv lang="fr-fr">
         <seg>Toutes ces fonctions, à part @code{%}, retourne une valeur à virgule
 flottante si au moins un argument est une valeur à virgule flottante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Altering the contents of an existing string.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102330Z" creationid="babac_000" creationdate="20140429T102330Z">
+        <seg>Changer le contenu d'une chaîne existante.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1878,6 +1918,22 @@ représentation des nombres entiers dans une future version d'Emacs.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Basic properties of strings and characters.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101614Z" creationid="babac_000" creationdate="20140429T101614Z">
+        <seg>Les propriétés fondamentales des chaînes et des caractères.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Basics: String Basics</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101600Z" creationid="babac_000" creationdate="20140429T101600Z">
+        <seg>Notions de base sur les chaînes et les caractères</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Because Emacs Lisp is designed for use in an editor, it has special features for scanning and parsing text as well as features for handling files, buffers, displays, subprocesses, and so on.  Emacs Lisp is closely integrated with the editing facilities; thus, editing commands are functions that can also conveniently be called from Lisp programs, and parameters for customization are ordinary Lisp variables.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicoals" changedate="20140307T213234Z">
@@ -2010,10 +2066,42 @@ manière extrêmement non-standard. @xref{Création de symboles}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Case Conversion</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102858Z" creationid="babac_000" creationdate="20140429T102858Z">
+        <seg>Conversion de casse</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Case Tables</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102943Z" creationid="babac_000" creationdate="20140429T102943Z">
+        <seg>La table de casse</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Case conversion functions.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102922Z" creationid="babac_000" creationdate="20140429T102922Z">
+        <seg>Fonctions de conversion de casse.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Caveats</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Avertissements</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Characters are represented in Emacs Lisp as integers; whether an integer is a character or not is determined only by how it is used.  Thus, strings really contain integers.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T103253Z" creationid="babac_000" creationdate="20140429T103253Z">
+        <seg>Les caractères sont représentés par des entiers dans Emacs Lisp ; un entier peut être un caractère ou pas, cela dépend seulement de la façon dont il est utilisé. Par conséquent, les chaînes de caractères sont vraiment constituées d’entiers.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2035,6 +2123,14 @@ leurs arguments différemment des fonctions (les arguments ne sont pas
       </tuv>
       <tuv lang="fr-fr">
         <seg>Common Lisp</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Comparing characters or strings.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102455Z" creationid="babac_000" creationdate="20140429T102455Z">
+        <seg>Comparer des caractères ou des chaînes.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2111,6 +2207,14 @@ leurs arguments différemment des fonctions (les arguments ne sont pas
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Converting to and from characters and strings.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102702Z" creationid="babac_000" creationdate="20140429T102702Z">
+        <seg>Convertir en caractères et en chaînes et inversement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Copyright (C) 2000,2001,2002  Free Software Foundation, Inc.
 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA</seg>
       </tuv>
@@ -2141,6 +2245,14 @@ D. Zuhn.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Creating Strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102149Z" creationid="babac_000" creationdate="20140429T102149Z">
+        <seg>Créer des chaînes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Creating Symbols</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2153,6 +2265,14 @@ D. Zuhn.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Créer et travailler avec des tables d'abréviations.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Customizing case conversion.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T103013Z" creationid="babac_000" creationdate="20140429T103013Z">
+        <seg>Personnalisation de la conversion de casse.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2481,6 +2601,14 @@ ainsi les deux bits à l'extrême droite de la valeur retournée sont 0.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>For more information about general sequence and array predicates, see @ref{Sequences Arrays Vectors}, and @ref{Arrays}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105331Z" creationid="babac_000" creationdate="20140429T105331Z">
+        <seg>Pour plus d’informations sur les prédicats généraux des suites et des tableaux, voir @xref{Sequences, Arrays, and Vectors}, et @xref{Arrays}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>For negative arguments, the remainder is in principle machine-dependent since the quotient is; but in practice, all known machines behave alike.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032056Z">
@@ -2508,6 +2636,14 @@ toutes les machines connues se comportent de la même façon.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Formatting Strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102756Z" creationid="babac_000" creationdate="20140429T102756Z">
+        <seg>Formatter les chaînes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Free Software Foundation</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2528,6 +2664,14 @@ toutes les machines connues se comportent de la même façon.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Fonctions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Functions to allocate new strings.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102213Z" creationid="babac_000" creationdate="20140429T102213Z">
+        <seg>Les fonctions pour allouer de nouvelles chaînes.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3015,6 +3159,14 @@ matériel.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Like a buffer, a string can contain text properties for the characters in it, as well as the characters themselves.  @xref{Text Properties}.  All the Lisp primitives that copy text from strings to buffers or other strings also copy the properties of the characters being copied.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105043Z" creationid="babac_000" creationdate="20140429T105043Z">
+        <seg>Comme une mémoire tampon, une chaîne peut contenir des propriétés de texte pour les caractères qui s'y trouvent, ainsi que les caractères eux-mêmes. Voir la section @xref{Text Properties}. Toutes les primitives Lips qui copient le texte à partir de chaînes vers la mémoire tampon ou vers d’autres chaînes copient également les propriétés des caractères copiés. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Lisp (LISt Processing language) was first developed in the late 1950s at the Massachusetts Institute of Technology for research in artificial intelligence.  The great power of the Lisp language makes it ideal for other purposes as well, such as writing editing commands.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -3141,6 +3293,14 @@ sa valeur de position est employée et son tampon est ignoré.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Modifying Strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102252Z" creationid="babac_000" creationdate="20140429T102252Z">
+        <seg>Modifier des chaînes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Most modern computers support the @acronym{IEEE} floating point standard, which provides for positive infinity and negative infinity as floating point values.  It also provides for a class of values called NaN or ``not-a-number''; numerical functions return such values in cases where there is no correct answer.  For example, @code{(/ 0.0 0.0)} returns a NaN.  For practical purposes, there's no significant difference between different NaN values in Emacs Lisp, and there's no rule for precisely which NaN value should be used in a particular case, so Emacs Lisp doesn't try to distinguish them (but it does report the sign, if you print it).  Here are the read syntaxes for these special floating point values:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
@@ -3255,6 +3415,14 @@ qu'un certain minimum (négatif).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Other functions to compare with this one include @code{char-to-string} (@pxref{String Conversion}), @code{make-vector} (@pxref{Vectors}), and @code{make-list} (@pxref{Building Lists}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T110514Z" creationid="babac_000" creationdate="20140429T110514Z">
+        <seg>Les autres fonctions à comparer avec celle-ci comprennent @code{char-to-string} (voir la section @xref{Conversion des caractères et des chaînes}), @code{make-vector} (voir la section @xref{Vecteurs}), et @code{make-list} (voir la section @xref{Building Cons Cells and Lists}).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Please mail comments and corrections to</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -3267,6 +3435,14 @@ qu'un certain minimum (négatif).</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Positions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Predicates for Strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102052Z" creationid="babac_000" creationdate="20140429T102052Z">
+        <seg>Les prédicats pour les chaînes</seg>
       </tuv>
     </tu>
     <tu>
@@ -3450,6 +3626,15 @@ binaires de 8 bits) :</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Since strings are arrays, and therefore sequences as well, you can operate on them with the general array and sequence functions.  (@xref{Sequences Arrays Vectors}.)  For example, you can access or change individual characters in a string using the functions @code{aref} and @code{aset} (@pxref{Array Functions}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T103652Z" creationid="babac_000" creationdate="20140429T103652Z">
+        <seg>Puisque les chaînes de caractères sont des tableaux, et par conséquent des suites aussi, vous pouvez les traiter avec les fonctions générales des tableaux et des suites. (Voir la section @xref{Sequences, Arrays, and Vectors}.) Par exemple, on peut accéder aux caractères individuels d'une chaîne, ou les modifier, à l’aide des fonctions @code{aref} et @code{aset} (voir la section @xref{Functions that Operate on Arrays}).
+.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Since the arithmetic functions do not check whether integers go outside their range, when you add 1 to 268,435,455, the value is the negative integer @minus{}268,435,456:</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -3503,6 +3688,14 @@ données (les deux sont des nombres entiers, ou à virgule flottante) et
 la même valeur. En revanche, @code{=} peut traiter un nombre entier et
 un nombre à virgule flottante en tant qu'égaux. @xref{Equality
 Predicates}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Sometimes key sequences are represented as strings.  When a string is a key sequence, string elements in the range 128 to 255 represent meta characters (which are large integers) rather than character codes in the range 128 to 255.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T104949Z" creationid="babac_000" creationdate="20140429T104949Z">
+        <seg>Parfois, les séquences de touches sont représentées sous forme de chaînes de caractères.  Quand une chaîne est une suite de touche, les éléments de la chaîne dans la gamme de 128 à 255 représentent les meta-caractères (qui sont de large integers) plutôt que des codes de caractères dans la gamme de 128 à 255.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3565,10 +3758,50 @@ un exemple :</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>String Basics</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T103141Z" creationid="babac_000" creationdate="20140429T103141Z">
+        <seg>Notions de base sur les chaînes et les caractères</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>String Conversion</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102628Z" creationid="babac_000" creationdate="20140429T102628Z">
+        <seg>Conversion des caractères et des chaînes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>String and Character Basics</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T103230Z" creationid="babac_000" creationdate="20140429T103230Z">
+        <seg>Chaînes de caractères et caractères : les bases</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Strings and Characters</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Chaînes et caractères</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Strings are useful for holding regular expressions.  You can also match regular expressions against strings with @code{string-match} (@pxref{Regexp Search}).  The functions @code{match-string} (@pxref{Simple Match Data}) and @code{replace-match} (@pxref{Replacing Match}) are useful for decomposing and modifying strings after matching regular expressions against them.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T104540Z" creationid="babac_000" creationdate="20140429T104540Z">
+        <seg>Les chaînes de caractères sont utiles pour contenir les expressions régulières. On peut également faire correspondre les expressions régulières et les chaînes avec @code{string-match} (voir la section @xref{Regular Expression Searching}). Les fonctions @code{match-string} (voir la section @xref{Simple Match Data Access}) et @code{replace-match} (voir la section @xref{Replacing the Text that Matched}) sont utiles pour la décomposition et la modification des chaînes après les avoir transtypées en expressions régulières.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Strings cannot hold characters that have the hyper, super or alt modifiers; they can hold @acronym{ASCII} control characters, but no other control characters.  They do not distinguish case in @acronym{ASCII} control characters.  If you want to store such characters in a sequence, such as a key sequence, you must use a vector instead of a string.  @xref{Character Type}, for more information about the representation of meta and other modifiers for keyboard input characters.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T104328Z" creationid="babac_000" creationdate="20140429T104328Z">
+        <seg>Les chaînes de caractères ne peuvent pas contenir de caractères qui sont la combinaison entre un caractère quelconque et la touche hyper, super ou atl ; elles peuvent contenir des caractères de contrôle @acronym{ASCII}, mais pas d'autres caractères de contrôle. Elles ne distinguent pas la casse sur les caractères de contrôles @acronym{ASCII}. Si vous souhaitez stocker ces caractères sous la forme d’une suite, comme une suite de touches, vous devez utiliser un vecteur plutôt qu’une chaîne. Voir la section @xref{Character Type}, pour plus d’informations sur la représentation des modificateurs meta et autres pour les caractères saisis au clavier.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3645,10 +3878,26 @@ un exemple :</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Testing whether an object is a string or char.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102134Z" creationid="babac_000" creationdate="20140429T102134Z">
+        <seg>Test pour voir si un objet est une chaîne ou un caractères.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Text</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Texte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Text Comparison</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102417Z" creationid="babac_000" creationdate="20140429T102417Z">
+        <seg>Comparaison des caractères et des chaînes</seg>
       </tuv>
     </tu>
     <tu>
@@ -3681,6 +3930,14 @@ autrement. 0 est considéré non négatif.</seg>
       <tuv lang="fr-fr">
         <seg>Le lecteur de Lisp lit un nombre entier comme une séquence de chiffres
 avec le signe initial et le point final facultatifs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The Predicates for Strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105242Z" creationid="babac_000" creationdate="20140429T105242Z">
+        <seg>Les prédicats pour les chaînes</seg>
       </tuv>
     </tu>
     <tu>
@@ -3751,6 +4008,14 @@ imprimé à côté de la marge.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>La description suit les lignes réussies, parfois avec des exemples.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The following functions create strings, either from scratch, or by putting strings together, or by taking them apart.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T110030Z" creationid="babac_000" creationdate="20140429T110030Z">
+        <seg>Les fonctions suivantes permettent de créer des chaînes, soit en partant de zéro, soit en réunissant des chaînes, ou en les désassemblant.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3861,6 +4126,14 @@ simple) indique qu'un certain nombre d'arguments va suivre. Le nom
 d'argument simple suivant @code{&amp;rest} recevra, comme valeur, une
 liste de tous arguments restants à passer à la fonction. Ne pas écrire
 @code{&amp;rest} quand vous appelez la fonction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The length of a string (like any array) is fixed, and cannot be altered once the string exists.  Strings in Lisp are @emph{not} terminated by a distinguished character code.  (By contrast, strings in C are terminated by a character with @acronym{ASCII} code 0.)</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T103413Z" creationid="babac_000" creationdate="20140429T103413Z">
+        <seg>La longueur d’une chaîne de caractères (comme tout tableau) est fixe et ne peut pas être modifiée une fois la chaîne créée. Dans le langage Lisp, les chaînes @emph{ne} se terminent @emph{pas} par un code de caractère distinctif. (Contrairement aux chaînes de caractères en C qui se terminent par un caractère de code @acronym{ASCII} 0.)</seg>
       </tuv>
     </tu>
     <tu>
@@ -4074,6 +4347,14 @@ renvoient sans changement si c'est déjà un nombre entier. Si
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>There are two text representations for non-@acronym{ASCII} characters in Emacs strings (and in buffers): unibyte and multibyte (@pxref{Text Representations}).  An @acronym{ASCII} character always occupies one byte in a string; in fact, when a string is all @acronym{ASCII}, there is no real difference between the unibyte and multibyte representations.  For most Lisp programming, you don't need to be concerned with these two representations.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T104153Z" creationid="babac_000" creationdate="20140429T104153Z">
+        <seg>Il y a deux façons de représenter le texte pour les caractères non-@acronym{ASCII} dans les chaînes d’Emacs (et dans les mémoires tampons) : l'uni- octet et le multi-octet (voir la section @xref{Text Representations}).  Un caractère @acronym{ASCII} occupe toujours un octet dans une chaîne ; en fait, quand une chaîne est entièrement en @acronym{ASCII}, il n’y a pas de réelle différence entre les représentations uni-octet etmulti-octet . Pour la plupart des programmes Lisp, vous n’avez pas besoin de vous préoccuper de ces deux représentations.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>There is another wrinkle: because floating point arithmetic is not exact, it is often a bad idea to check for equality of two floating point values.  Usually it is better to test for approximate equality.  Here's a function to do this:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031702Z">
@@ -4237,6 +4518,30 @@ produit. Si aucun argument n'est donné, @code{*} retourne 1.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function returns @code{t} if @var{object} is a string or a character (i.e., an integer), @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105947Z" creationid="babac_000" creationdate="20140429T105947Z">
+        <seg>Cette function retourne @code{t} si @var{objet} est une chaîne ou un caractère (c-à-d un entier), sinon @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns @code{t} if @var{object} is a string or nil, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105739Z" creationid="babac_000" creationdate="20140429T105739Z">
+        <seg>Cette fonction retourne @code{t} si @var{objet} est une chaîne ou nil, sinon @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns @code{t} if @var{object} is a string, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105501Z" creationid="babac_000" creationdate="20140429T105501Z">
+        <seg>Cette fonction retourne @code{t} si @var{objet} est une chaîne, sinon @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function returns @code{t} if @var{object} is a symbol, @code{nil} otherwise.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4299,6 +4604,14 @@ répétés renvoient a une série de nombres entiers pseudo-aléatoires.</seg>
         <seg>Cette fonction renvoie une chaine décrivant la version d'Emacs qui est
 en fonction. Il est utile d'inclure cette chaine dans des rapports de
 bogue.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns a string made up of @var{count} repetitions of @var{character}.  If @var{count} is negative, an error is signaled.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T110243Z" creationid="babac_000" creationdate="20140429T110243Z">
+        <seg>Cette fonction retourne une chaîne faite de @var{n} répétitions de @var{caractere}.  Si @var{n} est négatif, une erreur est soulevée.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4725,6 +5038,14 @@ machine.</seg>
       <tuv lang="fr-fr">
         <seg>Ceci renvoie @var{number}, converti en nombre entier en arrondissant
 vers le haut (vers plus l'infini).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This returns a string containing the characters @var{characters}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T110554Z" creationid="babac_000" creationdate="20140429T110554Z">
+        <seg>Cette fonction retourne une chaîne contenant les caractères @var{caracteres}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6001,6 +6322,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>case-replace</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>char-or-string-p object</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105743Z" creationid="babac_000" creationdate="20140429T105743Z">
+        <seg>char-or-string-p objet</seg>
       </tuv>
     </tu>
     <tu>
@@ -7417,6 +7746,14 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>make-string count character</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T110054Z" creationid="babac_000" creationdate="20140429T110054Z">
+        <seg>make-string n caractere</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>make-symbol name</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -8233,6 +8570,14 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>string &amp;rest characters</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T110534Z" creationid="babac_000" creationdate="20140429T110534Z">
+        <seg>string &amp;rest caracteres</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>string-chars-consed</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -8241,10 +8586,26 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>string-or-null-p object</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105511Z" creationid="babac_000" creationdate="20140429T105511Z">
+        <seg>string-or-null-p objet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>string-to-int</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>string-to-int</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>stringp object</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105346Z" creationid="babac_000" creationdate="20140429T105346Z">
+        <seg>stringp objet</seg>
       </tuv>
     </tu>
     <tu>
