@@ -5152,6 +5152,14 @@ non sortie.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The weakness of a hash table specifies whether the presence of a key or value in the hash table preserves it from garbage collection.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213946Z">
+        <seg>La valeur de faiblesse d'une table de hachage spécifie si la présence d'une clé ou d'une valeur dans la table de hachage la préserve d'être récupérée par le ramasse-miettes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>There are four functions to convert floating point numbers to integers; they differ in how they round.  All accept an argument @var{number} and an optional argument @var{divisor}.  Both arguments may be integers or floating point numbers.  @var{divisor} may also be @code{nil}.  If @var{divisor} is @code{nil} or omitted, these functions convert @var{number} to an integer, or return it unchanged if it already is an integer.  If @var{divisor} is non-@code{nil}, they divide @var{number} by @var{divisor} and convert the result to an integer.  An @code{arith-error} results if @var{divisor} is 0.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031902Z">
@@ -6313,6 +6321,14 @@ nombres sous leur forme binaire.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Two Lisp objects are ``the same,'' as keys, if they are equal according to @code{equal}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213856Z">
+        <seg>Deux objets Lisp sont ``les mêmes'', en tant que clés, s'ils sont égaux d'après la fonction @code{equal}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Type Predicates for Numbers</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -6508,6 +6524,14 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Vous pouvez tester si n'importe quel objet Lisp est un symbole avec @code{symbolp} :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>You can use @code{define-hash-table-test} (@pxref{Defining Hash}) to define additional possibilities for @var{test}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213929Z">
+        <seg>Vous pouvez utilisez @code{define-hash-table-test} (@pxref{Defining Hash}) pour définir des possibilités supplémentaires pour la fonction @var{test}.</seg>
       </tuv>
     </tu>
     <tu>
