@@ -4215,6 +4215,14 @@ Voir aussi la fonction @code{elt}, dans la partie @ref{Sequence Functions}.</seg
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Several keywords make sense in @code{make-hash-table}, but the only two that you really need to know about are @code{:test} and @code{:weakness}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213550Z">
+        <seg>Plusieurs mots-clés ont une signification pour la fonction @code{make-hash-table} mais les deux que vous devez vraiment connaître sont @code{:test} et @code{:weakness}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Shifting a pattern of bits two places to the left produces results like this (with 8-bit binary numbers):</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032319Z">
@@ -5296,6 +5304,14 @@ donné, @code{+} retourne 0.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function creates a new hash table according to the specified arguments.  The arguments should consist of alternating keywords (particular symbols recognized specially) and values corresponding to them.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213520Z">
+        <seg>Cette fonction crée une table de hachage selon les arguments spécifiés. Les arguments doivent être des mots-clés différents (surtout des symboles particulièrement reconnus) et les valeurs leur correspondants.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function creates and returns a new, empty abbrev table---an obarray containing no symbols.  It is a vector filled with zeros.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -6161,6 +6177,14 @@ plus tard.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T203837Z">
         <seg>Cette fonction définit la table de casse courante du buffer à la valeur @var{table}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This specifies the method of key lookup for this hash table.  The default is @code{eql}; @code{eq} and @code{equal} are other alternatives:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213628Z">
+        <seg>Cela spécifie la méthode de recherche de la clé pour cette table de hachage. La valeur par défaut est @code{eql} ; @code{eq} et @code{equal} sont des alternatives :</seg>
       </tuv>
     </tu>
     <tu>
