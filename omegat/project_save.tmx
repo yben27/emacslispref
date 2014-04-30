@@ -3082,6 +3082,14 @@ les huit bits faibles du binaire modèle ; le reste est fait de zéro.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Here is an example of creating, examining, and updating a bool-vector.  Note that the printed form represents up to 8 boolean values as a single character.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140430T202130Z">
+        <seg>Voici un exemple de création, d'examen et de mise-à-jour d'un vecteur-booléen. Il faut noter que la forme affichée représente jusqu'à 8 valeurs booléennes comme un seul caractère.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Here the index for @samp{a} is 0, the index for @samp{b} is 1, and the index for @samp{c} is 2.  Thus, three letters, @samp{abc}, are copied from the string @code{"abcdefg"}.  The index 3 marks the character position up to which the substring is copied.  The character whose index is 3 is actually the fourth character in the string.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T121655Z">
@@ -4997,6 +5005,14 @@ d'Emacs en service.</seg>
       <tuv lang="fr-fr">
         <seg>Ces fonctions mathématiques autorisent des nombres entiers aussi bien
 que des nombres à virgule flottante comme arguments.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>These results make sense because the binary codes for control-_ and control-W are 11111 and 10111, respectively.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140430T202137Z">
+        <seg>Ces résultats ont un sens parce que les codes binaires pour control-_ et control-W sont respectivement 11111 et 10111.</seg>
       </tuv>
     </tu>
     <tu>
