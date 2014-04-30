@@ -3612,6 +3612,14 @@ matériel.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Keys which are numbers are ``the same'' if they are @code{equal}, that is, if they are equal in value and either both are integers or both are floating point numbers; otherwise, two distinct objects are never ``the same.''</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213737Z">
+        <seg>Les clés qui sont des nombres sont ``identiques'' si elles sont @code{equal}, c'est-à-dire si elles sont égales par leurs valeurs et si elles sont chacunes des entiers (@code{integers}) ou des nombres à virgule flottante ; sinon deux objets distincts ne sont jamais ``les mêmes''.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Like a buffer, a string can contain text properties for the characters in it, as well as the characters themselves.  @xref{Text Properties}.  All the Lisp primitives that copy text from strings to buffers or other strings also copy the properties of the characters being copied.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105043Z">
