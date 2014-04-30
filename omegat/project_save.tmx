@@ -3325,6 +3325,14 @@ pour être non négative et inférieure à @var{limit}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>If @var{rehash-size} is an integer, it should be positive, and the hash table grows by adding that much to the nominal size.  If @var{rehash-size} is a floating point number, it had better be greater than 1, and the hash table grows by multiplying the old size by that number.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214711Z">
+        <seg>Si @var{rehash-size} est un entier, il devrait être positif, et la table de hachage s'agrandira en partant de sa valeur nominale et en y ajoutant cet entier positif. Si @var{rehash-size} est un nombre à virgule flottante, il vaut mieux qu'il soit supérieur à 1 et la table de hachage s'agrandira en multipliant l'ancienne taille par ce nombre.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>If @var{weak} is @code{key-and-value} or @code{t}, both the key and the value must be live in order to preserve the association.  Thus, the hash table does not protect either keys or values from garbage collection; if either one is collected as garbage, that removes the association.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214324Z">
@@ -4743,6 +4751,22 @@ imprimé à côté de la marge.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T212653Z">
         <seg>Les correspondances dans une table de hachage n'ont pas d'ordre particulier.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The default for @var{weak} is @code{nil}, so that all keys and values referenced in the hash table are preserved from garbage collection.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214429Z">
+        <seg>La valeur par défaut pour @var{weak} est @code{nil}. Ainsi toutes les clés et toutes les valeurs référencées dans la table de hachage sont protégées du ramasse-miettes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The default size is 65.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214452Z">
+        <seg>La valeur par défaut est 65.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6237,6 +6261,14 @@ plus tard.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This specifies a hint for how many associations you plan to store in the hash table.  If you know the approximate number, you can make things a little more efficient by specifying it this way.  If you specify too small a size, the hash table will grow automatically when necessary, but doing that takes some extra time.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214444Z">
+        <seg>Cela spécifie une astuce pour bon nombre d'associations que vous prévoyez de stocker dans la table de hachage. Si vous connaissez le nombre approximatif, vous pouvez rendre les choses un peu plus efficaces en les spécificant ainsi. Si vous spécifiez une taille trop petite, la table de hachage s'agrandira automatiquement quand c'est nécessaire mais cela nécessite du temps supplémentaire.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This specifies the method of key lookup for this hash table.  The default is @code{eql}; @code{eq} and @code{equal} are other alternatives:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213628Z">
@@ -6507,6 +6539,14 @@ contacter la maintenance d'Emacs plus rapidement, envoyer le courrier
 nouveau formulaire pour que le Lisp l'évalue. Nous montrons le
 résultat de l'expansion avec @samp{@expansion{}}. Nous pouvons ou non
 montrer le résultat de l'évaluation du formulaire augmenté.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>When you add an association to a hash table and the table is ``full,'' it grows automatically.  This value specifies how to make the hash table larger, at that time.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214635Z">
+        <seg>Quand on ajoute une association à une table de hachage et que la table est ``pleine'', elle s'agrandit automatiquement. Cette valeur spécifie comment rendre la table de hachage plus grande à ce moment.</seg>
       </tuv>
     </tu>
     <tu>
