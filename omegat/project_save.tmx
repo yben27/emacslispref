@@ -4737,6 +4737,14 @@ machine de 29 bits :</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The function cell or the value cell may be @dfn{void}, which means that the cell does not reference any object.  (This is not the same thing as holding the symbol @code{void}, nor the same as holding the symbol @code{nil}.)  Examining a function or value cell that is void results in an error, such as @samp{Symbol's value as variable is void}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210818Z">
+        <seg>La cellule de fonction ou cellule de valeur peut être @dfn{void}, ce qui signifie que le cellule ne référence aucun objet. (Cela n'est pas la même chose que contenir le symbole @code{void} ou le symbole @code{nil}.) Interroger une cellule de fonction ou de valeur qui est void résulte en une erreur, comme @samp{Symbol's value as variable is void}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The functions @code{ffloor}, @code{fceiling}, @code{fround}, and @code{ftruncate} take a floating point argument and return a floating point result whose value is a nearby integer.  @code{ffloor} returns the nearest integer below; @code{fceiling}, the nearest integer above; @code{ftruncate}, the nearest integer in the direction towards zero; @code{fround}, the nearest integer.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032308Z">
@@ -4855,6 +4863,14 @@ version 20.3 d'Emacs, la valeur est 3.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210120Z">
         <seg>La cellule du nom d'affichage contient la chaîne de caractère qui est le nom du symbole. Comme les symboles sont représentés textuellement par leurs noms, il est important de ne pas avoir deux symboles avec le même nom. Le lecteur Lisp s'assure de ceci : à chaque fois qu'il lit un symbole, il regarde s'il existe déjà un symbole avec le même nom avant de créer le nouveau. (Dans GNU Emacs Lisp, cette recherche utilise un algorithme de hachage et un obarray ; voir @ref{Creating Symbols}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The property list cell normally should hold a correctly formatted property list (@pxref{Property Lists}), as a number of functions expect to see a property list there.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210728Z">
+        <seg>La cellule de liste de propriétés devrait normalement contenir une liste de propriétés correctement formatée (@pxref{Property Lists}) vu qu'un certain nombre de fonctions s'attendent à voir une liste de propriétés à cet endroit.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6288,6 +6304,14 @@ pas attacher de signification au manque d'une réponse---votre courrier
 @emph{devrait} être pris en compte en temps voulu. Si vous voulez
 contacter la maintenance d'Emacs plus rapidement, envoyer le courrier
 à @code{bug-gnu-emacs@@gnu.org}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>We often refer to ``the function @code{foo}'' when we really mean the function stored in the function cell of the symbol @code{foo}.  We make the distinction explicit only when necessary.  In normal usage, the function cell usually contains a function (@pxref{Functions}) or a macro (@pxref{Macros}), as that is what the Lisp interpreter expects to see there (@pxref{Evaluation}).  Keyboard macros (@pxref{Keyboard Macros}), keymaps (@pxref{Keymaps}) and autoload objects (@pxref{Autoloading}) are also sometimes stored in the function cells of symbols.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210714Z">
+        <seg>On se réfère souvent à ``la fonction @code{foo}'' quand on veut parler de la fonction stockée dans la cellule de fonction du symbole @code{foo}. On distingue explicitement seulement quand c'est nécessaire. Dans une utilisation normale, en général la cellule de fonction contient une fonction (@pxref{Functions}) ou une macro (@pxref{Macros}), comme c'est ce que l'interpréteur Lisp s'attend à voir là (@pxref{Evaluation}). Les macros de clavier (@pxref{Keyboard Macros}), les keymaps (@pxref{Keymaps}) et des objets auto-chargeables (@pxref{Autoloading}) sont aussi parfois stockés dans les cellules de fonction des symboles.</seg>
       </tuv>
     </tu>
     <tu>
