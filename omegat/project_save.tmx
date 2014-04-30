@@ -5075,6 +5075,14 @@ de référence GNU Emacs Lisp, correspondant à la version
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This command displays a description of the contents of the current buffer's case table.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T204643Z">
+        <seg>Cette commande affiche une description du contenu de la table de casse du buffer courant.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function acts like @code{eq} except when both arguments are numbers.  It compares numbers by type and numeric value, so that @code{(eql 1.0 1)} returns @code{nil}, but @code{(eql 1.0 1.0)} and @code{(eql 1 1)} both return @code{t}.</seg>
       </tuv>
       <tuv lang="fr-fr">
