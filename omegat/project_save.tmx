@@ -208,8 +208,8 @@
       <tuv lang="en-us">
         <seg>(The term ``hash notation'' refers to the initial @samp{#} character---@pxref{Printed Representation}---and has nothing to do with the term ``hash table.'')</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213133Z">
-        <seg>(Le terme ``notation de hachage'' se réfère aucorrespond au caractère @samp{#} --- @pxref{Printed Representation} --- et n'a rien à voir avec le terme ``table de hachage''.)</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213207Z">
+        <seg>(Le terme ``notation de hachage'' correspond au caractère @samp{#} --- @pxref{Printed Representation} --- et n'a rien à voir avec le terme ``table de hachage''.)</seg>
       </tuv>
     </tu>
     <tu>
@@ -2489,6 +2489,14 @@ D. Zuhn.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Creating Hash Tables</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213427Z">
+        <seg>Création de tables de hachage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Creating Strings</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102149Z">
@@ -3837,6 +3845,14 @@ Vous pouvez l'employer comme n'importe quel autre langage de programmation.</seg
       </tuv>
       <tuv lang="fr-fr">
         <seg>Conversions numériques</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Obarrays are also a kind of hash table, but they are a different type of object and are used only for recording interned symbols (@pxref{Creating Symbols}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213226Z">
+        <seg>Les obarrays sont aussi une sorte de table de hachage mais ils sont un type d'objet différent et sont seulement utilisés pour enregistrer des symboles internes (@pxref{Creating Symbols}).</seg>
       </tuv>
     </tu>
     <tu>
