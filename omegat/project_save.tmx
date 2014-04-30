@@ -2690,6 +2690,14 @@ nouveau logiciel de GNU qui réclame l'extensibilité.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Emacs Lisp provides a general-purpose hash table data type, along with a series of functions for operating on them.  Hash tables have no read syntax, and print in hash notation, like this:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T212830Z">
+        <seg>Lisp Emacs fournit un type de données universel de table de hachage avec une série de fonctions pour les manipuler. Les tables de hachage n'ont pas de syntaxe de lecture, et l'affichage d'une notation de hachage est le suivant :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Emacs Lisp provides the traditional four arithmetic operations: addition, subtraction, multiplication, and division.  Remainder and modulus functions supplement the division functions.  The functions to add or subtract 1 are provided because they are traditional in Lisp and commonly used.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T031949Z">
@@ -3644,6 +3652,14 @@ commandes d'édition.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>and, or, not logique et décalage.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Lookup in a hash table is extremely fast for large tables---in fact, the time required is essentially @emph{independent} of how many elements are stored in the table.  For smaller tables (a few tens of elements)  alists may still be faster because hash tables have a more-or-less constant overhead.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T212650Z">
+        <seg>Chercher dans une table de hachage est extrêmement rapide pour les grandes tables. En fait, le temps nécessaire est, avant tout, @emph{indépendant} du nombre d'éléments contenus dans la table. Pour les plus petites tables (quelques dizaines d'éléments), les listes d'association peuvent quand même être plus rapides parce que les tables de hachage ont un temps système plus-ou-moins constant.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4651,6 +4667,14 @@ imprimé à côté de la marge.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The correspondences in a hash table are in no particular order.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T212653Z">
+        <seg>Les correspondances dans une table de hachage n'ont pas d'ordre particulier.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The description follows on succeeding lines, sometimes with examples.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -5130,6 +5154,14 @@ pour faire ceci:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192032Z">
         <seg>Il n'y a pas de fonction particulière pour accéder aux valeurs par défaut d'une char-table. Pour cela, utilisez @code{char-table-range} (voir ci-dessous).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>There is no way to share structure between two hash tables, the way two alists can share a common tail.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T212724Z">
+        <seg>Il n'est pas possible de partager une structure entre deux tables de hachage, contrairement à deux listes d'association dont la queue de liste peut être commune.</seg>
       </tuv>
     </tu>
     <tu>
