@@ -4923,6 +4923,14 @@ version 20.3 d'Emacs, la valeur est 3.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The principal function for creating a hash table is @code{make-hash-table}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213456Z">
+        <seg>La fonction principale pour créer une table de hachage est @code{make-hash-table}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The print name cell always holds a string, and cannot be changed.  The other three cells can be set individually to any specified Lisp object.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210025Z">
@@ -7641,6 +7649,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>cos arg</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>creating hash tables</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213441Z">
+        <seg>création de tables de hachage</seg>
       </tuv>
     </tu>
     <tu>
