@@ -206,6 +206,14 @@
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>(The term ``hash notation'' refers to the initial @samp{#} character---@pxref{Printed Representation}---and has nothing to do with the term ``hash table.'')</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213133Z">
+        <seg>(Le terme ``notation de hachage'' se réfère aucorrespond au caractère @samp{#} --- @pxref{Printed Representation} --- et n'a rien à voir avec le terme ``table de hachage''.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>(We have inserted spaces between groups of 4 bits, and two spaces between groups of 8 bits, to make the binary integer easier to read.)</seg>
       </tuv>
       <tuv lang="fr-fr">
