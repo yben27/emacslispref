@@ -2174,6 +2174,14 @@ manière extrêmement non-standard. @xref{Création de symboles}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Bool-vectors</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140430T201618Z">
+        <seg>Vecteurs-booléens</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Buffer Text Notation</seg>
       </tuv>
       <tuv lang="fr-fr">
