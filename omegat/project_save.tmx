@@ -2624,6 +2624,14 @@ appelé Scheme.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Each symbol has four components (or ``cells''), each of which references another object:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205512Z">
+        <seg>Chaque symbole a quatre composants (ou ``cellules''), chacun référençant un autre objet :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Elisp: (elisp)</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120726Z">
@@ -3877,6 +3885,14 @@ qu'un certain minimum (négatif).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Print name</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205519Z">
+        <seg>Nom d'affichage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Printing Notation</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4488,6 +4504,14 @@ autrement. 0 est considéré non négatif.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T204106Z">
         <seg>La macro @code{with-case-table} enregistre la table de casse courante, définit la table de casse courante à la valeur du paramètre @var{table}, évalue la forme du paramètre @var{body}, et enfin restaure la table de casse. La valeur de retour est la valeur de la dernière forme de @var{body}. La table de casse est restauré même dans le cas où il y a une sortie anormale par la levée d'une exception (@code{throw}) ou par une erreur (@pxref{Nonlocal Exits}).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The @dfn{print name cell} holds a string that names the symbol for reading and printing.  See @code{symbol-name} in @ref{Creating Symbols}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205635Z">
+        <seg>La @dfn{cellule de nom d'affichage} contient une chaîne de caractère qui nomme le symbole pour la lecture et l'affichage. Voir @code{symbol-name} dans @ref{Creating Symbols}. </seg>
       </tuv>
     </tu>
     <tu>
@@ -9185,6 +9209,14 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>print name cell</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205543Z">
+        <seg>Cellule de nom d'affichage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>print-circle</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -9661,6 +9693,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>symbole</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>symbol components</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205456Z">
+        <seg>Composants des symboles</seg>
       </tuv>
     </tu>
     <tu>
