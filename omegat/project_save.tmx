@@ -1999,6 +1999,14 @@ commencement.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Any two distinct Lisp objects are ``different'' as keys.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213802Z">
+        <seg>Deux objets Lisp distincts, n'importe lesquels, sont ``differents'' en tant que clés.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Appendices</seg>
       </tuv>
       <tuv lang="fr-fr">
