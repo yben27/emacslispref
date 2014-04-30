@@ -5471,6 +5471,14 @@ argument peut être un nombre ou un marqueur.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function enters an association for @var{key} in @var{table}, with value @var{value}.  If @var{key} already has an association in @var{table}, @var{value} replaces the old associated value.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215212Z">
+        <seg>Cette fonction insère une association avec pour clé @var{key} et pour valeur @var{value} dans la table de hachage @code{table}. Si @var{key} a déjà une association dans @var{table}, @var{value} remplace l'ancienne valeur associée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function fills the array @var{array} with @var{object}, so that each element of @var{array} is @var{object}.  It returns @var{array}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182855Z">
@@ -5516,6 +5524,14 @@ si nous continuons,</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function looks up @var{key} in @var{table}, and returns its associated @var{value}---or @var{default}, if @var{key} has no association in @var{table}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215106Z">
+        <seg>Cette fonction recherche la valeur @var{key} dans la table @var{table}, et retourne sa valeur associée @var{value} --- ou la valeur @var{default} si @var{key} n'a pas d'association dans la table @var{table}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function makes @var{char} case-invariant, with syntax @var{syntax}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T204600Z">
@@ -5545,6 +5561,14 @@ si nous continuons,</seg>
       <tuv lang="fr-fr">
         <seg>Cette fonction multiplie ses arguments entre elles, et renvoie le
 produit. Si aucun argument n'est donné, @code{*} retourne 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function removes the association for @var{key} from @var{table}, if there is one.  If @var{key} has no association, @code{remhash} does nothing.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215251Z">
+        <seg>Cette fonction retire l'association ayant comme clé @var{key} de la table @var{table}, s'il y en a une. Si @var{key} n'a pas d'association, @code{remhash} ne fait rien.</seg>
       </tuv>
     </tu>
     <tu>
