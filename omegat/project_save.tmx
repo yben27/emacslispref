@@ -1649,6 +1649,14 @@ indiqué avec @samp{@result{}} :</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>A bool-vector is much like a vector, except that it stores only the values @code{t} and @code{nil}.  If you try to store any non-@code{nil} value into an element of the bool-vector, the effect is to store @code{t} there.  As with all arrays, bool-vector indices start from 0, and the length cannot be changed once the bool-vector is created.  Bool-vectors are constants when evaluated.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140430T201756Z">
+        <seg>Un vecteur-booléen est presque comme un vecteur sauf qu'il stocke seulement des valeurs de type @code{t} et la valeur @code{nil}. Si on essaie de stocker une valeur qui n'est pas @code{nil} dans un élément du vecteur-booléen, c'est @code{t} qui s'y trouvera stocké. Comme avec tous les tableaux, les indices du vecteur-booléen commencent à 0 et la longueur ne peut pas être changée une fois que le vecteur-booléen est créé. Les vecteurs-booléen sont des constantes quand ils sont évalués.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>A certain amount of Common Lisp emulation is available via the @file{cl} library.  @inforef{Top, Overview, cl}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -3957,6 +3965,14 @@ qu'un certain minimum (négatif).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Return a new bool-vector of @var{length} elements, each one initialized to @var{initial}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140430T201921Z">
+        <seg>Retourne un nouveau vecteur-booléen contenant un nombre @var{length} d'éléments, chacun initialisé à la valeur de l'argument @var{initial}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Return a newly created char-table, with subtype @var{subtype}.  Each element is initialized to @var{init}, which defaults to @code{nil}.  You cannot alter the subtype of a char-table after the char-table is created.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T191143Z">
@@ -4902,6 +4918,14 @@ renvoient sans changement si c'est déjà un nombre entier. Si
 @var{divisor} est non-@code{nil}, elles divisent @var{number} par
 @var{divisor} et convertissent le résultat en nombre entier. Un
 @code{arith-error} en résulte si @var{divisor} est 0.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>There are two special functions for working with bool-vectors; aside from that, you manipulate them with same functions used for other kinds of arrays.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140430T201903Z">
+        <seg>Il y a deux fonctions particulières pour le travail avec les vecteurs-booléen ; à part cela, on les manipule avec les mêmes fonctions que pour les autres types de tableaux.</seg>
       </tuv>
     </tu>
     <tu>
