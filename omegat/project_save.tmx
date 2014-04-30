@@ -4715,6 +4715,14 @@ imprimé à côté de la marge.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The four functions @code{symbol-name}, @code{symbol-value}, @code{symbol-plist}, and @code{symbol-function} return the contents of the four cells of a symbol.  Here as an example we show the contents of the four cells of the symbol @code{buffer-file-name}:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210857Z">
+        <seg>Les quatre fonctions @code{symbol-name}, @code{symbol-value}, @code{symbol-plist} et @code{symbol-function} retournent les contenus de chacune des quatre cellules d'un symbole. Ici par exemple, on affiche les contenus des quatre cellules du symbole @code{butter-file-name} :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The function @code{foo} subtracts @var{integer1} from @var{integer2}, then adds all the rest of the arguments to the result.  If @var{integer2} is not supplied, then the number 19 is used by default.</seg>
       </tuv>
       <tuv lang="fr-fr">
