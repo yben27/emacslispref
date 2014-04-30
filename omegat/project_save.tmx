@@ -3088,6 +3088,14 @@ relient spécifiquement à l'édition.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Hash Table Access</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215000Z">
+        <seg>Accès à une table de hachage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Hash Tables</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4771,6 +4779,14 @@ imprimé à côté de la marge.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The default value is 1.5.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214717Z">
+        <seg>La valeur par défaut est 1.5.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The description follows on succeeding lines, sometimes with examples.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -5492,6 +5508,14 @@ si nous continuons,</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function is obsolete. Use @code{make-hash-table} instead.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214901Z">
+        <seg>Cette fonction est obsolète. Utilisez @code{make-hash-table} à la place.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function makes @var{char} case-invariant, with syntax @var{syntax}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T204600Z">
@@ -6032,6 +6056,14 @@ Lisp, correspondant à la version d'Emacs @value{EMACSVER}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This is equivalent to @code{make-hash-table}, but with a different style argument list.  The argument @var{test} specifies the method of key lookup.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214851Z">
+        <seg>Cela est équivalent à @code{make-hash-table}, mais avec un agencement différent de la liste d'arguments. L'argument @var{test} spécifie la méthode de recherche de clé.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This is the exponential function; it returns</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032429Z">
@@ -6243,6 +6275,14 @@ d'abréviations.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This section describes the functions for accessing and storing associations in a hash table.  In general, any Lisp object can be used as a hash key, unless the comparison method imposes limits.  Any Lisp object can also be used as the value.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215009Z">
+        <seg>Cette section décrit les fonctions pour accéder et stocker des associations dans une table de hachage. En général, n'importe quel objet Lisp peut être utilisé comme une clé de hachage, sauf si la méthode de comparaison impose des limites. Tout objet Lisp peut aussi être utilisé comme une valeur.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This section explains the notational conventions that are used in this manual.  You may want to skip this section and refer back to it later.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -6265,6 +6305,14 @@ plus tard.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214444Z">
         <seg>Cela spécifie une astuce pour bon nombre d'associations que vous prévoyez de stocker dans la table de hachage. Si vous connaissez le nombre approximatif, vous pouvez rendre les choses un peu plus efficaces en les spécificant ainsi. Si vous spécifiez une taille trop petite, la table de hachage s'agrandira automatiquement quand c'est nécessaire mais cela nécessite du temps supplémentaire.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This specifies the criterion for when the hash table is ``full'' (so it should be made larger).  The value, @var{threshold}, should be a positive floating point number, no greater than 1.  The hash table is ``full'' whenever the actual number of entries exceeds this fraction of the nominal size.  The default for @var{threshold} is 0.8.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214813Z">
+        <seg>Cela spécifie le critère où la table de hachage est ``pleine'' (ainsi il devrait être défini grand). La valeur @var{threshold} devrait être soit un nombre positif à virgule flottante et inférieur à 1. La table de hachage est ``pleine'' quand le nombre d'entrées dépasse cette fraction de la taille nominale. La valeur par défaut pour @var{threshold} est 0.8.</seg>
       </tuv>
     </tu>
     <tu>
