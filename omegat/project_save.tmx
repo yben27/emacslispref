@@ -1322,6 +1322,22 @@ qu'il a un champ limité des valeurs de nombre entier.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@b{Common Lisp note:} In Common Lisp, @code{clrhash} returns the empty @var{table}.  In Emacs Lisp, it returns @code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215554Z">
+        <seg>@b{Common Lisp note :} En Common Lisp, @code{clrhash} retourne la table vide @var{table}. En Lisp Emacs, elle retourne @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>@b{Common Lisp note:} In Common Lisp, @code{remhash} returns non-@code{nil} if it actually removed an association and @code{nil} otherwise.  In Emacs Lisp, @code{remhash} always returns @code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215404Z">
+        <seg>@b{Common Lisp note :} En Common Lisp, @code{remhash} retourne non-@code{nil} si elle a réellement retiré une association et sinon @code{nil}. Dans Lisp Emacs, @code{remhash} retourne toujours @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@code{"Symbol's value as variable is void"}@* @xref{Accessing Variables}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -5561,6 +5577,14 @@ si nous continuons,</seg>
       <tuv lang="fr-fr">
         <seg>Cette fonction multiplie ses arguments entre elles, et renvoie le
 produit. Si aucun argument n'est donné, @code{*} retourne 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function removes all the associations from hash table @var{table}, so that it becomes empty.  This is also called @dfn{clearing} the hash table.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215444Z">
+        <seg>Cette fonction retire toutes les associations de la table de hachage @var{table}, ainsi elle devient vide. Cela s'appelle aussi @dfn{nettoyer} la table de hachage.</seg>
       </tuv>
     </tu>
     <tu>
