@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.6.3_7" segtype="paragraph" srclang="en-us"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.6.3_9" segtype="paragraph" srclang="en-us"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -8535,6 +8535,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>hash tables</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T212325Z">
+        <seg>Tables de hachages</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>header-line-format</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -8821,6 +8829,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>logb number</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lookup tables</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T212337Z">
+        <seg>tables de recherche</seg>
       </tuv>
     </tu>
     <tu>
