@@ -3325,6 +3325,30 @@ pour être non négative et inférieure à @var{limit}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>If @var{weak} is @code{key-and-value} or @code{t}, both the key and the value must be live in order to preserve the association.  Thus, the hash table does not protect either keys or values from garbage collection; if either one is collected as garbage, that removes the association.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214324Z">
+        <seg>Si @var{weak} vaut @code{key-and-value} ou @code{t}, à la fois la clé et la valeur doivent être référencées pour conserver l'association. Ainsi, la table de hachage ne protège ni les clés ni les valeurs d'être récupérées par le ramasse-miettes ; si l'une des deux est ramassée, cela enlève l'association.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>If @var{weak} is @code{key-or-value}, either the key or the value can preserve the association.  Thus, associations are removed from the hash table when both their key and value would be collected as garbage (if not for references from weak hash tables).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214405Z">
+        <seg>Si @var{weak} vaut @code{key-or-value}, ni la clé ni la valeur ne peuvent conserver l'association. Ainsi, les associations sont retirées de la table de hachage quand à la fois la clé et la valeur peuvent être récupérées par le ramasse-miettes (si elles sont pas référencées dans de faibles tables de hachage).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>If @var{weak} is @code{value}, then the hash table does not prevent values from being collected as garbage (if they are not referenced anywhere else); if a particular value does get collected, the corresponding association is removed from the hash table.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214350Z">
+        <seg>Si @var{weak} vaut @code{value}, alors la table de hachage n'empêche pas ses clés d'être détruites par le ramasse-miettes (si elles ne sont référencées nulle part ailleurs) ; si une valeur particulière se fait ramasser, l'association correspondante est enlevée de la table de hachage.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>If all the arguments are integers, then the result is an integer too.  This means the result has to be rounded.  On most machines, the result is rounded towards zero after each division, but some machines may round differently with negative arguments.  This is because the Lisp function @code{/} is implemented using the C division operator, which also permits machine-dependent rounding.  As a practical matter, all known machines round in the standard fashion.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -5148,6 +5172,14 @@ il est incrémenté chaque fois que vous construisez Emacs dans
 n'importe quel répertoire donné. Une valeur avec quatre composants
 numériques, tels que @code{"20.3.9.1"}, indique une version d'essai
 non sortie.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The value, @var{weak}, must be one of @code{nil}, @code{key}, @code{value}, @code{key-or-value}, @code{key-and-value}, or @code{t} which is an alias for @code{key-and-value}.  If @var{weak} is @code{key} then the hash table does not prevent its keys from being collected as garbage (if they are not referenced anywhere else); if a particular key does get collected, the corresponding association is removed from the hash table.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214208Z">
+        <seg>La valeur de @var{weak} doit prendre une des valeurs suivantes @code{nil}, @code{key}, @code{value}, @code{key-or-value}, @code{key-and-value} ou @code{t} qui est un alias pour @code{key-and-value}. Si @var{weak} a pour valeur @var{key} alors la table de hachage n'empêche pas ses clés d'être détruites par le ramasse-miettes (si elles ne sont référencées nulle part ailleurs) ; si une clé particulière se fait ramasser, l'association correspondante est enlevée de la table de hachage.</seg>
       </tuv>
     </tu>
     <tu>
