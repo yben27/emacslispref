@@ -3064,6 +3064,14 @@ relient spécifiquement à l'édition.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Here are the functions for working with case tables:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T203628Z">
+        <seg>Voici les fonctions pour travailler avec les tables de casse :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Here are two examples of @code{lsh}, shifting a pattern of bits one place to the left.  We show only the low-order eight bits of the binary pattern; the rest are all zero.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032313Z">
@@ -5736,6 +5744,14 @@ manual, dans un effort se prolongeant sur plusieurs années. Robert
 J. Chassell a aidé à passer en revue et éditer le manuel, avec l'appui
 de la Defense Advanced Research Projects Agency, ARPA Ordre 6082, avec
 l'accord de Warren A. Hunt, Jr.@: de Computational Logic, Inc.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This predicate returns non-@code{nil} if @var{object} is a valid case table.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T203710Z">
+        <seg>Ce prédicat retourne non-@code{nil} si @var{object} est une table de casse valide.</seg>
       </tuv>
     </tu>
     <tu>
