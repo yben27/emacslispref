@@ -3917,6 +3917,14 @@ qu'un certain minimum (négatif).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Property list</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205853Z">
+        <seg>Liste de propriétés</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Q</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4508,10 +4516,34 @@ autrement. 0 est considéré non négatif.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The @dfn{function cell} holds the function definition of the symbol.  When a symbol is used as a function, its function definition is used in its place.  This cell is also used to make a symbol stand for a keymap or a keyboard macro, for editor command execution.  Because each symbol has separate value and function cells, variables names and function names do not conflict.  See @code{symbol-function} in @ref{Function Cells}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205848Z">
+        <seg>La @dfn{cellule de fonction} contient la définition de la fonction du symbole. Quand un symbole est utilisé comme une fonction, sa définition de fonction est utilisée à la place. Cette cellule est aussi utilisée pour qu'un symbole représente une touche de clavier ou une combinaison de touches pour que l'éditeur commande l'exécution. Comme chaque symbole a des valeurs et des cellules de fonction séparées, les noms de variables et les noms de fonctions ne rentrent pas en conflit. Voir @code{symbol-function} dans @ref{Function Cells}. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The @dfn{print name cell} holds a string that names the symbol for reading and printing.  See @code{symbol-name} in @ref{Creating Symbols}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205635Z">
         <seg>La @dfn{cellule de nom d'affichage} contient une chaîne de caractère qui nomme le symbole pour la lecture et l'affichage. Voir @code{symbol-name} dans @ref{Creating Symbols}. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The @dfn{property list cell} holds the property list of the symbol.  See @code{symbol-plist} in @ref{Property Lists}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205917Z">
+        <seg>La @dfncellule de liste de propriétés contient le liste de propriétés du symbole. Voir symbol-plist dans in @ref{Property Lists}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The @dfn{value cell} holds the current value of the symbol as a variable.  When a symbol is used as a form, the value of the form is the contents of the symbol's value cell.  See @code{symbol-value} in @ref{Accessing Variables}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205736Z">
+        <seg>La @dfn{cellule de valeur} contient la valeur actuelle du symbole comme une variable. Quand un symbole est utilisé comme une forme, la valeur de la forme est le contenu de la cellule de valeur du symbole. Voir @code{symbol-value} dans @ref{Accessing Variable Values}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8343,6 +8375,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>function cell</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205927Z">
+        <seg>cellule de fonction</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>function, @code{foo}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -9211,8 +9251,8 @@ logarithmes naturels.</seg>
       <tuv lang="en-us">
         <seg>print name cell</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205543Z">
-        <seg>Cellule de nom d'affichage</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205932Z">
+        <seg>cellule de nom d'affichage</seg>
       </tuv>
     </tu>
     <tu>
@@ -9245,6 +9285,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>print-number-table</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>property list cell</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205922Z">
+        <seg>cellule de liste de propriétés</seg>
       </tuv>
     </tu>
     <tu>
@@ -9699,8 +9747,8 @@ logarithmes naturels.</seg>
       <tuv lang="en-us">
         <seg>symbol components</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205456Z">
-        <seg>Composants des symboles</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205941Z">
+        <seg>composants des symboles</seg>
       </tuv>
     </tu>
     <tu>
@@ -9957,6 +10005,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>user-init-file</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>value cell</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205930Z">
+        <seg>cellule de valeur</seg>
       </tuv>
     </tu>
     <tu>
