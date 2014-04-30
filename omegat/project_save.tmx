@@ -4198,6 +4198,14 @@ d'erreur sur une ligne commençant par @samp{@error{}}. Noter que
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Some language environments may modify the case conversions of @acronym{ASCII} characters; for example, in the Turkish language environment, the @acronym{ASCII} character @samp{I} is downcased into a Turkish ``dotless i''.  This can interfere with code that requires ordinary ASCII case conversion, such as implementations of @acronym{ASCII}-based network protocols.  In that case, use the @code{with-case-table} macro with the variable @var{ascii-case-table}, which stores the unmodified case table for the @acronym{ASCII} character set.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T204318Z">
+        <seg>Certains environnements de langage peuvent modifier les conversions de casse des caractères @acronym{ASCII} ; par exemple, dans l'environnement de langage turc, le caractère @acronym{ASCII} @samp{I} est transformé en bas de casse dans le ``dotless i'' turque . Cela peut interférer avec du code qui nécessite une conversion de casse @acronym{ASCII} ordinaire, comme les implémentations des protocoles de réseau basés sur @acronym{ASCII}. Dans ce cas, il faut utiliser la macro @code{with-case-table} avec la variable @var{ascii-case-table} qui stocke la table de casse non modifiée pour l'ensemble de caractères @acronym{ASCII}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Sometimes it is useful to compare numbers with @code{equal}; it treats two numbers as equal if they have the same data type (both integers, or both floating point) and the same value.  By contrast, @code{=} can treat an integer and a floating point number as equal.  @xref{Equality Predicates}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4472,6 +4480,14 @@ manière cumulée. S'il n'y a aucun argument, le résultat est 0.</seg>
 « whole-number-p ») teste pour voir si son argument est un nombre
 entier non négatif, et renvoie le @code{t} si oui, @code{nil}
 autrement. 0 est considéré non négatif.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The @code{with-case-table} macro saves the current case table, makes @var{table} the current case table, evaluates the @var{body} forms, and finally restores the case table.  The return value is the value of the last form in @var{body}.  The case table is restored even in case of an abnormal exit via @code{throw} or error (@pxref{Nonlocal Exits}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T204106Z">
+        <seg>La macro @code{with-case-table} enregistre la table de casse courante, définit la table de casse courante à la valeur du paramètre @var{table}, évalue la forme du paramètre @var{body}, et enfin restaure la table de casse. La valeur de retour est la valeur de la dernière forme de @var{body}. La table de casse est restauré même dans le cas où il y a une sortie anormale par la levée d'une exception (@code{throw}) ou par une erreur (@pxref{Nonlocal Exits}).</seg>
       </tuv>
     </tu>
     <tu>
