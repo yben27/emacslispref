@@ -5172,6 +5172,14 @@ si nous continuons,</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function makes @var{table} the standard case table, so that it will be used in any buffers created subsequently.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T203732Z">
+        <seg>Cette fonction transforme @var{table} en une table de casse normale pour qu'elle puisse être utilisée par n'importe quel buffer créé par la suite.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function multiplies its arguments together, and returns the product.  When given no arguments, @code{*} returns 1.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -5866,6 +5874,14 @@ il signale une erreur @code{domain-error}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This returns the standard case table.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T203740Z">
+        <seg>Cette fonction retourne la table de casse normale.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This returns the value specified in @var{char-table} for a range of characters @var{range}.  Here are the possibilities for @var{range}:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192437Z">
@@ -5889,6 +5905,14 @@ d'abréviations.</seg>
         <seg>Cette section explique les conventions d'écriture qui sont employées
 dans ce manuel. Vous pouvez sauter cette section et vous y référer
 plus tard.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This sets the current buffer's case table to @var{table}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T203837Z">
+        <seg>Cette fonction définit la table de casse courante du buffer à la valeur @var{table}.</seg>
       </tuv>
     </tu>
     <tu>
