@@ -2150,6 +2150,14 @@ manière extrêmement non-standard. @xref{Création de symboles}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Because this symbol is the variable which holds the name of the file being visited in the current buffer, the value cell contents we see are the name of the source file of this chapter of the Emacs Lisp Manual.  The property list cell contains the list @code{(variable-documentation 29529)} which tells the documentation functions where to find the documentation string for the variable @code{buffer-file-name} in the @file{DOC-@var{version}} file.  (29529 is the offset from the beginning of the @file{DOC-@var{version}} file to where that documentation string begins---see @ref{Documentation Basics}.)  The function cell contains the function for returning the name of the file.  @code{buffer-file-name} names a primitive function, which has no read syntax and prints in hash notation (@pxref{Primitive Function Type}).  A symbol naming a function written in Lisp would have a lambda expression (or a byte-code object) in this cell.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T211234Z">
+        <seg>Comme le symbole est la variable qui contient le nom du fichier passé dans le buffer courant, les contenus de la valeur de cellule que l'on voit sont le nom du fichier source de ce chapitre du manuel Lisp Emacs. La cellule de liste de propriétés contient la liste @code{(variable-documentation 29529)} qui donne aux fonctions de documentation où trouver la chaîne de caractères de documentation pour la variable @code{buffer-file-name} dans le fichier @file{DOC-@var{version}}. (29529 est l'écart entre le début du fichier @file{DOC-@var{version}} et où la chaîne de caractères de documentation de la fonction commence --- voir @ref{Documentation Basics}.) La cellule de fonction contient la fonction pour retourner le nom du fichier. @code{buffer-file-name} appelle une fonction primitive qui n'a pas de syntaxe de lecture et qui affiche en notation de hachage (@pxref{Primitive Function Type}). Un symbole appelant une fonction écrite en Lisp devrait avoir une expression lambda (ou un objet octet-compilé) dans cette cellule.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Bil Lewis,</seg>
       </tuv>
       <tuv lang="fr-fr">
