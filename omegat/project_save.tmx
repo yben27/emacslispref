@@ -4534,8 +4534,8 @@ autrement. 0 est considéré non négatif.</seg>
       <tuv lang="en-us">
         <seg>The @dfn{property list cell} holds the property list of the symbol.  See @code{symbol-plist} in @ref{Property Lists}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205917Z">
-        <seg>La @dfncellule de liste de propriétés contient le liste de propriétés du symbole. Voir symbol-plist dans in @ref{Property Lists}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210009Z">
+        <seg>La @dfn{cellule de liste de propriétés} contient le liste de propriétés du symbole. Voir @code{symbol-plist} dans @ref{Property Lists}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4839,6 +4839,22 @@ version 20.3 d'Emacs, la valeur est 3.</seg>
         <seg>Le nombre entier négatif, @minus{}5, est créé en soustrayant 4 de
 @minus{}1. Dans la base binaire, le nombre entier décimal 4 est
 100. En conséquence, @minus{}5 ressemble à ceci:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The print name cell always holds a string, and cannot be changed.  The other three cells can be set individually to any specified Lisp object.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210025Z">
+        <seg>La cellule du nom d'affichage contient toujours une chaîne de caractères et ne peut pas être changée. Les trois autres cellules peuvent être assignées individuellement à n'importe quel objet Lisp.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The print name cell holds the string that is the name of the symbol.  Since symbols are represented textually by their names, it is important not to have two symbols with the same name.  The Lisp reader ensures this: every time it reads a symbol, it looks for an existing symbol with the specified name before it creates a new one.  (In GNU Emacs Lisp, this lookup uses a hashing algorithm and an obarray; see @ref{Creating Symbols}.)</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210120Z">
+        <seg>La cellule du nom d'affichage contient la chaîne de caractère qui est le nom du symbole. Comme les symboles sont représentés textuellement par leurs noms, il est important de ne pas avoir deux symboles avec le même nom. Le lecteur Lisp s'assure de ceci : à chaque fois qu'il lit un symbole, il regarde s'il existe déjà un symbole avec le même nom avant de créer le nouveau. (Dans GNU Emacs Lisp, cette recherche utilise un algorithme de hachage et un obarray ; voir @ref{Creating Symbols}.</seg>
       </tuv>
     </tu>
     <tu>
