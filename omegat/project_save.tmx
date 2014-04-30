@@ -5761,6 +5761,14 @@ oui, @code{nil} autrement. L'argument doit être un nombre.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This returns @code{t} if @var{object} is a bool-vector, and @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140430T202023Z">
+        <seg>Retourne @code{t} si @var{object} est un vecteur-booléen, et sinon @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This returns @var{number} converted to floating point.  If @var{number} is already a floating point number, @code{float} returns it unchanged.</seg>
       </tuv>
       <tuv lang="fr-fr">
