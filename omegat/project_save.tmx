@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.6.3_9" segtype="paragraph" srclang="en-us"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.0.8_3" segtype="paragraph" srclang="en-us"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -1610,6 +1610,14 @@ arguments optionnels et restants.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105145Z">
         <seg>&gt;@xref{Text}, pour plus d’informations sur les fonctions qui affichent des chaînes ou les copient dans une mémoire tampon. Voir la section @xref{Character Type}, et @xref{String Type}, pour plus d’informations sur la syntaxe des chaînes et des caractères. @xref{Non-ASCII Characters}, les fonctions pour faire des conversions entre des représentations textuelles et pour coder et décoder des codes caractères.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>A @code{wrong-type-argument} error is signaled if @var{start} is not an integer or if @var{end} is neither an integer nor @code{nil}.  An @code{args-out-of-range} error is signaled if @var{start} indicates a character following @var{end}, or if either integer is out of range for @var{string}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T102446Z" creationid="babac_000" creationdate="20140501T102446Z">
+        <seg>Une erreur de type @code{wrong-type-argument} est soulevée si @var{start} n'est pas un entier ou si @var{end} n'en est pas un non plus ou ne vaut pas @code{nil}. Une erreur de type @code{args-out-of-range} est signalée si @var{start} indique un caractère qui suit un caractère à l'indice @var{end}, ou si l'un ou l'autre des entiers est hors de la @var{string}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4307,9 +4315,8 @@ binaires de 8 bits) :</seg>
       <tuv lang="en-us">
         <seg>Since strings are arrays, and therefore sequences as well, you can operate on them with the general array and sequence functions.  (@xref{Sequences Arrays Vectors}.)  For example, you can access or change individual characters in a string using the functions @code{aref} and @code{aset} (@pxref{Array Functions}).</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T103652Z">
-        <seg>Puisque les chaînes de caractères sont des tableaux, et par conséquent des suites aussi, vous pouvez les traiter avec les fonctions générales des tableaux et des suites. (Voir la section @xref{Sequences, Arrays, and Vectors}.) Par exemple, on peut accéder aux caractères individuels d'une chaîne, ou les modifier, à l’aide des fonctions @code{aref} et @code{aset} (voir la section @xref{Functions that Operate on Arrays}).
-.</seg>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T102253Z">
+        <seg>Puisque les chaînes de caractères sont des tableaux, et par conséquent des suites aussi, vous pouvez les traiter avec les fonctions générales des tableaux et des suites. (Voir la section @xref{Sequences, Arrays, and Vectors}.) Par exemple, on peut accéder aux caractères individuels d'une chaîne, ou les modifier, à l’aide des fonctions @code{aref} et @code{aset} (voir la section @xref{Functions that Operate on Arrays}).</seg>
       </tuv>
     </tu>
     <tu>
