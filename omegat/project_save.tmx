@@ -5482,8 +5482,8 @@ nombres entiers.</seg>
       <tuv lang="en-us">
         <seg>The case table for the @acronym{ASCII} character set.  This should not be modified by any language environment settings.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T204349Z">
-        <seg>La table de casse pour l'ensemble de caractères @acronym{ASCII}. Il ne faut pas que les paramètres d'environnement de langue modifient cela.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140502T102351Z">
+        <seg>Le tableau de casse pour l'ensemble de caractères @acronym{ASCII}. Il ne faut pas que les paramètres d'environnement de langue modifient cela.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5644,8 +5644,8 @@ imprimé à côté de la marge.</seg>
       <tuv lang="en-us">
         <seg>The following three functions are convenient subroutines for packages that define non-@acronym{ASCII} character sets.  They modify the specified case table @var{case-table}; they also modify the standard syntax table.  @xref{Syntax Tables}.  Normally you would use these functions to change the standard case table.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T204439Z">
-        <seg>Les trois fonctions suivantes sont des sous-routines pratiques pour les packages qui définissent des ensembles de caractères non @acronym{ASCII}. Elles modifient la table de casse spécifiée @var{case-table} ; elles modifient également la table de syntaxe standard. @xref{Syntax Tables}. Normalement, il faut utiliser ces fonctions pour changer la table de casse standard.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140502T102422Z">
+        <seg>Les trois fonctions suivantes sont des sous-routines pratiques pour les packages qui définissent des ensembles de caractères non @acronym{ASCII}. Elles modifient le tableau de casse spécifié @var{case-table} ; elles modifient également le tableau de syntaxe standard. @xref{Syntax Tables}. Normalement, il faut utiliser ces fonctions pour changer le tableau de casse standard.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6244,8 +6244,8 @@ de référence GNU Emacs Lisp, correspondant à la version
       <tuv lang="en-us">
         <seg>This command displays a description of the contents of the current buffer's case table.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T204643Z">
-        <seg>Cette commande affiche une description du contenu de la table de casse du buffer courant.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140502T102448Z">
+        <seg>Cette commande affiche une description du contenu du tableau de casse du buffer courant.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8295,14 +8295,6 @@ générée. Pour @code{floor}, voir les @ref{Conversions numériques}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>arch-tag: 6baae835-b667-4447-91e2-9829ae1cf543</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-us">
-        <seg>arch-tag: 700b8e95-7aa5-4b52-9eb3-8f2e1ea152b4</seg>
-      </tuv>
-      <tuv lang="fr-fr">
-        <seg>arch-tag: 700b8e95-7aa5-4b52-9eb3-8f2e1ea152b4</seg>
       </tuv>
     </tu>
     <tu>
