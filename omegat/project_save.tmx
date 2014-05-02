@@ -307,6 +307,26 @@ nombre entier binaire.)</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>(capitalize "THE 77TH-HATTED CAT")
+     @result{} "The 77th-Hatted Cat"</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T202815Z" creationid="babac_000" creationdate="20140501T202815Z">
+        <seg>(capitalize "LE 77EME CHAT BOTTE")
+     @result{} "Le 77eme Chat Botte"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(capitalize "The cat in the hat")
+     @result{} "The Cat In The Hat"</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T202713Z" creationid="babac_000" creationdate="20140501T202713Z">
+        <seg>(capitalize "Le chat dans le chapeau")
+     @result{} "Le Chat Dans Le Chapeau"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>(ceiling 1.2)
      @result{} 2
 (ceiling 1.7)
@@ -325,6 +345,34 @@ nombre entier binaire.)</seg>
      @result{} -1
 (ceiling -1.7)
      @result{} -1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(concat "abc" "-def")
+     @result{} "abc-def"
+(concat "abc" (list 120 121) [122])
+     @result{} "abcxyz"
+;; @r{@code{nil} is an empty sequence.}
+(concat "abc" nil "-def")
+     @result{} "abc-def"
+(concat "The " "quick brown " "fox.")
+     @result{} "The quick brown fox."
+(concat)
+     @result{} ""</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T103233Z" creationid="babac_000" creationdate="20140501T103233Z">
+        <seg>(concat "abc" "-def")
+     @result{} "abc-def"
+(concat "abc" (list 120 121) [122])
+     @result{} "abcxyz"
+;; @r{@code{nil} est une suite vide.}
+(concat "abc" nil "-def")
+     @result{} "abc-def"
+(concat "Le " "juge blond " "qui fume.")
+     @result{} "Le juge blond qui fume."
+(concat)
+     @result{} ""</seg>
       </tuv>
     </tu>
     <tu>
@@ -383,6 +431,16 @@ nombre entier binaire.)</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>(downcase "The cat in the hat")
+     @result{} "the cat in the hat"</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T200956Z" creationid="babac_000" creationdate="20140501T200956Z">
+        <seg>(downcase "Le chat dans le chapeau")
+     @result{} "le chapeau dans le chapeau"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>(emacs-version)
   @result{} "GNU Emacs 20.3.5 (i486-pc-linux-gnulibc1, X toolkit)
  of Sat Feb 14 1998 on psilocin.gnu.org"</seg>
@@ -428,6 +486,106 @@ pêcher en radians entre le vecteur @code{[@var{x}, @var{y}]} et l'axis
      @result{} -2
 (floor 5.99 3)
      @result{} 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(format "%-6d is padded on the right" 123)
+     @result{} "123    is padded on the right"</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T163325Z" creationid="babac_000" creationdate="20140501T163325Z">
+        <seg>(format "%-6d est bourré à droite" 123)
+     @result{} "123    est bourré à droite"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(format "%06d is padded on the left with zeros" 123)
+     @result{} "000123 is padded on the left with zeros"</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T163244Z" creationid="babac_000" creationdate="20140501T163204Z">
+        <seg>(format "%06d est bourré à gauche avec des zéros" 123)
+     @result{} "000123 est bourré à gauche avec des zéros"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(format "The buffer object prints as %s." (current-buffer))
+     @result{} "The buffer object prints as strings.texi."</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T161651Z" creationid="babac_000" creationdate="20140501T161651Z">
+        <seg>(format "L'objet buffer imprime en %s." (current-buffer))
+     @result{} "L'objet buffer imprime en strings.texi."</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(format "The name of this buffer is %s." (buffer-name))
+     @result{} "The name of this buffer is strings.texi."</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T161517Z" creationid="babac_000" creationdate="20140501T161517Z">
+        <seg>(format "Le nom de ce buffer est %s." (buffer-name))
+     @result{} "Le nom de ce buffer est strings.texi."</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(format "The octal value of %d is %o,
+         and the hex value is %x." 18 18 18)
+     @result{} "The octal value of 18 is 22,
+         and the hex value is 12."</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T161851Z" creationid="babac_000" creationdate="20140501T161851Z">
+        <seg>(format "La valeur octale de %d est %o,
+         et la valeur hexadécimale est %x." 18 18 18)
+     @result{} "La valeur octale de 18 est 22,
+         et la valeur hexadécimale est 12."</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(format "The value of fill-column is %d." fill-column)
+     @result{} "The value of fill-column is 72."</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T152008Z" creationid="babac_000" creationdate="20140501T152008Z">
+        <seg>(format "La valeur de fill-column est %d." fill-column)
+     @result{} "La valeur de fill-column est 72."</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(format "The word `%-7s' actually has %d letters in it."
+        "foo" (length "foo"))
+     @result{} "The word `foo    ' actually has 3 letters in it."</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T164151Z" creationid="babac_000" creationdate="20140501T164151Z">
+        <seg>(format "Le mot `%-7s' a effectivement %d lettres en lui."
+        "foo" (length "foo"))
+     @result{} "Le mot `foo    ' a effectivement 3 lettres en lui."</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(format "The word `%7s' actually has %d letters in it."
+        "foo" (length "foo"))
+     @result{} "The word `    foo' actually has 3 letters in it."</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T163954Z" creationid="babac_000" creationdate="20140501T163954Z">
+        <seg>(format "Le mot `%7s' a effectivement %d lettres en lui."
+        "foo" (length "foo"))
+     @result{} "Le mot `    foo' a effectivement 3 lettres en lui."</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(format "The word `%7s' actually has %d letters in it."
+        "specification" (length "specification"))
+     @result{} "The word `specification' actually has 13 letters in it."</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T164058Z" creationid="babac_000" creationdate="20140501T164058Z">
+        <seg>(format "Le mot `%7s' a effectivement %d lettres en lui."
+        "spécification" (length "spécification"))
+     @result{} "Le mot `spécification' a effectivement 13 lettres en lui."</seg>
       </tuv>
     </tu>
     <tu>
@@ -815,6 +973,28 @@ x1
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>(split-string "  two words "
+              split-string-default-separators)
+     @result{} ("" "two" "words" "")</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133521Z" creationid="babac_000" creationdate="20140501T133521Z">
+        <seg>(split-string "  deux mots "
+              split-string-default-separators)
+     @result{} ("" "deux" "mots" "")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(split-string "  two words ")
+     @result{} ("two" "words")</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133457Z" creationid="babac_000" creationdate="20140501T133355Z">
+        <seg>(split-string "  deux mots ")
+     @result{} ("deux" "mots")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>(symbol-name 'foo)
      @result{} "foo"</seg>
       </tuv>
@@ -855,6 +1035,26 @@ x1
      @result{} -1
 (truncate -1.7)
      @result{} -1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(upcase "The cat in the hat")
+     @result{} "THE CAT IN THE HAT"</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T201449Z" creationid="babac_000" creationdate="20140501T201449Z">
+        <seg>(upcase "Le chat dans le chapeau")
+     @result{} "LE CHAT DANS LE CHAPEAU"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>(upcase-initials "The CAT in the hAt")
+     @result{} "The CAT In The HAt"</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T203411Z" creationid="babac_000" creationdate="20140501T203411Z">
+        <seg>(upcase-initials "Le CHAT dans le cHapeau")
+     @result{} "Le CHAT Dans Le CHapeau"</seg>
       </tuv>
     </tu>
     <tu>
@@ -1370,6 +1570,14 @@ qu'il a un champ limité des valeurs de nombre entier.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@code{append} can convert a string into a list.  @xref{Building Lists}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T145640Z" creationid="babac_000" creationdate="20140501T145640Z">
+        <seg>@code{append} peut convertir une chaîne en une liste.  @xref{Building Lists}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@code{ash} (@dfn{arithmetic shift}) shifts the bits in @var{integer1} to the left @var{count} places, or to the right if @var{count} is negative.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -1395,6 +1603,14 @@ gauche, alors que @code{lsh} met des 0 dans ces positions de bit.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T051551Z">
         <seg>Propriété @code{composition} et affichage du point</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>@code{concat} can convert a vector or a list into a string.  @xref{Creating Strings}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T145537Z" creationid="babac_000" creationdate="20140501T145537Z">
+        <seg>@code{concat} peut convertir un vecteur ou une liste en une chaîne.  @xref{Creating Strings}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1456,6 +1672,14 @@ d'Emacs.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@code{int-to-string} is a semi-obsolete alias for this function.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T143127Z" creationid="babac_000" creationdate="20140501T143127Z">
+        <seg>@code{int-to-string} est un alias semi-obsolère de cette fonction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@code{lsh}, which is an abbreviation for @dfn{logical shift}, shifts the bits in @var{integer1} to the left @var{count} places, or to the right if @var{count} is negative, bringing zeros into the vacated bits.  If @var{count} is negative, @code{lsh} shifts zeros into the leftmost (most-significant) bit, producing a positive result even if @var{integer1} is negative.  Contrast this with @code{ash}, below.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -1486,6 +1710,30 @@ un résultat positif même si @var{integer1} est négatif. Contrairement
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@code{string-equal} is another name for @code{string=}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T135842Z" creationid="babac_000" creationdate="20140501T135842Z">
+        <seg>@code{string-equal} est un autre nom pour @code{string=}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>@code{string-lessp} is another name for @code{string&lt;}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140329Z" creationid="babac_000" creationdate="20140501T140329Z">
+        <seg>@code{string-lessp} est un autre nom pour @code{string&lt;}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>@code{string-to-int} is an obsolete alias for this function.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T145507Z" creationid="babac_000" creationdate="20140501T145507Z">
+        <seg>@code{string-to-int} est un alias semi-obsolète de cette fonction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@code{substring} also accepts a vector for the first argument.  For example:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T122758Z">
@@ -1494,10 +1742,26 @@ un résultat positif même si @var{integer1} est négatif. Contrairement
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@code{vconcat} can convert a string into a vector.  @xref{Vector Functions}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T145556Z" creationid="babac_000" creationdate="20140501T145556Z">
+        <seg>@code{vconcat} peut convertir une chaîne en un vecteur.  @xref{Vector Functions}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@code{while} loops.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>boucles @code{while}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>@dfn{Formatting} means constructing a string by substitution of computed values at various places in a constant string.  This constant string controls how the other values are printed, as well as where they appear; it is called a @dfn{format string}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T150457Z" creationid="babac_000" creationdate="20140501T150457Z">
+        <seg>@dfn{Formatting} signifie la construction d'une chaîne par la substitution de valeurs calculées à différents endroits dans une chaîne constante. Cette chaîne constante contrôle la façon dont les autres valeurs sont affichées, ainsi que là où elles apparaissent; elle est appelé une @dfn{format string}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1557,10 +1821,26 @@ notation @dfn{two's complement}.)</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@samp{%} in format</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T151430Z" creationid="babac_000" creationdate="20140501T151430Z">
+        <seg>@samp{%} en format</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@samp{*?}, @samp{+?}, @samp{??}</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>@samp{*?}, @samp{+?}, @samp{??}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>@samp{+} as a flag inserts a plus sign before a positive number, so that it always has a sign.  A space character as flag inserts a space before a positive number.  (Otherwise, positive numbers start with the first digit.)  Either of these two flags ensures that positive numbers and negative numbers use the same number of columns.  These flags are ignored except for @samp{%d}, @samp{%e}, @samp{%f}, @samp{%g}, and if both flags are used, the @samp{+} takes precedence.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T192830Z" creationid="babac_000" creationdate="20140501T192830Z">
+        <seg>@samp{+} comme drapeau insère un signe plus devant un nombre positif, de sorte qu'il a toujours un signe. Un caractère espace comme drapeau insère un espace devant un nombre positif.  (Sinon, les nombres positifs commencent avec le premier chiffre.)  L'un ou l'autre de ces drapeaux veille que les nombres positifs et les nombres négatifs utilisent le même nombre de colonnes. Ces drapeaux sont ignorés sauf pour @samp{%d}, @samp{%e}, @samp{%f}, @samp{%g}, et si les deux drapeaux sont utilisés, le @samp{+} a la priorité.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1589,6 +1869,14 @@ notation @dfn{two's complement}.)</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>@xref{Documentation}, for functions that produce textual descriptions of text characters and general input events (@code{single-key-description} and @code{text-char-description}).  These are used primarily for making help messages.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T141854Z" creationid="babac_000" creationdate="20140501T141854Z">
+        <seg>@xref{Documentation}, en ce qui concerne les fonctions qui  produisent des descriptions textuelles des caractères textuels et des événenements géréraux d'entrée (@code{single-key-description} et @code{text-char-description}). Ils sont principalement utilisés pour la fabrication de messages d'aide.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>@xref{Lambda Expressions}, for a more complete description of optional and rest arguments.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -1602,6 +1890,14 @@ arguments optionnels et restants.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101505Z">
         <seg>@xref{Strings of Events}, pour des informations particulières sur les chaînes des événements liés aux caractères clavier.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>@xref{Text Comparison}, for functions that compare strings; some of them ignore case differences, or can optionally ignore case differences.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T203504Z" creationid="babac_000" creationdate="20140501T203504Z">
+        <seg>@xref{Text Comparison},  pour les fonctions qui comparent des chaînes; certains d'entre eux ignorent les différences de casse, ou peut éventuellement ignorer les différences de casse.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1689,6 +1985,14 @@ indiqué avec @samp{@result{}} :</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>A case table is a char-table (@pxref{Char-Tables}) whose subtype is @code{case-table}.  This char-table maps each character into the corresponding lower case character.  It has three extra slots, which hold related tables:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T204810Z" creationid="babac_000" creationdate="20140501T204302Z">
+        <seg>Un tableau de casse est un char-table (@pxref{Char-Tables}) dont le sous-type est @code{case-table}. Cette char-table associe à chaque caractère son caractère minuscule correspondant. Il dispose de trois emplacements supplémentaires, qui contiennent les tableaux liés:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>A certain amount of Common Lisp emulation is available via the @file{cl} library.  @inforef{Top, Overview, cl}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -1761,6 +2065,14 @@ dans une série pseudo-aléatoire.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>A format specification is a sequence of characters beginning with a @samp{%}.  Thus, if there is a @samp{%d} in @var{string}, the @code{format} function replaces it with the printed representation of one of the values to be formatted (one of the arguments @var{objects}).  For example:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T152346Z" creationid="babac_000" creationdate="20140501T151936Z">
+        <seg>Une spécification de format est une suite de caractères commençant par un @samp{%}.  Ainsi, s'il existe @samp{%d} dans @var{string}, la fonction @code{format} le remplace par la représentation imprimée d'une des valeurs à être formatée (un des arguments de @var{objects}). Par exemple :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>A function is a Lisp program</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -1793,6 +2105,14 @@ dans une série pseudo-aléatoire.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>A more powerful function is @code{store-substring}:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T134420Z" creationid="babac_000" creationdate="20140501T134420Z">
+        <seg>Il existe une fonction plus puissante : @code{store-substring}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>A negative number counts from the end of the string, so that @minus{}1 signifies the index of the last character of the string.  For example:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T121743Z">
@@ -1808,6 +2128,14 @@ dans une série pseudo-aléatoire.</seg>
 automatique des abréviations quand elles sont insérées dans un
 tampon. Si la valeur est @code{nil}, des abréviations peuvent être
 définies, mais elles ne sont pas développées automatiquement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>A specification can have a @dfn{width}, which is a signed decimal number between the @samp{%} and the specification character.  If the printed representation of the object contains fewer characters than this width, @code{format} extends it with padding.  The padding goes on the left if the width is positive (or starts with zero) and on the right if the width is negative.  The padding character is normally a space, but it's @samp{0} if the width starts with a zero.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T163229Z" creationid="babac_000" creationdate="20140501T162627Z">
+        <seg>Une spécification peut avoir une @dfn{largeur}, qui est un nombre décimal précisée entre @samp{%} et le caractère de spécification.  Si la représentation affichée de l'objet contient moins de caractères que sa largeur, @code{format} s'étend avec du bourrage. Le bourrage va à gauche si la largeur est positive (ou commence par zéro) et à droite si la largeur est négative. Le caractère de bourrage est normalement un espace, mais c'est @samp{0} si la largeur commence par un zéro.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1950,6 +2278,14 @@ flottante si au moins un argument est une valeur à virgule flottante.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>All the specification characters allow an optional @dfn{precision} before the character (after the width, if present).  The precision is a decimal-point @samp{.} followed by a digit-string.  For the floating-point specifications (@samp{%e}, @samp{%f}, @samp{%g}), the precision specifies how many decimal places to show; if zero, the decimal-point itself is also omitted.  For @samp{%s} and @samp{%S}, the precision truncates the string to the given width, so @samp{%.3s} shows only the first three characters of the representation for @var{object}.  Precision has no effect for other specification characters.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T193026Z" creationid="babac_000" creationdate="20140501T165036Z">
+        <seg>Tous les caractères de spécification premettent une option @dfn{precision} avant le caractère (après la largeur, s'il y'en a une). La précision est un  point décimal @samp{.} suivi par digit-string. Pour les spécification à virgule flottante (float) (@samp{%e}, @samp{%f}, @samp{%g}), la précision spécifie le nombre de décimales à afficher; si c'est zéro, le point décimal est lui aussi supprimé. Pour @samp{%s} et @samp{%S}, la précision tronque la chaîne à la largeur donnée, donc @samp{%.3s} affiche seulement le trois premiers caractères de la représentation de @var{object}.  Les précision n'ont pas d'effet sur les autres caractères de spécification.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Altering the contents of an existing string.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102330Z">
@@ -2023,6 +2359,14 @@ commencement.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Any other format character results in an @samp{Invalid format operation} error.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T161432Z" creationid="babac_000" creationdate="20140501T161432Z">
+        <seg>Tous les autres caractères de format résultent par une erreur @samp{Invalid format operation}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Any two distinct Lisp objects are ``different'' as keys.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213802Z">
@@ -2067,6 +2411,14 @@ commencement.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T183801Z">
         <seg>Les tableaux en Lisp, comme dans la majorité des langages, sont des blocs de mémoire dont les éléments ont tous le même temps d'accès. Un @dfn{vector} est un tableau universel d'une longueur donnée ; ses éléments peuvent être n'importe quel objet Lisp. (Par opposition, une chaîne de caractères peut seulement contenir des éléments de type caractère.) Dans Emacs, les vecteurs  sont utilisés pour  les obarrays (vecteurs de symboles), et comme partie de keymaps (vecteurs de commandes). Ils sont aussi utilisés intérieurement en interne comme une partie de la représentation en octet de code ; si vous affichez une telle fonction, vous verrez un vecteur à l'intérieur.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>As a special case, when @var{separators} is @code{nil} (or omitted), null strings are always omitted from the result.  Thus:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133322Z" creationid="babac_000" creationdate="20140501T133322Z">
+        <seg>Un cas particulier, quand @var{separators} est @code{nil} (ou non renseigné), les chaînes vides sont toujours omises du résultat. Par conséquent :</seg>
       </tuv>
     </tu>
     <tu>
@@ -2342,10 +2694,18 @@ manière extrêmement non-standard. @xref{Création de symboles}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Case Conversion in Lisp</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T193411Z" creationid="babac_000" creationdate="20140501T193411Z">
+        <seg>Conversion de la casse en Lisp</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Case Tables</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102943Z">
-        <seg>La table de casse</seg>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T204347Z">
+        <seg>Le tableau de casse</seg>
       </tuv>
     </tu>
     <tu>
@@ -2362,6 +2722,14 @@ manière extrêmement non-standard. @xref{Création de symboles}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Avertissements</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Certain format specifications require values of particular types.  If you supply a value that doesn't fit the requirements, an error is signaled.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T154434Z" creationid="babac_000" creationdate="20140501T154434Z">
+        <seg>Certaines spécifications de format requièrent des valeurs de types particuliers. Si vous fournissez une valeur qui ne correspond pas aux exigences, une erreur est signalée.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2411,6 +2779,14 @@ leurs arguments différemment des fonctions (les arguments ne sont pas
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Comparison of Characters and Strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T135248Z" creationid="babac_000" creationdate="20140501T135248Z">
+        <seg>Comparaison des caractères et des chaînes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Comparison of Numbers</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2443,6 +2819,14 @@ leurs arguments différemment des fonctions (les arguments ne sont pas
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Contrast this function with @code{buffer-substring} (@pxref{Buffer Contents}), which returns a string containing a portion of the text in the current buffer.  The beginning of a string is at index 0, but the beginning of a buffer is at index 1.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T102654Z" creationid="babac_000" creationdate="20140501T102654Z">
+        <seg>Comparez cette fonction avec @code{buffer-substring} (voir la section @pxref{Examining Buffer Contents}), qui retourne une chaîne contenant une partie du texte du buffer en cours. Le début d'une chaîne est à l'indice 0, mais le début d'un buffer est à l'indice 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Control-X-prefix</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2463,6 +2847,14 @@ leurs arguments différemment des fonctions (les arguments ne sont pas
       </tuv>
       <tuv lang="fr-fr">
         <seg>Conventions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Conversion of Characters and Strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140927Z" creationid="babac_000" creationdate="20140501T140927Z">
+        <seg>Conversion des caractères et des chaînes de caractères</seg>
       </tuv>
     </tu>
     <tu>
@@ -2758,6 +3150,14 @@ qu'elles sont traditionnelles en Lisp et utilisées généralement.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Empty matches do count, except that @code{split-string} will not look for a final empty match when it already reached the end of the string using a non-empty match or when @var{string} is empty:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133849Z" creationid="babac_000" creationdate="20140501T133849Z">
+        <seg>Les correspondances vides comptent bien, sauf que @code{split-string} ne cherchera pas une correspondance vide lorsqu'elle a déjà atteint la fin de la chaîne en utilisant un correspondance non vide ou lorsque @var{string} est vide:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Equality and inequality predicates.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2909,6 +3309,14 @@ ainsi les deux bits à l'extrême droite de la valeur retournée sont 0.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>For information about other concatenation functions, see the description of @code{mapconcat} in @ref{Mapping Functions}, @code{vconcat} in @ref{Vector Functions}, and @code{append} in @ref{Building Lists}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T104212Z" creationid="babac_000" creationdate="20140501T104212Z">
+        <seg>Pour plus d'information sur les autres fonctions de concaténation, regarder les descriptions de @code{mapconcat} dans @ref{Mapping Functions}, @code{vconcat} dans @ref{Functions for Vectors}, et @code{append} dans @ref{Building Cons Cells and Lists}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>For more information about general sequence and array predicates, see @ref{Sequences Arrays Vectors}, and @ref{Arrays}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105331Z">
@@ -2935,6 +3343,22 @@ toutes les machines connues se comportent de la même façon.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>For some languages, upper and lower case letters are not in one-to-one correspondence.  There may be two different lower case letters with the same upper case equivalent.  In these cases, you need to specify the maps for both lower case and upper case.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T205721Z" creationid="babac_000" creationdate="20140501T205721Z">
+        <seg>Pour certains langages, les lettres miniscules et majuscules ne sont pas en correspondance une-à-une. Il peut y avoir deux différents lettres minuscules avec le même équivalent en majuscule. Dans ce cas, vous devez spécifier le mappage à la fois pour les minuscules et les majuscules.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>For technical reasons, a unibyte and a multibyte string are @code{equal} if and only if they contain the same sequence of character codes and all these codes are either in the range 0 through 127 (@acronym{ASCII}) or 160 through 255 (@code{eight-bit-graphic}).  However, when a unibyte string gets converted to a multibyte string, all characters with codes in the range 160 through 255 get converted to characters with higher codes, whereas @acronym{ASCII} characters remain unchanged.  Thus, a unibyte string and its conversion to multibyte are only @code{equal} if the string is all @acronym{ASCII}.  Character codes 160 through 255 are not entirely proper in multibyte text, even though they can occur.  As a consequence, the situation where a unibyte and a multibyte string are @code{equal} without both being all @acronym{ASCII} is a technical oddity that very few Emacs Lisp programmers ever get confronted with.  @xref{Text Representations}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T135759Z" creationid="babac_000" creationdate="20140501T135759Z">
+        <seg>Pour des raisons techniques, une chaîne uni-octet et une chaîne multi-octet sont @code{equal} si et seulement si elles contiennent la même suite de codes de caractère et si tous ces codes sont soit dans la plage de 0 à 127 (@acronym{ASCII}) ou dans la plage de 160 à 255 (@code{eight-bit-graphic}). Cependant, quand une chaîne de caractères uni-octet est convertie en une chaîne multi-octets, tous les caractères avec des codes dans la plage de 160 à 255 sont convertis en caractères avec des codes plus grands, alors que les caractères @acronym{ASCII} restent inchangés. Donc, une chaîne uni-octet et sa conversion en multi-octet sont seulement @code{equal} si la chaîne est entièrement en @acronym{ASCII}. Les codes de caractères de 160 à 255 ne sont pas tout à fait appropriés dans le texte multi-octets, même s'il arrive qu'on les y rencontre. En conséquence, la situation où une chaîne uni-octet et une chaîne multi-octet sont @code{equal} sans être toutes deux entièrement @acronym{ASCII} est une curiosité technique à laquelle très peu de programmeurs Emacs Lisp se trouvent confrontés. Voir la section @xref{Text Representations}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>For the user-level commands for abbrevs, see @ref{Abbrevs,, Abbrev Mode, emacs, The GNU Emacs Manual}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2956,6 +3380,14 @@ toutes les machines connues se comportent de la même façon.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102756Z">
         <seg>Formatter les chaînes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Formatting is often useful for computing messages to be displayed.  In fact, the functions @code{message} and @code{error} provide the same formatting feature described here; they differ from @code{format} only in how they use the result of formatting.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T150753Z" creationid="babac_000" creationdate="20140501T150753Z">
+        <seg>Le formatage est souvent utile pour le calcul de message à afficher. En fait, les fonctions @code{message} et @code{error} fournissent la même caractéristique de formatage décrite ici; elles diffèrent de @code{format} seulement dans la façon dont elles utilisent le résultat de la mise en forme.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3144,10 +3576,26 @@ relient spécifiquement à l'édition.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Here are several examples:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T161445Z" creationid="babac_000" creationdate="20140501T161445Z">
+        <seg>Voici quelques exemples :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Here are some functions that relate to vectors:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184211Z">
         <seg>Voici quelques fonctions relatives aux vecteurs :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Here are some other functions that can convert to or from a string:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T145437Z" creationid="babac_000" creationdate="20140501T145437Z">
+        <seg>Voici d'autres fonctions qui peuvent convertir vers ou à partir d'une chaîne :</seg>
       </tuv>
     </tu>
     <tu>
@@ -3174,6 +3622,14 @@ les huit bits faibles du binaire modèle ; le reste est fait de zéro.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Voici une description de fonction imaginaire @code{foo}:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Here is a table of valid format specifications:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T154517Z" creationid="babac_000" creationdate="20140501T154517Z">
+        <seg>Voici un tableau des spécifications de format valides :</seg>
       </tuv>
     </tu>
     <tu>
@@ -3255,6 +3711,14 @@ les huit bits faibles du binaire modèle ; le reste est fait de zéro.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174446Z">
         <seg>Comment travailler avec les char-tables.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>However, when @var{separators} can match the empty string, @var{omit-nulls} is usually @code{t}, so that the subtleties in the three previous examples are rarely relevant:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T134018Z" creationid="babac_000" creationdate="20140501T134018Z">
+        <seg>Cependant, quand les @var{separators} arrivent à correspondre à une chaîne vide, @var{omit-nulls} est souvent @code{t}, de sorte que les subtilités constatées dans les trois exemples précédents sont rarement pertinentes:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3357,10 +3821,42 @@ pour être non négative et inférieure à @var{limit}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>If @var{omit-nulls} is @code{nil}, the result contains null strings whenever there are two consecutive matches for @var{separators}, or a match is adjacent to the beginning or end of @var{string}.  If @var{omit-nulls} is @code{t}, these null strings are omitted from the result.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133206Z" creationid="babac_000" creationdate="20140501T133206Z">
+        <seg>Si @var{omit-nulls} est @code{nil}, le résultat contient des chaînes vides chaque fois qu'il y a deux correspondances consécutives pour les @var{separators}, ou si la correspondance est adjacente au début ou à la fin de la @var{string}. Si @var{omit-nulls} est @code{t}, ces chaînes vides ne sont pas prises en compte dans le résultat.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>If @var{rehash-size} is an integer, it should be positive, and the hash table grows by adding that much to the nominal size.  If @var{rehash-size} is a floating point number, it had better be greater than 1, and the hash table grows by multiplying the old size by that number.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214711Z">
         <seg>Si @var{rehash-size} est un entier, il devrait être positif, et la table de hachage s'agrandira en partant de sa valeur nominale et en y ajoutant cet entier positif. Si @var{rehash-size} est un nombre à virgule flottante, il vaut mieux qu'il soit supérieur à 1 et la table de hachage s'agrandira en multipliant l'ancienne taille par ce nombre.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>If @var{separators} is @code{nil} (or omitted), the default is the value of @code{split-string-default-separators}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133249Z" creationid="babac_000" creationdate="20140501T133249Z">
+        <seg>Si @var{separators} est @code{nil} (ou non renseigné), la valeur par défaut est la valeur de @code{split-string-default-separators}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>If @var{string-or-char} is a string, this function capitalizes the initials of the words in @var{string-or-char}, without altering any letters other than the initials.  It returns a new string whose contents are a copy of @var{string-or-char}, in which each word has had its initial letter converted to upper case.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T203242Z" creationid="babac_000" creationdate="20140501T203242Z">
+        <seg>Si @var{string-or-char} est une chaîne, cette fonction capitalise les initales des mots dans @var{string-or-char}, sans modifier les autres lettres que les initiales. Elle retourne une nouvelle chaîne dont le contenu est une copie de @var{string-or-char}, dans laquelle chaque mot a sa lettre initiale convertie en majuscule.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>If @var{string} contains more than one format specification, the format specifications correspond to successive values from @var{objects}.  Thus, the first format specification in @var{string} uses the first such value, the second format specification uses the second such value, and so on.  Any extra format specifications (those for which there are no corresponding values) cause an error.  Any extra values to be formatted are ignored.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T154127Z" creationid="babac_000" creationdate="20140501T154127Z">
+        <seg>Si @var{string} contient plus d'une spécification de format, les spécifications de format correspondent aux valeurs successives de @var{objects}. Ainsi, la première spécification de format de @var{string} utilise la première de ces valeurs, la deuxième spécification de format utilise la deuxième de ces veleurs, et ainsi de suite. Toutes les spécifications de format supplémentaires (celles pour lesquelles il n'y pas pas de valeur correspondante) provoquent une erreur. Toutes les valeurs supplémentaires à être formatées sont ignorées.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3412,10 +3908,34 @@ toutes les machines connues arrondissent en mode standard.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>If the object is a string, its text properties are copied into the output.  The text properties of the @samp{%s} itself are also copied, but those of the object take priority.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T155352Z" creationid="babac_000" creationdate="20140501T155352Z">
+        <seg>Si l'objet est une chaîne, ces propriétés textuelles sont copiées dans la sortie. Les propriétés textuelles des @samp{%s} eux-même sont aussi copiées, mais ceux de l'objet sont prioritaires.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>If the sequence is a string with text properties, the property list in the copy is itself a copy, not shared with the original's property list.  However, the actual values of the properties are shared.  @xref{Text Properties}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185155Z">
         <seg>Si la suite est une chaîne de caractères avec des propriétés, alors la liste de propriétés de la suite copiée est elle-même une copie. Elle n'est pas partagée avec la liste de propriétés de la suite d'origine. Cependant, les valeurs des propriétés, quant à elles, sont partagées entre les deux listes de propriétés. @xref{Text Properties}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>If the specified portions of the two strings match, the value is @code{t}.  Otherwise, the value is an integer which indicates how many leading characters agree, and which string is less.  Its absolute value is one plus the number of characters that agree at the beginning of the two strings.  The sign is negative if @var{string1} (or its specified portion) is less.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140620Z" creationid="babac_000" creationdate="20140501T140620Z">
+        <seg>Si les parties spécifiées des deux chaînes correspondent, la valeur est @code{t}. Sinon, la valeur est un entier qui indique combien de caractères prépondérants sont en accord, et quelle chaîne est moindre. Sa valeur absolue est un à quoi on ajoute le nombre de caractères qui correspondent au début des deux chaînes. Le signe est négatif si @var{string1} (ou sa partie spécifique) est moindre.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>If the width is too small, @code{format} does not truncate the object's printed representation.  Thus, you can use a width to specify a minimum spacing between columns with no risk of losing information.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T163511Z" creationid="babac_000" creationdate="20140501T163511Z">
+        <seg>Si la largeur est trop petite, @code{format} ne tronque pas la représentation de l'objet affiché. Ainsi, vous pouvez utiliser une largeur pour spécifier un espace minimum entre les colonnes sans risque de perdre d'information.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3464,6 +3984,14 @@ basée sur l'heure courante du jour et sur le numéro du processus
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Immediately after the @samp{%} and before the optional width and precision, you can put certain ``flag'' characters.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T192131Z" creationid="babac_000" creationdate="20140501T192131Z">
+        <seg>Immédiatement après le @samp{%} et avant l'optionnelles largeur et précision, vous pouvez mettre certains caractères "flag''.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>In 29-bit binary, the decimal integer 5 looks like this:</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -3504,6 +4032,14 @@ tentative de changer leurs valeurs a comme conséquence une erreur
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185029Z">
         <seg>Dans les versions d'Emacs antérieures à la 21, la fonction @code{vconcat} autorisait des arguments de type integers en les convertissant en chaîne de caractères contenant des chiffres. Cependant, cette fonctionnalité a été retirée. La manière correcte pour convertir un nombre enier en nombre décimal de cette façon est d'utiliser la fonction @code{format} (@pxref{Formatting Strings}) or @code{number-to-string} (@pxref{String Conversion}). </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>In Emacs versions before 21, when an argument was an integer (not a sequence of integers), it was converted to a string of digits making up the decimal printed representation of the integer.  This obsolete usage no longer works.  The proper way to convert an integer to its decimal printed form is with @code{format} (@pxref{Formatting Strings}) or @code{number-to-string} (@pxref{String Conversion}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T103424Z" creationid="babac_000" creationdate="20140501T103424Z">
+        <seg>Dans les versions inférieures à 21 d'Emacs, quand un argument était un entier (pas une suite d'entiers), il était converti en une chaîne de chiffres qui composaient le nombre décimal s'affichant pour représenter l'entier. Cette pratique obsolète ne fonctionne plus. La bonne façon de convertir un nombre entier dans sa forme décimale affichée est de le faire avec @code{format} (voir la section @pxref{Formatting Strings}) ou avec @code{number-to-string} (voir la section @pxref{Conversion of Characters and Strings}).</seg>
       </tuv>
     </tu>
     <tu>
@@ -3586,6 +4122,22 @@ valeur non-@code{nil} est considérée comme @var{true}. Cependant,
       <tuv lang="fr-fr">
         <seg>En revanche, décaler la combinaison de chiffres binaires d'une place
 vers la droite avec @code{lsh} ressemble à ceci:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>In simple cases, all you need to specify is the mapping to lower-case; the three related tables will be calculated automatically from that one.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T205422Z" creationid="babac_000" creationdate="20140501T205422Z">
+        <seg>Dans les cas simple, tout ce que vous devez spécifier est le mappage lower-case; les trois tableaux liés seront calculés automatiquement à partir de ce dernier.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>In the following three examples, @samp{%7s} specifies a minimum width of 7.  In the first case, the string inserted in place of @samp{%7s} has only 3 letters, it needs 4 blank spaces as padding.  In the second case, the string @code{"specification"} is 13 letters wide but is not truncated.  In the third case, the padding is on the right.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T163850Z" creationid="babac_000" creationdate="20140501T163850Z">
+        <seg>Dans les trois exemples suivants, @samp{%7s} spécifié une largeur minimum de 7. Dans le permier cas, la chaîne insérée à la place de @samp{%7s} a seulement 3 lettres, elle a besoin de 4 espaces de bourrage. Dans le second cas, la chaîne @code{"specification"} est  large de 13 lettres mais n'est pas tronquée. Dans le troisième cas, le bourrage est à droite.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3842,6 +4394,14 @@ sa valeur de position est employée et son tampon est ignoré.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>More examples:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133558Z" creationid="babac_000" creationdate="20140501T133558Z">
+        <seg>Autres exemples:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Most modern computers support the @acronym{IEEE} floating point standard, which provides for positive infinity and negative infinity as floating point values.  It also provides for a class of values called NaN or ``not-a-number''; numerical functions return such values in cases where there is no correct answer.  For example, @code{(/ 0.0 0.0)} returns a NaN.  For practical purposes, there's no significant difference between different NaN values in Emacs Lisp, and there's no rule for precisely which NaN value should be used in a particular case, so Emacs Lisp doesn't try to distinguish them (but it does report the sign, if you print it).  Here are the read syntaxes for these special floating point values:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
@@ -3989,6 +4549,14 @@ qu'un certain minimum (négatif).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Pairs of characters are compared according to their character codes.  Keep in mind that lower case letters have higher numeric values in the @acronym{ASCII} character set than their upper case counterparts; digits and many punctuation characters have a lower numeric value than upper case letters.  An @acronym{ASCII} character is less than any non-@acronym{ASCII} character; a unibyte non-@acronym{ASCII} character is always less than any multibyte non-@acronym{ASCII} character (@pxref{Text Representations}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140130Z" creationid="babac_000" creationdate="20140501T140130Z">
+        <seg>Les pairs de caractères sont comparées selon leurs codes de caractère. Garder en tête que les lettres minuscules ont des valeurs numériques supérieures en @acronym{ASCII} que leurs homologues majuscules; les chiffres et beaucoup de caractères de ponctuation ont une valeur numérique inférieure à celle des lettres majuscules. Un caractère @acronym{ASCII} est inférieur à tout caractère non @acronym{ASCII}; un caractère uni-octet non @acronym{ASCII} est toujours inférieur à tout caractère multi-octet non @acronym{ASCII} (voir la section @pxref{Text Representations}).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Please mail comments and corrections to</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4125,6 +4693,86 @@ qu'un certain minimum (négatif).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Replace the specification with a single @samp{%}.  This format specification is unusual in that it does not use a value.  For example, @code{(format "%% %d" 30)} returns @code{"% 30"}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T161223Z" creationid="babac_000" creationdate="20140501T161223Z">
+        <seg>Remplace la spécification par un simple @samp{%}.  Cette spécification de format est inhabituelle dans le fait qu'elle n'utilise pas de valeur. Par exemple, @code{(format "%% %d" 30)} retourne @code{"% 30"}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Replace the specification with notation for a floating point number, using either exponential notation or decimal-point notation, whichever is shorter.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T165241Z" creationid="babac_000" creationdate="20140501T161034Z">
+        <seg>Remplace la spécification par la notation pour un nombre à virgule flottante, en utilisant la notation exponentielle ou la notation point décimal, selon celle qui est la plus courte.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Replace the specification with the base-eight representation of an integer.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T155841Z" creationid="babac_000" creationdate="20140501T155810Z">
+        <seg>Remplace la spécification par la représentation en base huit d'un entier</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Replace the specification with the base-sixteen representation of an integer.  @samp{%x} uses lower case and @samp{%X} uses upper case.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T160350Z" creationid="babac_000" creationdate="20140501T160350Z">
+        <seg>Remplace la spécification par la représentation en base seize d'un entier.  @samp{%x} utilise les minuscules et @samp{%X} utilise les majuscules.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Replace the specification with the base-ten representation of an integer.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T155917Z" creationid="babac_000" creationdate="20140501T155917Z">
+        <seg>Remplace la spécifiaction par la représentation en base dix d'un entier</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Replace the specification with the character which is the value given.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T160505Z" creationid="babac_000" creationdate="20140501T160505Z">
+        <seg>Remplace la spécification par le caractère qui est la valeur donnée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Replace the specification with the decimal-point notation for a floating point number.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T165056Z" creationid="babac_000" creationdate="20140501T160806Z">
+        <seg>Remplace la spécification par la notation point décimal pour un nombre à virgule flottante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Replace the specification with the exponential notation for a floating point number.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T160646Z" creationid="babac_000" creationdate="20140501T160646Z">
+        <seg>Remplace la spécification par le notation exponentielle pour un nombre à virgule flottante (float).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Replace the specification with the printed representation of the object, made with quoting (that is, using @code{prin1}---@pxref{Output Functions}).  Thus, strings are enclosed in @samp{"} characters, and @samp{\} characters appear where necessary before special characters.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T155814Z" creationid="babac_000" creationdate="20140501T155516Z">
+        <seg>Remplace la spécification par la représentation affichée de l'objet, en utilisant les guillemets (c'est-à-dire, en utilisant @code{prin1}---@pxref{Output Functions}). Ainsi, les chaînes sont placées entres les caractères @samp{"}, et les caractères @samp{\} apparaissent si nécessaire devant les caractères spéciaux.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Replace the specification with the printed representation of the object, made without quoting (that is, using @code{princ}, not @code{prin1}---@pxref{Output Functions}).  Thus, strings are represented by their contents alone, with no @samp{"} characters, and symbols appear without @samp{\} characters.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T155823Z" creationid="babac_000" creationdate="20140501T155051Z">
+        <seg>Remplace la spécification avec les représentation affichée de l'objet, sans utiliser les guillemets (c'est-à-dire, en utilisant @code{princ}, non pas @code{prin1}---@pxref{Output Functions}).  Ainsi, les chaînes sont représentées par leurs contenus seuls, sans les caractères @samp{"}, les symboles apparaissent sans les caractères @samp{\}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Representation and range of floating point.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T030742Z">
@@ -4246,11 +4894,27 @@ canoniques : @code{t} ou @code{nil}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>See also the @code{compare-buffer-substrings} function in @ref{Comparing Text}, for a way to compare text in buffers.  The function @code{string-match}, which matches a regular expression against a string, can be used for a kind of string comparison; see @ref{Regexp Search}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140847Z" creationid="babac_000" creationdate="20140501T140847Z">
+        <seg>Voir aussi la fonction @code{compare-buffer-substrings}  dans @ref{Comparing Text}, pour la comparaison de texte dans les buffers.La fonction @code{string-match}, qui compare une expression régulière à une chaîne, peut être utilisée pour un type de comparaison de chaînes; voir @ref{Regular Expression Searching}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>See also the function @code{elt}, in @ref{Sequence Functions}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180904Z">
         <seg>
 Voir aussi la fonction @code{elt}, dans la partie @ref{Sequence Functions}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>See also the function @code{format} in @ref{Formatting Strings}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T143203Z" creationid="babac_000" creationdate="20140501T143203Z">
+        <seg>Voir aussi la fonction @code{format} dans @ref{Formatting Strings}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4309,6 +4973,22 @@ Voir aussi la fonction @code{elt}, dans la partie @ref{Sequence Functions}.</seg
         <seg>Lorsqu'on décale de deux places une combinaison de chiffres binaires
 vers la gauche, on produit les résultats suivants (avec des nombres
 binaires de 8 bits) :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Since @code{format} interprets @samp{%} characters as format specifications, you should @emph{never} pass an arbitrary string as the first argument.  This is particularly true when the string is generated by some Lisp code.  Unless the string is @emph{known} to never include any @samp{%} characters, pass @code{"%s"}, described below, as the first argument, and the string as the second, like this:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T153508Z" creationid="babac_000" creationdate="20140501T153508Z">
+        <seg>Puisque @code{format} interprète les caractères @samp{%} comme des spécifiactions de format, vous ne devez @emph{jamais} passer une chaîne arbitraire comme premier argument. Cela est particulièrement vrai lorsque la chaîne est générée par du code Lisp. Au moins que la chaîne soit @emph{connu} pour ne jamais inclure aucun caractère @samp{%}, passez @code{"%s"}, décrit ci-dessous, comme premier argument, et la chaîne comme deuxième, comme ceci :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Since it is impossible to change the length of an existing string, it is an error if @var{obj} doesn't fit within @var{string}'s actual length, or if any new character requires a different number of bytes from the character currently present at that point in @var{string}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T134621Z" creationid="babac_000" creationdate="20140501T134621Z">
+        <seg>Puisqu'il est impossible de changer la longueur d'unechaîne existante, on a une erreur s'il se trouve que @var{obj} ne rentre pas dans la longueur de @var{string}, ou si un nouveau caractère nécessite un nombre d'octets différent de celui du caractère actuellement présent à cet indice dans @var{string}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4373,6 +5053,14 @@ d'erreur sur une ligne commençant par @samp{@error{}}. Noter que
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Some of these conventions are ignored for specification characters for which they do not make sense.  That is, @samp{%s}, @samp{%S} and @samp{%c} accept a width starting with 0, but still pad with @emph{spaces} on the left.  Also, @samp{%%} accepts a width, but ignores it.  Here are some examples of padding:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T163210Z" creationid="babac_000" creationdate="20140501T163136Z">
+        <seg>Certaines des ces conventions sont ignorées par les caractères de spécification pour lesquels elles n'ont pas de sens.  Autrement dit, @samp{%s}, @samp{%S} et @samp{%c} acceptent un largeur commençant par zéro, mais toujours bourré avec @emph{espaces} à gauche.  En outre, @samp{%%} accepte une largeur, mais l'ignore. Voici quelques exemples de bourrage :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Sometimes it is useful to compare numbers with @code{equal}; it treats two numbers as equal if they have the same data type (both integers, or both floating point) and the same value.  By contrast, @code{=} can treat an integer and a floating point number as equal.  @xref{Equality Predicates}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4400,6 +5088,14 @@ Predicates}.</seg>
         <seg>Parfois pour aider à décrire un formulaire, nous montrons un autre
 formulaire qui produit des résultats identiques. L'équivalence exacte
 de deux formulaires est indiquée avec le @samp{@equiv{}}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Somewhat odd, but predictable, behavior can occur for certain ``non-greedy'' values of @var{separators} that can prefer empty matches over non-empty matches.  Again, such values rarely occur in practice:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T134048Z" creationid="babac_000" creationdate="20140501T134048Z">
+        <seg>Un comportement un peu bizarre mais prévisible peut se produire pour certaines valeurs de @var{separators} " peu gourmandes" qui peuvent préférer des correspondances vides à des correspondances non vides. Encore une fois, on rencontre ces valeurs rarement dans la pratique:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4548,6 +5244,14 @@ un exemple :</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Symbols are also allowed as arguments, in which case their print names are used.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140253Z" creationid="babac_000" creationdate="20140501T140253Z">
+        <seg>Les symboles sont aussi autorisés comme arguments, auquel cas c'est leurs noms qui sont utilisés.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Symbols have names, values, function definitions</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4632,6 +5336,14 @@ manière cumulée. S'il n'y a aucun argument, le résultat est 0.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The @code{concat} function always constructs a new string that is not @code{eq} to any existing string.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T103321Z" creationid="babac_000" creationdate="20140501T103321Z">
+        <seg>La fonction @code{concat} construit toujours une nouvelle chaîne qui n'est @code{eq} à aucune chaîne existante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The @code{vconcat} function also allows byte-code function objects as arguments.  This is a special feature to make it easy to access the entire contents of a byte-code function object.  @xref{Byte-Code Objects}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185050Z">
@@ -4687,6 +5399,14 @@ autrement. 0 est considéré non négatif.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205736Z">
         <seg>La @dfn{cellule de valeur} contient la valeur actuelle du symbole comme une variable. Quand un symbole est utilisé comme une forme, la valeur de la forme est le contenu de la cellule de valeur du symbole. Voir @code{symbol-value} dans @ref{Accessing Variable Values}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The Case Table</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T204424Z" creationid="babac_000" creationdate="20140501T203518Z">
+        <seg>Le tableau de casse</seg>
       </tuv>
     </tu>
     <tu>
@@ -4752,6 +5472,14 @@ nombres entiers.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The canonicalize table maps all of a set of case-related characters into a particular member of that set.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T205106Z" creationid="babac_000" creationdate="20140501T205036Z">
+        <seg>Le tableau canonicalize associe tout d'un jeu de caractères case-related à un membre particulier de ce jeu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The case table for the @acronym{ASCII} character set.  This should not be modified by any language environment settings.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T204349Z">
@@ -4774,6 +5502,22 @@ imprimé à côté de la marge.</seg>
       <tuv lang="fr-fr">
         <seg>La catégorie---fonction, variable, ou quoi que soit---est
 imprimé à côté de la marge.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The character case functions change the case of single characters or of the contents of strings.  The functions normally convert only alphabetic characters (the letters @samp{A} through @samp{Z} and @samp{a} through @samp{z}, as well as non-@acronym{ASCII} letters); other characters are not altered.  You can specify a different case conversion mapping by specifying a case table (@pxref{Case Tables}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T200121Z" creationid="babac_000" creationdate="20140501T200121Z">
+        <seg>Les fonctions de casse de caractère changent la casse de caractères simples ou du contenu des chaînes. Normalement, les fonctions convertissent seulement les caractères alphabétiques (les lettres de @samp{A} à @samp{Z} et de @samp{a} à @samp{z}, ainsi que les lettres non @acronym{ASCII}); les autres caractères ne sont pas modifiés. Vous pouvez spécifier un mappage différent de conversion de casse en spécifiant un tableau de casse (@pxref{Case Tables}).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The characters in @var{string}, other than the format specifications, are copied directly into the output, including their text properties, if any.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T151423Z" creationid="babac_000" creationdate="20140501T151423Z">
+        <seg>Les caractères dans @var{string}, autre que les spécifications de format, sont directement copiés dans la sortie, y compris leurs propriétés textuelles, s'ils en possèdent.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4810,6 +5554,22 @@ imprimé à côté de la marge.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The default value of @var{separators} for @code{split-string}.  Its usual value is @w{@code{"[ \f\t\n\r\v]+"}}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T134150Z" creationid="babac_000" creationdate="20140501T134150Z">
+        <seg>La valeur par défaut de @var{separators} pour @code{split-string}. La valeur habituelle est @w{@code{"[ \f\t\n\r\v]+"}}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The definition of a word is any sequence of consecutive characters that are assigned to the word constituent syntax class in the current syntax table (@pxref{Syntax Class Table}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T202551Z" creationid="babac_000" creationdate="20140501T202551Z">
+        <seg>La définition d'un mot est une suite de caractères consécutifs qui sont attribués au mot constituant la classe de syntaxe dans la syntaxe actuelle (@pxref{Syntax Class Table}).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The description follows on succeeding lines, sometimes with examples.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -4822,6 +5582,46 @@ imprimé à côté de la marge.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T173858Z">
         <seg>Les éléments contenus dans les vecteurs ou les listes peuvent être n'importe quel objet Lisp. Les éléments contenus dans les chaînes de caractères sont tous des caractères.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The equivalences table maps each one of a set of case-related characters into the next character in that set.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T205247Z" creationid="babac_000" creationdate="20140501T205247Z">
+        <seg>Le tableau equivalences associe chacun des jeux de caractères case-related au prochain caractère dans ce jeu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The examples below use the characters @samp{X} and @samp{x} which have @acronym{ASCII} codes 88 and 120 respectively.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T200306Z" creationid="babac_000" creationdate="20140501T200306Z">
+        <seg>Les exemples ci-dessous utilisent les caractères @samp{X} et @samp{x} qui ont respectivement pour code @acronym{ASCII} 88 et 120.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The extra table @var{canonicalize} maps each character to a canonical equivalent; any two characters that are related by case-conversion have the same canonical equivalent character.  For example, since @samp{a} and @samp{A} are related by case-conversion, they should have the same canonical equivalent character (which should be either @samp{a} for both of them, or @samp{A} for both of them).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T210109Z" creationid="babac_000" creationdate="20140501T210109Z">
+        <seg>Le tableau supplémentaire @var{canonicalize} associe chaque caractère à un équivalent canonique; deux caractères qui sont liés par case-conversion ont le même caractère équivalent canonique. Par exemple, puisque @samp{a} et @samp{A} sont liés par case-conversion, ils devraient avoir le même caractère équivalent canonique (qui devrait être soit @samp{a} pour les deux, ou @samp{A} pour les deux).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The extra table @var{equivalences} is a map that cyclically permutes each equivalence class (of characters with the same canonical equivalent).  (For ordinary @acronym{ASCII}, this would map @samp{a} into @samp{A} and @samp{A} into @samp{a}, and likewise for each set of equivalent characters.)</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T210548Z" creationid="babac_000" creationdate="20140501T210548Z">
+        <seg>Le tableau supplémentaire @var{equivalences} est une map qui permute cycliquement chaque classe d'équivalence (de caractères avec le même équivalent canonique).  (Pour l'ordinaire @acronym{ASCII}, cela devrait associer @samp{a} à @samp{A} et @samp{A} à @samp{a}, et de même pour chaque ensemble de caractères équivalents.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The flag @samp{#} specifies an ``alternate form'' which depends on the format in use.  For @samp{%o} it ensures that the result begins with a @samp{0}.  For @samp{%x} and @samp{%X}, it prefixes the result with @samp{0x} or @samp{0X}.  For @samp{%e}, @samp{%f}, and @samp{%g}, the @samp{#} flag means include a decimal point even if the precision is zero.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T193347Z" creationid="babac_000" creationdate="20140501T193020Z">
+        <seg>Le drapeau @samp{#} spécifie une "alternate form'' qui dépend du format utilisé.  Pour @samp{%o} il assure que le résultat commence par @samp{0}.  Pour @samp{%x} et @samp{%X}, il précède le résultat avec @samp{0x} ou @samp{0X}.  Pour @samp{%e}, @samp{%f}, et @samp{%g}, le drapeau @samp{#} signifie l'inclusion d'un point décimal même si la précision est égale à zéro.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4916,6 +5716,14 @@ d'Emacs Lisp, ne vérifie pas le débordement, ainsi de décalage à
 gauche peut changer le bit fort et changer le signe du nombre. Par
 exemple, le décalage à gauche de 268.435.455 produit @minus{}2 sur une
 machine de 29 bits :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The function @code{string=} ignores the text properties of the two strings.  When @code{equal} (@pxref{Equality Predicates}) compares two strings, it uses @code{string=}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T135545Z" creationid="babac_000" creationdate="20140501T135545Z">
+        <seg>La fonction @code{string=} ignore les propriétés textuelles des deux chaînes. Quand @code{equal} (voir la section @pxref{Equality Predicates}) compare deux chaînes, il utilise @code{string=}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5024,12 +5832,28 @@ version 20.3 d'Emacs, la valeur est 3.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The most basic way to alter the contents of an existing string is with @code{aset} (@pxref{Array Functions}).  @code{(aset @var{string} @var{idx} @var{char})} stores @var{char} into @var{string} at index @var{idx}.  Each character occupies one or more bytes, and if @var{char} needs a different number of bytes from the character already present at that index, @code{aset} signals an error.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T134357Z" creationid="babac_000" creationdate="20140501T134357Z">
+        <seg>Le moyen le plus simple pour modifier le contenu d'une chaîne existante est d'utiliser @code{aset} (voir la section @pxref{Functions that Operate on Arrays}). @code{(aset @var{string} @var{idx} @var{char}) stocke @var{char} dans @var{string} à l'indice @var{idx}. Chaque caractère occupe un ou plusieurs octets, et si @var{char} a besoin d'un nombre d'octets différent de celui du caractère déjà présent à cet indice, @code{aset} soulève une erreur.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The negative integer, @minus{}5, is creating by subtracting 4 from @minus{}1.  In binary, the decimal integer 4 is 100.  Consequently, @minus{}5 looks like this:</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Le nombre entier négatif, @minus{}5, est créé en soustrayant 4 de
 @minus{}1. Dans la base binaire, le nombre entier décimal 4 est
 100. En conséquence, @minus{}5 ressemble à ceci:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The parsing skips spaces and tabs at the beginning of @var{string}, then reads as much of @var{string} as it can interpret as a number in the given base.  (On some systems it ignores other whitespace at the beginning, not just spaces and tabs.)  If the first character after the ignored whitespace is neither a digit in the given base, nor a plus or minus sign, nor the leading dot of a floating point number, this function returns 0.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T145346Z" creationid="babac_000" creationdate="20140501T145346Z">
+        <seg>L'analyse ignore les espaces et les tabulations au début de @var{string}, puis lit @var{string} tant que elle peut l'interpréter comme un nombre dans la base donnée.  (Sur certains systèmes, elle ignore les autre "whitespace" au début, pas seulement les espaces et les tabulations.)  Si le premier caractère après le "whitespace" ignoré n'est ni un chiffre dans la base donnée, ni un signe plus ou moins, ni le premier points d'un "float", cette fonction retourne 0.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5089,6 +5913,14 @@ des nombres négatifs à virgule flottante, comme dans @samp{- 1.0}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The result is not @code{("" "two" "words" "")}, which would rarely be useful.  If you need such a result, use an explicit value for @var{separators}:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133435Z" creationid="babac_000" creationdate="20140501T133435Z">
+        <seg>Le résultat n'est pas @code{("" "deux" "mots" "")}, qui serait rarement utile. Si vous voulez un tel résultat, utilisez une valeur explicite pour @var{separators} :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The return value is always @code{nil}; to make this function useful, @var{function} should have side effects.  For example, here is how to examine each element of the syntax table:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T193115Z">
@@ -5109,6 +5941,14 @@ globale. Normalement toutes les deux sont employées.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The strings are both converted to multibyte for the comparison (@pxref{Text Representations}) so that a unibyte string and its conversion to multibyte are always regarded as equal.  If @var{ignore-case} is non-@code{nil}, then case is ignored, so that upper case letters can be equal to lower case letters.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140532Z" creationid="babac_000" creationdate="20140501T140532Z">
+        <seg>Les deux chaînes sont converties en multi-octet pour la comparaison (voir la section @pxref{Text Representations}) de telle sorte qu'une chaîne uni-octet et sa conversion en multi-octet sont toujours considérées comme égales. Si @var{ignore-case} est non @code{nil}, alors la casse est ignorée, de sorte que les lettres majuscules peuvent être égales aux minuscules.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The syntax for integers in bases other than 10 uses @samp{#} followed by a letter that specifies the radix: @samp{b} for binary, @samp{o} for octal, @samp{x} for hex, or @samp{@var{radix}r} to specify radix @var{radix}.  Case is not significant for the letter that specifies the radix.  Thus, @samp{#b@var{integer}} reads @var{integer} in binary, and @samp{#@var{radix}r@var{integer}} reads @var{integer} in radix @var{radix}.  Allowed values of @var{radix} run from 2 to 36.  For example:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120811Z">
@@ -5121,6 +5961,14 @@ significatif pour la lettre qui indique la base. Ainsi, le
 @samp{#@var{base}r@var{integer}} lit @var{integer} dans la base
 @var{base}. Les valeurs permises de @var{base} vont de 2 à 36. Par
 exemple:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The upcase table maps each character into the corresponding upper case character.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T205043Z" creationid="babac_000" creationdate="20140501T204902Z">
+        <seg>Le tableau upcase associe à chaque caractère à son caractère majuscule correspondant.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5351,6 +6199,14 @@ d'Emacs en service.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>These functions do not modify the strings that are passed to them as arguments.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T200153Z" creationid="babac_000" creationdate="20140501T200153Z">
+        <seg>Ces fonctions ne modifient pas les chaînes qui leur sont passées en arguments.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>These mathematical functions allow integers as well as floating point numbers as arguments.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -5415,6 +6271,14 @@ donné, @code{+} retourne 0.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function alters part of the contents of the string @var{string}, by storing @var{obj} starting at index @var{idx}.  The argument @var{obj} may be either a character or a (smaller) string.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T134516Z" creationid="babac_000" creationdate="20140501T134516Z">
+        <seg>Cette fonction modifie une partie du contenu de la chaîne @var{string}: elle stocke @var{obj} en commençant à l'indice @var{idx}. L'argument @var{obj} peut être soit un caractère soit une (plus petite) chaîne.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function calls @var{function} for each element of @var{char-table}.  @var{function} is called with two arguments, a key and a value.  The key is a possible @var{range} argument for @code{char-table-range}---either a valid character or a generic character---and the value is @code{(char-table-range @var{char-table} @var{key})}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192904Z">
@@ -5427,6 +6291,46 @@ donné, @code{+} retourne 0.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215759Z">
         <seg>Cette fonction appelle une fois @var{function} pour chacune des associations de @var{table}. Il faut que @var{function} prenne deux arguments --- une clé @var{key} présente dans @var{table} et sa valeur associée @var{value}. @var{maphash} retourne @var{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function capitalizes strings or characters.  If @var{string-or-char} is a string, the function creates and returns a new string, whose contents are a copy of @var{string-or-char} in which each word has been capitalized.  This means that the first character of each word is converted to upper case, and the rest are converted to lower case.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T202138Z" creationid="babac_000" creationdate="20140501T202138Z">
+        <seg>Cette fonction capitalise les chaînes ou les caractères. Si @var{string-or-char} est une chaîne, la fonction crée et retourne une nouvelle chaîne, dont le contenu est une copie de @var{string-or-char} dans laquelle chaque mot a été capitalisé. Cela signifie que le premier caractère de chaque mot est converti en majuscule, et que le reste est converti en minuscule.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function compares the specified part of @var{string1} with the specified part of @var{string2}.  The specified part of @var{string1} runs from index @var{start1} up to index @var{end1} (@code{nil} means the end of the string).  The specified part of @var{string2} runs from index @var{start2} up to index @var{end2} (@code{nil} means the end of the string).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140446Z" creationid="babac_000" creationdate="20140501T140446Z">
+        <seg>Cette fonction compare la partie spécifiée de @var{string1} avec la partie spécifiée de @var{string2}. La partie spécifiée de @var{string1} va de l'indice @var{start1} jusqu'à l'indice @var{end1} (@code{nil} signifie la fin de la chaîne). La partie spécifiée de @var{string2} va de l'indice @var{start2} jusqu'à l'indice @var{end2} (@code{nil} signifie la fin de la chaîne).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function compares two strings a character at a time.  It scans both the strings at the same time to find the first pair of corresponding characters that do not match.  If the lesser character of these two is the character from @var{string1}, then @var{string1} is less, and this function returns @code{t}.  If the lesser character is the one from @var{string2}, then @var{string1} is greater, and this function returns @code{nil}.  If the two strings match entirely, the value is @code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140015Z" creationid="babac_000" creationdate="20140501T140015Z">
+        <seg>Cette fonction compare deux chaînes de caractères à la fois. Elle scanne les deux chaînes en même temps pour trouver la première paire de caractères correspondants qui ne sont pas les mêmes. Si le moindre caractère de ces deux est le caractère de @var{string1}, alors @var{string1} est moindre, et cette fonction retourne @code{t}. Si le moindre caractère est celui de @var{string2}, alors @var{string1} est plus grand, et cette fonction retourne @code{nil}. Si les deux chaînes correspondent entièrement, la valeur est @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function converts a character or a string to lower case.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T200359Z" creationid="babac_000" creationdate="20140501T200359Z">
+        <seg>Cette fonctions convertit un caractère ou une chaîne en minuscules</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function converts a character or a string to upper case.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T201029Z" creationid="babac_000" creationdate="20140501T201029Z">
+        <seg>Cette fonctions convertit un caractère ou une chaîne en majuscules.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5587,6 +6491,14 @@ si nous continuons,</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function may be eliminated in the future if it does not seem useful enough to retain.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T142539Z" creationid="babac_000" creationdate="20140501T142539Z">
+        <seg>Cette fonction peut être éliminée à l'avenir si elle ne semble pas être assez utile pour la conserver.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function multiplies its arguments together, and returns the product.  When given no arguments, @code{*} returns 1.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -5668,6 +6580,22 @@ produit. Si aucun argument n'est donné, @code{*} retourne 1.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function returns @code{t} if the arguments represent the same character, @code{nil} otherwise.  This function ignores differences in case if @code{case-fold-search} is non-@code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T135417Z" creationid="babac_000" creationdate="20140501T135417Z">
+        <seg>Cette fonction retourne @code{t} si les arguments représentent les mêmes caractères, sinon @code{nil}. Cette fonction ignore la casse si case-fold-search est non @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns @code{t} if the characters of the two strings match exactly.  Symbols are also allowed as arguments, in which case their print names are used.  Case is always significant, regardless of @code{case-fold-search}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T135500Z" creationid="babac_000" creationdate="20140501T135500Z">
+        <seg>Cette fonction retourne @code{t} si les caractères de deux chaînes correspondent exactement. Les symboles sont également autorisés comme arguments, dans ce cas leurs noms sont utilisés. La casse a toujours de l'importance, quel que soit @code{case-fold-search}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function returns @var{number-or-marker} minus 1.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -5707,6 +6635,30 @@ propriétés de toutes les abréviations copiées à 0.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function returns a new string consisting of the characters in the arguments passed to it (along with their text properties, if any).  The arguments may be strings, lists of numbers, or vectors of numbers; they are not themselves changed.  If @code{concat} receives no arguments, it returns an empty string.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T103134Z" creationid="babac_000" creationdate="20140501T103134Z">
+        <seg>Cette fonction retourne une nouvelle chaîne constituée des caractères des arguments qui lui sont passés (ainsi que leurs propriétés textuelles, s'ils en ont). Les arguments peuvent être des chaînes de caractères, des listes de nombres, ou des vecteurs de nombres; ils ne sont pas eux-mêmes modifiés. Si @code{concat} ne reçoit aucun argument, elle retourne une chaîne vide.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns a new string containing one character, @var{character}.  This function is semi-obsolete because the function @code{string} is more general.  @xref{Creating Strings}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T142028Z" creationid="babac_000" creationdate="20140501T142028Z">
+        <seg>Cette fonction retourne une nouvelle chaîne contenant un caractère, @var{character}.  Cette fonction est semi-obsolète puisque la fonction @code{string} est plus générale.  @xref{Creating Strings}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns a new string that is made by copying @var{string} and then replacing any format specification in the copy with encodings of the corresponding @var{objects}.  The arguments @var{objects} are the computed values to be formatted.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T152253Z" creationid="babac_000" creationdate="20140501T151221Z">
+        <seg>Cette fonction retourne une nouvelle chaîne qui est fait en copiant @var{string} puis en remplaçant toute spécification de format de la copie par les codages des @var{objects} correspondants.  L'argument @var{objects} sont les valeurs calculées à être formatées.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function returns a new string which consists of those characters from @var{string} in the range from (and including) the character at the index @var{start} up to (but excluding) the character at the index @var{end}.  The first character is at index zero.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T121434Z">
@@ -5736,6 +6688,14 @@ propriétés de toutes les abréviations copiées à 0.</seg>
       <tuv lang="fr-fr">
         <seg>Cette fonction renvoie un nombre entier pseudo-aléatoire. Les appels
 répétés renvoient a une série de nombres entiers pseudo-aléatoires.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns a string consisting of the printed base-ten representation of @var{number}, which may be an integer or a floating point number.  The returned value starts with a minus sign if the argument is negative.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T143048Z" creationid="babac_000" creationdate="20140501T143048Z">
+        <seg>Cette fonction retourne une chaîne constituée de la représentation en base dix de @var{number}, qui peut être un entier ou un nombre à virgule flottante (float).  La valeur retournée commence par le signe moins si l'argument est négatif.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5837,6 +6797,14 @@ arrondie vers le bas à un nombre entier.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function returns the first character in @var{string}.  If the string is empty, the function returns 0.  The value is also 0 when the first character of @var{string} is the null character, @acronym{ASCII} code 0.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T142235Z" creationid="babac_000" creationdate="20140501T142235Z">
+        <seg>Cette fonction retourne le premier caractère de @var{string}.  Si la chaîne est vide, la fonction retourne 0.  La valeur retournée est aussi  0 lorsque le premier caractère de @var{string} est un caractère nul, code @acronym{ASCII} 0.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function returns the integer remainder after division of @var{dividend} by @var{divisor}.  The arguments must be integers or markers.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -5891,6 +6859,14 @@ Si vous n'indiquez pas @var{base}, la base</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182407Z">
         <seg>Cette fonction retourne le nombre d'éléments dans une suite @var{sequence}. Si une suite @var{sequence} est une liste pointée, une erreur @code{wrong-type-argument} (mauvais-type-d-argument) est signalée. Les listes circulaires peuvent entraîner une boucle infinie. Pour une table de chaînes de caractères, la valeur retournée est toujours supérieure d'un au code caractère maximum d'Emacs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns the numeric value of the characters in @var{string}.  If @var{base} is non-@code{nil}, it must be an integer between 2 and 16 (inclusive), and integers are converted in that base.  If @var{base} is @code{nil}, then base ten is used.  Floating point conversion only works in base ten; we have not implemented other radices for floating point numbers, because that would be much more work and does not seem useful.  If @var{string} looks like an integer but its value is too large to fit into a Lisp integer, @code{string-to-number} returns a floating point result.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T144554Z" creationid="babac_000" creationdate="20140501T144554Z">
+        <seg>Cette fonction retourne la valeur numérique des caractères de @var{string}.  Si @var{base} est non @code{nil}, elle doit être un entier compris entre 2 et 16 (inclusive), et les entiers sont convertis dans cette base.  Si @var{base} est @code{nil}, alors la base dix est utilisée. La conversion de la virgule ne fonctionne qu'en base dix; nous n'avons pas implanté d'autres base de numération pour les nombres à virgule, parce que ça serait  beaucoup plus de travail et que ça ne semble pas utile. Si @var{string} ressemble à un entier mais sa valeur est trop large pour tenir dans un entier Lisp, @code{string-to-number} retourne un résultat de type "float".</seg>
       </tuv>
     </tu>
     <tu>
@@ -6009,6 +6985,14 @@ zéro, et renvoie cette valeur comme nombre à virgule flottante.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function splits @var{string} into substrings at matches for the regular expression @var{separators}.  Each match for @var{separators} defines a splitting point; the substrings between the splitting points are made into a list, which is the value returned by @code{split-string}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133013Z" creationid="babac_000" creationdate="20140501T133013Z">
+        <seg>Cette fonction sépare @var{string} en sous-chaînes à chaque correspondance avec  les expressions régulières @var{separators}. Chaque fois qu'il y a correspondance avec @var{separators}, un point de séparation est défini; les sous-chaînes entre les points de séparation sont mises dans une liste, qui est la valeur retournée par @code{split-string}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function stores @var{value} in extra slot @var{n} of @var{char-table}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192335Z">
@@ -6086,6 +7070,14 @@ d'abréviations @var{table}, la laissant vide. Elle renvoie toujours
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function works like @code{assoc}, except that @var{key} must be a string or symbol, and comparison is done using @code{compare-strings}.  Symbols are converted to strings before testing.  If @var{case-fold} is non-@code{nil}, it ignores case differences.  Unlike @code{assoc}, this function can also match elements of the alist that are strings or symbols rather than conses.  In particular, @var{alist} can be a list of strings or symbols rather than an actual alist.  @xref{Association Lists}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140749Z" creationid="babac_000" creationdate="20140501T140749Z">
+        <seg>Cette fonction se comporte comme @code{assoc}, sauf que @var{key} doit être une chaîne ou un symbole, et la comparaison se fait en utilisant @code{compare-strings}. Les symboles sont convertis en chaîne avant le test. Si @var{case-fold} est non @code{nil}, il ignore la différence de casse. Contrairement à @code{assoc}, cette fonction peut aussi faire correspondre des éléments de la "alist" qui sont des chaînes ou des symboles plutôt que des cellules cons. En particulier, @var{alist} peut être une liste de chaînes ou de symboles plutôt qu'une "alist" réelle. Voir la section @xref{Association Lists}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This imaginary special form implements a loop that executes the @var{body} forms and then increments the variable @var{var} on each iteration.  On the first iteration, the variable has the value @var{from}; on subsequent iterations, it is incremented by one (or by @var{inc} if that is given).  The loop exits before executing @var{body} if @var{var} equals @var{to}.  Here is an example:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121426Z">
@@ -6140,6 +7132,14 @@ Lisp, correspondant à la version d'Emacs @value{EMACSVER}.</seg>
       <tuv lang="fr-fr">
         <seg>C'est la valeur de @code{abbrev-mode} pour les tampons qui ne la
 modifient pas. C'est identique à @code{(default-value 'abbrev-mode)}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This makes @var{string} a unibyte string and clears its contents to zeros.  It may also change @var{string}'s length.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T135236Z" creationid="babac_000" creationdate="20140501T135236Z">
+        <seg>Cela fait de @var{string} une chaîne uni-octet et efface le contenu en l'amenant à 0. Cela peut aussi changer la longueur de @var{string}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6329,6 +7329,14 @@ il signale une erreur @code{domain-error}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This section describes functions for conversions between characters, strings and integers.  @code{format} (@pxref{Formatting Strings})  and @code{prin1-to-string} (@pxref{Output Functions}) can also convert Lisp objects into strings.  @code{read-from-string} (@pxref{Input Functions}) can ``convert'' a string representation of a Lisp object into an object.  The functions @code{string-make-multibyte} and @code{string-make-unibyte} convert the text representation of a string (@pxref{Converting Representations}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T141546Z" creationid="babac_000" creationdate="20140501T141546Z">
+        <seg>Cette section décrit les fonctions de conversions entre les caractères, les chaînes et les entiers.  @code{format} (@pxref{Formatting Strings})  et @code{prin1-to-string} (@pxref{Output Functions}) peuvent également convertir les objets Lisp en chaînes.  @code{read-from-string} (@pxref{Input Functions}) peut "convertir'' une représentation sous forme d'une chaîne d'un objet Lisp en un objet.  Les fonctions @code{string-make-multibyte} et @code{string-make-unibyte} convertissent la représentation textuelle d'une chaîne (@pxref{Converting Representations}).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This section describes how to create and manipulate abbrev tables.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -6397,6 +7405,14 @@ activée dans n'importe quelle mode.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This works like @code{substring} but discards all text properties from the value.  Also, @var{start} may be omitted or @code{nil}, which is equivalent to 0.  Thus, @w{@code{(substring-no-properties @var{string})}} returns a copy of @var{string}, with all text properties removed.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133039Z" creationid="babac_000" creationdate="20140501T102920Z">
+        <seg>Cela fonctionne comme @code{substring} mais rejette toutes les propriétés du texte en valeur. De même, @var{start} peut être omis ou @code{nil}, qui est équivalent à 0. Donc, @w{@code{(substring-no-properties @var{string})}} retourne une copie de @var{string}, en enlevant toutes les propriétés textuelles.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Throughout this manual, the phrases ``the Lisp reader'' and ``the Lisp printer'' refer to those routines in Lisp that convert textual representations of Lisp objects into actual Lisp objects, and vice versa.  @xref{Printed Representation}, for more details.  You, the person reading this manual, are thought of as ``the programmer'' and are addressed as ``you.'' ``The user'' is the person who uses Lisp programs, including those you write.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
@@ -6425,6 +7441,14 @@ place vers la droite ressemble à ceci:</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Astuces</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>To clear out a string that contained a password, use @code{clear-string}:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T135155Z" creationid="babac_000" creationdate="20140501T135155Z">
+        <seg>Pour effacer une chaîne qui contient un mot de passe, utilisez @code{clear-string} :</seg>
       </tuv>
     </tu>
     <tu>
@@ -6654,10 +7678,66 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>When the argument to @code{capitalize} is a character, @code{capitalize} has the same result as @code{upcase}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T202633Z" creationid="babac_000" creationdate="20140501T202633Z">
+        <seg>Quand l'argument de @code{capitalize} est un caractère, @code{capitalize} a le même résultat que @code{upcase}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>When the argument to @code{downcase} is a string, the function creates and returns a new string in which each letter in the argument that is upper case is converted to lower case.  When the argument to @code{downcase} is a character, @code{downcase} returns the corresponding lower case character.  This value is an integer.  If the original character is lower case, or is not a letter, then the value equals the original character.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T200922Z" creationid="babac_000" creationdate="20140501T200922Z">
+        <seg>Quand l'argument de @code{downcase} est une chaîne, la fonction crée et retourne une nouvelle chaîne dans laquelle chaque lettre de l'argument qui est en majuscule est converie en minuscule. Quand l'argument de @code{downcase} est un caractère, @code{downcase} retourne le caractère minuscule correspondant. Cette valeur est un entier. Si le caractère originel est en minuscule, ou si n'est pas une lettre, alors la valeur est égale au caractère originel.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>When the argument to @code{upcase-initials} is a character, @code{upcase-initials} has the same result as @code{upcase}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T203335Z" creationid="babac_000" creationdate="20140501T203335Z">
+        <seg>Quand l'argument de @code{upcase-initials} est un caractère, @code{upcase-initials} a le même résultat que @code{upcase}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>When the argument to @code{upcase} is a character, @code{upcase} returns the corresponding upper case character.  This value is an integer.  If the original character is upper case, or is not a letter, then the value returned equals the original character.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T201423Z" creationid="babac_000" creationdate="20140501T201423Z">
+        <seg>Qaund l'argument de @code{upcase} est un caractère, @code{upcase} retourne la caractère majuscule correspondant. Cette valeur est un entier. Si le caractère originel est en majuscule, ou si n'est pas une lettre, alors la valeur est égale au caractère originel.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>When the argument to @code{upcase} is a string, the function creates and returns a new string in which each letter in the argument that is lower case is converted to upper case.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T201223Z" creationid="babac_000" creationdate="20140501T201223Z">
+        <seg>Quand l'argument de @code{upcase} est une chaîne, la fonctions crée et retourne une nouvelle chaîne dans laquelle chaque lettre de l'argument qui est en minuscule est convertie en majuscule.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>When the strings have different lengths, and they match up to the length of @var{string1}, then the result is @code{t}.  If they match up to the length of @var{string2}, the result is @code{nil}.  A string of no characters is less than any other string.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140237Z" creationid="babac_000" creationdate="20140501T140237Z">
+        <seg>Quand les chaînes sont de longueurs différentes, et qu'elles correspondent à la longueur de @var{string1}, alors le résultat est @code{t}. Si elles correspondent à la longueur de @var{string2}, le résultat est @code{nil}. Une chaîne sans aucun caractère est moindre que toute autre chaîne.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>When you add an association to a hash table and the table is ``full,'' it grows automatically.  This value specifies how to make the hash table larger, at that time.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214635Z">
         <seg>Quand on ajoute une association à une table de hachage et que la table est ``pleine'', elle s'agrandit automatiquement. Cette valeur spécifie comment rendre la table de hachage plus grande à ce moment.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>When you construct a case table, you can provide @code{nil} for @var{canonicalize}; then Emacs fills in this slot from the lower case and upper case mappings.  You can also provide @code{nil} for @var{equivalences}; then Emacs fills in this slot from @var{canonicalize}.  In a case table that is actually in use, those components are non-@code{nil}.  Do not try to specify @var{equivalences} without also specifying @var{canonicalize}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T211606Z" creationid="babac_000" creationdate="20140501T211606Z">
+        <seg>Quand vous construisez un tableau de casse, vous pouvez mettre @code{nil} pour @var{canonicalize}; alors Emacs remplit dans cet emplacement avec le mappage miniscule et majuscule. Vous pouvez mettre @code{nil} pour @var{equivalences}; alors Emacs remplit cet emplacement avec @var{canonicalize}. Dans un tableau de casse qui en utilisation, ces composant sont non @code{nil}.  N'essayez pas de préciserr @var{equivalences} sans préciser également @var{canonicalize}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6690,6 +7770,14 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Écriture de déclarations de personnalisation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>You can customize case conversion by installing a special @dfn{case table}.  A case table specifies the mapping between upper case and lower case letters.  It affects both the case conversion functions for Lisp objects (see the previous section) and those that apply to text in the buffer (@pxref{Case Changes}).  Each buffer has a case table; there is also a standard case table which is used to initialize the case table of new buffers.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T204515Z" creationid="babac_000" creationdate="20140501T204217Z">
+        <seg>Vous pouvez personnaliser la conversion de casse en installant un @dfn{tableau de casse} spécial. Un tableau de casse spécifie le mappage entre les majuscules et les minuscules. Elle affecte à la fois les fonctions de conversion de casse pour les objets Lisp (voir la section précédente) et celles qui s'appliquent au texte dans les buffers (@pxref{Case Changes}). Chaque buffer a un tableau de casse; il y a aussi un tableau de casse standard qui est utilisée pour initialiser le tablau de case des nouveaux buffers.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7716,6 +8804,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>case conversion in Lisp</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T193513Z" creationid="babac_000" creationdate="20140501T193513Z">
+        <seg>Conversion de la casse en Lisp</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>case-fold-search</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -7768,6 +8864,22 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101144Z">
         <seg>Les tableaux de caractères</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>character case</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T193450Z" creationid="babac_000" creationdate="20140501T193450Z">
+        <seg>La casse du caractère</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>character to string</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T141911Z" creationid="babac_000" creationdate="20140501T141911Z">
+        <seg>De caractère à chaîne</seg>
       </tuv>
     </tu>
     <tu>
@@ -7860,6 +8972,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>concatenating strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T103040Z" creationid="babac_000" creationdate="20140501T103040Z">
+        <seg>Concaténation des chaînes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>conditional evaluation</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -7876,6 +8996,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>conversion of strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T140942Z" creationid="babac_000" creationdate="20140501T140942Z">
+        <seg>Conversion des chaînes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>convert-standard-filename filename</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -7888,6 +9016,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>copy-abbrev-table table</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>copying strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T103006Z" creationid="babac_000" creationdate="20140501T103006Z">
+        <seg>Copie des chaînes</seg>
       </tuv>
     </tu>
     <tu>
@@ -8588,6 +9724,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>field width</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T161939Z" creationid="babac_000" creationdate="20140501T161939Z">
+        <seg>Largeur du champ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>file-name-buffer-file-type-alist</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -8738,6 +9882,22 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>pour l'enregistrement d'informations diverses.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>format specification</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T151501Z" creationid="babac_000" creationdate="20140501T151501Z">
+        <seg>La spécification du format</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>formatting strings</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T145700Z" creationid="babac_000" creationdate="20140501T145700Z">
+        <seg>Formatage des chaînes de caractères</seg>
       </tuv>
     </tu>
     <tu>
@@ -8982,6 +10142,38 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>integer to decimal</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T142632Z" creationid="babac_000" creationdate="20140501T142632Z">
+        <seg>D'entier à décimal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>integer to hexadecimal</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T155944Z" creationid="babac_000" creationdate="20140501T155944Z">
+        <seg>D'entier à hexadecimal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>integer to octal</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T155730Z" creationid="babac_000" creationdate="20140501T155730Z">
+        <seg>D'entier à octal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>integer to string</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T142602Z" creationid="babac_000" creationdate="20140501T142602Z">
+        <seg>D'entier à chaîne</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>integerp object</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -9112,6 +10304,14 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>lexical comparison</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T135904Z" creationid="babac_000" creationdate="20140501T135904Z">
+        <seg>Comparaison lexicale</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>lisp-mode-abbrev-table</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -9164,6 +10364,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T212337Z">
         <seg>tables de recherche</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lower case</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T193429Z" creationid="babac_000" creationdate="20140501T193429Z">
+        <seg>Miniscule</seg>
       </tuv>
     </tu>
     <tu>
@@ -9552,6 +10760,14 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>padding</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T162000Z" creationid="babac_000" creationdate="20140501T162000Z">
+        <seg>bourrage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>parse-sexp-ignore-comments</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -9644,6 +10860,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>pre-abbrev-expand-hook</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>precision in format specifications</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T164220Z" creationid="babac_000" creationdate="20140501T164220Z">
+        <seg>Des précision dans les spécifications de format</seg>
       </tuv>
     </tu>
     <tu>
@@ -10040,6 +11264,14 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>split-string string &amp;optional separators omit-nulls</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T132823Z" creationid="babac_000" creationdate="20140501T132823Z">
+        <seg>split-string string &amp;optionnel separators omit-nulls</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>split-window-keep-point</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -10072,10 +11304,34 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>string equality</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T135326Z" creationid="babac_000" creationdate="20140501T135326Z">
+        <seg>Egalité de chaîne</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>string length</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174940Z">
         <seg></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>string to character</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T142044Z" creationid="babac_000" creationdate="20140501T142044Z">
+        <seg>De chaîne à caractère</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>string to number</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T143216Z" creationid="babac_000" creationdate="20140501T143216Z">
+        <seg>De chaîne à nombre</seg>
       </tuv>
     </tu>
     <tu>
@@ -10120,6 +11376,14 @@ logarithmes naturels.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>strings, formatting them</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T145806Z" creationid="babac_000" creationdate="20140501T145806Z">
+        <seg>Les chaînes et leur formatage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>strings-consed</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -10132,6 +11396,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T121225Z">
         <seg>substring string debut &amp;fin optionnelle</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>substring-no-properties string &amp;optional start end</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133023Z" creationid="babac_000" creationdate="20140501T102742Z">
+        <seg>substring-no-properties string &amp;optionnel fin debut</seg>
       </tuv>
     </tu>
     <tu>
@@ -10396,6 +11668,14 @@ logarithmes naturels.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>update-file-autoloads</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>upper case</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T193419Z" creationid="babac_000" creationdate="20140501T193419Z">
+        <seg>Majuscule</seg>
       </tuv>
     </tu>
     <tu>
