@@ -3948,6 +3948,14 @@ toutes les machines connues arrondissent en mode standard.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>If the two objects are not equal, the values returned by @code{sxhash} are usually different, but not always; once in a rare while, by luck, you will encounter two distinct-looking objects that give the same result from @code{sxhash}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195253Z">
+        <seg>Si deux objets ne sont pas égaux, d'habitude les valeurs retournées par @code{sxhash} sont différentes, mais pas toujours. Une fois de temps en temps, par chance, vous rencontrerez deux objets apparemment distincts mais dont le résultat de @code{sxhash} est identique.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>If the width is too small, @code{format} does not truncate the object's printed representation.  Thus, you can use a width to specify a minimum spacing between columns with no risk of losing information.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T163511Z">
@@ -3964,6 +3972,14 @@ toutes les machines connues arrondissent en mode standard.</seg>
 @var{definitions} à @var{tabname}, plutôt que de modifier en entier le
 contenu original. (Un appel suivant modifie seulement des abréviations
 explicitement redéfinies ou éliminées dans @var{definitions}.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>If two objects @var{obj1} and @var{obj2} are equal, then @code{(sxhash @var{obj1})} and @code{(sxhash @var{obj2})} are the same integer.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195225Z">
+        <seg>Si deux objets @var{obj1} et @var{obj2} sont égaux, alors @code{(sxhash @var{obj1})} et @code{(sxhash @var{obj2})} retournent le même entier relatif.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6679,6 +6695,14 @@ l'abréviation, alors attention.</seg>
 définitions d'abréviations---. La seule différence entre @var{table}
 et la copie retournée est que la fonction place les listes de
 propriétés de toutes les abréviations copiées à 0.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function returns a hash code for Lisp object @var{obj}.  This is an integer which reflects the contents of @var{obj} and the other Lisp objects it points to.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195137Z">
+        <seg>La fonction retourne un code de hachage pour l'objet Lisp @var{obj}. C'est un entier relatif qui donne une image des contenus de l'objet @var{obj} et des autres objets Lisp vers lesquels il pointe.</seg>
       </tuv>
     </tu>
     <tu>
