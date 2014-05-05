@@ -7456,10 +7456,26 @@ vers le haut (vers plus l'infini).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This returns the current nominal size of @var{table}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195940Z">
+        <seg>Cette fonction retourne la valeur nominale actuelle de @var{table}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This returns the rehash size of @var{table}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195844Z">
         <seg>Cette fonction retourne la valeur de la taille d'agrandissement (@code{rehash-size}) de @var{table}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This returns the rehash threshold of @var{table}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195923Z">
+        <seg>Cette fonction retourne la valeur seuil de re-hachage (@code{rehash threshold}) de @var{table}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8391,14 +8407,6 @@ générée. Pour @code{floor}, voir les @ref{Conversions numériques}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>arch-tag: 39100cdf-8a55-4898-acba-595db619e8e2</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-us">
-        <seg>arch-tag: 3b5107f9-d2f0-47d5-ad61-3498496bea0e</seg>
-      </tuv>
-      <tuv lang="fr-fr">
-        <seg>arch-tag: 3b5107f9-d2f0-47d5-ad61-3498496bea0e</seg>
       </tuv>
     </tu>
     <tu>
