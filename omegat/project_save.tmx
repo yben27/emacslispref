@@ -2277,6 +2277,14 @@ variable @code{abbrev-mode}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>All four kinds of array share these characteristics:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200459Z">
+        <seg>Ces quatre types de tableaux partagent ces caractéristiques :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>All of these functions except @code{%} return a floating point value if any argument is floating.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -2314,6 +2322,14 @@ flottante si au moins un argument est une valeur à virgule flottante.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T173654Z">
         <seg>Un tableau @dfn{array} est un objet primitif unique qui dispose d'une case pour chacun de ses éléments. Tout les éléments sont accessibles tout le temps mais la longueur d'un tableau existant peut être changée. Les chaînes de caractères, les vecteurs, les tables de caractères et les vecteurs-booléens représentent les quatre types de tableaux.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>An @dfn{array} object has slots that hold a number of other Lisp objects, called the elements of the array.  Any element of an array may be accessed in constant time.  In contrast, an element of a list requires access time that is proportional to the position of the element in the list.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200408Z">
+        <seg>Un objet @dfn{array} possède des cases qui contiennent un certain nombre d'autres objets Lisp, appelés les éléments du tableau. N'importe quel élément d'un tableau a le même temps d'accès. En revanche, un élément d'une liste possède un temps d'accès proportionnel à la position de l'élément dans la liste.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3166,6 +3182,14 @@ qu'elles sont traditionnelles en Lisp et utilisées généralement.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Emacs defines four types of array, all one-dimensional: @dfn{strings}, @dfn{vectors}, @dfn{bool-vectors} and @dfn{char-tables}.  A vector is a general array; its elements can be any Lisp objects.  A string is a specialized array; its elements must be characters.  Each type of array has its own read syntax.  @xref{String Type}, and @ref{Vector Type}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200453Z">
+        <seg>Emacs définit quatre types de tableaux, tous à une dimension : @dfn{strings}, @dfn{vectors}, @dfn{bool-vectors} et @dfn{char-tables}. Un vecteur est un tableau général ; ses éléments peuvent être n'importe quels objets Lisp. Un tableau de type string est un tableau particulier ; ses éléments doivent être des caractères. Chaque type de tableau a sa propre syntaxe de lecture. @xref{String Type} et @ref{Vector Type}. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Empty matches do count, except that @code{split-string} will not look for a final empty match when it already reached the end of the string using a non-empty match or when @var{string} is empty:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T133849Z">
@@ -3355,6 +3379,14 @@ toutes les machines connues se comportent de la même façon.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185351Z">
         <seg>Pour d'autres fonctions de concaténation, voir @code{mapconcat} dans @ref{Mapping Functions}, @code{concat} dans @ref{Creating Strings}, et @code{append} dans @ref{Building Lists}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>For purposes of evaluation, the array is a constant---in other words, it evaluates to itself.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200551Z">
+        <seg>Dans les buts d'évaluation, le tableau est une constante --- c'est-à-dire qu'il s'évalue lui-même.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5674,6 +5706,14 @@ imprimé à côté de la marge.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The first element of an array has index zero, the second element has index 1, and so on.  This is called @dfn{zero-origin} indexing.  For example, an array of four elements has indices 0, 1, 2, @w{and 3}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200533Z">
+        <seg>le premier élément d'un tableau a comme indice zéro, le second élément l'indice 1, et ainsi de suite. On appelle cela l'indexation @dfn{début-zéro}. Par exemple, un tableau de quatre éléments a les indices 0, 1, 2 et 3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The flag @samp{#} specifies an ``alternate form'' which depends on the format in use.  For @samp{%o} it ensures that the result begins with a @samp{0}.  For @samp{%x} and @samp{%X}, it prefixes the result with @samp{0x} or @samp{0X}.  For @samp{%e}, @samp{%f}, and @samp{%g}, the @samp{#} flag means include a decimal point even if the precision is zero.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T193347Z">
@@ -5868,6 +5908,14 @@ liste de tous arguments restants à passer à la fonction. Ne pas écrire
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T103413Z">
         <seg>La longueur d’une chaîne de caractères (comme tout tableau) est fixe et ne peut pas être modifiée une fois la chaîne créée. Dans le langage Lisp, les chaînes @emph{ne} se terminent @emph{pas} par un code de caractère distinctif. (Contrairement aux chaînes de caractères en C qui se terminent par un caractère de code @acronym{ASCII} 0.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The length of the array is fixed once you create it; you cannot change the length of an existing array.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200540Z">
+        <seg>La longueur d'un tableau est fixée quand vous le créez ; vous ne pouvez pas changer la longueur d'un tableau existant.</seg>
       </tuv>
     </tu>
     <tu>
