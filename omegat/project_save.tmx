@@ -6838,6 +6838,14 @@ bogue.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function returns the @var{weak} value that was specified for hash table @var{table}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195810Z">
+        <seg>Cette fonction retourne la valeur de @var{weak} qui a été spécifiée pour la table de hachage @var{table}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function returns the ``exclusive or'' of its arguments: the @var{n}th bit is set in the result if, and only if, the @var{n}th bit is set in an odd number of the arguments.  If there are no arguments, the result is 0, which is an identity element for this operation.  If @code{logxor} is passed just one argument, it returns that argument.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T120909Z">
@@ -7436,6 +7444,22 @@ vers le haut (vers plus l'infini).</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195459Z">
         <seg>Cette fonction retourne non-@code{nil} si @var{table} est un objet de type table de hachage.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This returns the @var{test} value that was given when @var{table} was created, to specify how to hash and compare keys.  See @code{make-hash-table} (@pxref{Creating Hash}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195751Z">
+        <seg>Cette fonction retourne la valeur @var{test} qui a été donnée quand @var{table} fut créée pour spécifier comment hacher et comparer les clés. Voir @code{make-hash-table} (@pxref{Creating Hash}).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This returns the rehash size of @var{table}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195844Z">
+        <seg>Cette fonction retourne la valeur de la taille d'agrandissement (@code{rehash-size}) de @var{table}.</seg>
       </tuv>
     </tu>
     <tu>
