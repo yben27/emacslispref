@@ -2638,6 +2638,14 @@ manière extrêmement non-standard. @xref{Création de symboles}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>By contrast, for an array of keyboard input characters (such as a key sequence), a vector may be necessary, because many keyboard input characters are outside the range that will fit in a string.  @xref{Key Sequence Input}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200910Z">
+        <seg>En revanche, pour un tableau de caractères d'entrée clavier (comme une séquence de clés), un vector peut être nécessaire car beaucoup de caractères d'entrée clavier sont en-dehors de la plage de ceux qui peuvent rentrer dans un tableau de type string. @xref{Key Sequence Input}. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>C-]</seg>
       </tuv>
       <tuv lang="fr-fr">
