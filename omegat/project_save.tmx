@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.6.3_9" segtype="paragraph" srclang="en-us"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.6.3_7" segtype="paragraph" srclang="en-us"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -2973,6 +2973,14 @@ D. Zuhn.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Définir des abréviations</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Defining Hash Comparisons</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194248Z">
+        <seg>Définition des comparaisons de hachage</seg>
       </tuv>
     </tu>
     <tu>
@@ -7790,6 +7798,14 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>You can define new methods of key lookup by means of @code{define-hash-table-test}.  In order to use this feature, you need to understand how hash tables work, and what a @dfn{hash code} means.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194353Z">
+        <seg>Vous pouvez définir de nouvelles méthodes de recherche de clé grâce à la fonction @code{define-hash-table-test}. Pour utiliser cette fonctionnalité, vous devez comprendre comment les tables de hachages fonctionnent et ce que signifie une @dfn{valeur de hachage}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>You can read this as ``@code{(car '(1 2))} evaluates to 1.''</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140424T015013Z">
@@ -7803,6 +7819,14 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>Vous pouvez tester si n'importe quel objet Lisp est un symbole avec @code{symbolp} :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>You can think of a hash table conceptually as a large array of many slots, each capable of holding one association.  To look up a key, @code{gethash} first computes an integer, the hash code, from the key.  It reduces this integer modulo the length of the array, to produce an index in the array.  Then it looks in that slot, and if necessary in other nearby slots, to see if it has found the key being sought.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194455Z">
+        <seg>Conceptuellement, vous pouvez penser à une table de hachage comme un grand tableau composé de beaucoup de cases, chacune capable de contenir une association. Pour rechercher une clé, @code{gethash} calcule d'abord un entier, le code de hachage, à partir de la clé. Il réduit l'entier modulo la longueur du tableau pour produire un indice du tableau. Ensuite, il regarde dans cette case et si nécessaire dans d'autres cases voisines pour voir s'il trouve la clé qu'il recherche.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10018,6 +10042,14 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>h</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>hash code</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194343Z">
+        <seg>valeur de hachage</seg>
       </tuv>
     </tu>
     <tu>
