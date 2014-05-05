@@ -2269,6 +2269,14 @@ variable @code{abbrev-mode}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>After defining @var{name} in this way, you can use it as the @var{test} argument in @code{make-hash-table}.  When you do that, the hash table will use @var{test-fn} to compare key values, and @var{hash-fn} to compute a ``hash code'' from a key value.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194739Z">
+        <seg>Après avoir défini @var{name} de cette façon, vous pouvez l'utilisez en argument @var{test} dans @code{make-hash-table}. Quand vous faites cela, la table de hachage utilisera @var{test-fn} pour comparer les valeurs des clés, et @var{hash-fn} pour calculer un``code de hachage'' à partir d'une valeur de clé.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>All of these functions except @code{%} return a floating point value if any argument is floating.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -6385,6 +6393,14 @@ valeur de retour est toujours @code{nil}.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function defines a new hash table test, named @var{name}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194527Z">
+        <seg>Cette fonction définit une nouvelle table de hachage de test, appelée @var{name}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function defines an abbrev named @var{name}, in @var{table}, to expand to @var{expansion} and call @var{hook}.  The return value is @var{name}.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -7440,6 +7456,14 @@ de détails. Vous, la personne lisant ce manuel, êtes considérée comme
 « programmeur » et êtes nommée en tant que « vous ».
 « L'utilisateur » est la personne qui emploie le Lisp des programmes,
 y compris ceux que vous écrivez.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Thus, to define a new method of key lookup, you need to specify both a function to compute the hash code from a key, and a function to compare two keys directly.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194505Z">
+        <seg>Ainsi, pour définir une nouvelle méthode de recherche de clé, vous devez spécifier à la fois une fonction pour calculer le code de hachage à partir d'une clé et la fonction pour comparer directement deux clés.</seg>
       </tuv>
     </tu>
     <tu>
