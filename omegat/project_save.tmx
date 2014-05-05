@@ -3658,6 +3658,14 @@ les huit bits faibles du binaire modèle ; le reste est fait de zéro.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Here is how you could define a hash table test equivalent to the predefined test value @code{equal}.  The keys can be any Lisp object, and equal-looking objects are considered the same key.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195331Z">
+        <seg>Voici comment vous pouvez définir une table de hachage de test équivalente à la valeur de test prédéfinie @code{equal}. Les clés peuvent être n'importe quel objet Lisp, et des objets apparemment égaux sont considérés comme la même clé.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Here the index for @samp{a} is 0, the index for @samp{b} is 1, and the index for @samp{c} is 2.  Thus, three letters, @samp{abc}, are copied from the string @code{"abcdefg"}.  The index 3 marks the character position up to which the substring is copied.  The character whose index is 3 is actually the fourth character in the string.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T121655Z">
@@ -6302,6 +6310,14 @@ de référence GNU Emacs Lisp, correspondant à la version
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140502T102448Z">
         <seg>Cette commande affiche une description du contenu du tableau de casse du buffer courant.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This example creates a hash table whose keys are strings that are compared case-insensitively.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195306Z">
+        <seg>Cet exemple crée une table de hachage dont les clés sont des chaînes de caractères qui sont comparées sans tenir compte de la casse.</seg>
       </tuv>
     </tu>
     <tu>
