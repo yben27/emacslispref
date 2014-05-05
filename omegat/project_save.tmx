@@ -3608,6 +3608,14 @@ relient spécifiquement à l'édition.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Here are some other functions for working with hash tables.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195438Z">
+        <seg>Voici d'autres fonctions pour travailler avec les tables de hachage.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Here are some other functions that can convert to or from a string:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T145437Z">
@@ -4568,6 +4576,14 @@ qu'un certain minimum (négatif).</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140131T032323Z">
         <seg>D'autre part, le décalage d'une place vers la droite ressemble à ceci :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Other Hash Table Functions</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195434Z">
+        <seg>Autres fonctions pour les tables de hachage</seg>
       </tuv>
     </tu>
     <tu>
@@ -6415,6 +6431,14 @@ donné, @code{+} retourne 0.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function creates and returns a copy of @var{table}.  Only the table itself is copied---the keys and values are shared.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195529Z">
+        <seg>Cette fonction crée et retourne une copie de @var{table}. Seule la table elle-même est copiée --- les clés et les valeurs sont partagées.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function creates and returns a new, empty abbrev table---an obarray containing no symbols.  It is a vector filled with zeros.</seg>
       </tuv>
       <tuv lang="fr-fr">
@@ -7396,6 +7420,14 @@ vers le haut (vers plus l'infini).</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T110554Z">
         <seg>Cette fonction retourne une chaîne contenant les caractères @var{caracteres}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This returns non-@code{nil} if @var{table} is a hash table object.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195459Z">
+        <seg>Cette fonction retourne non-@code{nil} si @var{table} est un objet de type table de hachage.</seg>
       </tuv>
     </tu>
     <tu>
