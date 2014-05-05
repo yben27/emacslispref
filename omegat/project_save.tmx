@@ -5744,6 +5744,22 @@ machine de 29 bits :</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>The function @var{hash-fn} should accept one argument, a key, and return an integer that is the ``hash code'' of that key.  For good results, the function should use the whole range of integer values for hash codes, including negative integers.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194908Z">
+        <seg>La fonction @var{hash-fn} devrait prendre un argument, une clé, et elle retourne un entier relatif qui est le ``code de hachage'' de cette clé. Pour obtenir de bons résultats, la fonction devrait utiliser tout l'ensemble des entiers relatifs pour les valeurs des codes de hachage, y compris les entiers négatifs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The function @var{test-fn} should accept two arguments, two keys, and return non-@code{nil} if they are considered ``the same.''</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194838Z">
+        <seg>La fonction @var{test-fn} doit prendre deux arguments, deux clés, et elle retourne non-@code{nil} s'ils sont considérés ``identiques''.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>The function cell or the value cell may be @dfn{void}, which means that the cell does not reference any object.  (This is not the same thing as holding the symbol @code{void}, nor the same as holding the symbol @code{nil}.)  Examining a function or value cell that is void results in an error, such as @samp{Symbol's value as variable is void}.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210818Z">
@@ -5953,6 +5969,14 @@ des nombres négatifs à virgule flottante, comme dans @samp{- 1.0}.</seg>
 mais normalement tous les tampons dans le même mode majeur partage une
 table principale d'abréviations. Il y a donc une table d'abréviation
 globale. Normalement toutes les deux sont employées.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The specified functions are stored in the property list of @var{name} under the property @code{hash-table-test}; the property value's form is @code{(@var{test-fn} @var{hash-fn})}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195018Z">
+        <seg>Les fonctions spécifiées sont stockées dans la liste de propriétés de @var{name} sous la propriété @code{hash-table-test} ; la forme de la propriété de la valeur est @code{(@var{test-fn} @var{hash-fn})}.</seg>
       </tuv>
     </tu>
     <tu>
