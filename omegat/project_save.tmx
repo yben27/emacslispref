@@ -6883,6 +6883,14 @@ bit est 1 plutôt que 0.)</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>This function returns the actual number of entries in @var{table}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195549Z">
+        <seg>Cette fonction retourne le nombre actuel d'entrées contenues dans @var{table}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>This function returns the binary exponent of @var{number}.  More precisely, the value is the logarithm of @var{number} base 2, rounded down to an integer.</seg>
       </tuv>
       <tuv lang="fr-fr">
