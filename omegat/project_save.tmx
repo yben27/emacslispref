@@ -4206,6 +4206,14 @@ vers la droite avec @code{lsh} ressemble à ceci:</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>In principle, if you want an array of text characters, you could use either a string or a vector.  In practice, we always choose strings for such applications, for four reasons:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200700Z">
+        <seg>En théorie, si vous voulez un tableau de caractères de texte, vous pouvez utiliser un tableau type string ou un tableau type vector. En pratique, on choisit toujours un tableau type string pour de telles applications, pour quatre raisons :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>In simple cases, all you need to specify is the mapping to lower-case; the three related tables will be calculated automatically from that one.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T205422Z">
@@ -4438,6 +4446,14 @@ Puisque les arguments réels à de telles fonctions peuvent être des
 nombres ou des marqueurs, nous donnons souvent à ces arguments le nom
 de @var{number-or-marker}. Quand la valeur d'argument est un marqueur,
 sa valeur de position est employée et son tampon est ignoré.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Many of the specialized editing and I/O facilities of Emacs accept only strings.  For example, you cannot insert a vector of characters into a buffer the way you can insert a string.  @xref{Strings and Characters}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200835Z">
+        <seg>Beaucoup d'équipements d'édition spécialisée et d'entrée-sortie d'Emacs acceptent seulement des strings. Par exemple, vous ne pouvez pas insérer un vecteurs de caractères dans un buffer de la même façon qu'une chaîne de caractères peut l'être. @xref{Strings and Characters}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5284,10 +5300,26 @@ un exemple :</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Strings are printed in a way that shows the contents more clearly as text.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200736Z">
+        <seg>Les tableaux type @code{strings} sont affichés d'une façon qui montre plus clairement le contenu comme il s'agit de texte.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Strings are useful for holding regular expressions.  You can also match regular expressions against strings with @code{string-match} (@pxref{Regexp Search}).  The functions @code{match-string} (@pxref{Simple Match Data}) and @code{replace-match} (@pxref{Replacing Match}) are useful for decomposing and modifying strings after matching regular expressions against them.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T104540Z">
         <seg>Les chaînes de caractères sont utiles pour contenir les expressions régulières. On peut également faire correspondre les expressions régulières et les chaînes avec @code{string-match} (voir la section @xref{Regular Expression Searching}). Les fonctions @code{match-string} (voir la section @xref{Simple Match Data Access}) et @code{replace-match} (voir la section @xref{Replacing the Text that Matched}) sont utiles pour la décomposition et la modification des chaînes après les avoir transtypées en expressions régulières.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>Strings can hold text properties.  @xref{Text Properties}.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200801Z">
+        <seg>Les tableaux type @code{strings} peuvent contenir des propriétés de texte. @xref{Text Properties}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5662,6 +5694,14 @@ imprimé à côté de la marge.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>La description suit les lignes réussies, parfois avec des exemples.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>The elements of an array may be referenced or changed with the functions @code{aref} and @code{aset}, respectively (@pxref{Array Functions}).</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200638Z">
+        <seg>Les éléments d'un tableau peuvent être référencés ou changés, respectivement avec les fonctions @code{aref} et @code{aset}, (@pxref{Array Functions}).</seg>
       </tuv>
     </tu>
     <tu>
@@ -6348,6 +6388,14 @@ que des nombres à virgule flottante comme arguments.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140430T202137Z">
         <seg>Ces résultats ont un sens parce que les codes binaires pour control-_ et control-W sont respectivement 11111 et 10111.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>They occupy one-fourth the space of a vector of the same elements.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200716Z">
+        <seg>Ils occupent un quart de l'espace d'un tableau type @code{vector} contenant les mêmes éléments.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7970,6 +8018,14 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T211606Z">
         <seg>Quand vous construisez un tableau de casse, vous pouvez mettre @code{nil} pour @var{canonicalize}; alors Emacs remplit dans cet emplacement avec le mappage miniscule et majuscule. Vous pouvez mettre @code{nil} pour @var{equivalences}; alors Emacs remplit cet emplacement avec @var{canonicalize}. Dans un tableau de casse qui en utilisation, ces composant sont non @code{nil}.  N'essayez pas de préciserr @var{equivalences} sans préciser également @var{canonicalize}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>When you create an array, other than a char-table, you must specify its length.  You cannot specify the length of a char-table, because that is determined by the range of character codes.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200647Z">
+        <seg>Quand vous créez un tableau, qui n'est pas un char-table, vous devez obligatoirement spécifier sa longueur. Vous ne pouvez pas spécifier la longueur d'un char-table car elle est déterminée par la plage des codes de caractères.</seg>
       </tuv>
     </tu>
     <tu>
