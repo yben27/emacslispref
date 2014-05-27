@@ -4128,8 +4128,8 @@ tentative de changer leurs valeurs a comme conséquence une erreur
       <tuv lang="en-us">
         <seg>In Emacs Lisp, a @dfn{sequence} is either a list or an array.  The common property of all sequences is that they are ordered collections of elements.  This section describes functions that accept any kind of sequence.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T174635Z">
-        <seg>En Lisp Emacs, une suite (@dfn{sequence}) est soit une liste soit un tableau. La propriété commune de toutes les suites est qu'elles sont des collections ordonnées d'éléments. Dans cette partie, on décrit des fonctions qui acceptent tout type de suite.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T173251Z">
+        <seg>En Lisp Emacs, une suite (@dfn{sequence}) est soit une liste, soit un tableau. La propriété commune de toutes les suites est qu'elles sont des collections ordonnées d'éléments. Dans cette partie, on décrit des fonctions qui acceptent tout type de suite.</seg>
       </tuv>
     </tu>
     <tu>
