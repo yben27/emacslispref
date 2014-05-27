@@ -5862,8 +5862,8 @@ imprimé à côté de la marge.</seg>
       <tuv lang="en-us">
         <seg>The four functions @code{symbol-name}, @code{symbol-value}, @code{symbol-plist}, and @code{symbol-function} return the contents of the four cells of a symbol.  Here as an example we show the contents of the four cells of the symbol @code{buffer-file-name}:</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210857Z">
-        <seg>Les quatre fonctions @code{symbol-name}, @code{symbol-value}, @code{symbol-plist} et @code{symbol-function} retournent les contenus de chacune des quatre cellules d'un symbole. Ici par exemple, on affiche les contenus des quatre cellules du symbole @code{butter-file-name} :</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T145446Z">
+        <seg>Les quatre fonctions @code{symbol-name}, @code{symbol-value}, @code{symbol-plist} et @code{symbol-function} retournent les contenus des quatre cellules d'un symbole. Ici par exemple, on montre les contenus des quatre cellules du symbole @code{butter-file-name} :</seg>
       </tuv>
     </tu>
     <tu>
@@ -5916,8 +5916,8 @@ machine de 29 bits :</seg>
       <tuv lang="en-us">
         <seg>The function cell or the value cell may be @dfn{void}, which means that the cell does not reference any object.  (This is not the same thing as holding the symbol @code{void}, nor the same as holding the symbol @code{nil}.)  Examining a function or value cell that is void results in an error, such as @samp{Symbol's value as variable is void}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210818Z">
-        <seg>La cellule de fonction ou cellule de valeur peut être @dfn{void}, ce qui signifie que le cellule ne référence aucun objet. (Cela n'est pas la même chose que contenir le symbole @code{void} ou le symbole @code{nil}.) Interroger une cellule de fonction ou de valeur qui est void résulte en une erreur, comme @samp{Symbol's value as variable is void}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T145358Z">
+        <seg>La cellule de fonction ou cellule de valeur peut être @dfn{void}, ce qui signifie que la cellule ne référence aucun objet. (Cela n'est pas pareil que contenir le symbole @code{void} ou le symbole @code{nil}.) Interroger une cellule de fonction ou de valeur qui est void résulte en une erreur, comme @samp{Symbol's value as variable is void}.</seg>
       </tuv>
     </tu>
     <tu>
