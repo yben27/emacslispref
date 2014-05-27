@@ -1558,8 +1558,8 @@ qu'il a un champ limité des valeurs de nombre entier.</seg>
       <tuv lang="en-us">
         <seg>@b{Common Lisp note:} In Common Lisp, @code{remhash} returns non-@code{nil} if it actually removed an association and @code{nil} otherwise.  In Emacs Lisp, @code{remhash} always returns @code{nil}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215404Z">
-        <seg>@b{Common Lisp note :} En Common Lisp, @code{remhash} retourne non-@code{nil} si elle a réellement retiré une association et sinon @code{nil}. Dans Lisp Emacs, @code{remhash} retourne toujours @code{nil}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T143620Z">
+        <seg>@b{Common Lisp note :} En Common Lisp, @code{remhash} retourne non-@code{nil} s'il se trouve qu'elle a retiré une association et sinon @code{nil}. Dans Lisp Emacs, @code{remhash} retourne toujours @code{nil}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6744,8 +6744,8 @@ produit. Si aucun argument n'est donné, @code{*} retourne 1.</seg>
       <tuv lang="en-us">
         <seg>This function removes all the associations from hash table @var{table}, so that it becomes empty.  This is also called @dfn{clearing} the hash table.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215444Z">
-        <seg>Cette fonction retire toutes les associations de la table de hachage @var{table}, ainsi elle devient vide. Cela s'appelle aussi @dfn{nettoyer} la table de hachage.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T143708Z">
+        <seg>Cette fonction retire toutes les associations de la table de hachage @var{table}, de sorte qu'elle devienne vide. Cela s'appelle aussi @dfn{nettoyer} la table de hachage.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7736,8 +7736,8 @@ y compris ceux que vous écrivez.</seg>
       <tuv lang="en-us">
         <seg>Thus, to define a new method of key lookup, you need to specify both a function to compute the hash code from a key, and a function to compare two keys directly.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194505Z">
-        <seg>Ainsi, pour définir une nouvelle méthode de recherche de clé, vous devez spécifier à la fois une fonction pour calculer le code de hachage à partir d'une clé et la fonction pour comparer directement deux clés.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T143903Z">
+        <seg>Ainsi donc, pour définir une nouvelle méthode de recherche de clé, il faut spécifier à la fois une fonction pour calculer le code de hachage à partir d'une clé et la fonction pour comparer directement deux clés.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8106,8 +8106,8 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
       <tuv lang="en-us">
         <seg>You can define new methods of key lookup by means of @code{define-hash-table-test}.  In order to use this feature, you need to understand how hash tables work, and what a @dfn{hash code} means.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194353Z">
-        <seg>Vous pouvez définir de nouvelles méthodes de recherche de clé grâce à la fonction @code{define-hash-table-test}. Pour utiliser cette fonctionnalité, vous devez comprendre comment les tables de hachages fonctionnent et ce que signifie une @dfn{valeur de hachage}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T143806Z">
+        <seg>On peut définir de nouvelles méthodes de recherche de clé grâce à la fonction @code{define-hash-table-test}. Pour utiliser cette fonctionnalité, il faut comprendre comment les tables de hachages fonctionnent et ce qu'est un @dfn{code de hachage}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8131,8 +8131,8 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
       <tuv lang="en-us">
         <seg>You can think of a hash table conceptually as a large array of many slots, each capable of holding one association.  To look up a key, @code{gethash} first computes an integer, the hash code, from the key.  It reduces this integer modulo the length of the array, to produce an index in the array.  Then it looks in that slot, and if necessary in other nearby slots, to see if it has found the key being sought.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194455Z">
-        <seg>Conceptuellement, vous pouvez penser à une table de hachage comme un grand tableau composé de beaucoup de cases, chacune capable de contenir une association. Pour rechercher une clé, @code{gethash} calcule d'abord un entier, le code de hachage, à partir de la clé. Il réduit l'entier modulo la longueur du tableau pour produire un indice du tableau. Ensuite, il regarde dans cette case et si nécessaire dans d'autres cases voisines pour voir s'il trouve la clé qu'il recherche.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T143849Z">
+        <seg>On peut concevoir une table de hachage comme étant un grand tableau composé de beaucoup de cases, chacune capable de contenir une association. Pour rechercher une clé, @code{gethash} calcule d'abord un entier, le code de hachage, à partir de la clé. Il réduit l'entier modulo la longueur du tableau pour produire un indice du tableau. Ensuite, il regarde dans cette case et si nécessaire dans d'autres cases voisines pour voir s'il trouve la clé qu'il recherche.</seg>
       </tuv>
     </tu>
     <tu>
