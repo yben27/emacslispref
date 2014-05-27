@@ -6752,8 +6752,8 @@ produit. Si aucun argument n'est donné, @code{*} retourne 1.</seg>
       <tuv lang="en-us">
         <seg>This function removes the association for @var{key} from @var{table}, if there is one.  If @var{key} has no association, @code{remhash} does nothing.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215251Z">
-        <seg>Cette fonction retire l'association ayant comme clé @var{key} de la table @var{table}, s'il y en a une. Si @var{key} n'a pas d'association, @code{remhash} ne fait rien.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T143549Z">
+        <seg>Cette fonction retire de la table @var{table} l'association ayant comme clé @var{key}, s'il y en a une. Si @var{key} n'a pas d'association, @code{remhash} ne fait rien.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7654,8 +7654,8 @@ d'abréviations.</seg>
       <tuv lang="en-us">
         <seg>This section describes the functions for accessing and storing associations in a hash table.  In general, any Lisp object can be used as a hash key, unless the comparison method imposes limits.  Any Lisp object can also be used as the value.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T215009Z">
-        <seg>Cette section décrit les fonctions pour accéder et stocker des associations dans une table de hachage. En général, n'importe quel objet Lisp peut être utilisé comme une clé de hachage, sauf si la méthode de comparaison impose des limites. Tout objet Lisp peut aussi être utilisé comme une valeur.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T143450Z">
+        <seg>Cette section décrit les fonctions pour accéder et stocker des associations dans une table de hachage. En général, tout objet Lisp peut être utilisé en tant que clé de hachage, sauf si la méthode de comparaison impose des limites. Tout objet Lisp peut aussi être utilisé comme valeur.</seg>
       </tuv>
     </tu>
     <tu>
