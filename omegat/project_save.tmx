@@ -2305,8 +2305,8 @@ variable @code{abbrev-mode}.</seg>
       <tuv lang="en-us">
         <seg>All four kinds of array share these characteristics:</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200459Z">
-        <seg>Ces quatre types de tableaux partagent ces caractéristiques :</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152437Z">
+        <seg>Ces quatre types de tableaux partagent les caractéristiques suivantes :</seg>
       </tuv>
     </tu>
     <tu>
@@ -2354,8 +2354,8 @@ flottante si au moins un argument est une valeur à virgule flottante.</seg>
       <tuv lang="en-us">
         <seg>An @dfn{array} object has slots that hold a number of other Lisp objects, called the elements of the array.  Any element of an array may be accessed in constant time.  In contrast, an element of a list requires access time that is proportional to the position of the element in the list.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200408Z">
-        <seg>Un objet @dfn{array} possède des cases qui contiennent un certain nombre d'autres objets Lisp, appelés les éléments du tableau. N'importe quel élément d'un tableau a le même temps d'accès. En revanche, un élément d'une liste possède un temps d'accès proportionnel à la position de l'élément dans la liste.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152424Z">
+        <seg>Un objet @dfn{array} possède des cases qui contiennent un certain nombre d'autres objets Lisp, appelés les éléments du tableau. Tout élément d'un tableau a le même temps d'accès. En revanche, un élément d'une liste nécessite un temps d'accès proportionnel à la position de l'élément dans la liste.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3419,8 +3419,8 @@ toutes les machines connues se comportent de la même façon.</seg>
       <tuv lang="en-us">
         <seg>For purposes of evaluation, the array is a constant---in other words, it evaluates to itself.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200551Z">
-        <seg>Dans les buts d'évaluation, le tableau est une constante --- c'est-à-dire qu'il s'évalue lui-même.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152551Z">
+        <seg>Pour les besoins d'évaluation, le tableau est une constante, c'est-à-dire qu'il s'évalue lui-même.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5782,8 +5782,8 @@ imprimé à côté de la marge.</seg>
       <tuv lang="en-us">
         <seg>The first element of an array has index zero, the second element has index 1, and so on.  This is called @dfn{zero-origin} indexing.  For example, an array of four elements has indices 0, 1, 2, @w{and 3}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200533Z">
-        <seg>le premier élément d'un tableau a comme indice zéro, le second élément l'indice 1, et ainsi de suite. On appelle cela l'indexation @dfn{début-zéro}. Par exemple, un tableau de quatre éléments a les indices 0, 1, 2 et 3.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152448Z">
+        <seg>le premier élément d'un tableau a comme indice zéro, le second élément l'indice 1, et ainsi de suite. On appelle cela l'indexation @dfn{origine-zéro}. Par exemple, un tableau de quatre éléments a les indices 0, 1, 2 et 3.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5988,8 +5988,8 @@ liste de tous arguments restants à passer à la fonction. Ne pas écrire
       <tuv lang="en-us">
         <seg>The length of the array is fixed once you create it; you cannot change the length of an existing array.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200540Z">
-        <seg>La longueur d'un tableau est fixée quand vous le créez ; vous ne pouvez pas changer la longueur d'un tableau existant.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152531Z">
+        <seg>La longueur d'un tableau est fixe une fois qu'il a été créé ; on ne peut pas changer la longueur d'un tableau existant.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8058,8 +8058,8 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
       <tuv lang="en-us">
         <seg>When you create an array, other than a char-table, you must specify its length.  You cannot specify the length of a char-table, because that is determined by the range of character codes.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200647Z">
-        <seg>Quand vous créez un tableau, qui n'est pas un char-table, vous devez obligatoirement spécifier sa longueur. Vous ne pouvez pas spécifier la longueur d'un char-table car elle est déterminée par la plage des codes de caractères.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152616Z">
+        <seg>Quand on crée un tableau, qui n'est pas un char-table, on doit obligatoirement spécifier sa longueur. On ne peut pas spécifier la longueur d'un char-table car elle est déterminée par la plage des codes de caractères.</seg>
       </tuv>
     </tu>
     <tu>
