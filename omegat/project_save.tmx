@@ -4144,8 +4144,8 @@ tentative de changer leurs valeurs a comme conséquence une erreur
       <tuv lang="en-us">
         <seg>In Emacs versions before 21, the @code{vconcat} function allowed integers as arguments, converting them to strings of digits, but that feature has been eliminated.  The proper way to convert an integer to a decimal number in this way is with @code{format} (@pxref{Formatting Strings}) or @code{number-to-string} (@pxref{String Conversion}).</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185029Z">
-        <seg>Dans les versions d'Emacs antérieures à la 21, la fonction @code{vconcat} autorisait des arguments de type integers en les convertissant en chaîne de caractères contenant des chiffres. Cependant, cette fonctionnalité a été retirée. La manière correcte pour convertir un nombre enier en nombre décimal de cette façon est d'utiliser la fonction @code{format} (@pxref{Formatting Strings}) or @code{number-to-string} (@pxref{String Conversion}). </seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T175200Z">
+        <seg>Dans les versions d'Emacs antérieures à la 21, la fonction @code{vconcat} autorisait des arguments de type entiers en les convertissant en chaîne de caractères contenant des chiffres. Cependant, cette fonctionnalité a été retirée. La manière correcte pour convertir un nombre entier en nombre décimal de cette façon est d'utiliser la fonction @code{format} (@pxref{Formatting Strings}) or @code{number-to-string} (@pxref{String Conversion}). </seg>
       </tuv>
     </tu>
     <tu>
@@ -7920,8 +7920,8 @@ mot `Variable' est remplacée par `User Option'.</seg>
       <tuv lang="en-us">
         <seg>Vectors are printed with square brackets surrounding the elements.  Thus, a vector whose elements are the symbols @code{a}, @code{b} and @code{a} is printed as @code{[a b a]}.  You can write vectors in the same way in Lisp input.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184000Z">
-        <seg>Les vecteurs sont affichés avec des crochets autour des éléments  Ainsi, un vecteur dont les éléments sont les symboles @code{a}, @code{b} et @code{a} sont affichés de la façon suivante @code{[a b a]}. On peut écrire des vecteurs de la même façon en saisie Lisp.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T174652Z">
+        <seg>Les vecteurs sont affichés avec des crochets autour des éléments  Ainsi, un vecteur dont les éléments sont les symboles @code{a}, @code{b} et @code{a} est affiché de la façon suivante @code{[a b a]}. On peut écrire des vecteurs de la même façon en saisie Lisp.</seg>
       </tuv>
     </tu>
     <tu>
