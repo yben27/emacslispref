@@ -7023,8 +7023,8 @@ bit est 1 plutôt que 0.)</seg>
       <tuv lang="en-us">
         <seg>This function returns the actual number of entries in @var{table}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195549Z">
-        <seg>Cette fonction retourne le nombre actuel d'entrées contenues dans @var{table}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T144441Z">
+        <seg>Cette fonction retourne le nombre effectif d'entrées contenues dans @var{table}.</seg>
       </tuv>
     </tu>
     <tu>
