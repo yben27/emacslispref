@@ -1511,8 +1511,8 @@ y @result{} [foo (1 2)]</seg>
 (string (elt "1234" 2))
      @result{} "3"</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T175715Z">
-        <seg>;; On utilise les chaînes de caractères pour montrer quel caractère @code{elt} renvoie.
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T173324Z">
+        <seg>;; On utilise les chaînes de caractères pour montrer quel caractère @code{elt} retourne.
 (string (elt "1234" 2))
      @result{} "3"</seg>
       </tuv>
