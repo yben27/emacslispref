@@ -5551,8 +5551,8 @@ autrement. 0 est considéré non négatif.</seg>
       <tuv lang="en-us">
         <seg>The @dfn{value cell} holds the current value of the symbol as a variable.  When a symbol is used as a form, the value of the form is the contents of the symbol's value cell.  See @code{symbol-value} in @ref{Accessing Variables}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205736Z">
-        <seg>La @dfn{cellule de valeur} contient la valeur actuelle du symbole comme une variable. Quand un symbole est utilisé comme une forme, la valeur de la forme est le contenu de la cellule de valeur du symbole. Voir @code{symbol-value} dans @ref{Accessing Variable Values}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T144804Z">
+        <seg>La @dfn{cellule de valeur} contient la valeur actuelle du symbole comme variable. Quand un symbole est utilisé comme une forme, la valeur de la forme est le contenu de la cellule de valeur du symbole. Voir @code{symbol-value} dans @ref{Accessing Variable Values}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6187,8 +6187,8 @@ virgule flottante de @acronym{IEEE}, mais en Emacs Lisp @code{equal} et
       <tuv lang="en-us">
         <seg>The value cell holds the symbol's value as a variable (@pxref{Variables}).  That is what you get if you evaluate the symbol as a Lisp expression (@pxref{Evaluation}).  Any Lisp object is a legitimate value.  Certain symbols have values that cannot be changed; these include @code{nil} and @code{t}, and any symbol whose name starts with @samp{:} (those are called @dfn{keywords}).  @xref{Constant Variables}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210305Z">
-        <seg>La cellule de valeur contient la valeur du symbole sous forme d'une variable (@pxref{Variables}). C'est ce que vous obtenez si vous évaluez le symbole comme une expression Lisp (@pxref{Evaluation}). N'importe quel objet Lisp est une valeur autorisée. Certains symboles peuvent avoir des valeurs qui ne peuvent pas être changées ; parmi lesquelles se trouve @code{nil}, @code{t} et tout autre symbole dont le nom commence par @samp{:} (ceux-là sont appelés @dfn{mot-clés}). @xref{Constant Variables}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T145020Z">
+        <seg>La cellule de valeur contient la valeur du symbole sous forme d'une variable (@pxref{Variables}). C'est ce qu'on obtient si on évalue le symbole comme une expression Lisp (@pxref{Evaluation}). N'importe quel objet Lisp est une valeur autorisée. Certains symboles ont des valeurs qui ne peuvent pas être changées parmi lesquelles se trouve @code{nil}, @code{t} et tout autre symbole dont le nom commence par @samp{:} (on appele ces derniers @dfn{mot-clés}). @xref{Constant Variables}</seg>
       </tuv>
     </tu>
     <tu>
