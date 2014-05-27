@@ -2297,8 +2297,8 @@ variable @code{abbrev-mode}.</seg>
       <tuv lang="en-us">
         <seg>After defining @var{name} in this way, you can use it as the @var{test} argument in @code{make-hash-table}.  When you do that, the hash table will use @var{test-fn} to compare key values, and @var{hash-fn} to compute a ``hash code'' from a key value.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194739Z">
-        <seg>Après avoir défini @var{name} de cette façon, vous pouvez l'utilisez en argument @var{test} dans @code{make-hash-table}. Quand vous faites cela, la table de hachage utilisera @var{test-fn} pour comparer les valeurs des clés, et @var{hash-fn} pour calculer un``code de hachage'' à partir d'une valeur de clé.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T144015Z">
+        <seg>Après avoir défini @var{name} de cette façon, on peut l'utiliser en argument @var{test} dans @code{make-hash-table}. Quand on fait cela, la table de hachage utilise @var{test-fn} pour comparer les valeurs des clés, et @var{hash-fn} pour calculer un``code de hachage'' à partir d'une valeur de clé.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3734,8 +3734,8 @@ les huit bits faibles du binaire modèle ; le reste est fait de zéro.</seg>
       <tuv lang="en-us">
         <seg>Here is how you could define a hash table test equivalent to the predefined test value @code{equal}.  The keys can be any Lisp object, and equal-looking objects are considered the same key.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195331Z">
-        <seg>Voici comment vous pouvez définir une table de hachage de test équivalente à la valeur de test prédéfinie @code{equal}. Les clés peuvent être n'importe quel objet Lisp, et des objets apparemment égaux sont considérés comme la même clé.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T144206Z">
+        <seg>Voici comment on peut définir une table de hachage de test équivalente à la valeur de test prédéfinie @code{equal}. Les clés peuvent être n'importe quel objet Lisp, et des objets apparemment égaux sont considérés comme la même clé.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4060,8 +4060,8 @@ explicitement redéfinies ou éliminées dans @var{definitions}.)</seg>
       <tuv lang="en-us">
         <seg>If two objects @var{obj1} and @var{obj2} are equal, then @code{(sxhash @var{obj1})} and @code{(sxhash @var{obj2})} are the same integer.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195225Z">
-        <seg>Si deux objets @var{obj1} et @var{obj2} sont égaux, alors @code{(sxhash @var{obj1})} et @code{(sxhash @var{obj2})} retournent le même entier relatif.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T144145Z">
+        <seg>Si deux objets @var{obj1} et @var{obj2} sont égaux, alors @code{(sxhash @var{obj1})} et @code{(sxhash @var{obj2})} sont le même entier relatif.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5900,16 +5900,16 @@ machine de 29 bits :</seg>
       <tuv lang="en-us">
         <seg>The function @var{hash-fn} should accept one argument, a key, and return an integer that is the ``hash code'' of that key.  For good results, the function should use the whole range of integer values for hash codes, including negative integers.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194908Z">
-        <seg>La fonction @var{hash-fn} devrait prendre un argument, une clé, et elle retourne un entier relatif qui est le ``code de hachage'' de cette clé. Pour obtenir de bons résultats, la fonction devrait utiliser tout l'ensemble des entiers relatifs pour les valeurs des codes de hachage, y compris les entiers négatifs.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T144108Z">
+        <seg>La fonction @var{hash-fn} doit prendre un argument, une clé, et elle retourne un entier relatif qui est le ``code de hachage'' de cette clé. Pour obtenir de bons résultats, la fonction doit utiliser tout l'ensemble des entiers relatifs pour les valeurs des codes de hachage, y compris les entiers négatifs.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-us">
         <seg>The function @var{test-fn} should accept two arguments, two keys, and return non-@code{nil} if they are considered ``the same.''</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194838Z">
-        <seg>La fonction @var{test-fn} doit prendre deux arguments, deux clés, et elle retourne non-@code{nil} s'ils sont considérés ``identiques''.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T144031Z">
+        <seg>La fonction @var{test-fn} doit prendre deux arguments, deux clés, et elle retourne non-@code{nil} s'ils sont considérés comme ``identiques''.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6605,8 +6605,8 @@ valeur de retour est toujours @code{nil}.</seg>
       <tuv lang="en-us">
         <seg>This function defines a new hash table test, named @var{name}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T194527Z">
-        <seg>Cette fonction définit une nouvelle table de hachage de test, appelée @var{name}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T143936Z">
+        <seg>Cette fonction définit une nouveau test de table de hachage, appelée @var{name}.</seg>
       </tuv>
     </tu>
     <tu>
