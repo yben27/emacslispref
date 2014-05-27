@@ -6620,8 +6620,8 @@ valeur de retour est toujours @code{nil}.</seg>
       <tuv lang="en-us">
         <seg>This function defines a new hash table test, named @var{name}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T143936Z">
-        <seg>Cette fonction définit une nouveau test de table de hachage, appelée @var{name}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T182537Z">
+        <seg>Cette fonction définit un nouveau test de table de hachage, appelée @var{name}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8560,14 +8560,6 @@ générée. Pour @code{floor}, voir les @ref{Conversions numériques}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>arch-tag: 39100cdf-8a55-4898-acba-595db619e8e2</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-us">
-        <seg>arch-tag: 3b5107f9-d2f0-47d5-ad61-3498496bea0e</seg>
-      </tuv>
-      <tuv lang="fr-fr">
-        <seg>arch-tag: 3b5107f9-d2f0-47d5-ad61-3498496bea0e</seg>
       </tuv>
     </tu>
     <tu>
