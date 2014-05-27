@@ -3969,8 +3969,8 @@ pour être non négative et inférieure à @var{limit}.</seg>
       <tuv lang="en-us">
         <seg>If @var{weak} is @code{key-and-value} or @code{t}, both the key and the value must be live in order to preserve the association.  Thus, the hash table does not protect either keys or values from garbage collection; if either one is collected as garbage, that removes the association.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T141907Z">
-        <seg>Si @var{weak} vaut @code{key-and-value} ou @code{t}, la clé et la valeur doivent absolument être référencées pour préserver l'association. Ainsi donc, la table de hachage ne met ni les clés ni les valeurs d'une récupération par le ramasse-miettes ; si l'une des deux est ramassée, l'association est supprimée.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T182009Z">
+        <seg>Si @var{weak} vaut @code{key-and-value} ou @code{t}, la clé et la valeur doivent absolument être référencées pour préserver l'association. Ainsi donc, la table de hachage ne préserve ni les clés ni les valeurs d'une récupération par le ramasse-miettes ; si l'une des deux est ramassée, l'association est supprimée.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7695,8 +7695,8 @@ plus tard.</seg>
       <tuv lang="en-us">
         <seg>This specifies a hint for how many associations you plan to store in the hash table.  If you know the approximate number, you can make things a little more efficient by specifying it this way.  If you specify too small a size, the hash table will grow automatically when necessary, but doing that takes some extra time.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T142400Z">
-        <seg>C'est une astuce qui permet de spécifier le nombre d'associations que vous prévoyez de stocker dans la table de hachage. Si vous connaissez le nombre approximatif, vous pouvez rendre les choses un peu plus efficaces en le spécificant de cette façon. Si vous spécifiez une taille trop petite, la table de hachage s'agrandira automatiquement quand ce sera nécessaire mais cela prend du temps supplémentaire.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T182121Z">
+        <seg>C'est une astuce qui permet de spécifier le nombre d'associations que vous prévoyez de stocker dans la table de hachage. Si vous connaissez le nombre approximatif, vous pouvez rendre les choses un peu plus efficaces en le spécificant de cette façon. Si vous spécifiez une taille trop petite, la table de hachage s'agrandira automatiquement quand ce sera nécessaire mais cela prendra du temps supplémentaire.</seg>
       </tuv>
     </tu>
     <tu>
