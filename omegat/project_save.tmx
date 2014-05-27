@@ -4486,8 +4486,8 @@ sa valeur de position est employée et son tampon est ignoré.</seg>
       <tuv lang="en-us">
         <seg>Many of the specialized editing and I/O facilities of Emacs accept only strings.  For example, you cannot insert a vector of characters into a buffer the way you can insert a string.  @xref{Strings and Characters}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152821Z">
-        <seg>Beaucoup d'équipements d'édition spécialisée et d'entrée-sortie d'Emacs acceptent seulement des strings. Par exemple, vous ne pouvez pas insérer un vecteur de caractères dans une mémoire tampon de la même façon qu'une chaîne de caractères peut l'être. @xref{Strings and Characters}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T173833Z">
+        <seg>Beaucoup d'équipements d'édition spécialisée et d'entrée-sortie d'Emacs acceptent seulement des chaînes de caractères. Par exemple, vous ne pouvez pas insérer un vecteur de caractères dans une mémoire tampon de la même façon qu'une chaîne de caractères peut l'être. @xref{Strings and Characters}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5782,8 +5782,8 @@ imprimé à côté de la marge.</seg>
       <tuv lang="en-us">
         <seg>The first element of an array has index zero, the second element has index 1, and so on.  This is called @dfn{zero-origin} indexing.  For example, an array of four elements has indices 0, 1, 2, @w{and 3}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152448Z">
-        <seg>le premier élément d'un tableau a comme indice zéro, le second élément l'indice 1, et ainsi de suite. On appelle cela l'indexation @dfn{origine-zéro}. Par exemple, un tableau de quatre éléments a les indices 0, 1, 2 et 3.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T173705Z">
+        <seg>Le premier élément d'un tableau a comme indice zéro, le second élément l'indice 1, et ainsi de suite. On appelle cela l'indexation @dfn{origine-zéro}. Par exemple, un tableau de quatre éléments a les indices 0, 1, 2 et 3.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5988,8 +5988,8 @@ liste de tous arguments restants à passer à la fonction. Ne pas écrire
       <tuv lang="en-us">
         <seg>The length of the array is fixed once you create it; you cannot change the length of an existing array.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152531Z">
-        <seg>La longueur d'un tableau est fixe une fois qu'il a été créé ; on ne peut pas changer la longueur d'un tableau existant.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T173716Z">
+        <seg>La longueur d'un tableau est fixe une fois qu'il a été créé. On ne peut pas changer la longueur d'un tableau existant.</seg>
       </tuv>
     </tu>
     <tu>
