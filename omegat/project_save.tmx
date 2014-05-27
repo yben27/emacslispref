@@ -2039,8 +2039,8 @@ cl}.</seg>
       <tuv lang="en-us">
         <seg>A char-table can have a @dfn{parent}, which is another char-table.  If it does, then whenever the char-table specifies @code{nil} for a particular character @var{c}, it inherits the value specified in the parent.  In other words, @code{(aref @var{char-table} @var{c})} returns the value from the parent of @var{char-table} if @var{char-table} itself specifies @code{nil}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T190918Z">
-        <seg>Une char-table peut avoir un @dfn{parent} qui est une autre char-table. Si elle en a un, alors quand la char-table spécifie @code{nil} pour un caractère particulier @var{c}, elle hérite de la valeur spécifiée dans la char-table parente. Autremnt dit, @code{(aref char-table c)} retourne la valeur de la char-table parente si @var{char-table}spécifie @code{nil}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T175529Z">
+        <seg>Une char-table peut avoir un @dfn{parent} qui est une autre char-table. Si elle en a un, alors quand la char-table spécifie @code{nil} pour un caractère particulier @var{c}, elle hérite de la valeur spécifiée dans la char-table parente. Autrement dit, @code{(aref char-table c)} retourne la valeur de la char-table parente si @var{char-table}spécifie @code{nil}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2055,8 +2055,8 @@ cl}.</seg>
       <tuv lang="en-us">
         <seg>A char-table is much like a vector, except that it is indexed by character codes.  Any valid character code, without modifiers, can be used as an index in a char-table.  You can access a char-table's elements with @code{aref} and @code{aset}, as with any array.  In addition, a char-table can have @dfn{extra slots} to hold additional data not associated with particular character codes.  Char-tables are constants when evaluated.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T190233Z">
-        <seg>Une char-table ressemble à un vecteur mais il est indexé par les codes de caractères. N'importe quel code de caractère valide, sans modificateurs, peut être utilisé comme indice dans une char-table. On peut accéder aux éléments d'une char-table avec @code{aref} et @code{aset}, comme avec n'importe quel tableau. De plus, une char-table peut avoir des cases supplémentaires (@dfn{extra slots}) pour contenir des données supplémentaires qui ne sont pas associées à des codes de caractères particuliers. Les char-tables sont des constantes quand elles sont évaluées.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T175439Z">
+        <seg>Une char-table ressemble à un vecteur mais elle est indexée par les codes de caractères. N'importe quel code de caractère valide, sans modificateurs, peut être utilisé comme indice dans une char-table. On peut accéder aux éléments d'une char-table avec @code{aref} et @code{aset}, comme avec n'importe quel tableau. De plus, une char-table peut avoir des cases supplémentaires (@dfn{extra slots}) pour contenir des données supplémentaires qui ne sont pas associées à des codes de caractères particuliers. Les char-tables sont des constantes quand elles sont évaluées.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6360,8 +6360,8 @@ pour faire ceci:</seg>
       <tuv lang="en-us">
         <seg>There is no special function to access default values in a char-table.  To do that, use @code{char-table-range} (see below).</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192032Z">
-        <seg>Il n'y a pas de fonction particulière pour accéder aux valeurs par défaut d'une char-table. Pour cela, utilisez @code{char-table-range} (voir ci-dessous).</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T175645Z">
+        <seg>Il n'y a pas de fonction particulière pour accéder aux valeurs par défaut d'une char-table. Pour cela, il faut utiliser @code{char-table-range} (voir ci-dessous).</seg>
       </tuv>
     </tu>
     <tu>
