@@ -5042,9 +5042,8 @@ canoniques : @code{t} ou @code{nil}.</seg>
       <tuv lang="en-us">
         <seg>See also the function @code{elt}, in @ref{Sequence Functions}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180904Z">
-        <seg>
-Voir aussi la fonction @code{elt}, dans la partie @ref{Sequence Functions}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T173953Z">
+        <seg>Voir aussi la fonction @code{elt}, dans la partie @ref{Sequence Functions}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7221,8 +7220,8 @@ zéro, et renvoie cette valeur comme nombre à virgule flottante.</seg>
       <tuv lang="en-us">
         <seg>This function sets the @var{index}th element of @var{array} to be @var{object}.  It returns @var{object}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182231Z">
-        <seg>Cette fonction définit le @var{index}-ième élément du tableau @var{array} comme un @var{object}. Elle retourne @var{object}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T174101Z">
+        <seg>Cette fonction définit le @var{n}-ième élément du tableau @var{array} comme un @var{object}. Elle retourne @var{object}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8881,6 +8880,14 @@ générée. Pour @code{floor}, voir les @ref{Conversions numériques}.</seg>
       </tuv>
       <tuv lang="fr-fr">
         <seg>arithmetic shift</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>aset array index object</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T174027Z">
+        <seg>aset array n object</seg>
       </tuv>
     </tu>
     <tu>
