@@ -5534,8 +5534,8 @@ autrement. 0 est considéré non négatif.</seg>
       <tuv lang="en-us">
         <seg>The @code{with-case-table} macro saves the current case table, makes @var{table} the current case table, evaluates the @var{body} forms, and finally restores the case table.  The return value is the value of the last form in @var{body}.  The case table is restored even in case of an abnormal exit via @code{throw} or error (@pxref{Nonlocal Exits}).</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T150421Z">
-        <seg>La macro @code{with-case-table} enregistre le tableau de casse courante, le définit à la valeur du paramètre @var{table}, évalue la forme du paramètre @var{body}, et enfin restaure le tableau de casse. La valeur de retour est la valeur de la dernière forme de @var{body}. Le tableau de casse est restauré même dans le cas où il y a une sortie anormale par le déclenchement d'une exception (@code{throw}) ou par une erreur (@pxref{Nonlocal Exits}).</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T183524Z">
+        <seg>La macro @code{with-case-table} enregistre le tableau de casse courant, le définit à la valeur du paramètre @var{table}, évalue la forme du paramètre @var{body}, et enfin restaure le tableau de casse. La valeur de retour est la valeur de la dernière forme de @var{body}. Le tableau de casse est restauré même dans le cas où il y a une sortie anormale par le déclenchement d'une exception (@code{throw}) ou par une erreur (@pxref{Nonlocal Exits}).</seg>
       </tuv>
     </tu>
     <tu>
@@ -6726,8 +6726,8 @@ si nous continuons,</seg>
       <tuv lang="en-us">
         <seg>This function makes @var{table} the standard case table, so that it will be used in any buffers created subsequently.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140502T102151Z">
-        <seg>Cette fonction transforme @var{table} en un tableau de casse normale pour qu'il puisse être utilisé par n'importe quel buffer créé par la suite.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T183435Z">
+        <seg>Cette fonction transforme @var{table} en un tableau de casse normale pour qu'il puisse être utilisé par n'importe quel tampon créé par la suite.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7064,8 +7064,8 @@ arrondie vers le bas à un nombre entier.</seg>
       <tuv lang="en-us">
         <seg>This function returns the current buffer's case table.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140502T102214Z">
-        <seg>Cette fonction retourne le tableau de casse courante du buffer.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T183448Z">
+        <seg>Cette fonction retourne le tableau de casse courante du tampon.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7687,8 +7687,8 @@ plus tard.</seg>
       <tuv lang="en-us">
         <seg>This sets the current buffer's case table to @var{table}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140502T102229Z">
-        <seg>Cette fonction définit le tableau de casse courante du buffer à la valeur @var{table}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T183502Z">
+        <seg>Cette fonction définit le tableau de casse courante du tampon à la valeur @var{table}.</seg>
       </tuv>
     </tu>
     <tu>
