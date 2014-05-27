@@ -4823,6 +4823,14 @@ qu'un certain minimum (négatif).</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>Refers to the whole range of character codes.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T180150Z">
+        <seg>Renvoie à tout l'ensemble des codes de caractère.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>Refresh Screen</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="jchelary" changedate="20140216T092419Z">
