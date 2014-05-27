@@ -2115,6 +2115,14 @@ dans une série pseudo-aléatoire.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
+        <seg>A generic character stands for a character set; specifying the generic character as argument is equivalent to specifying the character set name.  @xref{Splitting Characters}, for a description of generic characters.</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T180518Z">
+        <seg>Un caractère générique représente un ensemble de caractères ; spécifier le caractère générique comme argument est équivalent à spécifier le nom de l'ensemble de caractères. @xref{Splitting Characters} pour une description de caractères génériques. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
         <seg>A hash table is a very fast kind of lookup table, somewhat like an alist (@pxref{Association Lists}) in that it maps keys to corresponding values.  It differs from an alist in these ways:</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T212415Z">
