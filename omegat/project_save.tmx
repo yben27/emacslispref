@@ -6085,8 +6085,8 @@ version 20.3 d'Emacs, la valeur est 3.</seg>
       <tuv lang="en-us">
         <seg>The print name cell holds the string that is the name of the symbol.  Since symbols are represented textually by their names, it is important not to have two symbols with the same name.  The Lisp reader ensures this: every time it reads a symbol, it looks for an existing symbol with the specified name before it creates a new one.  (In GNU Emacs Lisp, this lookup uses a hashing algorithm and an obarray; see @ref{Creating Symbols}.)</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210120Z">
-        <seg>La cellule du nom d'affichage contient la chaîne de caractère qui est le nom du symbole. Comme les symboles sont représentés textuellement par leurs noms, il est important de ne pas avoir deux symboles avec le même nom. Le lecteur Lisp s'assure de ceci : à chaque fois qu'il lit un symbole, il regarde s'il existe déjà un symbole avec le même nom avant de créer le nouveau. (Dans GNU Emacs Lisp, cette recherche utilise un algorithme de hachage et un obarray ; voir @ref{Creating Symbols}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T182923Z">
+        <seg>La cellule du nom d'affichage contient la chaîne de caractère qui est le nom du symbole. Comme les symboles sont représentés textuellement par leurs noms, il est important de ne pas avoir deux symboles avec le même nom. Le lecteur Lisp s'assure de ceci : à chaque fois qu'il lit un symbole, il regarde s'il existe déjà un symbole avec le même nom avant de créer le nouveau. (Dans GNU Emacs Lisp, cette recherche utilise un algorithme de hachage et un obarray ; voir @ref{Creating Symbols}.)</seg>
       </tuv>
     </tu>
     <tu>
@@ -6202,8 +6202,8 @@ virgule flottante de @acronym{IEEE}, mais en Emacs Lisp @code{equal} et
       <tuv lang="en-us">
         <seg>The value cell holds the symbol's value as a variable (@pxref{Variables}).  That is what you get if you evaluate the symbol as a Lisp expression (@pxref{Evaluation}).  Any Lisp object is a legitimate value.  Certain symbols have values that cannot be changed; these include @code{nil} and @code{t}, and any symbol whose name starts with @samp{:} (those are called @dfn{keywords}).  @xref{Constant Variables}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T145020Z">
-        <seg>La cellule de valeur contient la valeur du symbole sous forme d'une variable (@pxref{Variables}). C'est ce qu'on obtient si on évalue le symbole comme une expression Lisp (@pxref{Evaluation}). N'importe quel objet Lisp est une valeur autorisée. Certains symboles ont des valeurs qui ne peuvent pas être changées parmi lesquelles se trouve @code{nil}, @code{t} et tout autre symbole dont le nom commence par @samp{:} (on appele ces derniers @dfn{mot-clés}). @xref{Constant Variables}</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T182958Z">
+        <seg>La cellule de valeur contient la valeur du symbole sous forme d'une variable (@pxref{Variables}). C'est ce qu'on obtient si on évalue le symbole comme une expression Lisp (@pxref{Evaluation}). N'importe quel objet Lisp est une valeur autorisée. Certains symboles ont des valeurs qui ne peuvent pas être changées parmi lesquelles se trouve @code{nil}, @code{t} et tout autre symbole dont le nom commence par @samp{:} (on appelle ces derniers @dfn{mot-clés}). @xref{Constant Variables}</seg>
       </tuv>
     </tu>
     <tu>
