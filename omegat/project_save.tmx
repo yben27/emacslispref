@@ -2666,8 +2666,8 @@ manière extrêmement non-standard. @xref{Création de symboles}.</seg>
       <tuv lang="en-us">
         <seg>By contrast, for an array of keyboard input characters (such as a key sequence), a vector may be necessary, because many keyboard input characters are outside the range that will fit in a string.  @xref{Key Sequence Input}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200910Z">
-        <seg>En revanche, pour un tableau de caractères d'entrée clavier (comme une séquence de clés), un vector peut être nécessaire car beaucoup de caractères d'entrée clavier sont en-dehors de la plage de ceux qui peuvent rentrer dans un tableau de type string. @xref{Key Sequence Input}. </seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152857Z">
+        <seg>En revanche, pour un tableau de caractères d'entrée clavier (comme une séquence de clés), un vecteur peut être nécessaire car beaucoup de caractères d'entrée clavier sont en dehors de la plage de ceux qui peuvent rentrer dans un tableau de type string. @xref{Key Sequence Input}. </seg>
       </tuv>
     </tu>
     <tu>
@@ -4242,8 +4242,8 @@ vers la droite avec @code{lsh} ressemble à ceci:</seg>
       <tuv lang="en-us">
         <seg>In principle, if you want an array of text characters, you could use either a string or a vector.  In practice, we always choose strings for such applications, for four reasons:</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200700Z">
-        <seg>En théorie, si vous voulez un tableau de caractères de texte, vous pouvez utiliser un tableau type string ou un tableau type vector. En pratique, on choisit toujours un tableau type string pour de telles applications, pour quatre raisons :</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152711Z">
+        <seg>En théorie, si on veut un tableau de caractères de texte, on peut utiliser un tableau type string ou un tableau type vector. En pratique, on choisit toujours un tableau type string pour de telles applications, pour quatre raisons :</seg>
       </tuv>
     </tu>
     <tu>
@@ -4486,8 +4486,8 @@ sa valeur de position est employée et son tampon est ignoré.</seg>
       <tuv lang="en-us">
         <seg>Many of the specialized editing and I/O facilities of Emacs accept only strings.  For example, you cannot insert a vector of characters into a buffer the way you can insert a string.  @xref{Strings and Characters}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140526T210223Z">
-        <seg>Beaucoup d'équipements d'édition spécialisée et d'entrée-sortie d'Emacs acceptent seulement des strings. Par exemple, vous ne pouvez pas insérer un vecteurs de caractères dans une mémoire tampon de la même façon qu'une chaîne de caractères peut l'être. @xref{Strings and Characters}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152821Z">
+        <seg>Beaucoup d'équipements d'édition spécialisée et d'entrée-sortie d'Emacs acceptent seulement des strings. Par exemple, vous ne pouvez pas insérer un vecteur de caractères dans une mémoire tampon de la même façon qu'une chaîne de caractères peut l'être. @xref{Strings and Characters}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5336,8 +5336,8 @@ un exemple :</seg>
       <tuv lang="en-us">
         <seg>Strings are printed in a way that shows the contents more clearly as text.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200736Z">
-        <seg>Les tableaux type @code{strings} sont affichés d'une façon qui montre plus clairement le contenu comme il s'agit de texte.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152758Z">
+        <seg>Les tableaux type @code{strings} s'affichent d'une façon qui montre plus clairement le contenu car il s'agit de texte.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5352,8 +5352,8 @@ un exemple :</seg>
       <tuv lang="en-us">
         <seg>Strings can hold text properties.  @xref{Text Properties}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T200801Z">
-        <seg>Les tableaux type @code{strings} peuvent contenir des propriétés de texte. @xref{Text Properties}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152805Z">
+        <seg>Les tableaux type @code{strings} peuvent contenir des propriétés textuelles. @xref{Text Properties}.</seg>
       </tuv>
     </tu>
     <tu>
