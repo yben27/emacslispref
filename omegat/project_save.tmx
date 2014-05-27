@@ -4801,24 +4801,24 @@ qu'un certain minimum (négatif).</seg>
       <tuv lang="en-us">
         <seg>Refers to the default value.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192438Z">
-        <seg>renvoie à la valeur par défaut.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T175926Z">
+        <seg>Renvoie à la valeur par défaut.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-us">
         <seg>Refers to the element for character @var{char} (supposing @var{char} is a valid character code).</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192523Z">
-        <seg>renvoie à l'élément pour le caractère @var{char} (en supposant que @var{char} est un code caractère valide).</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T175937Z">
+        <seg>Renvoie à l'élément pour le caractère @var{char} (en supposant que @var{char} est un code caractère valide).</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-us">
         <seg>Refers to the value specified for the whole character set @var{charset} (@pxref{Character Sets}).</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192550Z">
-        <seg>renvoie à la valeur spécifiée pour tout l'ensemble de caractères @var{charset} (@pxref{Character Sets}).</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T175944Z">
+        <seg>Renvoie à la valeur spécifiée pour tout l'ensemble de caractères @var{charset} (@pxref{Character Sets}).</seg>
       </tuv>
     </tu>
     <tu>
