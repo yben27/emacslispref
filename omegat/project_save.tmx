@@ -2419,8 +2419,8 @@ commencement.</seg>
       <tuv lang="en-us">
         <seg>Any two distinct Lisp objects are ``different'' as keys.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213802Z">
-        <seg>Deux objets Lisp distincts, n'importe lesquels, sont ``differents'' en tant que clés.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T141304Z">
+        <seg>Deux objets Lisp distincts, quels qu'ils soient, sont ``différents'' en tant que clés.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3929,8 +3929,8 @@ pour être non négative et inférieure à @var{limit}.</seg>
       <tuv lang="en-us">
         <seg>If @var{rehash-size} is an integer, it should be positive, and the hash table grows by adding that much to the nominal size.  If @var{rehash-size} is a floating point number, it had better be greater than 1, and the hash table grows by multiplying the old size by that number.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214711Z">
-        <seg>Si @var{rehash-size} est un entier, il devrait être positif, et la table de hachage s'agrandira en partant de sa valeur nominale et en y ajoutant cet entier positif. Si @var{rehash-size} est un nombre à virgule flottante, il vaut mieux qu'il soit supérieur à 1 et la table de hachage s'agrandira en multipliant l'ancienne taille par ce nombre.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T142458Z">
+        <seg>Si @var{rehash-size} est un entier, il doit être positif, et la table de hachage s'agrandira en partant de sa valeur nominale et en y ajoutant cet entier positif. Si @var{rehash-size} est un nombre à virgule flottante, il vaut mieux qu'il soit supérieur à 1 et la table de hachage s'agrandira en multipliant l'ancienne taille par ce nombre.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3961,24 +3961,24 @@ pour être non négative et inférieure à @var{limit}.</seg>
       <tuv lang="en-us">
         <seg>If @var{weak} is @code{key-and-value} or @code{t}, both the key and the value must be live in order to preserve the association.  Thus, the hash table does not protect either keys or values from garbage collection; if either one is collected as garbage, that removes the association.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214324Z">
-        <seg>Si @var{weak} vaut @code{key-and-value} ou @code{t}, à la fois la clé et la valeur doivent être référencées pour conserver l'association. Ainsi, la table de hachage ne protège ni les clés ni les valeurs d'être récupérées par le ramasse-miettes ; si l'une des deux est ramassée, cela enlève l'association.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T141907Z">
+        <seg>Si @var{weak} vaut @code{key-and-value} ou @code{t}, la clé et la valeur doivent absolument être référencées pour préserver l'association. Ainsi donc, la table de hachage ne met ni les clés ni les valeurs d'une récupération par le ramasse-miettes ; si l'une des deux est ramassée, l'association est supprimée.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-us">
         <seg>If @var{weak} is @code{key-or-value}, either the key or the value can preserve the association.  Thus, associations are removed from the hash table when both their key and value would be collected as garbage (if not for references from weak hash tables).</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214405Z">
-        <seg>Si @var{weak} vaut @code{key-or-value}, ni la clé ni la valeur ne peuvent conserver l'association. Ainsi, les associations sont retirées de la table de hachage quand à la fois la clé et la valeur peuvent être récupérées par le ramasse-miettes (si elles sont pas référencées dans de faibles tables de hachage).</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T142108Z">
+        <seg>Si @var{weak} vaut @code{key-or-value}, ni la clé ni la valeur ne peuvent conserver l'association. Ainsi donc, les associations sont retirées de la table de hachage quand la clé ainsi que la valeur sont récupérées par le ramasse-miettes (si elles ne sont pas référencées dans des tables de hachage faibles).</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-us">
         <seg>If @var{weak} is @code{value}, then the hash table does not prevent values from being collected as garbage (if they are not referenced anywhere else); if a particular value does get collected, the corresponding association is removed from the hash table.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214350Z">
-        <seg>Si @var{weak} vaut @code{value}, alors la table de hachage n'empêche pas ses clés d'être détruites par le ramasse-miettes (si elles ne sont référencées nulle part ailleurs) ; si une valeur particulière se fait ramasser, l'association correspondante est enlevée de la table de hachage.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T141615Z">
+        <seg>Si @var{weak} vaut @code{value}, alors la table de hachage n'empêche pas les valeurs d'être détruites par le ramasse-miettes (si elles ne sont référencées nulle part ailleurs) ; si une valeur particulière se fait ramasser, l'association correspondante est retirée de la table de hachage.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4360,8 +4360,8 @@ matériel.</seg>
       <tuv lang="en-us">
         <seg>Keys which are numbers are ``the same'' if they are @code{equal}, that is, if they are equal in value and either both are integers or both are floating point numbers; otherwise, two distinct objects are never ``the same.''</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213737Z">
-        <seg>Les clés qui sont des nombres sont ``identiques'' si elles sont @code{equal}, c'est-à-dire si elles sont égales par leurs valeurs et si elles sont chacunes des entiers (@code{integers}) ou des nombres à virgule flottante ; sinon deux objets distincts ne sont jamais ``les mêmes''.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T141247Z">
+        <seg>Les clés qui sont des nombres sont ``les mêmes'' si elles sont @code{equal}, c'est-à-dire si elles sont égales par leurs valeurs et si elles sont l'une et l'autre des entiers (@code{integers}) ou bien des nombres à virgule flottante ; sinon deux objets distincts ne sont jamais ``les mêmes''.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6291,16 +6291,16 @@ non sortie.</seg>
       <tuv lang="en-us">
         <seg>The value, @var{weak}, must be one of @code{nil}, @code{key}, @code{value}, @code{key-or-value}, @code{key-and-value}, or @code{t} which is an alias for @code{key-and-value}.  If @var{weak} is @code{key} then the hash table does not prevent its keys from being collected as garbage (if they are not referenced anywhere else); if a particular key does get collected, the corresponding association is removed from the hash table.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214208Z">
-        <seg>La valeur de @var{weak} doit prendre une des valeurs suivantes @code{nil}, @code{key}, @code{value}, @code{key-or-value}, @code{key-and-value} ou @code{t} qui est un alias pour @code{key-and-value}. Si @var{weak} a pour valeur @var{key} alors la table de hachage n'empêche pas ses clés d'être détruites par le ramasse-miettes (si elles ne sont référencées nulle part ailleurs) ; si une clé particulière se fait ramasser, l'association correspondante est enlevée de la table de hachage.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T141540Z">
+        <seg>La valeur de @var{weak} doit prendre une des valeurs suivantes @code{nil}, @code{key}, @code{value}, @code{key-or-value}, @code{key-and-value} ou @code{t} qui est un alias pour @code{key-and-value}. Si @var{weak} a pour valeur @var{key} alors la table de hachage n'empêche pas ses clés d'être détruites par le ramasse-miettes (si elles ne sont référencées nulle part ailleurs) ; si une clé particulière se fait ramasser, l'association correspondante est retirée de la table de hachage.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-us">
         <seg>The weakness of a hash table specifies whether the presence of a key or value in the hash table preserves it from garbage collection.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213946Z">
-        <seg>La valeur de faiblesse d'une table de hachage spécifie si la présence d'une clé ou d'une valeur dans la table de hachage la préserve d'être récupérée par le ramasse-miettes.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T141505Z">
+        <seg>La valeur de faiblesse d'une table de hachage spécifie si la présence d'une clé ou d'une valeur dans la table de hachage la préserve de la récupération par le ramasse-miettes.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7379,8 +7379,8 @@ Lisp, correspondant à la version d'Emacs @value{EMACSVER}.</seg>
       <tuv lang="en-us">
         <seg>This is equivalent to @code{make-hash-table}, but with a different style argument list.  The argument @var{test} specifies the method of key lookup.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214851Z">
-        <seg>Cela est équivalent à @code{make-hash-table}, mais avec un agencement différent de la liste d'arguments. L'argument @var{test} spécifie la méthode de recherche de clé.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T143253Z">
+        <seg>Équivaut à @code{make-hash-table}, mais avec un agencement différent de la liste d'arguments. L'argument @var{test} spécifie la méthode de recherche de clé.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7680,24 +7680,24 @@ plus tard.</seg>
       <tuv lang="en-us">
         <seg>This specifies a hint for how many associations you plan to store in the hash table.  If you know the approximate number, you can make things a little more efficient by specifying it this way.  If you specify too small a size, the hash table will grow automatically when necessary, but doing that takes some extra time.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214444Z">
-        <seg>Cela spécifie une astuce pour bon nombre d'associations que vous prévoyez de stocker dans la table de hachage. Si vous connaissez le nombre approximatif, vous pouvez rendre les choses un peu plus efficaces en les spécificant ainsi. Si vous spécifiez une taille trop petite, la table de hachage s'agrandira automatiquement quand c'est nécessaire mais cela nécessite du temps supplémentaire.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T142400Z">
+        <seg>C'est une astuce qui permet de spécifier le nombre d'associations que vous prévoyez de stocker dans la table de hachage. Si vous connaissez le nombre approximatif, vous pouvez rendre les choses un peu plus efficaces en le spécificant de cette façon. Si vous spécifiez une taille trop petite, la table de hachage s'agrandira automatiquement quand ce sera nécessaire mais cela prend du temps supplémentaire.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-us">
         <seg>This specifies the criterion for when the hash table is ``full'' (so it should be made larger).  The value, @var{threshold}, should be a positive floating point number, no greater than 1.  The hash table is ``full'' whenever the actual number of entries exceeds this fraction of the nominal size.  The default for @var{threshold} is 0.8.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214813Z">
-        <seg>Cela spécifie le critère où la table de hachage est ``pleine'' (ainsi il devrait être défini grand). La valeur @var{threshold} devrait être soit un nombre positif à virgule flottante et inférieur à 1. La table de hachage est ``pleine'' quand le nombre d'entrées dépasse cette fraction de la taille nominale. La valeur par défaut pour @var{threshold} est 0.8.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T143234Z">
+        <seg>Spécifie le critère pour qu'une table de hachage soit ``pleine'' (Il faut donc qu'il soit défini comme plus grand). La valeur @var{threshold} doit être soit un nombre positif à virgule flottante et inférieur ou égal à 1. La table de hachage est ``pleine'' dès que le nombre d'entrées dépasse cette fraction de la taille nominale. La valeur par défaut pour @var{threshold} est 0.8.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-us">
         <seg>This specifies the method of key lookup for this hash table.  The default is @code{eql}; @code{eq} and @code{equal} are other alternatives:</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213628Z">
-        <seg>Cela spécifie la méthode de recherche de la clé pour cette table de hachage. La valeur par défaut est @code{eql} ; @code{eq} et @code{equal} sont des alternatives :</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T141140Z">
+        <seg>Spécifie la méthode de recherche de la clé pour cette table de hachage. La valeur par défaut est @code{eql} ; @code{eq} et @code{equal} sont également possibles :</seg>
       </tuv>
     </tu>
     <tu>
@@ -8042,8 +8042,8 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
       <tuv lang="en-us">
         <seg>When you add an association to a hash table and the table is ``full,'' it grows automatically.  This value specifies how to make the hash table larger, at that time.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T214635Z">
-        <seg>Quand on ajoute une association à une table de hachage et que la table est ``pleine'', elle s'agrandit automatiquement. Cette valeur spécifie comment rendre la table de hachage plus grande à ce moment.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T142422Z">
+        <seg>Quand on ajoute une association à une table de hachage et que la table est ``pleine'', elle s'agrandit automatiquement. Cette valeur spécifie comment agrandir la table de hachage à ce moment-là.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8139,8 +8139,8 @@ montrer le résultat de l'évaluation du formulaire augmenté.</seg>
       <tuv lang="en-us">
         <seg>You can use @code{define-hash-table-test} (@pxref{Defining Hash}) to define additional possibilities for @var{test}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T213929Z">
-        <seg>Vous pouvez utilisez @code{define-hash-table-test} (@pxref{Defining Hash}) pour définir des possibilités supplémentaires pour la fonction @var{test}.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T141329Z">
+        <seg>On peut utiliser @code{define-hash-table-test} (@pxref{Defining Hash}) pour définir des possibilités supplémentaires pour la fonction @var{test}.</seg>
       </tuv>
     </tu>
     <tu>
