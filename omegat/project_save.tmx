@@ -2125,8 +2125,8 @@ dans une série pseudo-aléatoire.</seg>
       <tuv lang="en-us">
         <seg>A hash table is a very fast kind of lookup table, somewhat like an alist (@pxref{Association Lists}) in that it maps keys to corresponding values.  It differs from an alist in these ways:</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T212415Z">
-        <seg>Une table de hachage est une sorte de table de correspondance très rapide, un peu comme une liste d'association (@pxref{Association Lists}) du fait qu'elle lie les clés aux valeurs correspondantes. Elle diffère d'une alist sur les points suivants :</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T181236Z">
+        <seg>Une table de hachage est une sorte de table de correspondance très rapide, un peu comme une liste d'association (@pxref{Association Lists}) du fait qu'elle lie les clés aux valeurs correspondantes. Elle diffère d'une liste d'associations sur les points suivants :</seg>
       </tuv>
     </tu>
     <tu>
