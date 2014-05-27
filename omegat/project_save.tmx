@@ -5814,8 +5814,8 @@ imprimé à côté de la marge.</seg>
       <tuv lang="en-us">
         <seg>The following three functions are convenient subroutines for packages that define non-@acronym{ASCII} character sets.  They modify the specified case table @var{case-table}; they also modify the standard syntax table.  @xref{Syntax Tables}.  Normally you would use these functions to change the standard case table.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140502T102422Z">
-        <seg>Les trois fonctions suivantes sont des sous-routines pratiques pour les packages qui définissent des ensembles de caractères non @acronym{ASCII}. Elles modifient le tableau de casse spécifié @var{case-table} ; elles modifient également le tableau de syntaxe standard. @xref{Syntax Tables}. Normalement, il faut utiliser ces fonctions pour changer le tableau de casse standard.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152323Z">
+        <seg>Les trois fonctions suivantes sont des sous-routines pratiques pour les paquetages qui définissent des ensembles de caractères non @acronym{ASCII}. Elles modifient le tableau de casse spécifié @var{case-table} ; elles modifient également le tableau de syntaxe standard. @xref{Syntax Tables}. Normalement, il faut utiliser ces fonctions pour changer le tableau de casse standard.</seg>
       </tuv>
     </tu>
     <tu>
