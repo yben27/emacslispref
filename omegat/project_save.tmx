@@ -2117,8 +2117,8 @@ dans une série pseudo-aléatoire.</seg>
       <tuv lang="en-us">
         <seg>A generic character stands for a character set; specifying the generic character as argument is equivalent to specifying the character set name.  @xref{Splitting Characters}, for a description of generic characters.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T180518Z">
-        <seg>Un caractère générique représente un ensemble de caractères ; spécifier le caractère générique comme argument est équivalent à spécifier le nom de l'ensemble de caractères. @xref{Splitting Characters} pour une description de caractères génériques. </seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T110359Z">
+        <seg>Un caractère générique représente un ensemble de caractères ; spécifier le caractère générique comme argument est équivalent à spécifier le nom de l'ensemble de caractères. @xref{Splitting Characters} pour une description des caractères génériques.</seg>
       </tuv>
     </tu>
     <tu>
