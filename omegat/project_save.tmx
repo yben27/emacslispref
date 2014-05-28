@@ -9205,14 +9205,6 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
     </tu>
     <tu>
       <tuv lang="en-us">
-        <seg>char-tables</seg>
-      </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T190132Z">
-        <seg>Les char-tables</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-us">
         <seg>character arrays</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101144Z">
