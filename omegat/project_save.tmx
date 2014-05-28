@@ -6934,8 +6934,8 @@ propriétés de toutes les abréviations copiées à 0.</seg>
       <tuv lang="en-us">
         <seg>This function returns a new vector containing all the elements of the @var{sequences}.  The arguments @var{sequences} may be true lists, vectors, strings or bool-vectors.  If no @var{sequences} are given, an empty vector is returned.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T184618Z">
-        <seg>Cette fonction retourne un nouveau vecteur contenant tous les éléments de l'argument @var{sequences}. Cet argument @var{sequences} peut être des listes, des vecteurs, des chaînes de caractères ou des vecteurs-booléens. Si aucune @var{sequence} n'est donnée alors un vecteur vide est retourné.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T104015Z">
+        <seg>Cette fonction retourne un nouveau vecteur contenant tous les éléments des arguments @var{sequences}. Ces arguments @var{sequences} peuvent être des listes, des vecteurs, des chaînes de caractères ou des vecteurs-booléens. Si aucune @var{sequence} n'est donnée alors un vecteur vide est retourné.</seg>
       </tuv>
     </tu>
     <tu>
