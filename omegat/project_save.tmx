@@ -2770,8 +2770,8 @@ manière extrêmement non-standard. @xref{Création de symboles}.</seg>
       <tuv lang="en-us">
         <seg>Case Tables</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T204347Z">
-        <seg>Le tableau de casse</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T203146Z">
+        <seg>Tableaux de casse</seg>
       </tuv>
     </tu>
     <tu>
@@ -5148,8 +5148,8 @@ binaires de 8 bits) :</seg>
       <tuv lang="en-us">
         <seg>Since strings are arrays, and therefore sequences as well, you can operate on them with the general array and sequence functions.  (@xref{Sequences Arrays Vectors}.)  For example, you can access or change individual characters in a string using the functions @code{aref} and @code{aset} (@pxref{Array Functions}).</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140501T102253Z">
-        <seg>Puisque les chaînes de caractères sont des tableaux, et par conséquent des suites aussi, vous pouvez les traiter avec les fonctions générales des tableaux et des suites. (Voir la section @xref{Sequences, Arrays, and Vectors}.) Par exemple, on peut accéder aux caractères individuels d'une chaîne, ou les modifier, à l’aide des fonctions @code{aref} et @code{aset} (voir la section @xref{Functions that Operate on Arrays}).</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T203231Z">
+        <seg>Puisque les chaînes de caractères sont des tableaux, et par conséquent des suites aussi, on peut les traiter avec les fonctions générales des tableaux et des suites. (Voir la section @xref{Sequences, Arrays, and Vectors}.) Par exemple, on peut accéder aux caractères individuels d'une chaîne, ou les modifier, à l’aide des fonctions @code{aref} et @code{aset} (voir la section @xref{Functions that Operate on Arrays}).</seg>
       </tuv>
     </tu>
     <tu>
