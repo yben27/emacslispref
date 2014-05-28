@@ -3850,8 +3850,8 @@ parce que sa représentation binaire consiste entièrement de 1. Si
       <tuv lang="en-us">
         <seg>If @var{array} is a string and @var{object} is not a character, a @code{wrong-type-argument} error results.  The function converts a unibyte string to multibyte if necessary to insert a character.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182651Z">
-        <seg>Si @var{array} est une chaîne de caractères et @var{object} n'est pas un caractère, il en résultera une erreur @code{wrong-type-argument}. La fonction convertit une chaîne de caractères unioctet en multioctet s'il est nécessaire d'insérer un caractère.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T102851Z">
+        <seg>Si @var{array} est une chaîne de caractères et @var{object} n'est pas un caractère, il en résultera une erreur @code{wrong-type-argument}. La fonction convertit une chaîne de caractères unioctet en multioctet si nécessaire pour insérer un caractère.</seg>
       </tuv>
     </tu>
     <tu>
