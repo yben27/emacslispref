@@ -6578,8 +6578,8 @@ donné, @code{+} retourne 0.</seg>
       <tuv lang="en-us">
         <seg>This function creates and returns a copy of @var{table}.  Only the table itself is copied---the keys and values are shared.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195529Z">
-        <seg>Cette fonction crée et retourne une copie de @var{table}. Seule la table elle-même est copiée --- les clés et les valeurs sont partagées.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T195233Z">
+        <seg>Cette fonction crée et retourne une copie de @var{table}. Seule la table elle-même est copiée ; les clés et les valeurs sont partagées.</seg>
       </tuv>
     </tu>
     <tu>
