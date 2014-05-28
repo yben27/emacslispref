@@ -5931,8 +5931,8 @@ machine de 29 bits :</seg>
       <tuv lang="en-us">
         <seg>The function cell or the value cell may be @dfn{void}, which means that the cell does not reference any object.  (This is not the same thing as holding the symbol @code{void}, nor the same as holding the symbol @code{nil}.)  Examining a function or value cell that is void results in an error, such as @samp{Symbol's value as variable is void}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T145358Z">
-        <seg>La cellule de fonction ou cellule de valeur peut être @dfn{void}, ce qui signifie que la cellule ne référence aucun objet. (Cela n'est pas pareil que contenir le symbole @code{void} ou le symbole @code{nil}.) Interroger une cellule de fonction ou de valeur qui est void résulte en une erreur, comme @samp{Symbol's value as variable is void}.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T200728Z">
+        <seg>La cellule de fonction ou cellule de valeur peut être @dfn{void}, ce qui signifie que la cellule ne référence aucun objet. (Cela n'est pas comme contenir le symbole @code{void} ou le symbole @code{nil}.) Interroger une cellule de fonction ou de valeur qui est void résulte en une erreur, comme @samp{Symbol's value as variable is void}.</seg>
       </tuv>
     </tu>
     <tu>
