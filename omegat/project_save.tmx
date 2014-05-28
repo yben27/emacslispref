@@ -7936,8 +7936,8 @@ mot `Variable' est remplacée par `User Option'.</seg>
       <tuv lang="en-us">
         <seg>Vectors are printed with square brackets surrounding the elements.  Thus, a vector whose elements are the symbols @code{a}, @code{b} and @code{a} is printed as @code{[a b a]}.  You can write vectors in the same way in Lisp input.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T174652Z">
-        <seg>Les vecteurs sont affichés avec des crochets autour des éléments  Ainsi, un vecteur dont les éléments sont les symboles @code{a}, @code{b} et @code{a} est affiché de la façon suivante @code{[a b a]}. On peut écrire des vecteurs de la même façon en saisie Lisp.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T103344Z">
+        <seg>Les vecteurs s'affichent avec les éléments entre crochets. Ainsi, un vecteur dont les éléments sont les symboles @code{a}, @code{b} et @code{a} s'affiche de la façon suivante @code{[a b a]}. On peut écrire des vecteurs de la même façon en saisie Lisp.</seg>
       </tuv>
     </tu>
     <tu>
