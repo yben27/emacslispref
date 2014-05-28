@@ -7138,8 +7138,8 @@ Si vous n'indiquez pas @var{base}, la base</seg>
       <tuv lang="en-us">
         <seg>This function returns the number of elements in @var{sequence}.  If @var{sequence} is a dotted list, a @code{wrong-type-argument} error is signaled.  Circular lists may cause an infinite loop.  For a char-table, the value returned is always one more than the maximum Emacs character code.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T182407Z">
-        <seg>Cette fonction retourne le nombre d'éléments dans une suite @var{sequence}. Si une suite @var{sequence} est une liste pointée, une erreur @code{wrong-type-argument} (mauvais-type-d-argument) est signalée. Les listes circulaires peuvent entraîner une boucle infinie. Pour une table de chaînes de caractères, la valeur retournée est toujours supérieure d'un au code caractère maximum d'Emacs.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T100806Z">
+        <seg>Cette fonction retourne le nombre d'éléments dans une suite @var{sequence}. Si une suite @var{sequence} est une liste pointée, une erreur @code{wrong-type-argument} (mauvais-type-d-argument) est signalée. Les listes circulaires peuvent entraîner une boucle infinie. Pour une table de chaînes de caractères, la valeur retournée est toujours supérieure de un au code caractère maximum d'Emacs.</seg>
       </tuv>
     </tu>
     <tu>
