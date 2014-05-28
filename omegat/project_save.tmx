@@ -2176,8 +2176,8 @@ définies, mais elles ne sont pas développées automatiquement.</seg>
       <tuv lang="en-us">
         <seg>A string in Emacs Lisp is an array that contains an ordered sequence of characters.  Strings are used as names of symbols, buffers, and files; to send messages to users; to hold text being copied between buffers; and for many other purposes.  Because strings are so important, Emacs Lisp has many functions expressly for manipulating them.  Emacs Lisp programs use strings more often than individual characters.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140526T210300Z">
-        <seg>Une chaîne en Lisp Emacs est un tableau qui contient une suite ordonnée de caractères. Les chaînes sont utilisées comme noms de symboles, de mémoires tampons et de fichiers ; pour envoyer des messages aux utilisateurs ; pour contenir le texte copié entre les mémoires tampons ; et pour beaucoup d’autres choses. Puisque les chaînes sont si importantes, Lisp Emacs possède de nombreuses fonctions permettant expressément de les manipuler. Les programmes Lisp Emacs utilisent  plus souvent les chaînes que les caractères individuels.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T202803Z">
+        <seg>Une chaîne en Lisp Emacs est un tableau qui contient une suite ordonnée de caractères. Les chaînes sont utilisées comme noms de symboles, de mémoires tampons et de fichiers ; pour envoyer des messages aux utilisateurs ; pour contenir le texte copié entre les mémoires tampons ; et pour beaucoup d’autres choses. Puisque les chaînes sont si importantes, Lisp Emacs possède de nombreuses fonctions permettant de les manipuler. Les programmes Lisp Emacs utilisent  plus souvent les chaînes que les caractères individuels.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2566,8 +2566,8 @@ représentation des nombres entiers dans une future version d'Emacs.</seg>
       <tuv lang="en-us">
         <seg>Basic properties of strings and characters.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101614Z">
-        <seg>Les propriétés fondamentales des chaînes et des caractères.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T202818Z">
+        <seg>Propriétés fondamentales des chaînes et des caractères.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3548,8 +3548,8 @@ toutes les machines connues se comportent de la même façon.</seg>
       <tuv lang="en-us">
         <seg>Functions to allocate new strings.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102213Z">
-        <seg>Les fonctions pour allouer de nouvelles chaînes.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T202859Z">
+        <seg>Fonctions pour allouer de nouvelles chaînes.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4721,8 +4721,8 @@ qu'un certain minimum (négatif).</seg>
       <tuv lang="en-us">
         <seg>Predicates for Strings</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T102052Z">
-        <seg>Les prédicats pour les chaînes</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T202824Z">
+        <seg>Prédicats pour les chaînes</seg>
       </tuv>
     </tu>
     <tu>
@@ -9143,8 +9143,8 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       <tuv lang="en-us">
         <seg>bytes</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101217Z">
-        <seg>Les octets</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T202649Z">
+        <seg>Octets</seg>
       </tuv>
     </tu>
     <tu>
@@ -9215,8 +9215,8 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       <tuv lang="en-us">
         <seg>character arrays</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101144Z">
-        <seg>Les tableaux de caractères</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T202440Z">
+        <seg>Tableaux de caractères</seg>
       </tuv>
     </tu>
     <tu>
@@ -9239,8 +9239,8 @@ d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
       <tuv lang="en-us">
         <seg>characters</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101204Z">
-        <seg>Les caractères</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T202448Z">
+        <seg>Caractères</seg>
       </tuv>
     </tu>
     <tu>
@@ -14963,8 +14963,8 @@ This function returns the string that is @var{symbol}'s name.  For example:</seg
       <tuv lang="en-us">
         <seg>strings</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T101120Z">
-        <seg>Les chaînes de caractères</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T202432Z">
+        <seg>Chaînes de caractères</seg>
       </tuv>
     </tu>
     <tu>
