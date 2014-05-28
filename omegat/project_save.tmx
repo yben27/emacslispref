@@ -5311,8 +5311,8 @@ un exemple :</seg>
       <tuv lang="en-us">
         <seg>Storing a new element into the copy does not affect the original @var{sequence}, and vice versa.  However, the elements of the new sequence are not copies; they are identical (@code{eq}) to the elements of the original.  Therefore, changes made within these elements, as found via the copied sequence, are also visible in the original sequence.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180015Z">
-        <seg>Stocker un nouvel élément dans la copie ne change rien à l'originale @var{sequence}, et vice versa. Cependant, les éléments de la nouvelle suite ne sont pas des copies ; ce sont les mêmes (@code{eq}) que ceux de la suite d'origine. Ainsi, les changements effectués sur ces éléments sont visibles dans les deux suites, celle d'origine et celle copiée.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T101223Z">
+        <seg>Stocker un nouvel élément dans la copie ne change rien à la @var{sequence} d'origine, et vice versa. Cependant, les éléments de la nouvelle suite ne sont pas des copies ; ce sont les mêmes (@code{eq}) que ceux de la suite d'origine. Ainsi, les changements effectués sur ces éléments sont visibles dans les deux suites, celle d'origine et celle copiée.</seg>
       </tuv>
     </tu>
     <tu>
