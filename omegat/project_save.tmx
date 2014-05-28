@@ -5542,8 +5542,8 @@ autrement. 0 est considéré non négatif.</seg>
       <tuv lang="en-us">
         <seg>The @dfn{function cell} holds the function definition of the symbol.  When a symbol is used as a function, its function definition is used in its place.  This cell is also used to make a symbol stand for a keymap or a keyboard macro, for editor command execution.  Because each symbol has separate value and function cells, variables names and function names do not conflict.  See @code{symbol-function} in @ref{Function Cells}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T205848Z">
-        <seg>La @dfn{cellule de fonction} contient la définition de la fonction du symbole. Quand un symbole est utilisé comme une fonction, sa définition de fonction est utilisée à la place. Cette cellule est aussi utilisée pour qu'un symbole représente une touche de clavier ou une combinaison de touches pour que l'éditeur commande l'exécution. Comme chaque symbole a des valeurs et des cellules de fonction séparées, les noms de variables et les noms de fonctions ne rentrent pas en conflit. Voir @code{symbol-function} dans @ref{Function Cells}. </seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T195558Z">
+        <seg>La @dfn{cellule de fonction} contient la définition de la fonction du symbole. Quand un symbole est utilisé comme fonction, sa définition de fonction est utilisée à la place. Cette cellule est aussi utilisée pour qu'un symbole représente une touche de clavier ou une combinaison de touches pour que l'éditeur commande l'exécution. Comme chaque symbole a des valeurs et des cellules de fonction séparées, les noms de variables et les noms de fonctions ne rentrent pas en conflit. Voir @code{symbol-function} dans @ref{Function Cells}. </seg>
       </tuv>
     </tu>
     <tu>
@@ -5566,8 +5566,8 @@ autrement. 0 est considéré non négatif.</seg>
       <tuv lang="en-us">
         <seg>The @dfn{value cell} holds the current value of the symbol as a variable.  When a symbol is used as a form, the value of the form is the contents of the symbol's value cell.  See @code{symbol-value} in @ref{Accessing Variables}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T144804Z">
-        <seg>La @dfn{cellule de valeur} contient la valeur actuelle du symbole comme variable. Quand un symbole est utilisé comme une forme, la valeur de la forme est le contenu de la cellule de valeur du symbole. Voir @code{symbol-value} dans @ref{Accessing Variable Values}.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T195455Z">
+        <seg>La @dfn{cellule de valeur} contient la valeur actuelle du symbole comme variable. Quand un symbole est utilisé comme forme, la valeur de la forme est le contenu de la cellule de valeur du symbole. Voir @code{symbol-value} dans @ref{Accessing Variable Values}.</seg>
       </tuv>
     </tu>
     <tu>
