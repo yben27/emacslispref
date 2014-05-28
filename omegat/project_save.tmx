@@ -2133,8 +2133,8 @@ dans une série pseudo-aléatoire.</seg>
       <tuv lang="en-us">
         <seg>A list is a sequence of elements, but it is not a single primitive object; it is made of cons cells, one cell per element.  Finding the @var{n}th element requires looking through @var{n} cons cells, so elements farther from the beginning of the list take longer to access.  But it is possible to add elements to the list, or remove elements.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T173802Z">
-        <seg>Une liste est une suite d'éléments mais n'est pas un objet primitif unique. La liste est constituée de cellules cons avec une seule cellule par élément. Pour trouver l'élément @var{n}, il faut passer les @var{n} cellules avant. Donc plus un élément est loin du début de la liste, plus il sera long d'y accéder. Toutefois, il est possible d'ajouter ou d'enlever des éléments à la liste.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T100141Z">
+        <seg>Une liste est une suite d'éléments mais n'est pas un objet primitif unique. La liste est constituée de cellules cons avec une seule cellule par élément. Pour trouver l'élément @var{n}, il faut passer les @var{n} cellules avant. Donc plus un élément est loin du début de la liste, plus on mettra de temps à y accéder. Toutefois, il est possible d'ajouter ou d'enlever des éléments à la liste.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4136,8 +4136,8 @@ tentative de changer leurs valeurs a comme conséquence une erreur
       <tuv lang="en-us">
         <seg>In Emacs Lisp, a @dfn{sequence} is either a list or an array.  The common property of all sequences is that they are ordered collections of elements.  This section describes functions that accept any kind of sequence.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T173251Z">
-        <seg>En Lisp Emacs, une suite (@dfn{sequence}) est soit une liste, soit un tableau. La propriété commune de toutes les suites est qu'elles sont des collections ordonnées d'éléments. Dans cette partie, on décrit des fonctions qui acceptent tout type de suite.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T100217Z">
+        <seg>.En Lisp Emacs, une suite (@dfn{sequence}) est soit une liste, soit un tableau. La propriété commune de toutes les suites est qu'elles sont des collections ordonnées d'éléments. Dans cette partie, on décrit des fonctions qui acceptent tout type de suite.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4801,8 +4801,8 @@ qu'un certain minimum (négatif).</seg>
       <tuv lang="en-us">
         <seg>Recall that the @dfn{sequence} type is the union of two other Lisp types: lists and arrays.  In other words, any list is a sequence, and any array is a sequence.  The common property that all sequences have is that each is an ordered collection of elements.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T095709Z">
-        <seg>Il faut se rappeler que le type @dfn{sequence} est l'union de deux autres types Lisp : les listes et les tableaux. En d'autres termes, toute liste est une suite et tout tableau est une suite. La propriété commune à toutes les suites est qu'elles sont toutes un ensemble ordonné d'éléments</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T100234Z">
+        <seg>Il faut se rappeler que le type @dfn{sequence} est l'union de deux autres types Lisp : les listes et les tableaux. En d'autres termes, toute liste est une suite et tout tableau est une suite. La propriété commune à toutes les suites est qu'elles sont toutes un ensemble ordonné d'éléments.</seg>
       </tuv>
     </tu>
     <tu>
