@@ -7056,8 +7056,8 @@ arrondie vers le bas à un nombre entier.</seg>
       <tuv lang="en-us">
         <seg>This function returns the contents of extra slot @var{n} of @var{char-table}.  The number of extra slots in a char-table is determined by its subtype.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192241Z">
-        <seg>Cette fonction retourne le contenu du slot supplémentaire numéro @var{n} de @var{char-table}. Le nombre de cases supplémentaires dans une char-table est déterminé par son sous-type.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T105405Z">
+        <seg>Cette fonction retourne le contenu de la case supplémentaire numéro @var{n} de @var{char-table}. Le nombre de cases supplémentaires dans une char-table est déterminé par son sous-type.</seg>
       </tuv>
     </tu>
     <tu>
