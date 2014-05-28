@@ -4250,8 +4250,8 @@ vers la droite avec @code{lsh} ressemble à ceci:</seg>
       <tuv lang="en-us">
         <seg>In principle, if you want an array of text characters, you could use either a string or a vector.  In practice, we always choose strings for such applications, for four reasons:</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T152711Z">
-        <seg>En théorie, si on veut un tableau de caractères de texte, on peut utiliser un tableau type string ou un tableau type vector. En pratique, on choisit toujours un tableau type string pour de telles applications, pour quatre raisons :</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T102144Z">
+        <seg>En théorie, si on veut un tableau de caractères de texte, on peut utiliser un tableau type string ou un tableau type vector. En pratique, on choisit toujours des tableaux type string pour de telles applications, pour quatre raisons :</seg>
       </tuv>
     </tu>
     <tu>
