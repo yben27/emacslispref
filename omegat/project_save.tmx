@@ -4436,8 +4436,8 @@ commandes d'édition.</seg>
       <tuv lang="en-us">
         <seg>Lookup in a hash table is extremely fast for large tables---in fact, the time required is essentially @emph{independent} of how many elements are stored in the table.  For smaller tables (a few tens of elements)  alists may still be faster because hash tables have a more-or-less constant overhead.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T212650Z">
-        <seg>Chercher dans une table de hachage est extrêmement rapide pour les grandes tables. En fait, le temps nécessaire est, avant tout, @emph{indépendant} du nombre d'éléments contenus dans la table. Pour les plus petites tables (quelques dizaines d'éléments), les listes d'association peuvent quand même être plus rapides parce que les tables de hachage ont un temps système plus-ou-moins constant.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T192449Z">
+        <seg>Une recherche dans une table de hachage est extrêmement rapide pour les grandes tables. En fait, le temps nécessaire est, avant tout, @emph{indépendant} du nombre d'éléments contenus dans la table. Pour les plus petites tables (quelques dizaines d'éléments), les listes d'association peuvent quand même être plus rapides parce que les tables de hachage ont un temps système plus-ou-moins constant.</seg>
       </tuv>
     </tu>
     <tu>
