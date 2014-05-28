@@ -2109,8 +2109,8 @@ dans une série pseudo-aléatoire.</seg>
       <tuv lang="en-us">
         <seg>A generic character stands for a character set, or a row of a character set; specifying the generic character as argument is equivalent to specifying the character set name.  @xref{Splitting Characters}, for a description of generic characters.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192640Z">
-        <seg>Un caractère générique signifie un ensemble de caractères ; spécifier le caractère générique comme argument est équivalent à spécifier le nom de l'ensemble de caractères. Pour une description des caractères génériques, @xref{Splitting Characters}.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T105700Z">
+        <seg>Un caractère générique représente un ensemble de caractères ou une rangée d'un ensemble de caractères ; spécifier le caractère générique comme argument est équivalent à spécifier le nom de l'ensemble de caractères. Pour une description des caractères génériques, @xref{Splitting Characters}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7254,6 +7254,14 @@ zéro, et renvoie cette valeur comme nombre à virgule flottante.</seg>
       </tuv>
       <tuv lang="fr-fr" changeid="Nicolas Lecompte" changedate="20140428T192137Z">
         <seg>Cette fonction définit @var{new-parent} comme parent de @var{char-table}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>This function sets the value in @var{char-table} for a range of characters @var{range}.  Here are the possibilities for @var{range}:</seg>
+      </tuv>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T110004Z">
+        <seg>Cette fonction définit la valeur dans @var{char-table} pour la gamme de caractères @var{range}.  Voici les valeurs possibles de @var{range}:</seg>
       </tuv>
     </tu>
     <tu>
