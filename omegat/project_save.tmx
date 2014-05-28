@@ -6348,8 +6348,8 @@ renvoient sans changement si c'est déjà un nombre entier. Si
       <tuv lang="en-us">
         <seg>There are two text representations for non-@acronym{ASCII} characters in Emacs strings (and in buffers): unibyte and multibyte (@pxref{Text Representations}).  An @acronym{ASCII} character always occupies one byte in a string; in fact, when a string is all @acronym{ASCII}, there is no real difference between the unibyte and multibyte representations.  For most Lisp programming, you don't need to be concerned with these two representations.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T104153Z">
-        <seg>Il y a deux façons de représenter le texte pour les caractères non-@acronym{ASCII} dans les chaînes d’Emacs (et dans les mémoires tampons) : l'uni- octet et le multi-octet (voir la section @xref{Text Representations}).  Un caractère @acronym{ASCII} occupe toujours un octet dans une chaîne ; en fait, quand une chaîne est entièrement en @acronym{ASCII}, il n’y a pas de réelle différence entre les représentations uni-octet etmulti-octet . Pour la plupart des programmes Lisp, vous n’avez pas besoin de vous préoccuper de ces deux représentations.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T203322Z">
+        <seg>Il y a deux façons de représenter le texte pour les caractères non-@acronym{ASCII} dans les chaînes d’Emacs (et dans les mémoires tampons) : l'uni- octet et le multi-octet (voir la section @xref{Text Representations}).  Un caractère @acronym{ASCII} occupe toujours un octet dans une chaîne ; en fait, quand une chaîne est entièrement en @acronym{ASCII}, il n’y a pas de réelle différence entre les représentations uni-octet et multi-octet . Pour la plupart des programmes Lisp, vous n’avez pas besoin de vous préoccuper de ces deux représentations.</seg>
       </tuv>
     </tu>
     <tu>
