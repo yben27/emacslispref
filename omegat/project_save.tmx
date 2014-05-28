@@ -4040,8 +4040,8 @@ toutes les machines connues arrondissent en mode standard.</seg>
       <tuv lang="en-us">
         <seg>If the two objects are not equal, the values returned by @code{sxhash} are usually different, but not always; once in a rare while, by luck, you will encounter two distinct-looking objects that give the same result from @code{sxhash}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140505T195253Z">
-        <seg>Si deux objets ne sont pas égaux, d'habitude les valeurs retournées par @code{sxhash} sont différentes, mais pas toujours. Une fois de temps en temps, par chance, vous rencontrerez deux objets apparemment distincts mais dont le résultat de @code{sxhash} est identique.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T194926Z">
+        <seg>Si les deux objets ne sont pas égaux, d'habitude les valeurs retournées par @code{sxhash} sont différentes, mais pas toujours. Parfois, mais très rarement, par chance, vous rencontrerez deux objets apparemment distincts mais dont le résultat de @code{sxhash} est identique.</seg>
       </tuv>
     </tu>
     <tu>
