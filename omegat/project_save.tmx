@@ -5034,8 +5034,8 @@ canoniques : @code{t} ou @code{nil}.</seg>
       <tuv lang="en-us">
         <seg>See also @code{append} in @ref{Building Lists}, @code{concat} in @ref{Creating Strings}, and @code{vconcat} in @ref{Vector Functions}, for other ways to copy sequences.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T180220Z">
-        <seg>Pour les autres façons de copier des listes, voir également @code{append} dans @ref{Building Lists, @code{concat} dans @ref{Creating Strings}, et @code{vconcat} dans @ref{Vector Functions}. </seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T101728Z">
+        <seg>Pour d'autres méthodes de copie de listes, voir également @code{append} dans @ref{Building Lists, @code{concat} dans @ref{Creating Strings}, et @code{vconcat} dans @ref{Vector Functions}. </seg>
       </tuv>
     </tu>
     <tu>
