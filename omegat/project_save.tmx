@@ -2184,8 +2184,8 @@ définies, mais elles ne sont pas développées automatiquement.</seg>
       <tuv lang="en-us">
         <seg>A vector, like a string or a number, is considered a constant for evaluation: the result of evaluating it is the same vector.  This does not evaluate or even examine the elements of the vector.  @xref{Self-Evaluating Forms}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185057Z">
-        <seg>Un vecteur, comme une chaîne de caractères ou un nombre, est considéré constant pour évaluation : le résultat de l'évaluation est le même vecteur. Cela n'évalue pas, ni même n'examine, les éléments du vecteur. @xref{Self-Evaluating Forms}.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T103718Z">
+        <seg>Un vecteur, comme une chaîne de caractères ou un nombre, est considéré constant pour l'évaluation : le résultat de l'évaluation est le même vecteur. Les éléments du vecteur ne sont pas évalués, ni même examinés. @xref{Self-Evaluating Forms}.</seg>
       </tuv>
     </tu>
     <tu>
