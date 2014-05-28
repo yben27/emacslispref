@@ -4801,8 +4801,8 @@ qu'un certain minimum (négatif).</seg>
       <tuv lang="en-us">
         <seg>Recall that the @dfn{sequence} type is the union of two other Lisp types: lists and arrays.  In other words, any list is a sequence, and any array is a sequence.  The common property that all sequences have is that each is an ordered collection of elements.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140528T112315Z">
-        <seg>Il faut se rappeler que le type @dfn{sequence} est l'union de deux autres types Lisp : les listes et les tableaux. Autrement dit, toute liste est une suite et tout tableau est une suite. La propriété commune à toutes les suites est que chacune est une collection ordonnée d'éléments.</seg>
+      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140528T112521Z">
+        <seg>Il faut se rappeler que le type @dfn{sequence} est l'union de deux autres types Lisp : les listes et les tableaux. Autrement dit, toute liste est une suite et tout tableau est une suite. La propriété commune à toutes les suites est que chacune est un ensemble ordonné d'éléments.</seg>
       </tuv>
     </tu>
     <tu>
