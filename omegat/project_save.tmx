@@ -4152,8 +4152,8 @@ tentative de changer leurs valeurs a comme conséquence une erreur
       <tuv lang="en-us">
         <seg>In Emacs versions before 21, the @code{vconcat} function allowed integers as arguments, converting them to strings of digits, but that feature has been eliminated.  The proper way to convert an integer to a decimal number in this way is with @code{format} (@pxref{Formatting Strings}) or @code{number-to-string} (@pxref{String Conversion}).</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T175200Z">
-        <seg>Dans les versions d'Emacs antérieures à la 21, la fonction @code{vconcat} autorisait des arguments de type entiers en les convertissant en chaîne de caractères contenant des chiffres. Cependant, cette fonctionnalité a été retirée. La manière correcte pour convertir un nombre entier en nombre décimal de cette façon est d'utiliser la fonction @code{format} (@pxref{Formatting Strings}) or @code{number-to-string} (@pxref{String Conversion}). </seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T104212Z">
+        <seg>Dans les versions d'Emacs antérieures à la 21, la fonction @code{vconcat} autorisait des arguments de type entiers en les convertissant en chaîne de caractères contenant des chiffres. Cependant, cette fonctionnalité a été retirée. La méthode correcte pour convertir un nombre entier en nombre décimal de cette façon est d'utiliser la fonction @code{format} (@pxref{Formatting Strings}) or @code{number-to-string} (@pxref{String Conversion}). </seg>
       </tuv>
     </tu>
     <tu>
@@ -5499,8 +5499,8 @@ manière cumulée. S'il n'y a aucun argument, le résultat est 0.</seg>
       <tuv lang="en-us">
         <seg>The @code{append} function also provides a way to convert a vector into a list with the same elements:</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185436Z">
-        <seg>La fonction @code{append} fournit aussi la conversion d'un vecteur en une liste contenant les mêmes éléments :</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T104241Z">
+        <seg>La fonction @code{append} permet aussi la conversion d'un vecteur en une liste contenant les mêmes éléments :</seg>
       </tuv>
     </tu>
     <tu>
@@ -5515,8 +5515,8 @@ manière cumulée. S'il n'y a aucun argument, le résultat est 0.</seg>
       <tuv lang="en-us">
         <seg>The @code{vconcat} function also allows byte-code function objects as arguments.  This is a special feature to make it easy to access the entire contents of a byte-code function object.  @xref{Byte-Code Objects}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T185050Z">
-        <seg>La fonction @code{vconcat} prend aussi comme arguments des objets de fonctions en code octet. C'est une caractéristique particulière pour rendre facile l'accès à tout le contenu d'un objet d'une fonction en code octet. @xref{Byte-Code Objects}.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T104132Z">
+        <seg>La fonction @code{vconcat} prend aussi comme arguments des objets de fonctions en code octet. C'est une caractéristique particulière pour faciliter l'accès à tout le contenu d'un objet d'une fonction en code octet. @xref{Byte-Code Objects}.</seg>
       </tuv>
     </tu>
     <tu>
