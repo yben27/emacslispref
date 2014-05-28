@@ -1930,8 +1930,8 @@ arguments optionnels et restants.</seg>
       <tuv lang="en-us">
         <seg>@xref{Text}, for information about functions that display strings or copy them into buffers.  @xref{Character Type}, and @ref{String Type}, for information about the syntax of characters and strings.  @xref{Non-ASCII Characters}, for functions to convert between text representations and to encode and decode character codes.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T105145Z">
-        <seg>&gt;@xref{Text}, pour plus d’informations sur les fonctions qui affichent des chaînes ou les copient dans une mémoire tampon. Voir la section @xref{Character Type}, et @xref{String Type}, pour plus d’informations sur la syntaxe des chaînes et des caractères. @xref{Non-ASCII Characters}, les fonctions pour faire des conversions entre des représentations textuelles et pour coder et décoder des codes caractères.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T204337Z">
+        <seg>&gt;@xref{Text}, pour plus d’informations sur les fonctions qui affichent des chaînes ou les copient dans une mémoire tampon. Voir la section @xref{Character Type}, et @xref{String Type}, pour plus d’informations sur la syntaxe des chaînes et des caractères. @xref{Non-ASCII Characters}, pour les fonctions permettant de faire des conversions entre des représentations textuelles et de coder et décoder des codes caractères.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5229,8 +5229,8 @@ Predicates}.</seg>
       <tuv lang="en-us">
         <seg>Sometimes key sequences are represented as strings.  When a string is a key sequence, string elements in the range 128 to 255 represent meta characters (which are large integers) rather than character codes in the range 128 to 255.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="babac_000" changedate="20140429T104949Z">
-        <seg>Parfois, les séquences de touches sont représentées sous forme de chaînes de caractères.  Quand une chaîne est une suite de touche, les éléments de la chaîne dans la gamme de 128 à 255 représentent les meta-caractères (qui sont de large integers) plutôt que des codes de caractères dans la gamme de 128 à 255.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T203940Z">
+        <seg>Parfois, les séquences de touches sont représentées sous forme de chaînes de caractères.  Quand une chaîne est une suite de touche, les éléments de la chaîne dans la gamme de 128 à 255 représentent les meta-caractères (qui sont de grands entiers relatifs) plutôt que des codes de caractères dans la gamme de 128 à 255.</seg>
       </tuv>
     </tu>
     <tu>
