@@ -6368,8 +6368,8 @@ pour faire ceci:</seg>
       <tuv lang="en-us">
         <seg>There is no argument to specify the length of the char-table, because all char-tables have room for any valid character code as an index.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T191219Z">
-        <seg>Il n'existe pas d'argument pour spécifier la longueur d'une char-table parce que toutes les char-table ont de la place pour n'importe quel code de caractère valide comme indice.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T105157Z">
+        <seg>Il n'existe pas d'argument pour spécifier la longueur d'une char-table parce que toutes les char-table ont de la place pour tout code de caractère valide comme indice.</seg>
       </tuv>
     </tu>
     <tu>
