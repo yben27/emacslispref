@@ -2055,8 +2055,8 @@ cl}.</seg>
       <tuv lang="en-us">
         <seg>A char-table is much like a vector, except that it is indexed by character codes.  Any valid character code, without modifiers, can be used as an index in a char-table.  You can access a char-table's elements with @code{aref} and @code{aset}, as with any array.  In addition, a char-table can have @dfn{extra slots} to hold additional data not associated with particular character codes.  Char-tables are constants when evaluated.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T175439Z">
-        <seg>Une char-table ressemble à un vecteur mais elle est indexée par les codes de caractères. N'importe quel code de caractère valide, sans modificateurs, peut être utilisé comme indice dans une char-table. On peut accéder aux éléments d'une char-table avec @code{aref} et @code{aset}, comme avec n'importe quel tableau. De plus, une char-table peut avoir des cases supplémentaires (@dfn{extra slots}) pour contenir des données supplémentaires qui ne sont pas associées à des codes de caractères particuliers. Les char-tables sont des constantes quand elles sont évaluées.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T105016Z">
+        <seg>Une char-table ressemble à un vecteur mais elle est indexée par les codes de caractères. Tout code de caractère valide, sans modificateurs, peut être utilisé comme indice dans une char-table. On peut accéder aux éléments d'une char-table avec @code{aref} et @code{aset}, comme avec n'importe quel tableau. De plus, une char-table peut avoir des cases supplémentaires (@dfn{extra slots}) pour contenir des données supplémentaires qui ne sont pas associées à des codes de caractères particuliers. Les char-tables sont des constantes quand elles sont évaluées.</seg>
       </tuv>
     </tu>
     <tu>
