@@ -5558,8 +5558,8 @@ autrement. 0 est considéré non négatif.</seg>
       <tuv lang="en-us">
         <seg>The @dfn{property list cell} holds the property list of the symbol.  See @code{symbol-plist} in @ref{Property Lists}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140430T210009Z">
-        <seg>La @dfn{cellule de liste de propriétés} contient le liste de propriétés du symbole. Voir @code{symbol-plist} dans @ref{Property Lists}.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T195721Z">
+        <seg>La @dfn{cellule de liste de propriétés} contient la liste de propriétés du symbole. Voir @code{symbol-plist} dans @ref{Property Lists}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6202,8 +6202,8 @@ virgule flottante de @acronym{IEEE}, mais en Emacs Lisp @code{equal} et
       <tuv lang="en-us">
         <seg>The value cell holds the symbol's value as a variable (@pxref{Variables}).  That is what you get if you evaluate the symbol as a Lisp expression (@pxref{Evaluation}).  Any Lisp object is a legitimate value.  Certain symbols have values that cannot be changed; these include @code{nil} and @code{t}, and any symbol whose name starts with @samp{:} (those are called @dfn{keywords}).  @xref{Constant Variables}.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T182958Z">
-        <seg>La cellule de valeur contient la valeur du symbole sous forme d'une variable (@pxref{Variables}). C'est ce qu'on obtient si on évalue le symbole comme une expression Lisp (@pxref{Evaluation}). N'importe quel objet Lisp est une valeur autorisée. Certains symboles ont des valeurs qui ne peuvent pas être changées parmi lesquelles se trouve @code{nil}, @code{t} et tout autre symbole dont le nom commence par @samp{:} (on appelle ces derniers @dfn{mot-clés}). @xref{Constant Variables}</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T195915Z">
+        <seg>La cellule de valeur contient la valeur du symbole sous forme d'une variable (@pxref{Variables}). C'est ce qu'on obtient si on évalue le symbole comme expression Lisp (@pxref{Evaluation}). Tout objet Lisp est une valeur autorisée. Certains symboles ont des valeurs qui ne peuvent pas être changées parmi lesquelles se trouvent @code{nil}, @code{t} et tout autre symbole dont le nom commence par @samp{:} (on appelle ces derniers @dfn{mot-clés}). @xref{Constant Variables}</seg>
       </tuv>
     </tu>
     <tu>
