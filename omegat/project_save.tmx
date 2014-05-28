@@ -6570,8 +6570,8 @@ donné, @code{+} retourne 0.</seg>
       <tuv lang="en-us">
         <seg>This function creates a new hash table according to the specified arguments.  The arguments should consist of alternating keywords (particular symbols recognized specially) and values corresponding to them.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140527T160753Z">
-        <seg>Cette fonction crée une nouvelle table de hachage selon les arguments spécifiés. Les arguments doivent être une alternance de mots-clés différents (surtout des symboles particulièrement reconnus) et les valeurs leur correspondants.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T192847Z">
+        <seg>Cette fonction crée une nouvelle table de hachage selon les arguments spécifiés. Les arguments doivent être une alternance de mots-clés différents (surtout des symboles particulièrement reconnus) et des valeurs qui leur correspondent.</seg>
       </tuv>
     </tu>
     <tu>
