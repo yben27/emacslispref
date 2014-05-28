@@ -6469,8 +6469,8 @@ de référence GNU Emacs Lisp, correspondant à la version
       <tuv lang="en-us">
         <seg>This command displays a description of the contents of the current buffer's case table.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nlecompte" changedate="20140502T102448Z">
-        <seg>Cette commande affiche une description du contenu du tableau de casse du buffer courant.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T201410Z">
+        <seg>Cette commande affiche une description du contenu du tableau de casse du tampon courant.</seg>
       </tuv>
     </tu>
     <tu>
