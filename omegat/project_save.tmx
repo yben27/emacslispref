@@ -2354,8 +2354,8 @@ flottante si au moins un argument est une valeur à virgule flottante.</seg>
       <tuv lang="en-us">
         <seg>An @dfn{array} is a single primitive object that has a slot for each of its elements.  All the elements are accessible in constant time, but the length of an existing array cannot be changed.  Strings, vectors, char-tables and bool-vectors are the four types of arrays.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="nicolas" changedate="20140428T173654Z">
-        <seg>Un tableau @dfn{array} est un objet primitif unique qui dispose d'une case pour chacun de ses éléments. Tout les éléments sont accessibles tout le temps mais la longueur d'un tableau existant peut être changée. Les chaînes de caractères, les vecteurs, les tables de caractères et les vecteurs-booléens représentent les quatre types de tableaux.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T095758Z">
+        <seg>Un tableau @dfn{array} est un objet primitif unique qui dispose d'une case pour chacun de ses éléments. Tous les éléments sont accessibles tout le temps mais la longueur d'un tableau existant peut être changée. Les chaînes de caractères, les vecteurs, les tables de caractères et les vecteurs-booléens représentent les quatre types de tableaux.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4801,8 +4801,8 @@ qu'un certain minimum (négatif).</seg>
       <tuv lang="en-us">
         <seg>Recall that the @dfn{sequence} type is the union of two other Lisp types: lists and arrays.  In other words, any list is a sequence, and any array is a sequence.  The common property that all sequences have is that each is an ordered collection of elements.</seg>
       </tuv>
-      <tuv lang="fr-fr" changeid="jchelary" changedate="20140423T121255Z">
-        <seg>Il faut se rappeler que le type @dfn{sequence} est l'union de deux autres types Lisp : les listes et les tableaux. En d'autres termes, toute liste est une séquence et tout tableau est une séquence. La propriété commune à toutes les séquences et qu'elles sont toutes une collection ordonnée d'éléments.</seg>
+      <tuv lang="fr-fr" changeid="Monique" changedate="20140528T095709Z">
+        <seg>Il faut se rappeler que le type @dfn{sequence} est l'union de deux autres types Lisp : les listes et les tableaux. En d'autres termes, toute liste est une suite et tout tableau est une suite. La propriété commune à toutes les suites est qu'elles sont toutes un ensemble ordonné d'éléments</seg>
       </tuv>
     </tu>
     <tu>
