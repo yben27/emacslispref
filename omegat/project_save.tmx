@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.6.3_9" segtype="paragraph" srclang="en-us"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.1.1" segtype="paragraph" srclang="en-us"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -3728,6 +3728,3238 @@ logarithmes naturels.</seg>
       <tuv lang="fr-fr">
         <seg>est employÃ©e. Si @var{arg} est nÃ©gatif, il signale une erreur
 @code{domain-error}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:104
+This function defines @var{tabname} (a symbol) as an abbrev table name, i.e., as a variable whose value is an abbrev table.  It defines abbrevs in the table according to @var{definitions}, a list of elements of the form @code{(@var{abbrevname} @var{expansion} @var{hook} @var{usecount} @var{system-flag})}.  If an element of @var{definitions} has length less than five, omitted elements default to @code{nil}.  A value of @code{nil} for @var{usecount} is equivalent to zero.  The return value is always @code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction définit @var{tabname} (un symbole) comme le nom d'une
+table d'abréviations, c.-à-d., comme variable dont la valeur est une
+table d'abréviations. Elle définit les abréviations dans la table
+selon @var{definitions}, une liste d'éléments de forme
+@code{(@var{abbrevname} @var{expansion} @var{hook} @var{usecount}
+@var{system-flag})}. Si un élément de @var{definitions} a la longueur
+inférieure à cinq, les éléments omis par défaut sont @code{nil}. Une
+valeur de @code{nil} pour @var{usecount} est équivalente à zéro. La
+valeur de retour est toujours @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:110
+If this function is called more than once for the same @var{tabname}, subsequent calls add the definitions in @var{definitions} to @var{tabname}, rather than overriding the entire original contents.  (A subsequent call only overrides abbrevs explicitly redefined or undefined in @var{definitions}.)</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si cette fonction est appelée plus d'une fois pour le même
+@var{tabname}, les appels suivants ajoutent les définitions dans
+@var{definitions} à @var{tabname}, plutôt que de modifier en entier le
+contenu original. (Un appel suivant modifie seulement des abréviations
+explicitement redéfinies ou éliminées dans @var{definitions}.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:115
+This is a list of symbols whose values are abbrev tables.  @code{define-abbrev-table} adds the new abbrev table name to this list.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>C'est une liste de symboles dont les valeurs sont des tables
+d'abréviations. @code{define-abbrev-table} ajoute le nouveau nom de
+table d'abréviations à cette liste.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:121
+This function inserts before point a description of the abbrev table named @var{name}.  The argument @var{name} is a symbol whose value is an abbrev table.  The return value is always @code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction insère avant le point une description de la table
+d'abréviations avant nommé @var{name}. L'argument @var{name} est un
+symbole dont la valeur est la table d'abréviations. La valeur de
+retour est toujours @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:128
+If @var{human} is non-@code{nil}, the description is human-oriented.  System abbrevs are listed and identified as such.  Otherwise the description is a Lisp expression---a call to @code{define-abbrev-table} that would define @var{name} as it is currently defined, but without the system abbrevs.  (The mode or package using @var{name} is supposed to add these to @var{name} separately.)</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si @var{human} est non-@code{nil}, la description est orientée pour
+l'humain. Des abréviations de système sont énumérées et identifiées en
+tant que telles. Autrement la description est une expression de
+Lisp---un appel à @code{define-abbrev-table} définirait @var{name}
+comme il l'est actuellement, mais en dehors des abréviations de
+système---. (Le mode ou le paquet employant @var{name} est supposé
+ajouter ces derniers à @var{name} séparément.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:140
+@code{define-abbrev} is the low-level basic function for defining an abbrev in a specified abbrev table.  When major modes predefine standard abbrevs, they should call @code{define-abbrev} and specify @code{t} for @var{system-flag}.  Be aware that any saved non-``system'' abbrevs are restored at startup, i.e. before some major modes are loaded.  Major modes should therefore not assume that when they are first loaded their abbrev tables are empty.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>@code{define-abbrev} est la fonction de base de bas niveau pour
+définir les abréviations dans une table d'abréviations indiquée. Si
+les modes majeurs prédéfinissent la norme des abréviations, ils
+devraient appeler @code{define-abbrev} et indiquer @code{t} pour
+@var{system-flag}. Faites attention, les abréviations non sauvés du
+non-``système'' sont restaurées au démarrage, c.-à-d. avant que les
+modes majeurs sont chargés. C'est pourquoi les modes majeurs ne
+devraient pas assumer que, quand ils sont d'abord chargés, leurs
+tables d'abbréviations soient vides.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:145
+This function defines an abbrev named @var{name}, in @var{table}, to expand to @var{expansion} and call @var{hook}.  The return value is @var{name}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction définit une abréviation appelée @var{name}, dans
+@var{table}, à développer @var{expansion} et appeler @var{hook}. La
+valeur de retour est @var{name}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:149
+The value of @var{count}, if specified, initializes the abbrev's usage-count.  If @var{count} is not specified or @code{nil}, the use count is initialized to zero.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La valeur @var{count}, si indiquée, initialise les abréviations
+usage-compter. Si @var{count} n'est pas indiqué ou est @code{nil},
+l'usage du compteur est initialisée à zéro.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:16
+An abbreviation or @dfn{abbrev} is a string of characters that may be expanded to a longer string.  The user can insert the abbrev string and find it replaced automatically with the expansion of the abbrev.  This saves typing.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Une abréviation ou @dfn{abbrev} est une chaîne de caractères qui peut
+être développée dans une chaîne plus longue. L'utilisateur peut
+insérer la chaîne d'abréviation et se rendre compte qu'elle a été
+remplacée automatiquement avec l'expansion de l'abréviation. Ceci
+améliore la dactylographie.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:21
+The set of abbrevs currently in effect is recorded in an @dfn{abbrev table}.  Each buffer has a local abbrev table, but normally all buffers in the same major mode share one abbrev table.  There is also a global abbrev table.  Normally both are used.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Actuellement, l'ensemble des abréviations est enregistré dans un
+@dfn{abbrev table}. Chaque tampon a une table locale d'abréviations,
+mais normalement tous les tampons dans le même mode majeur partage une
+table principale d'abréviations. Il y a donc une table d'abréviation
+global. Normalement tous les deux sont employés.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:33
+An abbrev table is represented as an obarray containing a symbol for each abbreviation.  The symbol's name is the abbreviation; its value is the expansion; its function definition is the hook function to do the expansion (@pxref{Defining Abbrevs}); its property list cell typically contains the use count, the number of times the abbreviation has been expanded.  Alternatively, the use count is on the @code{count} property and the system-abbrev flag is on the @code{system-type} property.  Abbrevs with a non-@code{nil} @code{system-type} property are called ``system'' abbrevs.  They are usually defined by modes or packages, instead of by the user, and are treated specially in certain respects.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Une table d'abréviation est représentée en tant qu'une liste contenant
+un symbole pour chaque abréviation. Le nom du symbole est
+l'abréviation ; sa valeur est l'expansion ; sa définition de fonction
+est la fonction hook devant faire l'expansion (@pxref{Defining
+Abbrevs}) ; sa cellule de liste de propriété contient typiquement le
+compteur d'utilisation, le nombre de fois que l'abréviation a été
+développée. Alternativement, le compteur d'utilisation pointe vers la
+propriété @code{count} et le drapeau de system-abbrev pointe vers la
+propriété @code{system-type}. Les abréviations avec la propriété
+non-@code{nil} @code{system-type} s'appellent les abréviations de
+``système''. Elles sont habituellement définies par des modes ou des
+paquets, non par l'utilisateur, et traitées spécialement à certains
+égards.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:39
+Because the symbols used for abbrevs are not interned in the usual obarray, they will never appear as the result of reading a Lisp expression; in fact, normally they are never used except by the code that handles abbrevs.  Therefore, it is safe to use them in an extremely nonstandard way.  @xref{Creating Symbols}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Puisque les symboles utilisés pour les abréviations ne sont pas
+compris dans la liste habituel, ils n'apparaîtront jamais comme le
+résultat de lecture d'une expression Lisp ; en fait, normalement ils
+ne sont jamais utilisés excepté par le code qui traite ces
+abréviations. Par conséquent, il est prudent de les utiliser d'une
+manière extrêmement non-standard. @xref{Création de symboles}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:42
+For the user-level commands for abbrevs, see @ref{Abbrevs,, Abbrev Mode, emacs, The GNU Emacs Manual}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Pour les commandes du niveau utilisateur des abréviations, voir
+@ref{Abbrevs,, Abbrev Mode, emacs, The GNU Emacs Manual}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:58
+Abbrev mode is a minor mode controlled by the value of the variable @code{abbrev-mode}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Le mode abbrev est un mode mineur contrôlé par la valeur de la
+variable @code{abbrev-mode}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:64
+A non-@code{nil} value of this variable turns on the automatic expansion of abbrevs when their abbreviations are inserted into a buffer.  If the value is @code{nil}, abbrevs may be defined, but they are not expanded automatically.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Une valeur non-@code{nil} de cette variable active l'expansion
+automatique des abréviations quand elles sont insérées dans un
+tampon. Si la valeur est @code{nil}, des abréviations peuvent être
+définis, mais elles ne sont pas développées automatiquement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:66
+This variable automatically becomes buffer-local when set in any fashion.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette variable devient automatiquement locale au tampon quand elle est
+activée dans n'importe quelle mode.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:71
+This is the value of @code{abbrev-mode} for buffers that do not override it.  This is the same as @code{(default-value 'abbrev-mode)}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>C'est la valeur de @code{abbrev-mode} pour les tampons qui ne la
+modifient pas. C'est identique à @code{(default-value 'abbrev-mode)}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:81
+This function creates and returns a new, empty abbrev table---an obarray containing no symbols.  It is a vector filled with zeros.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction crée et renvoie une nouvelle table vide
+d'abréviations---une liste ne contient aucun symbole---. C'est un
+vecteur rempli de zéros.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:86
+This function undefines all the abbrevs in abbrev table @var{table}, leaving it empty.  It always returns @code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction élimine toutes les abréviations dans la table
+d'abrévations @var{table}, la laissant vide. Elle renvoie toujours
+@code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/abbrevs.texi:93
+This function returns a copy of abbrev table @var{table}---a new abbrev table that contains the same abbrev definitions.  The only difference between @var{table} and the returned copy is that this function sets the property lists of all copied abbrevs to 0.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie une copie de table d'abréviations
+@var{table}---une nouvelle table d'abréviations qui contient les mêmes
+définitions d'abréviations---. La seule différence entre @var{table}
+et la copie retournée est que la fonction place les listes de
+propriétés de toutes les abréviations copiées à 0.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/back.texi:23 lispref/intro.texi:18
+Most of the GNU Emacs text editor is written in the programming language called Emacs Lisp.  You can write new code in Emacs Lisp and install it as an extension to the editor.  However, Emacs Lisp is more than a mere ``extension language''; it is a full computer programming language in its own right.  You can use it as you would any other programming language.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La majeure partie de l'éditeur de texte GNU Emacs est écrite dans
+le langage de programmation appelé Emacs Lisp. Vous pouvez écrire le
+nouveau code en Emacs Lisp et l'installer comme extension de l'éditeur.
+Cependant, Emacs Lisp est plus qu'un simple ``langage d'extension'' ;
+c'est un langage de programmation complet et autonome d'ordinateur.
+Vous pouvez l'employer comme n'importe quel autre langage de programmation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/back.texi:30 lispref/intro.texi:25
+Because Emacs Lisp is designed for use in an editor, it has special features for scanning and parsing text as well as features for handling files, buffers, displays, subprocesses, and so on.  Emacs Lisp is closely integrated with the editing facilities; thus, editing commands are functions that can also conveniently be called from Lisp programs, and parameters for customization are ordinary Lisp variables.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Puisque Emacs Lisp est conçu pour l'utilisation dans un éditeur, il a
+des usages spéciaux pour le balayage et l'analyse de texte aussi bien
+que des dispositifs pour manipuler des fichiers, tampons, affichages,
+sous-processus, et ainsi de suite. L'Emacs Lisp est intégré avec
+beaucoup des facilités d'édition ; ainsi, les commandes d'édition sont
+des fonctions qui peuvent commodément appeler également des programmes
+de Lisp, et les paramètres pour la personnalisation sont des variables
+ordinaires de Lisp.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/doclicense.texi:10
+Copyright (C) 2000,2001,2002  Free Software Foundation, Inc.
+51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Copyright (C) 2000,2001,2002  Free Software Foundation, Inc.
+51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/elisp.texi:104
+This Info file contains edition @value{VERSION} of the GNU Emacs Lisp Reference Manual, corresponding to GNU Emacs version @value{EMACSVER}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ce dossier d'information contient l'édition @value{VERSION} du Manuel
+de référence GNU Emacs Lisp, correspondant à la version
+@value{EMACSVER} de GNU Emacs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/elisp.texi:1170
+Abbrevs And Abbrev Expansion</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Abréviations et abréviations expansions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/elisp.texi:1177
+* Abbrev Mode::             Setting up Emacs for abbreviation.
+* Abbrev Tables::           Creating and working with abbrev tables.
+* Defining Abbrevs::        Specifying abbreviations and their expansions.
+* Abbrev Files::            Saving abbrevs in files.
+* Abbrev Expansion::        Controlling expansion; expansion subroutines.
+* Standard Abbrev Tables::  Abbrev tables used by various major modes.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>* Mode abbrev::                 Configuration d'Emacs pour l'abréviation.
+* Tables d'abréviations::       Créer et travailler avec des tables d'abréviations.
+* Définir des abréviations::    Spécifier des abréviations et leurs expansions.
+* Fichiers d'abréviations::     Sauver des abréviations dans les fichiers.
+* Expansions d'abréviations::    Contrôler l'expansion ; sous-programmes d'expansions.
+* Tables standard d'abréviations:: Tables d'abréviations employées par divers modes majeurs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/elisp.texi:195
+Introduction</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Introduction</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/elisp.texi:201
+* Caveats::                 Flaws and a request for help.
+* Lisp History::            Emacs Lisp is descended from Maclisp.
+* Conventions::             How the manual is formatted.
+* Version Info::            Which Emacs version is running?
+* Acknowledgements::        The authors, editors, and sponsors of this manual.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>* Avertissements::              Erreurs et demande d'aide.
+* L'histoire de Lisp::          Emacs Lisp descend de Maclisp.
+* Conventions::                 Comment le manuel est composé.
+* Information de version::      Quelle version d'Emacs fonctionne?
+* Remerciements::               Les auteurs, les rédacteurs, et les commanditaires de ce manuel.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/elisp.texi:203
+Conventions</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Conventions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/elisp.texi:211
+* Some Terms::              Explanation of terms we use in this manual.
+* nil and t::               How the symbols @code{nil} and @code{t} are used.
+* Evaluation Notation::     The format we use for examples of evaluation.
+* Printing Notation::       The format we use for examples that print output.
+* Error Messages::          The format we use for examples of errors.
+* Buffer Text Notation::    The format we use for buffer contents in examples.
+* Format of Descriptions::  Notation for describing functions, variables, etc.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>* Quelques termes::             Explication des termes que nous employons en ce manuel.
+* nil et t::                    Comment les symboles @code{nil} et @code{t} sont employés.
+* Notation d'évaluation::       Le format que nous employons pour des exemples de l'évaluation.
+* Notation d'affichage::        Le format que nous employons quand les exemples affichent du texte.
+* Messages d'erreur::           Le format que nous employons pour des exemples d'erreurs.
+* Notation des textes de tampon:: Le format que nous employons pour le contenu de tampons dans les exemples.
+* Format des descriptions::     Notation pour décrire des fonctions, des variables, etc.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/elisp.texi:213
+Format of Descriptions</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Format de descriptions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/elisp.texi:218
+* A Sample Function Description::  A description of an imaginary
+                                     function, @code{foo}.
+* A Sample Variable Description::  A description of an imaginary
+                                     variable, @code{electric-future-map}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>* Un exemple d'une description de fonction::  Une description d'une imaginaire
+                                     fonction, @code{foo}.
+* Un exemple d'une description de variable::  Une description d'une imaginaire
+                                     variable, @code{electric-future-map}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/elisp.texi:299
+* Integer Basics::          Representation and range of integers.
+* Float Basics::	    Representation and range of floating point.
+* Predicates on Numbers::   Testing for numbers.
+* Comparison of Numbers::   Equality and inequality predicates.
+* Numeric Conversions::	    Converting float to integer and vice versa.
+* Arithmetic Operations::   How to add, subtract, multiply and divide.
+* Rounding Operations::     Explicitly rounding floating point numbers.
+* Bitwise Operations::      Logical and, or, not, shifting.
+* Math Functions::          Trig, exponential and logarithmic functions.
+* Random Numbers::          Obtaining random integers, predictable or not.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>* Entiers basiques::                     Représentation et champ des nombres entiers.
+* Nombres à virgule flottante basiques:: Représentation et champ des monbres à virgule flottante.
+* Attributs des nombres::                Tester les nombres.
+* Comparaison des nombres::              Attributs d'égalité et d'inégalité.
+* Conversions numériques::               Convertir des nombres à virgule flottante en nombres entiers et vice-versa.
+* Opérations arithmétiques::             Comment additionner, soustraire, multiplier et diviser.
+* Opérations d'arrondissage::            Arrondir explicitement les nombres à virgule flottante.
+* Opérations de bits::                   and, or, not logique et décalage.
+* Fonctions mathématiques::              Fonctions trigonométrique, exponentielle et logarithmique.
+* Nombres aléatoires::                   Obtention des nombres entiers aléatoires, prévisibles ou pas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/errors.texi:168
+@code{"Symbol's value as variable is void"}@* @xref{Accessing Variables}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>@code{"La valeur du symbole comme variable est vide"}@* @xref{Accès aux variables}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:102
+We let mail to this list accumulate unread until someone decides to apply the corrections.  Months, and sometimes years, go by between updates.  So please attach no significance to the lack of a reply---your mail @emph{will} be acted on in due time.  If you want to contact the Emacs maintainers more quickly, send mail to @code{bug-gnu-emacs@@gnu.org}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Nous laissons le courrier non lu de cette liste s'accumuler
+jusqu'à ce que quelqu'un décide d'appliquer les corrections. Les mois,
+et parfois les années, s'écoulent entre les mises à jour. Veuillez ne
+pas attacher de signification au manque d'une réponse---votre courrier
+@emph{devrait} être pris en compte en temps voulu. Si vous voulez
+contacter la maintenance d'Emacs plus rapidement, envoyer le courrier
+à @code{bug-gnu-emacs@@gnu.org}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:111
+Lisp (LISt Processing language) was first developed in the late 1950s at the Massachusetts Institute of Technology for research in artificial intelligence.  The great power of the Lisp language makes it ideal for other purposes as well, such as writing editing commands.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Lisp (LISt Processing language) a été développé la première fois vers
+la fin des années 50 au Massachusetts Institute of Technology pour la
+recherche en intelligence artificielle. La grande puissance du langage
+Lisp le rend idéal pour d'autres buts aussi bien, comme l'écriture de
+commandes d'édition.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:121
+Dozens of Lisp implementations have been built over the years, each with its own idiosyncrasies.  Many of them were inspired by Maclisp, which was written in the 1960s at MIT's Project MAC.  Eventually the implementors of the descendants of Maclisp came together and developed a standard for Lisp systems, called Common Lisp.  In the meantime, Gerry Sussman and Guy Steele at MIT developed a simplified but very powerful dialect of Lisp, called Scheme.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Des douzaines de réalisations de Lisp ont été établies au cours des
+années, chacune avec ses propres particularités. Bon nombre d'entre
+elles ont été inspirées par Maclisp, qui a été écrit dans les années
+60 au MIT's Project MAC. Par la suite les programmeurs des descendants
+de Maclisp se sont réunis et ont développé une norme pour des systèmes
+Lisp, appelée Common Lisp. En attendant, Gerry Sussman et Guy Steele
+au MIT ont développé un dialecte simplifié mais très puissant de Lisp,
+appelé Scheme.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:130
+GNU Emacs Lisp is largely inspired by Maclisp, and a little by Common Lisp.  If you know Common Lisp, you will notice many similarities.  However, many features of Common Lisp have been omitted or simplified in order to reduce the memory requirements of GNU Emacs.  Sometimes the simplifications are so drastic that a Common Lisp user might be very confused.  We will occasionally point out how GNU Emacs Lisp differs from Common Lisp.  If you don't know Common Lisp, don't worry about it; this manual is self-contained.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>GNU Emacs Lisp est en grande partie inspiré par Maclisp, et par Common
+Lisp. Si vous connaissez le Common Lisp, vous noterez beaucoup de
+similitudes. Cependant, beaucoup de dispositifs de Common Lisp ont été
+omis ou simplifié afin de réduire les conditions de mémoire de GNU
+Emacs. Parfois les simplifications sont si importantes qu'un
+utilisateur Lisp Common pourrait être très dérouté. Nous préciserons
+de temps en temps comment le GNU Emacs Lisp diffère du Common Lisp. Si
+vous ne connaissez pas le Common Lisp, ne vous inquiétez à son sujet;
+ce manuel est indépendant.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:134
+A certain amount of Common Lisp emulation is available via the @file{cl} library.  @inforef{Top, Overview, cl}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Une certaine quantité de programmes Lisp Common est disponible par
+l'intermédiaire de la @file{cl} bibliothèque. @inforef{Top, Overview,
+cl}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:138
+Emacs Lisp is not at all influenced by Scheme; but the GNU project has an implementation of Scheme, called Guile.  We use Guile in all new GNU software that calls for extensibility.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Emacs Lisp n'est pas du tout influencé par Scheme; mais le projet GNU
+a une implémentation, appelée Guile. Nous employons Guile dans tout
+nouveau logiciel de GNU qui réclame l'extensibilité.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:144
+This section explains the notational conventions that are used in this manual.  You may want to skip this section and refer back to it later.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette section explique les conventions d'écriture qui sont employées
+dans ce manuel. Vous pouvez sauter cette section et vous y référer
+plus tard.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:165
+Throughout this manual, the phrases ``the Lisp reader'' and ``the Lisp printer'' refer to those routines in Lisp that convert textual representations of Lisp objects into actual Lisp objects, and vice versa.  @xref{Printed Representation}, for more details.  You, the person reading this manual, are thought of as ``the programmer'' and are addressed as ``you.'' ``The user'' is the person who uses Lisp programs, including those you write.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Dans tout ce manuel, les expressions ``le lecteur de Lisp'' et
+``l'afficheur de Lisp'' se rapportent à ces routines en Lisp qui
+convertissent les représentations textuelles du Lisp object en objets
+réels de Lisp, et vice-versa. @xref{Printed Representation}, pour plus
+de détails. Vous, la personne lisant ce manuel, êtes considérée comme
+``programmeur'' et êtes nommée en tant que ``vous''.
+``L'utilisateur'' est la personne qui emploie le Lisp des programmes,
+y compris ceux que vous écrivez.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:170
+Examples of Lisp code are formatted like this: @code{(list 1 2 3)}.  Names that represent metasyntactic variables, or arguments to a function being described, are formatted like this: @var{first-number}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Des exemples du code de Lisp sont composés comme ceci : @code{(list 1
+2 3)}. Des noms qui représentent des variables, ou des arguments à une
+fonction décrite, sont composés comme ceci : @var{first-number}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:182
+In Lisp, the symbol @code{nil} has three separate meanings: it is a symbol with the name @samp{nil}; it is the logical truth value @var{false}; and it is the empty list---the list of zero elements.  When used as a variable, @code{nil} always has the value @code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>En Lisp, le symbole @code{nil} a trois significations distinctes: il
+est un symbole nommé @samp{nil} ; c'est la vraie valeur logique
+@var{false} ; et c'est la liste vide---la liste de zéro élément. Une
+fois utilisé comme variable, @code{nil} a toujours la valeur
+@code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:189
+As far as the Lisp reader is concerned, @samp{()} and @samp{nil} are identical: they stand for the same object, the symbol @code{nil}.  The different ways of writing the symbol are intended entirely for human readers.  After the Lisp reader has read either @samp{()} or @samp{nil}, there is no way to determine which representation was actually written by the programmer.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>En ce qui concerne le lecteur Lisp, @samp{()} et @samp{nil} sont
+identiques : ils représentent le même objet, le symbole
+@code{nil}. Les différentes manières d'écrire le symbole sont prévues
+entièrement pour les lecteurs humains. Après que le lecteur Lisp ait
+lu l'un ou l'autre, @samp{()} ou @samp{nil}, il n'y a aucune manière
+de déterminer quelle représentation a été écrite réellement par le
+programmeur.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:194
+In this manual, we write @code{()} when we wish to emphasize that it means the empty list, and we write @code{nil} when we wish to emphasize that it means the truth value @var{false}.  That is a good convention to use in Lisp programs also.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Dans ce manuel, nous écrivons @code{()} quand nous souhaitons
+souligner qu'il signifie la liste vide, et nous écrivons @code{nil}
+quand nous souhaitons souligner qu'il signifie la vraie valeur
+@var{false}. C'est une bonne convention à employer dans des programmes
+de Lisp également.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:208
+In contexts where a truth value is expected, any non-@code{nil} value is considered to be @var{true}.  However, @code{t} is the preferred way to represent the truth value @var{true}.  When you need to choose a value which represents @var{true}, and there is no other basis for choosing, use @code{t}.  The symbol @code{t} always has the value @code{t}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Dans les contextes où une vraie valeur est prévue, n'importe quelle
+valeur non-@code{nil} est considérée comme @var{true}. Cependant,
+@code{t} est la manière préférée de représenter la vraie valeur
+@var{true}. Quand vous devez choisir une valeur qui représente
+@var{true}, et que vous n'avez aucun autre choix, employer
+@code{t}. Le symbole @code{t} a toujours la valeur @code{t}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:214
+In Emacs Lisp, @code{nil} and @code{t} are special symbols that always evaluate to themselves.  This is so that you do not need to quote them to use them as constants in a program.  An attempt to change their values results in a @code{setting-constant} error.  @xref{Constant Variables}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>En Emacs Lisp, @code{nil} et @code{t} sont des symboles spéciaux qui
+s'évaluent toujours eux-mêmes. De sorte que vous n'avez pas besoin de
+les citer pour les employer comme constantes dans un programme. Une
+tentative de changer leurs valeurs a comme conséquence une erreur
+@code{setting-constant}. @xref{Constant Variables}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:218
+Return non-nil iff @var{object} is one of the two canonical boolean values: @code{t} or @code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Retourne non-nil si @var{objet} est une des deux valeurs booléennes
+canoniques : @code{t} ou @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:229
+A Lisp expression that you can evaluate is called a @dfn{form}.  Evaluating a form always produces a result, which is a Lisp object.  In the examples in this manual, this is indicated with @samp{@result{}}:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Une expression de Lisp que vous pouvez évaluer s'appelle une
+@dfn{form}. L'évaluation d'un formulaire produit toujours un résultat,
+qui est un objet de Lisp. Dans les exemples en ce manuel, ceci est
+indiqué avec @samp{@result{}} :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:242
+When a form is a macro call, it expands into a new form for Lisp to evaluate.  We show the result of the expansion with @samp{@expansion{}}.  We may or may not show the result of the evaluation of the expanded form.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Quand un formulaire est appellé par une macro, il augmente d'un
+nouveau formulaire pour que le Lisp l'évalue. Nous montrons le
+résultat de l'expansion avec @samp{@expansion{}}. Nous pouvons ou non
+montrer le résultat de l'évaluation du formulaire augmenté.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:252
+Sometimes to help describe one form we show another form that produces identical results.  The exact equivalence of two forms is indicated with @samp{@equiv{}}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Parfois pour aider à décrire un formulaire, nous montrons un autre
+formulaire qui produit des résultats identiques. L'équivalence exacte
+de deux formulaires est indiquée avec le @samp{@equiv{}}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:267
+Many of the examples in this manual print text when they are evaluated.  If you execute example code in a Lisp Interaction buffer (such as the buffer @samp{*scratch*}), the printed text is inserted into the buffer.  If you execute the example by other means (such as by evaluating the function @code{eval-region}), the printed text is displayed in the echo area.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Plusieurs des exemples de ce manuel affichent du texte quand ils sont
+évalués. Si vous exécutez le code d'exemple dans un tampon
+d'interaction de Lisp (tel que le tampon @samp{*scratch*}), le texte
+affiché est inséré dans le tampon. Si vous exécutez l'exemple par
+d'autres moyens (comme pour évaluer la fonction @code{eval-région}),
+le texte affiché est montré dans le secteur d'écho.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:272
+Examples in this manual indicate printed text with @samp{@print{}}, irrespective of where that text goes.  The value returned by evaluating the form (here @code{bar}) follows on a separate line with @samp{@result{}}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Les exemples de ce manuel indiquent le texte affiché avec
+@samp{@print{}}, indépendamment de la destination du texte. La valeur
+retournée par l'évaluation du formulaire (ici @code{bar}) suit sur une
+ligne séparée avec @samp{@result{}}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:290
+Some examples signal errors.  This normally displays an error message in the echo area.  We show the error message on a line starting with @samp{@error{}}.  Note that @samp{@error{}} itself does not appear in the echo area.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Quelques exemples de signal d'erreurs. Ceci montre normalement un
+message d'erreur dans le secteur d'écho. Nous montrons le message
+d'erreur sur une ligne commençant par @samp{@error{}}. Noter que
+@samp{@error{}} lui-même n'apparaît pas dans le secteur d'écho.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:307
+Some examples describe modifications to the contents of a buffer, by showing the ``before'' and ``after'' versions of the text.  These examples show the contents of the buffer in question between two lines of dashes containing the buffer name.  In addition, @samp{@point{}} indicates the location of point.  (The symbol for point, of course, is not part of the text in the buffer; it indicates the place @emph{between} two characters where point is currently located.)</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Quelques exemples décrivent des modifications du contenu d'un tampon,
+en montrant ``l'avant'' et ``l'après'' des versions du texte. Ces
+exemples montrent le contenu du tampon en question entre deux lignes
+de tirets contenant le nom du tampon. En outre, le @samp{@point{}}
+indique l'endroit du point. (Le symbole pour le point, naturellement,
+n'est pas une partie du texte dans le tampon ; il indique l'endroit
+@emph{entre} deux caractères où le point est actuellement localisé.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:32
+This manual attempts to be a full description of Emacs Lisp.  For a beginner's introduction to Emacs Lisp, see @cite{An Introduction to Emacs Lisp Programming}, by Bob Chassell, also published by the Free Software Foundation.  This manual presumes considerable familiarity with the use of Emacs for editing; see @cite{The GNU Emacs Manual} for this basic information.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ce manuel essaye d'être une description complète d'Emacs Lisp. Pour la
+présentation à un débutant d'Emacs Lisp, voir @cite{An Introduction to
+Emacs Lisp Programming}, par Bob Chassell, également édité par la Free
+Software Foundation. Ce manuel suppose la connaissance parfaite de
+l'utilisation d'Emacs pour l'édition ; voir @cite{The GNU Emacs
+Manual} pour cette information de base.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:328
+Functions, variables, macros, commands, user options, and special forms are described in this manual in a uniform format.  The first line of a description contains the name of the item followed by its arguments, if any.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Des fonctions, les variables, les macros, les commandes, les options
+d'utilisateur, et les formulaires spéciaux sont décrits dans ce manuel
+dans un format uniforme. La première ligne de la description contient
+le nom de l'article suivi de ses arguments, s'il y a.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:331
+The category---function, variable, or whatever---appears at the beginning of the line.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La catégorie---fonction, variable, ou quoi que soit---est
+imprimé à côté de la marge.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:335
+The category---function, variable, or whatever---is printed next to the right margin.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La catégorie---fonction, variable, ou quoi que soit---est
+imprimé à côté de la marge.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:357
+In a function description, the name of the function being described appears first.  It is followed on the same line by a list of argument names.  These names are also used in the body of the description, to stand for the values of the arguments.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Dans une description de fonction, le nom de la fonction étant décrite
+apparaît d'abord. Il est suivi sur la même ligne d'une liste de noms
+d'argument. Ces noms sont également employés dans le corps de la
+description, pour représenter les valeurs des arguments.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:362
+The appearance of the keyword @code{&amp;optional} in the argument list indicates that the subsequent arguments may be omitted (omitted arguments default to @code{nil}).  Do not write @code{&amp;optional} when you call the function.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>L'apparition du mot-clé @code{&amp;optional} dans la liste d'argument
+indique que les arguments suivants peuvent être omis (les arguments
+omis se transfèrent comme @code{nil}). Ne pas écrire @code{&amp;optional}
+quand vous appelez la fonction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:368
+The keyword @code{&amp;rest} (which must be followed by a single argument name) indicates that any number of arguments can follow.  The single argument name following @code{&amp;rest} will receive, as its value, a list of all the remaining arguments passed to the function.  Do not write @code{&amp;rest} when you call the function.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Le mot-clé @code{&amp;rest} (qui doit être suivi d'un nom d'argument
+simple) indique qu'un certain nombre d'arguments va suivre. Le nom
+d'argument simple suivant @code{&amp;rest} recevra, comme valeur, une
+liste de tous arguments restants à passer à la fonction. Ne pas écrire
+@code{&amp;rest} quand vous appelez la fonction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:37
+Generally speaking, the earlier chapters describe features of Emacs Lisp that have counterparts in many programming languages, and later chapters describe features that are peculiar to Emacs Lisp or relate specifically to editing.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>D'une manière générale, les premiers chapitres décrivent les
+caractéristiques d'Emacs Lisp qui ont des équivalences dans beaucoup
+de langages de programmation, et les chapitres postérieurs décrivent
+les caractéristiques qui sont particulières au Emacs Lisp ou se
+relient spécifiquement à l'édition.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:375
+The function @code{foo} subtracts @var{integer1} from @var{integer2}, then adds all the rest of the arguments to the result.  If @var{integer2} is not supplied, then the number 19 is used by default.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La fonction @code{foo} soustrait @var{integer1} de @var{integer2},
+puis ajoute tout reste des arguments au résultat. Si @var{integer2}
+n'est pas fourni, alors le numéro 19 est appliqué par défaut.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:40
+This is edition @value{VERSION} of the GNU Emacs Lisp Reference Manual, corresponding to Emacs version @value{EMACSVER}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>C'est l'édition @value{VERSION} du manuel de référence de GNU Emacs
+Lisp, correspondant à la version d'Emacs @value{EMACSVER}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:402
+Any argument whose name contains the name of a type (e.g., @var{integer}, @var{integer1} or @var{buffer}) is expected to be of that type.  A plural of a type (such as @var{buffers}) often means a list of objects of that type.  Arguments named @var{object} may be of any type.  (@xref{Lisp Data Types}, for a list of Emacs object types.)  Arguments with other sorts of names (e.g., @var{new-file}) are discussed specifically in the description of the function.  In some sections, features common to the arguments of several functions are described at the beginning.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Tout argument dont le nom contient le nom d'un type (par exemple,
+@var{integer}, @var{integer1} ou @var{buffer}) est prévu pour être de
+ce type. Un pluriel d'un type (tel que @var{buffers}) signifie souvent
+une liste d'objets de ce type. Les arguments appelés @var{object}
+peuvent être de n'importe quel type. (@xref{Lisp Data Types}, pour une
+liste des types d'objet d'Emacs.) Des arguments avec d'autres sortes
+de noms (par exemple, @var{new-file}) sont discutés spécialement dans
+la description de la fonction. Dans quelques sections, des dispositifs
+communs aux arguments de plusieurs fonctions sont décrits du
+commencement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:405
+@xref{Lambda Expressions}, for a more complete description of optional and rest arguments.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>@xref{Lambda Expressions}, pour une description plus complète des
+arguments optionnels et restants.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:411
+Command, macro, and special form descriptions have the same format, but the word `Function' is replaced by `Command', `Macro', or `Special Form', respectively.  Commands are simply functions that may be called interactively; macros process their arguments differently from functions (the arguments are not evaluated), but are presented the same way.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Commande, macro, et descriptions de formulaire spécial ont le même
+format, mais le mot `Function' est remplacé par `Command', `Macro', ou
+`Special Form', respectivement. Les commandes sont simplement des
+fonctions qui peuvent s'appeler interactivement; les macros traitent
+leurs arguments différemment des fonctions (les arguments ne sont pas
+évalués), mais sont présentés la même manière.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:419
+Special form descriptions use a more complex notation to specify optional and repeated arguments because they can break the argument list down into separate arguments in more complicated ways.  @samp{@r{[}@var{optional-arg}@r{]}} means that @var{optional-arg} is optional and @samp{@var{repeated-args}@dots{}} stands for zero or more arguments.  Parentheses are used when several arguments are grouped into additional levels of list structure.  Here is an example:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Les descriptions de formulaire spécial emploient une notation plus
+complexe pour indiquer des arguments facultatifs et répétés parce
+qu'elles peuvent démonter la liste d'argument en arguments séparés de
+manières plus compliquées. @samp{@r{[}@var{optional-arg}@r{]}}
+signifie que @var{optional-arg} est facultatif et
+@samp{@var{reapeated-args}@dots{}} représente zéro arguments ou
+plus. Des parenthèses sont employées quand plusieurs arguments sont
+groupés dans les niveaux additionnels de la structure de liste. Voici
+un exemple :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:427
+This imaginary special form implements a loop that executes the @var{body} forms and then increments the variable @var{var} on each iteration.  On the first iteration, the variable has the value @var{from}; on subsequent iterations, it is incremented by one (or by @var{inc} if that is given).  The loop exits before executing @var{body} if @var{var} equals @var{to}.  Here is an example:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ce formulaire spécial imaginaire met en application une boucle qui
+exécute la forme @var{body} et qui ensuite incrémente la variable
+@var{var} à chacun itération. Sur la première itération, la variable
+a la valeur @var{from} ; sur des itérations suivantes, elle est
+incrémentée de un (ou par @var{inc} si elle est donnée). La boucle est
+arrêtée avant l'exécution de @var{body} si @var{var} est égale à
+@var{to}. Voici un exemple :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:438
+If @var{from} and @var{to} are omitted, @var{var} is bound to @code{nil} before the loop begins, and the loop exits if @var{var} is non-@code{nil} at the beginning of an iteration.  Here is an example:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si @var{from} et @var{to} sont omis, @var{var} est lié à @code{nil}
+avant que la boucle commence, et la boucle est arrêtée si @var{var}
+est non-@code{nil} au début d'une itération. Voici un exemple :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:451
+In this special form, the arguments @var{from} and @var{to} are optional, but must both be present or both absent.  If they are present, @var{inc} may optionally be specified as well.  These arguments are grouped with the argument @var{var} into a list, to distinguish them from @var{body}, which includes all remaining elements of the form.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Sous ce formulaire spécial, les arguments @var{from} et @var{to} sont
+facultatif, mais il faut qu'ils soient tous deux présents ou tous deux
+absents. S'ils sont présents, @var{inc} peut aussi bien être indiqué
+optionnellement. Ces arguments sont groupés avec l'argument @var{var}
+dans une liste, pour les distinguer de @var{body}, qui inclut tous les
+éléments restants de la forme.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:463
+A @dfn{variable} is a name that can hold a value.  Although nearly all variables can be set by the user, certain variables exist specifically so that users can change them; these are called @dfn{user options}.  Ordinary variables and user options are described using a format like that for functions except that there are no arguments.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Une @dfn{variable} est un nom qui peut contenir une valeur. Bien que
+presque toutes les variables puissent être initialisées par
+l'utilisateur, certaines variables existent spécifiquement de sorte
+que les utilisateurs puissent les changer ; celles-ci s'appellent
+@dfn{users options}. Des variables ordinaires et les options
+d'utilisateur sont décrites en utilisant un format comme pour des
+fonctions sauf qu'il n'y a aucun argument.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:471
+The value of this variable is a full keymap used by Electric Command Future mode.  The functions in this map allow you to edit commands you have not yet thought about executing.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La valeur de cette variable est une keymap employé par le mode
+Electric Command Future. Les fonctions dans cette map vous permettent
+d'éditer des commandes auxquelles vous n'avez pas avez encore pensé.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:475
+User option descriptions have the same format, but `Variable' is replaced by `User Option'.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Les descriptions d'option d'utilisateur ont le même format, mais le
+mot `Variable' est remplacée par `User Option'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:481
+These facilities provide information about which version of Emacs is in use.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ces fonctions fournissent les informations au sujet de la version
+d'Emacs en service.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:485
+This function returns a string describing the version of Emacs that is running.  It is useful to include this string in bug reports.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie une chaine décrivant la version d'Emacs qui est
+en fonction. Il est utile d'inclure cette chaine dans des rapports de
+bogue.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:491
+(emacs-version)
+  @result{} "GNU Emacs 20.3.5 (i486-pc-linux-gnulibc1, X toolkit)
+ of Sat Feb 14 1998 on psilocin.gnu.org"</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(emacs-version)
+  @result{} "GNU Emacs 20.3.5 (i486-pc-linux-gnulibc1, X toolkit)
+ of Sat Feb 14 1998 on psilocin.gnu.org"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:498
+If @var{here} is non-@code{nil}, it inserts the text in the buffer before point, and returns @code{nil}.  Called interactively, the function prints the same information in the echo area, but giving a prefix argument makes @var{here} non-@code{nil}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si @var{here} est non-@code{nil}, ça insère le texte dans le tampon
+avant le point, et renvoie le @code{nil}. Appelée interactivement, la
+fonction affiche la même information dans le secteur d'écho, mais en
+donnant un argument de préfixe rend @var{here} non-@code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:504
+The value of this variable indicates the time at which Emacs was built at the local site.  It is a list of three integers, like the value of @code{current-time} (@pxref{Time of Day}).</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La valeur de cette variable indique le moment où Emacs a été construit
+à l'emplacement local. C'est une liste de trois nombres entiers, comme
+la valeur de @code{current-time} (@pxref{Time of Day}).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:520
+The value of this variable is the version of Emacs being run.  It is a string such as @code{"20.3.1"}.  The last number in this string is not really part of the Emacs release version number; it is incremented each time you build Emacs in any given directory.  A value with four numeric components, such as @code{"20.3.9.1"}, indicates an unreleased test version.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La valeur de cette variable est la version d'Emacs en cours. C'est une
+chaine telle que @code{"20.3.1"}. Le dernier nombre dans cette chaine
+n'est pas vraiment une partie du nombre de version de sortie d'Emacs;
+il est incrémenté chaque fois que vous construisez Emacs dans
+n'importe quel répertoire donné. Une valeur avec quatre composants
+numériques, tels que @code{"20.3.9.1"}, indique une version d'essai
+non sortie.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:527
+The major version number of Emacs, as an integer.  For Emacs version 20.3, the value is 20.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Le numéro principal de version d'Emacs, comme nombre entier. Pour la
+version 20.3 d'Emacs, la valeur est 20.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:532
+The minor version number of Emacs, as an integer.  For Emacs version 20.3, the value is 3.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Le numéro de version mineur d'Emacs, comme nombre entier. Pour la
+version 20.3 d'Emacs, la valeur est 3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:544
+This manual was written by Robert Krawitz, Bil Lewis, Dan LaLiberte, Richard@tie{}M. Stallman and Chris Welty, the volunteers of the GNU manual group, in an effort extending over several years.  Robert@tie{}J. Chassell helped to review and edit the manual, with the support of the Defense Advanced Research Projects Agency, ARPA Order 6082, arranged by Warren@tie{}A. Hunt, Jr.@: of Computational Logic, Inc.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ce manuel a été écrit par Robert Krawitz, Bil Lewis, Dan LaLiberte,
+Richard M. Stallman and Chris Welty, les volontaires du groupe GNU
+manual, dans un effort se prolongeant sur plusieurs années. Robert
+J. Chassell a aidé à passer en revue et éditer le manuel, avec l'appui
+de la Defense Advanced Research Projects Agency, ARPA Ordre 6082, avec
+l'accord de Warren A. Hunt, Jr.@: de Computational Logic, Inc.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:557
+Corrections were supplied by Karl Berry, Jim Blandy, Bard Bloom, Stephane Boucher, David Boyes, Alan Carroll, Richard Davis, Lawrence R. Dodd, Peter Doornbosch, David A. Duff, Chris Eich, Beverly Erlebacher, David Eckelkamp, Ralf Fassel, Eirik Fuller, Stephen Gildea, Bob Glickstein, Eric Hanchrow, George Hartzell, Nathan Hess, Masayuki Ida, Dan Jacobson, Jak Kirman, Bob Knighten, Frederick M. Korz, Joe Lammens, Glenn M. Lewis, K. Richard Magill, Brian Marick, Roland McGrath, Skip Montanaro, John Gardiner Myers, Thomas A. Peterson, Francesco Potorti, Friedrich Pukelsheim, Arnold D. Robbins, Raul Rockwell, Per Starb@"ack, Shinichirou Sugou, Kimmo Suominen, Edward Tharp, Bill Trost, Rickard Westman, Jean White, Matthew Wilding, Carl Witty, Dale Worley, Rusty Wright, and David D. Zuhn.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Les corrections ont été fournies par Karl Berry, Jim Blandy, Bard
+Bloom, Stephane Boucher, David Boyes, Alan Carroll, Richard Davis,
+Lawrence R. Dodd, Peter Doornbosch, David A. Duff, Chris Eich, Beverly
+Erlebacher, David Eckelkamp, Ralf Fassel, Eirik Fuller, Stephen
+Gildea, Bob Glickstein, Eric Hanchrow, George Hartzell, Nathan Hess,
+Masayuki Ida, Dan Jacobson, Jak Kirman, Bob Knighten, Frederick
+M. Korz, Joe Lammens, Glenn M. Lewis, K. Richard Magill, Brian Marick,
+Roland McGrath, Skip Montanaro, John Gardiner Myers, Thomas
+A. Peterson, Francesco Potorti, Friedrich Pukelsheim, Arnold
+D. Robbins, Raul Rockwell, Per Starbäck, Shinichirou Sugou, Kimmo
+Suominen, Edward Tharp, Bill Trost, Rickard Westman, Jean White,
+Matthew Wilding, Carl Witty, Dale Worley, Rusty Wright, et David
+D. Zuhn.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:59
+This manual has gone through numerous drafts.  It is nearly complete but not flawless.  There are a few topics that are not covered, either because we consider them secondary (such as most of the individual modes) or because they are yet to be written.  Because we are not able to deal with them completely, we have left out several parts intentionally.  This includes most information about usage on VMS.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ce manuel est passé par de nombreuses ébauches. Il est presque complet
+mais non impeccable. Il y a quelques matières qui ne sont pas
+couvertes parce que nous les considérons secondaires (comme la plupart
+des différents modes) ou parce qu'elles doivent encore être
+écrites. Puisque nous ne pouvons pas les traiter complètement, nous
+avons omis plusieurs parties intentionnellement. Ceci inclut la
+plupart des informations sur l'utilisation de VMS.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:66
+The manual should be fully correct in what it does cover, and it is therefore open to criticism on anything it says---from specific examples and descriptive text, to the ordering of chapters and sections.  If something is confusing, or you find that you have to look at the sources or experiment to learn something not covered in the manual, then perhaps the manual should be fixed.  Please let us know.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Le manuel devrait être entièrement correct dans ce qu'il couvre, et il
+est donc soumis à la critique sur tout ce qu'il indique---des exemples
+spécifiques et du texte descriptif, à l'ordre des chapitres et des
+sections---. Si quelque chose est embrouillé, ou si vous constatez que
+vous devez regarder les sources ou expérimenter pour apprendre quelque
+chose non couvert dans le manuel, alors peut-être faudrait-il
+l'inclure dans le manuel. Merci de nous faire le savoir.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:76
+As you use this manual, we ask that you mark pages with corrections so you can later look them up and send them to us.  If you think of a simple, real-life example for a function or group of functions, please make an effort to write it up and send it in.  Please reference any comments to the chapter name, section name, and function name, as appropriate, since page numbers and chapter and section numbers will change and we may have trouble finding the text you are talking about.  Also state the number of the edition you are criticizing.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Quand vous employez ce manuel, nous vous demandons de marquer
+les pages avec les corrections ainsi vous pouvez plus tard les
+rechercher et nous les envoyer. Si vous pensez à un exemple simple et
+réel pour une fonction ou au groupe de fonctions, merci de faire
+l'effort de l'écrire et de l'envoyer. Veuillez mettre en référence
+tous les commentaires au nom de chapitre, nom de section, et le nom de
+fonction, comme approprié, puisque les numéros de page et les nombres
+de chapitre et de section changeront et nous aurions des problèmes
+pour trouver le texte dont vous parlez. Énoncer en outre le numéro de
+l'édition que vous critiquez.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/intro.texi:85
+As you use this manual, we ask that you send corrections as soon as you find them.  If you think of a simple, real life example for a function or group of functions, please make an effort to write it up and send it in.  Please reference any comments to the node name and function or variable name, as appropriate.  Also state the number of the edition you are criticizing.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Quand vous vous servez de ce manuel, nous vous demandons d'envoyez les
+corrections dès que vous en trouverez. Si vous pensez à un exemple
+simple et réel pour une fonction ou au groupe de fonctions, merci de
+faire l'effort de l'écrire et de l'envoyer. Veuillez mettre en
+référence tous les commentaires du nom du noeud et la fonction ou le
+nom de la variable, comme approprié. Énoncer en outre le numéro de
+l'édition que vous critiquez.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/macros.texi:437
+@result{} for</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>@result{} for</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1004
+This function returns the ``exclusive or'' of its arguments: the @var{n}th bit is set in the result if, and only if, the @var{n}th bit is set in an odd number of the arguments.  If there are no arguments, the result is 0, which is an identity element for this operation.  If @code{logxor} is passed just one argument, it returns that argument.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie le ``ou exclusif'' de ses arguments: le
+@var{n}ième bit est placé dans le résultat si, et seulement si, le bit
+@var{n}ième bit est placé dans un nombre impair des arguments. S'il
+n'y a aucun argument, le résultat est 0, qui est un élément d'identité
+pour cette opération. Si @code{logxor} est passé juste à un argument,
+il renvoie cet argument.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1012
+(logxor 12 5)      ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 9          ;  9  =  @r{0 0000  0000 0000  0000 0000  0000 1001}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(logxor 12 5)      ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 9          ;  9  =  @r{0 0000  0000 0000  0000 0000  0000 1001}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1019
+(logxor 12 5 7)    ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+                   ;  7  =  @r{0 0000  0000 0000  0000 0000  0000 0111}
+     @result{} 14         ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(logxor 12 5 7)    ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+                   ;  7  =  @r{0 0000  0000 0000  0000 0000  0000 0111}
+     @result{} 14         ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1027
+This function returns the logical complement of its argument: the @var{n}th bit is one in the result if, and only if, the @var{n}th bit is zero in @var{integer}, and vice-versa.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie le complément logique de son argument: le
+@var{n}ième bit est 1 dans le résultat si, et seulement si, le
+@var{n}ième bit est 0 dans @var{integer}, et vice-versa.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1034
+(lognot 5)
+     @result{} -6
+;;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+;; @r{becomes}
+;; -6  =  @r{1 1111  1111 1111  1111 1111  1111 1010}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(lognot 5)
+     @result{} -6
+;;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+;; @r{devient}
+;; -6  =  @r{1 1111  1111 1111  1111 1111  1111 1010}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1045
+These mathematical functions allow integers as well as floating point numbers as arguments.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ces fonctions mathématiques autorisent des nombres entiers aussi bien
+que des nombres à virgule flottante comme arguments.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:105
+(We have inserted spaces between groups of 4 bits, and two spaces between groups of 8 bits, to make the binary integer easier to read.)</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(Nous avons inséré un espace entre les groupes de 4 bits, et deux
+espaces entre les groupes de 8 bits, pour faciliter la lecture du
+nombre entier binaire.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1051
+These are the ordinary trigonometric functions, with argument measured in radians.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ce sont les fonctions trigonométriques ordinaires, avec l'argument mesuré
+en radians.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1070
+(inclusive) whose sine is @var{arg}; if, however, @var{arg} is out of range (outside [@minus{}1, 1]), it signals a @code{domain-error} error.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(inclus) dont le sinus est @var{arg} ; si, cependant, @var{arg} est
+hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
+@code{domaine-error}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1082
+(inclusive) whose cosine is @var{arg}; if, however, @var{arg} is out of range (outside [@minus{}1, 1]), it signals a @code{domain-error} error.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(inclus) dont le cosinus est @var{arg} ; si, cependant, @var{arg} est
+hors de portée (en dehors de [@minus{} 1, 1]), il signale une erreur
+@code{domaine-error}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1103
+(exclusive) whose tangent is @var{y}.  If the optional second argument @var{x} is given, the value of @code{(atan y x)} is the angle in radians between the vector @code{[@var{x}, @var{y}]} and the @code{X} axis.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(exclusif) dont la tangente est @var{y}. Si le deuxième argument
+facultatif @var{x} est donné, la valeur de @code{(atan y x)} est
+pêcher en radians entre le vecteur @code{[@var{x}, @var{y}]} et l'axis
+@code{X}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1122
+is a fundamental mathematical constant also called the base of natural logarithms.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>est une constante mathématique fondamentale également appelée base des
+logarithmes naturels.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1127
+This function returns the logarithm of @var{arg}, with base @var{base}.  If you don't specify @var{base}, the base</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie le logarithme de @var{arg}, en base @var{base}.
+Si vous n'indiquez pas @var{base}, la base</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1135
+is used.  If @var{arg} is negative, it signals a @code{domain-error} error.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>est employée. Si @var{arg} est négatif, il signale une erreur
+@code{domain-error}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1156
+This function returns the logarithm of @var{arg}, with base 10.  If @var{arg} is negative, it signals a @code{domain-error} error.  @code{(log10 @var{x})} @equiv{} @code{(log @var{x} 10)}, at least approximately.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie le logarithme de @var{arg}, en base 10. Si
+@var{arg} est négatif, il signale une erreur @code{domain-error}.
+@code{(log10 @var{x})} @equiv{} @code{(log @var{x} 10)}, au moins
+approximativement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:116
+@minus{}1 is represented as 29 ones.  (This is called @dfn{two's complement} notation.)</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>@minus{}1 est représenté en tant que 29 unités. (Ceci s'appelle la
+notation @dfn{two's complement}.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1162
+This function returns @var{x} raised to power @var{y}.  If both arguments are integers and @var{y} is positive, the result is an integer; in this case, overflow causes truncation, so watch out.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie @var{x} à la puissance @var{y}. Si tout les
+deux les arguments sont des nombres entiers et @var{y} est positif, le
+résultat est nombre entier ; dans ce cas, le débordement cause
+l'abrèviation, alors attention.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1167
+This returns the square root of @var{arg}.  If @var{arg} is negative, it signals a @code{domain-error} error.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ceci renvoie la racine carrée de @var{arg}. Si @var{arg} est négatif,
+il signale une erreur @code{domain-error}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1179
+A deterministic computer program cannot generate true random numbers.  For most purposes, @dfn{pseudo-random numbers} suffice.  A series of pseudo-random numbers is generated in a deterministic fashion.  The numbers are not truly random, but they have certain properties that mimic a random series.  For example, all possible values occur equally often in a pseudo-random series.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Un programme machine déterministe ne peut pas produire de véritables
+nombres aléatoires. Dans la plupart des cas, @dfn{pseudo-randam
+numbers} suffit. Une série de nombres pseudo-aléatoires est produite
+d'une façon déterminée. Les nombres ne sont pas vraiment aléatoires,
+mais ils ont certaines propriétés à imiter une série aléatoire. Par
+exemple, toutes les valeurs possibles se produisent également souvent
+dans une série pseudo-aléatoire.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1188
+In Emacs, pseudo-random numbers are generated from a ``seed'' number.  Starting from any given seed, the @code{random} function always generates the same sequence of numbers.  Emacs always starts with the same seed value, so the sequence of values of @code{random} is actually the same in each Emacs run! For example, in one operating system, the first call to @code{(random)} after you start Emacs always returns @minus{}1457731, and the second one always returns @minus{}7692030.  This repeatability is helpful for debugging.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Dans Emacs, des nombres pseudo-aléatoires sont produits à partir de
+``graine'' de nombre.  À partir de n'importe quelle graine donnée, la
+fonction @code{random} produit toujours le même ordre de
+nombres. Emacs démarre toujours par la même valeur de graine, ainsi la
+séquence des valeurs de @code{random} est réellement les mêmes dans
+chaque passe d'Emacs ! Par exemple, dans un logiciel d'exploitation,
+le premier appel à @code{(random)}, après que vous démarriez Emacs,
+retourne toujours @minus{}1457731, et le second renvoie toujours
+@minus{}7692030. Cette répétition est utile pour la correction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1192
+If you want random numbers that don't always come out the same, execute @code{(random t)}.  This chooses a new seed based on the current time of day and on Emacs's process @acronym{ID} number.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si vous voulez des nombres aléatoires qui ne sont pas toujours
+pareils, exécuter @code{(random t)}. Ceci choisit une nouvelle graine
+basée sur l'heure courante du jour et sur le numéro du processus
+@acronym{ID} d'Emacs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1196
+This function returns a pseudo-random integer.  Repeated calls return a series of pseudo-random integers.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie un nombre entier pseudo-aléatoire. Les appels
+répétés renvoient a une série de nombres entiers pseudo-aléatoires.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1199
+If @var{limit} is a positive integer, the value is chosen to be nonnegative and less than @var{limit}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si @var{limit} est un nombre entier positif, la valeur est choisie
+pour être non négative et inférieure à @var{limit}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:120
+The negative integer, @minus{}5, is creating by subtracting 4 from @minus{}1.  In binary, the decimal integer 4 is 100.  Consequently, @minus{}5 looks like this:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Le nombre entier négatif, @minus{}5, est créé en soustrayant 4 de
+@minus{}1. Dans la base binaire, le nombre entier décimal 4 est
+100. En conséquence, @minus{}5 ressemble à ceci:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1203
+If @var{limit} is @code{t}, it means to choose a new seed based on the current time of day and on Emacs's process @acronym{ID} number.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si @var{limit} est @code{t}, cela signifie de choisir une nouvelle
+graine basée sur heure courante et sur le numéro de processus
+@acronym{ID} d'Emacs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:1207
+On some machines, any integer representable in Lisp may be the result of @code{random}.  On other machines, the result can never be larger than a certain maximum or less than a certain (negative) minimum.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Sur quelques machines, n'importe quel nombre entier représentable en
+Lisp peut être le résultat de @code{random}. Sur d'autres machines, le
+résultat peut ne jamais être plus grand qu'un certain maximum ou moins
+qu'un certain minimum (négatif).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:127
+In this implementation, the largest 29-bit binary integer value is 268,435,455 in decimal.  In binary, it looks like this:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Dans cette exemple, la plus grande valeur de nombre entier binaire de
+29 bits est 268 435 455 en décimale. En binaire, elle ressemble à
+ceci:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:135
+Since the arithmetic functions do not check whether integers go outside their range, when you add 1 to 268,435,455, the value is the negative integer @minus{}268,435,456:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Puisque les fonctions arithmétiques ne vérifient pas si les nombres
+entiers ne sont pas à l'extérieur de leur champ, quand vous
+additionnez 1 à 268 435 455, la valeur est le nombre entier négatif
+@minus{}268 435 456:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:140
+(+ 1 268435455)
+     @result{} -268435456
+     @result{} 1 0000  0000 0000  0000 0000  0000 0000</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(+ 1 268435455)
+     @result{} -268435456
+     @result{} 1 0000  0000 0000  0000 0000  0000 0000</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:147
+Many of the functions described in this chapter accept markers for arguments in place of numbers.  (@xref{Markers}.)  Since the actual arguments to such functions may be either numbers or markers, we often give these arguments the name @var{number-or-marker}.  When the argument value is a marker, its position value is used and its buffer is ignored.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Plusieurs des fonctions décrites dans ce chapitre acceptent des
+marqueurs commes arguments au lieu des nombres. (@xref{Markers}.)
+Puisque les arguments réels à de telles fonctions peuvent être des
+nombres ou des marqueurs, nous donnons souvent à ces arguments le nom
+de @var{number-or-marker}. Quand la valeur d'argument est un marqueur,
+sa valeur de position est employée et son tampon est ignoré.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:151
+The value of this variable is the largest integer that Emacs Lisp can handle.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La valeur de cette variable est le plus grand nombre entier que Emacs
+Lisp peut manipuler.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:156
+The value of this variable is the smallest integer that Emacs Lisp can handle.  It is negative.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La valeur de cette variable est le plus petit nombre entier que Emacs
+Lisp peut manipuler. Elle est négative.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:165
+Floating point numbers are useful for representing numbers that are not integral.  The precise range of floating point numbers is machine-specific; it is the same as the range of the C data type @code{double} on the machine you are using.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Les nombres à virgule flottante sont utiles pour la représentation des
+nombres qui ne sont pas intégraux. Le champ précis des nombres à
+virgule flottante est propre à la machine; c'est pareil que le champ
+du type de données de C @code{double} sur la machine que vous
+employée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:172
+The read-syntax for floating point numbers requires either a decimal point (with at least one digit following), an exponent, or both.  For example, @samp{1500.0}, @samp{15e2}, @samp{15.0e2}, @samp{1.5e3}, and @samp{.15e4} are five ways of writing a floating point number whose value is 1500.  They are all equivalent.  You can also use a minus sign to write negative floating point numbers, as in @samp{-1.0}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La syntaxe de lecture pour des nombres à virgule flottante exige une
+virgule décimale (avec au moins un chiffre suivant), un exposant, ou
+les deux. Par exemple, @samp{1500.0}, @samp{15e2}, @samp{15.0e2},
+@samp{1.5e3}, et @samp{.15e4} sont cinq manières d'écrire le nombre à
+virgule flottante dont la valeur est 1500. Ils sont tous
+équivalents. Vous pouvez également employer un signe moins pour écrire
+des nombres négatifs à virgule flottante, comme dans @samp{- 1.0}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:189
+Most modern computers support the @acronym{IEEE} floating point standard, which provides for positive infinity and negative infinity as floating point values.  It also provides for a class of values called NaN or ``not-a-number''; numerical functions return such values in cases where there is no correct answer.  For example, @code{(/ 0.0 0.0)} returns a NaN.  For practical purposes, there's no significant difference between different NaN values in Emacs Lisp, and there's no rule for precisely which NaN value should be used in a particular case, so Emacs Lisp doesn't try to distinguish them (but it does report the sign, if you print it).  Here are the read syntaxes for these special floating point values:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La plupart des ordinateurs modernes soutiennent la norme à virgule
+flottante @acronym{IEEE}, qui prévoit plus l'infini et moins l'infini
+comme valeurs à virgule flottante. Elle prévoit également une classe
+de valeurs appelées NaN ou ``not-a-number''; les fonctions numériques
+renvoient de telles valeurs dans les cas où il n'y a aucune réponse
+correcte. Par exemple, @code{(/ 0.0 0.0)} renvoie NaN. Pour des buts
+pratiques, il n'y a aucune différence significative entre différentes
+valeurs de NaN en Emacs Lisp, et il n'y a aucune règle pour la valeur
+NaN à utiliser dans un cas particulier, ainsi Emacs Lisp n'essaye pas
+de les distinguer (mais rapporte le signal, si vous l'affichez). Voici
+les syntaxes lues pour ces valeurs à virgule flottante spéciales:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:20
+GNU Emacs supports two numeric data types: @dfn{integers} and @dfn{floating point numbers}.  Integers are whole numbers such as @minus{}3, 0, 7, 13, and 511.  Their values are exact.  Floating point numbers are numbers with fractional parts, such as @minus{}4.5, 0.0, or 2.71828.  They can also be expressed in exponential notation: 1.5e2 equals 150; in this example, @samp{e2} stands for ten to the second power, and that is multiplied by 1.5.  Floating point values are not exact; they have a fixed, limited amount of precision.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>GNU Emacs supporte deux types de données numériques: @dfn{entiers} et
+@dfn{nombres à virgule flottante}. Les nombres entiers sont des
+nombres entiers tels que @minus{}3, 0, 7, 13, et 511. Leurs valeurs
+sont exactes. Les nombres à virgule flottante sont des nombres avec
+les parties partielles, telles que le @minus{}4.5, 0.0, ou
+2.71828. Ils peuvent également être exprimés en notation
+exponentielle: 1.5e2 est égal à 150; dans cet exemple, le @samp{e2}
+représente dix à la puissance deux, le tout est multiplié par 1.5. Les
+valeurs à virgule flottante ne sont pas exactes; elles sont fixe et
+limitée en précision.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:202
+To test whether a floating point value is a NaN, compare it with itself using @code{=}.  That returns @code{nil} for a NaN, and @code{t} for any other floating point value.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Pour examiner si une valeur à virgule flottante est NaN, le comparer à
+lui-même en employant @code{=}. Il renvoie @code{nil} pour NaN, et
+@code{t} pour n'importe quelle autre valeur à virgule flottante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:206
+The value @code{-0.0} is distinguishable from ordinary zero in @acronym{IEEE} floating point, but Emacs Lisp @code{equal} and @code{=} consider them equal values.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La valeur @code{-0.0} est distinguable de l'ordinaire zéro dans la
+virgule flottante de @acronym{IEEE}, mais l'Emacs Lisp @code{equal} et
+@code{=} les considèrent comme valeurs égales.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:209
+You can use @code{logb} to extract the binary exponent of a floating point number (or estimate the logarithm of an integer):</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Vous pouvez employer @code{logb} pour extraire l'exposant binaire d'un
+nombre à virgule flottante (ou estimer le logarithme d'un nombre
+entier):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:214
+This function returns the binary exponent of @var{number}.  More precisely, the value is the logarithm of @var{number} base 2, rounded down to an integer.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie l'exposant binaire de @var{number}. Plus
+précisément, la valeur est le logarithme de @var{number} en base 2,
+arrondie vers le bas à un nombre entier.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:233
+The functions in this section test for numbers, or for a specific type of number.  The functions @code{integerp} and @code{floatp} can take any type of Lisp object as argument (they would not be of much use otherwise), but the @code{zerop} predicate requires a number as its argument.  See also @code{integer-or-marker-p} and @code{number-or-marker-p}, in @ref{Predicates on Markers}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Les fonctions dans cette section testent les nombres, ou un type
+spécifique de nombre. Les fonctions @code{integerp} et @code{floatp}
+peuvent prendre n'importe quel type d'objet de Lisp comme argument
+(ils ne seraient pas utiles autrement), mais l'attribut @code{zerop}
+exige un nombre en tant qu'argument. Voir également
+@code{integer-or-marker-p} et @code{number-ou-marker-p}, dans le
+@ref{Predicates on Markers}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:237
+This predicate tests whether its argument is a floating point number and returns @code{t} if so, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cet attribut examine si son argument est un nombre à virgule flottante
+et renvoie @code{t} si oui, @code{nil} autrement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:244
+This predicate tests whether its argument is an integer, and returns @code{t} if so, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cet attribut examine si son argument est un nombre entier, et renvoie
+le @code{t} si oui, @code{nil} autrement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:249
+This predicate tests whether its argument is a number (either integer or floating point), and returns @code{t} if so, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cet attribut examine si son argument est un nombre (nombre entier ou
+virgule flottante), et renvoie le @code{t} si oui, @code{nil}
+autrement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:257
+The @code{wholenump} predicate (whose name comes from the phrase ``whole-number-p'') tests to see whether its argument is a nonnegative integer, and returns @code{t} if so, @code{nil} otherwise.  0 is considered non-negative.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>L'attribut @code{wholenump} (dont le nom vient de l'expression
+``whole-number-p'') teste pour voir si son argument est un nombre
+entier non négatif, et renvoie le @code{t} si oui, @code{nil}
+autrement. 0 est considéré non négatif.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:265
+This predicate tests whether its argument is zero, and returns @code{t} if so, @code{nil} otherwise.  The argument must be a number.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cet attribut examine si son argument est zéro, et renvoie @code{t} si
+oui, @code{nil} autrement. L'argument doit être un nombre.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:280
+To test numbers for numerical equality, you should normally use @code{=}, not @code{eq}.  There can be many distinct floating point number objects with the same numeric value.  If you use @code{eq} to compare them, then you test whether two values are the same @emph{object}.  By contrast, @code{=} compares only the numeric values of the objects.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Pour tester l'égalité numérique des nombres, vous devriez normalement
+employer @code{=}, pas @code{eq}. Il peut y avoir beaucoup d'objets
+distincts de nombre à virgule flottante avec la même valeur
+numérique. Si vous employez @code{eq} pour les comparer, vous testez
+si deux valeurs sont des @emph{objets} identiques. En revanche,
+@code{=} compare seulement les valeurs numériques des objets.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:290
+At present, each integer value has a unique Lisp object in Emacs Lisp.  Therefore, @code{eq} is equivalent to @code{=} where integers are concerned.  It is sometimes convenient to use @code{eq} for comparing an unknown value with an integer, because @code{eq} does not report an error if the unknown value is not a number---it accepts arguments of any type.  By contrast, @code{=} signals an error if the arguments are not numbers or markers.  However, it is a good idea to use @code{=} if you can, even for comparing integers, just in case we change the representation of integers in a future Emacs version.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Actuellement, chaque valeur de nombre entier a un objet unique de Lisp
+dans Emacs Lisp. Par conséquent, @code{eq} est équivalent au @code{=}
+quand des nombres entiers sont concernés. Il est parfois commode
+d'employer @code{eq} pour comparer une valeur inconnue à un nombre
+entier, parce que @code{eq} ne rapporte pas d'erreur si la valeur
+inconnue n'est pas un nombre---il accepte des arguments de n'importe
+quel type---. En revanche, @code{=} signale une erreur si les
+arguments ne sont pas des nombres ou des marqueurs. Cependant, c'est
+une bonne idée d'employer @code{=} si vous le pouvez, même pour
+comparer des nombres entiers, juste au cas où nous changerions la
+représentation des nombres entiers dans une future version d'Emacs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:296
+Sometimes it is useful to compare numbers with @code{equal}; it treats two numbers as equal if they have the same data type (both integers, or both floating point) and the same value.  By contrast, @code{=} can treat an integer and a floating point number as equal.  @xref{Equality Predicates}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Parfois il est utile de comparer des nombres avec @code{equal}; les
+deux nombres sont traités comme égaux s'ils ont le même type de
+données (les deux sont des nombres entiers, ou à virgule flottante) et
+la même valeur. En revanche, @code{=} peut traiter un nombre entier et
+un nombre à virgule flottante en tant qu'égaux. @xref{Equality
+Predicates}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:301
+There is another wrinkle: because floating point arithmetic is not exact, it is often a bad idea to check for equality of two floating point values.  Usually it is better to test for approximate equality.  Here's a function to do this:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Il y a un autre problème: parce que l'arithmétique de virgule
+flottante n'est pas exacte, c'est souvent une mauvaise idée de
+vérifier l'égalité de deux valeurs à virgule flottante. Habituellement
+il vaut mieux déterminer l'égalité approximative. Voici une fonction
+pour faire ceci:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:309
+(defvar fuzz-factor 1.0e-6)
+(defun approx-equal (x y)
+  (or (and (= x 0) (= y 0))
+      (&lt; (/ (abs (- x y))
+            (max (abs x) (abs y)))
+         fuzz-factor)))</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(defvar fuzz-factor 1.0e-6)
+(defun approx-equal (x y)
+  (or (and (= x 0) (= y 0))
+      (&lt; (/ (abs (- x y))
+            (max (abs x) (abs y)))
+         fuzz-factor)))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:318
+@b{Common Lisp note:} Comparing numbers in Common Lisp always requires @code{=} because Common Lisp implements multi-word integers, and two distinct integer objects can have the same numeric value.  Emacs Lisp can have just one integer object for any given value because it has a limited range of integer values.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>@b{Common Lisp note:} Comparer des nombres en Common Lisp exige
+toujours @code{=} parce que le Common Lisp met en application des
+nombres entiers pluritermes, et deux objets distincts de nombre entier
+peuvent avoir la même valeur numérique. L'Emacs Lisp peut avoir juste
+un objet de nombre entier pour n'importe quelle valeur donnée parce
+qu'il a un champ limité des valeurs de nombre entier.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:323
+This function tests whether its arguments are numerically equal, and returns @code{t} if so, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction teste si ses arguments sont numériquement égaux, et
+renvoie le @code{t} si oui, @code{nil} autrement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:330
+This function acts like @code{eq} except when both arguments are numbers.  It compares numbers by type and numeric value, so that @code{(eql 1.0 1)} returns @code{nil}, but @code{(eql 1.0 1.0)} and @code{(eql 1 1)} both return @code{t}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction agit comme @code{eq} sauf quand les deux arguments sont
+des nombres. Elle compare des nombres par le type et la valeur
+numérique, de sorte que @code{(eql 1.0 1)} renvoie le @code{nil}, mais
+@code{(eql 1.0 1.0)} et @code{(eql 1 1)} renvoient tous les deux le
+@code{t}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:335
+This function tests whether its arguments are numerically equal, and returns @code{t} if they are not, and @code{nil} if they are.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction teste si ses arguments sont numériquement égaux, et
+renvoie @code{t} s'ils ne sont pas égaux, et @code{nil} s'ils sont
+égaux.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:340
+This function tests whether its first argument is strictly less than its second argument.  It returns @code{t} if so, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction teste si son premier argument est strictement moins
+grand que son deuxième argument. Elle renvoie @code{t} si oui,
+@code{nil} autrement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:346
+This function tests whether its first argument is less than or equal to its second argument.  It returns @code{t} if so, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction teste si son premier argument est inférieur ou égal à
+son deuxième argument. Elle renvoie @code{t} si oui, @code{nil}
+autrement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:352
+This function tests whether its first argument is strictly greater than its second argument.  It returns @code{t} if so, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction teste si son premier argument est strictement plus
+grand que son deuxième argument. Elle renvoie @code{t} si oui,
+@code{nil} autrement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:358
+This function tests whether its first argument is greater than or equal to its second argument.  It returns @code{t} if so, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction teste si son premier argument est supérieur ou égal à
+son deuxième argument. Il renvoie @code{t} si oui, @code{nil}
+autrement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:364
+This function returns the largest of its arguments.  If any of the arguments is floating-point, the value is returned as floating point, even if it was given as an integer.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie le plus grand de ses arguments. Si l'un des
+arguments est à virgule flottante, la valeur est retournée à virgule
+flottante, même si elle était donnée comme nombre entier.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:379
+This function returns the smallest of its arguments.  If any of the arguments is floating-point, the value is returned as floating point, even if it was given as an integer.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie le plus petit de ses arguments. Si l'un des
+arguments est à virgule flottante, la valeur est retournée à virgule
+flottante, même si elle était donnée comme nombre entier.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:383
+(min -4 1)
+     @result{} -4</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(min -4 1)
+     @result{} -4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:40
+The range of values for an integer depends on the machine.  The minimum range is @minus{}268435456 to 268435455 (29 bits; i.e.,</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Le champ des valeurs pour un nombre entier dépend de la machine. Le
+champ minimum est @minus{}268435456 à 268435455 (29 bits; c.-à-d.,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:402
+This returns @var{number} converted to floating point.  If @var{number} is already a floating point number, @code{float} returns it unchanged.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ceci renvoie @var{number} converti en un nombre à virgule
+flottante. Si @var{number} est déjà un nombre à virgule flottante,
+@code{float} le renvoie sans changement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:413
+There are four functions to convert floating point numbers to integers; they differ in how they round.  All accept an argument @var{number} and an optional argument @var{divisor}.  Both arguments may be integers or floating point numbers.  @var{divisor} may also be @code{nil}.  If @var{divisor} is @code{nil} or omitted, these functions convert @var{number} to an integer, or return it unchanged if it already is an integer.  If @var{divisor} is non-@code{nil}, they divide @var{number} by @var{divisor} and convert the result to an integer.  An @code{arith-error} results if @var{divisor} is 0.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Il y a quatre fonctions pour convertir des nombres à virgule flottante
+en nombres entiers; ils diffèrent dans la façon dont ils
+arrondissent. Tous acceptent un argument @var{number} et un argument
+facultatif @var{divisor}. Les deux arguments peuvent être des nombres
+entiers ou des nombres à virgule flottante. @var{divisor} peut
+également être @code{nil}. Si @var{divisor} est @code{nil} ou omis,
+ces fonctions convertissent @var{number} en nombre entier, ou le
+renvoient sans changement si c'est déjà un nombre entier. Si
+@var{divisor} est non-@code{nil}, elles divisent @var{number} par
+@var{divisor} et convertissent le résultat en nombre entier. Un
+@code{arith-error} en résulte si @var{divisor} est 0.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:417
+This returns @var{number}, converted to an integer by rounding towards zero.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ceci renvoie @var{number}, converti en nombre entier arrondis vers zéro.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:427
+(truncate 1.2)
+     @result{} 1
+(truncate 1.7)
+     @result{} 1
+(truncate -1.2)
+     @result{} -1
+(truncate -1.7)
+     @result{} -1</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(truncate 1.2)
+     @result{} 1
+(truncate 1.7)
+     @result{} 1
+(truncate -1.2)
+     @result{} -1
+(truncate -1.7)
+     @result{} -1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:433
+This returns @var{number}, converted to an integer by rounding downward (towards negative infinity).</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ceci renvoie @var{number}, converti en nombre entier en arrondissant
+en bas (vers moins l'infini).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:436
+If @var{divisor} is specified, this uses the kind of division operation that corresponds to @code{mod}, rounding downward.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si @var{divisor} est indiqué, ceci utilise le genre d'opération de
+division qui correspond à @code{mod}, arrondissant en bas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:448
+(floor 1.2)
+     @result{} 1
+(floor 1.7)
+     @result{} 1
+(floor -1.2)
+     @result{} -2
+(floor -1.7)
+     @result{} -2
+(floor 5.99 3)
+     @result{} 1</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(floor 1.2)
+     @result{} 1
+(floor 1.7)
+     @result{} 1
+(floor -1.2)
+     @result{} -2
+(floor -1.7)
+     @result{} -2
+(floor 5.99 3)
+     @result{} 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:454
+This returns @var{number}, converted to an integer by rounding upward (towards positive infinity).</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ceci renvoie @var{number}, converti en nombre entier en arrondissant
+vers le haut (vers plus l'infini).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:464
+(ceiling 1.2)
+     @result{} 2
+(ceiling 1.7)
+     @result{} 2
+(ceiling -1.2)
+     @result{} -1
+(ceiling -1.7)
+     @result{} -1</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(ceiling 1.2)
+     @result{} 2
+(ceiling 1.7)
+     @result{} 2
+(ceiling -1.2)
+     @result{} -1
+(ceiling -1.7)
+     @result{} -1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:472
+This returns @var{number}, converted to an integer by rounding towards the nearest integer.  Rounding a value equidistant between two integers may choose the integer closer to zero, or it may prefer an even integer, depending on your machine.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ceci renvoie @var{number}, converti en nombre entier arrondi vers le
+nombre entier le plus proche. L'arrondi d'une valeur équidistante
+entre deux nombres entiers peut choisir le nombre entier plus près de
+zéro, ou il peut préférer un nombre entier équivalent, selon votre
+machine.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:482
+(round 1.2)
+     @result{} 1
+(round 1.7)
+     @result{} 2
+(round -1.2)
+     @result{} -1
+(round -1.7)
+     @result{} -2</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(round 1.2)
+     @result{} 1
+(round 1.7)
+     @result{} 2
+(round -1.2)
+     @result{} -1
+(round -1.7)
+     @result{} -2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:494
+Emacs Lisp provides the traditional four arithmetic operations: addition, subtraction, multiplication, and division.  Remainder and modulus functions supplement the division functions.  The functions to add or subtract 1 are provided because they are traditional in Lisp and commonly used.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Le Emacs Lisp fournit les quatre opérations arithmétiques
+traditionnelles: addition, soustraction, multiplication et division.
+Les fonctions de reste et de modulo complètent les fonctions de
+division. Les fonctions additionner ou soustraire 1 sont fournis parce
+qu'elles sont traditionnelles en Lisp et utilisées généralement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:497
+All of these functions except @code{%} return a floating point value if any argument is floating.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Toutes ces fonctions, à part @code{%}, retourne une valeur à virgule
+flottante si au moins un argument est une valeur à virgule flottante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:501
+It is important to note that in Emacs Lisp, arithmetic functions do not check for overflow.  Thus @code{(1+ 268435455)} may evaluate to @minus{}268435456, depending on your hardware.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Il est important de noter qu'en Emacs Lisp, les fonctions
+arithmétiques ne vérifient pas le débordement. Ainsi @code{(1+
+268435455)} peut être évaluer à @minus{}268435456, selon votre
+matériel.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:511
+(setq foo 4)
+     @result{} 4
+(1+ foo)
+     @result{} 5</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(setq foo 4)
+     @result{} 4
+(1+ foo)
+     @result{} 5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:515
+This function is not analogous to the C operator @code{++}---it does not increment a variable.  It just computes a sum.  Thus, if we continue,</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction n'est pas analogue à l'opérateur C @code{++} ---elle
+n'incrémente pas une variable---. Elle calcule juste la somme. Ainsi,
+si nous continuons,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:519
+foo
+     @result{} 4</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>foo
+     @result{} 4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:523
+If you want to increment the variable, you must use @code{setq}, like this:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si vous voulez incrémenter la variable, vous devez employer
+@code{setq}, comme ceci:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:527
+(setq foo (1+ foo))
+     @result{} 5</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(setq foo (1+ foo))
+     @result{} 5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:537
+This function adds its arguments together.  When given no arguments, @code{+} returns 0.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction fait la somme de ses arguments. Si aucun argument n'est
+donné, @code{+} retourne 0.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:545
+(+)
+     @result{} 0
+(+ 1)
+     @result{} 1
+(+ 1 2 3 4)
+     @result{} 10</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(+)
+     @result{} 0
+(+ 1)
+     @result{} 1
+(+ 1 2 3 4)
+     @result{} 10</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:55
+but some machines may provide a wider range.  Many examples in this chapter assume an integer has 29 bits.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>mais quelques machines peuvent définir un autre champ. Beaucoup
+d'exemples en ce chapitre supposent qu'un nombre entier a 29 bits.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:554
+The @code{-} function serves two purposes: negation and subtraction.  When @code{-} has a single argument, the value is the negative of the argument.  When there are multiple arguments, @code{-} subtracts each of the @var{more-numbers-or-markers} from @var{number-or-marker}, cumulatively.  If there are no arguments, the result is 0.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La fonction @code{-} atteint deux objectifs: négation et soustraction.
+Quand @code{-} a un argument simple, la valeur est le négatif de
+l'argument. Quand il y a des arguments multiples, @code{-} soustrait
+chacun des @var{more-numbers-or-markers} de @var{number-or-marker}, de
+manière cumulée. S'il n'y a aucun argument, le résultat est 0.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:562
+(- 10 1 2 3 4)
+     @result{} 0
+(- 10)
+     @result{} -10
+(-)
+     @result{} 0</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(- 10 1 2 3 4)
+     @result{} 0
+(- 10)
+     @result{} -10
+(-)
+     @result{} 0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:568
+This function multiplies its arguments together, and returns the product.  When given no arguments, @code{*} returns 1.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction multiplie ses arguments entre elles, et renvoie le
+produit. Si aucun argument n'est donné, @code{*} retourne 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:576
+(*)
+     @result{} 1
+(* 1)
+     @result{} 1
+(* 1 2 3 4)
+     @result{} 24</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(*)
+     @result{} 1
+(* 1)
+     @result{} 1
+(* 1 2 3 4)
+     @result{} 24</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:584
+This function divides @var{dividend} by @var{divisor} and returns the quotient.  If there are additional arguments @var{divisors}, then it divides @var{dividend} by each divisor in turn.  Each argument may be a number or a marker.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction divise @var{dividend} par @var{divisor} et retourne le
+quotient. S'il y a des arguments additionnels @var{divisors}, il
+divise @var{dividend} par chaque diviseur alternativement. Chaque
+argument peut être un nombre ou un marqueur.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:59
+The Lisp reader reads an integer as a sequence of digits with optional initial sign and optional final period.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Le lecteur de Lisp lit un nombre entier comme une séquence de chiffres
+avec le signe initial et le point final facultatifs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:592
+If all the arguments are integers, then the result is an integer too.  This means the result has to be rounded.  On most machines, the result is rounded towards zero after each division, but some machines may round differently with negative arguments.  This is because the Lisp function @code{/} is implemented using the C division operator, which also permits machine-dependent rounding.  As a practical matter, all known machines round in the standard fashion.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si tous les arguments sont des nombres entiers, alors le résultat est
+aussi un nombre entier. Ceci signifie que le résultat doit être
+arrondi. Sur la plupart des machines, le résultat est arrondi vers le
+zéro après chaque division, mais quelques machines peuvent arrondir
+différemment les arguments négatifs. C'est parce que la fonction de
+Lisp @code{/} est implémentée en utilisant l'opérateur de division de
+C qui permet l'arrondi en fonction de la machine. Du côté pratique,
+toutes les machines connues arrondissent en mode standard.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:598
+If you divide an integer by 0, an @code{arith-error} error is signaled.  (@xref{Errors}.)  Floating point division by zero returns either infinity or a NaN if your machine supports @acronym{IEEE} floating point; otherwise, it signals an @code{arith-error} error.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si vous divisez un nombre entier par 0, une erreur @code{arith-error}
+est signalée. (@xref{Errors}.) La division d'un nombre à virgule
+flottante par zéro renvoie l'un ou l'autre infini ou NaN si votre
+machine supporte les nombres à virgule flottante @acronym{IEEE};
+autrement, elle signale une erreur @code{arith-error}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:603
+(/ 6 2)
+     @result{} 3</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(/ 6 2)
+     @result{} 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:614
+(/ 5 2)
+     @result{} 2
+(/ 5.0 2)
+     @result{} 2.5
+(/ 5 2.0)
+     @result{} 2.5
+(/ 5.0 2.0)
+     @result{} 2.5
+(/ 25 3 2)
+     @result{} 4</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(/ 5 2)
+     @result{} 2
+(/ 5.0 2)
+     @result{} 2.5
+(/ 5 2.0)
+     @result{} 2.5
+(/ 5.0 2.0)
+     @result{} 2.5
+(/ 25 3 2)
+     @result{} 4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:617
+(/ -17 6)
+     @result{} -2   @r{(could in theory be @minus{}3 on some machines)}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(/ -17 6)
+     @result{} -2   @r{(pourrait être @minus{}3 sur certaines machines)}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:625
+This function returns the integer remainder after division of @var{dividend} by @var{divisor}.  The arguments must be integers or markers.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie le reste en nombre entier après la division de
+@var{dividend} par @var{divisor}. Les arguments doivent être des
+nombres entiers ou des marqueurs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:628
+For negative arguments, the remainder is in principle machine-dependent since the quotient is; but in practice, all known machines behave alike.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Pour des arguments négatifs, le reste est en principe dépendant de la
+machine puisque le quotient est variable; mais dans la pratique,
+toutes les machines connues se comportent de la même façon.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:640
+(% 9 4)
+     @result{} 1
+(% -9 4)
+     @result{} -1
+(% 9 -4)
+     @result{} 1
+(% -9 -4)
+     @result{} -1</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(% 9 4)
+     @result{} 1
+(% -9 4)
+     @result{} -1
+(% 9 -4)
+     @result{} 1
+(% -9 -4)
+     @result{} -1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:648
+(+ (% @var{dividend} @var{divisor})
+   (* (/ @var{dividend} @var{divisor}) @var{divisor}))</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(+ (% @var{dividend} @var{divisor})
+   (* (/ @var{dividend} @var{divisor}) @var{divisor}))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:661
+This function returns the value of @var{dividend} modulo @var{divisor}; in other words, the remainder after division of @var{dividend} by @var{divisor}, but with the same sign as @var{divisor}.  The arguments must be numbers or markers.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie la valeur de @var{dividend} modulo
+@var{divisor}; en d'autres termes, le reste après la division de
+@var{dividend} par @var{divisor}, mais avec le même signe que
+@var{divisor}. Les arguments doivent être des nombres ou des
+marqueurs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:666
+Unlike @code{%}, @code{mod} returns a well-defined result for negative arguments.  It also permits floating point arguments; it rounds the quotient downward (towards minus infinity) to an integer, and uses that quotient to compute the remainder.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>À la différence de @code{%}, @code{mod} renvoie un résultat bien
+défini pour les arguments négatifs. Il permet également des arguments
+à virgule flottante; il arrondit le quotient à un nombre entier vers
+le bas (vers moins l'infini), et utilise ce quotient pour calculer le
+reste.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:673
+(mod 9 4)
+     @result{} 1</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(mod 9 4)
+     @result{} 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:677
+(mod -9 4)
+     @result{} 3</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(mod -9 4)
+     @result{} 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:68
+ 1               ; @r{The integer 1.}
+ 1.              ; @r{The integer 1.}
++1               ; @r{Also the integer 1.}
+-1               ; @r{The integer @minus{}1.}
+ 536870913       ; @r{Also the integer 1, due to overflow.}
+ 0               ; @r{The integer 0.}
+-0               ; @r{The integer 0.}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>1               ; @r{L'entier 1.}
+ 1.              ; @r{L'entier 1.}
++1               ; @r{Encore l'entier 1.}
+-1               ; @r{L'entier @minus{}1.}
+ 536870913       ; @r{Encore l'entier 1, dû au débordement.}
+ 0               ; @r{L'entier 0.}
+-0               ; @r{L'entier 0.}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:681
+(mod 9 -4)
+     @result{} -3</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(mod 9 -4)
+     @result{} -3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:685
+(mod -9 -4)
+     @result{} -1</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(mod -9 -4)
+     @result{} -1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:689
+(mod 5.5 2.5)
+     @result{} .5</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(mod 5.5 2.5)
+     @result{} .5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:698
+(+ (mod @var{dividend} @var{divisor})
+   (* (floor @var{dividend} @var{divisor}) @var{divisor}))</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(+ (mod @var{dividend} @var{divisor})
+   (* (floor @var{dividend} @var{divisor}) @var{divisor}))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:705
+always equals @var{dividend}, subject to rounding error if either argument is floating point.  For @code{floor}, see @ref{Numeric Conversions}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>est toujours égale à @var{dividend}, sauf si l'un ou l'autre
+argument est un nombre à virgule flottante, une erreur sera
+générée. Pour @code{floor}, voir les @ref{Conversions numériques}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:717
+The functions @code{ffloor}, @code{fceiling}, @code{fround}, and @code{ftruncate} take a floating point argument and return a floating point result whose value is a nearby integer.  @code{ffloor} returns the nearest integer below; @code{fceiling}, the nearest integer above; @code{ftruncate}, the nearest integer in the direction towards zero; @code{fround}, the nearest integer.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Les fonctions @code{ffloor}, @code{fceiling}, @code{fround}, et
+@code{ftruncate} prennent un argument à virgule flottante et renvoient
+un monbre à virgule flottante représentant la valeur d'un nombre
+entier voisin. @code{ffloor} renvoie le nombre entier le plus proche
+inférieur; @code{fceiling}, le nombre entier le plus proche supérieur;
+@code{ftruncate}, le nombre entier le plus proche de zéro;
+@code{fround}, le nombre entier le plus proche.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:721
+This function rounds @var{float} to the next lower integral value, and returns that value as a floating point number.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction arrondit @var{float} à la prochaine valeur intégrale
+inférieure, et renvoie cette valeur comme nombre à virgule flottante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:726
+This function rounds @var{float} to the next higher integral value, and returns that value as a floating point number.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction arrondit @var{float} à la prochaine valeur intégrale
+supérieure, et renvoie cette valeur comme nombre à virgule flottante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:731
+This function rounds @var{float} towards zero to an integral value, and returns that value as a floating point number.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction arrondit @var{float} à la valeur intégrale proche de
+zéro, et renvoie cette valeur comme nombre à virgule flottante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:736
+This function rounds @var{float} to the nearest integral value, and returns that value as a floating point number.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction arrondit @var{float} à la valeur intégrale la plus
+proche, et renvoie cette valeur comme nombre de virgule flottante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:748
+In a computer, an integer is represented as a binary number, a sequence of @dfn{bits} (digits which are either zero or one).  A bitwise operation acts on the individual bits of such a sequence.  For example, @dfn{shifting} moves the whole sequence left or right one or more places, reproducing the same pattern ``moved over.''</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Dans un ordinateur, un nombre entier est représenté comme nombre
+binaire, une séquence de @dfn{bits} (des chiffres qui sont zéro ou
+un). Une opération de bits agit sur les bits individuels d'une telle
+séquence. Par exemple, le @dfn{shifting} déplace l'ordre entier à
+gauche ou à droite d'une ou plusieures places, pour reproduire le même
+modèle ``moved over.''</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:759
+@code{lsh}, which is an abbreviation for @dfn{logical shift}, shifts the bits in @var{integer1} to the left @var{count} places, or to the right if @var{count} is negative, bringing zeros into the vacated bits.  If @var{count} is negative, @code{lsh} shifts zeros into the leftmost (most-significant) bit, producing a positive result even if @var{integer1} is negative.  Contrast this with @code{ash}, below.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>@code{lsh}, qui est une abréviation de @dfn{logical shift}, décale les
+bits dans @var{integer1} de @var{count} places à gauche, ou vers la
+droite si @var{count} est négatif, introduisant des zéros dans les
+places vacantes des bits. Si @var{count} est négatif, @code{lsh}
+décale les zéros dans l'extrême gauche du bit (plus fort), produisant
+un résultat positif même si @var{integer1} est négatif. Contrairement
+à @code{ash}, ci-dessous.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:763
+Here are two examples of @code{lsh}, shifting a pattern of bits one place to the left.  We show only the low-order eight bits of the binary pattern; the rest are all zero.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Voici deux exemples de @code{lsh}, décalant une combinaison de
+chiffres binaires d'une place vers la gauche. Nous montrons seulement
+les huit bits faibles du binaire modèle; le reste est fait de zéro.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:770
+(lsh 5 1)
+     @result{} 10
+;; @r{Decimal 5 becomes decimal 10.}
+00000101 @result{} 00001010</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(lsh 5 1)
+     @result{} 10
+;; @r{Decimal 5 becomes decimal 10.}
+00000101 @result{} 00001010</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:775
+(lsh 7 1)
+     @result{} 14
+;; @r{Decimal 7 becomes decimal 14.}
+00000111 @result{} 00001110</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(lsh 7 1)
+     @result{} 14
+;; @r{La décimale 7 devient la décimale 14.}
+00000111 @result{} 00001110</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:782
+As the examples illustrate, shifting the pattern of bits one place to the left produces a number that is twice the value of the previous number.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Comme ces exemples le montrent, lorsqu'on décale la combinaison de
+chiffres binaires d'une place vers la gauche, on produit un nombre qui
+est le double de la valeur du précédent nombre.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:785
+Shifting a pattern of bits two places to the left produces results like this (with 8-bit binary numbers):</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Lorsqu'on décale de deux places une combinaison de chiffres binaires
+vers la gauche, on produit les résultats suivants (avec des nombres
+binaires de 8 bits):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:792
+(lsh 3 2)
+     @result{} 12
+;; @r{Decimal 3 becomes decimal 12.}
+00000011 @result{} 00001100</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(lsh 3 2)
+     @result{} 12
+;; @r{La décimale 3 devient décimale 12.}
+00000011 @result{} 00001100</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:803
+(lsh 6 -1)
+     @result{} 3
+;; @r{Decimal 6 becomes decimal 3.}
+00000110 @result{} 00000011</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(lsh 6 -1)
+     @result{} 3
+;; @r{La décimale 6 devient décimale 3.}
+00000110 @result{} 00000011</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:810
+(lsh 5 -1)
+     @result{} 2
+;; @r{Decimal 5 becomes decimal 2.}
+00000101 @result{} 00000010</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(lsh 5 -1)
+     @result{} 2
+;; @r{La décimale 5 devient décimale 2.}
+00000101 @result{} 00000010</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:816
+As the example illustrates, shifting one place to the right divides the value of a positive integer by two, rounding downward.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Comme l'exemple le montre, le décalage d'une place vers la droite
+divise la valeur d'un nombre entier positif par deux, arrondissant
+vers le bas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:821
+The function @code{lsh}, like all Emacs Lisp arithmetic functions, does not check for overflow, so shifting left can discard significant bits and change the sign of the number.  For example, left shifting 268,435,455 produces @minus{}2 on a 29-bit machine:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La fonction @code{lsh}, comme toutes les fonctions arithmétiques
+d'Emacs Lisp, ne vérifie pas le débordement, ainsi de décalage à
+gauche peut changer le bit fort et changer le signe du nombre. Par
+exemple, le décalage à gauche de 268.435.455 produit @minus{}2 sur une
+machine de 29 bits :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:833
+;; @r{Decimal 268,435,455}
+0 1111  1111 1111  1111 1111  1111 1111</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>;; @r{La décimale 268 435 455}
+0 1111  1111 1111  1111 1111  1111 1111</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:84
+The syntax for integers in bases other than 10 uses @samp{#} followed by a letter that specifies the radix: @samp{b} for binary, @samp{o} for octal, @samp{x} for hex, or @samp{@var{radix}r} to specify radix @var{radix}.  Case is not significant for the letter that specifies the radix.  Thus, @samp{#b@var{integer}} reads @var{integer} in binary, and @samp{#@var{radix}r@var{integer}} reads @var{integer} in radix @var{radix}.  Allowed values of @var{radix} run from 2 to 36.  For example:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>La syntaxe pour des nombres entiers dans les bases autres que la base
+10 utilise @samp{#} suivi d'une lettre qui indique la base: @samp{b}
+pour binaire, @samp{o} pour octal, @samp{x} pour hex, ou
+@samp{@var{base}r} pour indiquer la base @var{base}. Le cas n'est pas
+significatif pour la lettre qui indique la base. Ainsi, le
+@samp{#b@var{integer}} lit @var{integer} en base binaire, et le
+@samp{#@var{base}r@var{integer}} lit @var{integer} dans la base
+@var{base}. Les valeurs permises de @var{base} vont de 2 à 36. Par
+exemple:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:843
+;; @r{Decimal @minus{}2}
+1 1111  1111 1111  1111 1111  1111 1110</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>;; @r{La décimale @minus{}2}
+1 1111  1111 1111  1111 1111  1111 1110</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:852
+@code{ash} (@dfn{arithmetic shift}) shifts the bits in @var{integer1} to the left @var{count} places, or to the right if @var{count} is negative.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>@code{ash} (@dfn{arithmetic shift}) décale les bits dans
+@var{integer1} de @var{count} places vers la gauche, ou vers la droite
+si @var{count} est négatif.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:857
+@code{ash} gives the same results as @code{lsh} except when @var{integer1} and @var{count} are both negative.  In that case, @code{ash} puts ones in the empty bit positions on the left, while @code{lsh} puts zeros in those bit positions.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>@code{ash} donne les mêmes résultats que @code{lsh} excepté quand
+@var{integer1} et @var{count} sont tous les deux négatifs. Dans ce
+cas, @code{ash} met des 1 dans les positions de bit vide du côté
+gauche, alors que @code{lsh} met des 0 dans ces positions de bit.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:860
+Thus, with @code{ash}, shifting the pattern of bits one place to the right looks like this:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Ainsi, @code{ash}, décalant la combinaison de chiffres binaires d'une
+place vers la droite ressemble à ceci:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:868
+(ash -6 -1) @result{} -3
+;; @r{Decimal @minus{}6 becomes decimal @minus{}3.}
+1 1111  1111 1111  1111 1111  1111 1010
+     @result{}
+1 1111  1111 1111  1111 1111  1111 1101</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(ash -6 -1)
+@result{} -3
+;; @r{La décimale @minus{}6 devient la décimale @minus{}3.}
+1 1111  1111 1111  1111 1111  1111 1010
+     @result{}
+1 1111  1111 1111  1111 1111  1111 1101</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:873
+In contrast, shifting the pattern of bits one place to the right with @code{lsh} looks like this:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>En revanche, décaler la combinaison de chiffres binaires d'une place
+vers la droite avec @code{lsh} ressemble à ceci:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:881
+(lsh -6 -1) @result{} 268435453
+;; @r{Decimal @minus{}6 becomes decimal 268,435,453.}
+1 1111  1111 1111  1111 1111  1111 1010
+     @result{}
+0 1111  1111 1111  1111 1111  1111 1101</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(lsh -6 -1)
+@result{} 268435453
+;; @r{La décimale @minus{}6 devient la décimale 268 435 453.}
+1 1111  1111 1111  1111 1111  1111 1010
+     @result{}
+0 1111  1111 1111  1111 1111  1111 1101</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:894
+(lsh 5 2)          ;   5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 20         ;      =  @r{0 0000  0000 0000  0000 0000  0001 0100}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(lsh 5 2)          ;   5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 20         ;      =  @r{0 0000  0000 0000  0000 0000  0001 0100}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:90
+#b101100 @result{} 44
+#o54 @result{} 44
+#x2c @result{} 44
+#24r1k @result{} 44</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>#b101100 @result{} 44
+#o54 @result{} 44
+#x2c @result{} 44
+#24r1k @result{} 44</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:902
+(ash 5 2)
+     @result{} 20
+(lsh -5 2)         ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
+     @result{} -20        ;      =  @r{1 1111  1111 1111  1111 1111  1110 1100}
+(ash -5 2)
+     @result{} -20</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(ash 5 2)
+     @result{} 20
+(lsh -5 2)         ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
+     @result{} -20        ;      =  @r{1 1111  1111 1111  1111 1111  1110 1100}
+(ash -5 2)
+     @result{} -20</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:906
+(lsh 5 -2)         ;   5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 1          ;      =  @r{0 0000  0000 0000  0000 0000  0000 0001}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(lsh 5 -2)         ;   5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 1          ;      =  @r{0 0000  0000 0000  0000 0000  0000 0001}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:910
+(ash 5 -2)
+     @result{} 1</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(ash 5 -2)
+     @result{} 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:914
+(lsh -5 -2)        ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
+     @result{} 134217726  ;      =  @r{0 0111  1111 1111  1111 1111  1111 1110}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(lsh -5 -2)        ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
+     @result{} 134217726  ;      =  @r{0 0111  1111 1111  1111 1111  1111 1110}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:918
+(ash -5 -2)        ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
+     @result{} -2         ;      =  @r{1 1111  1111 1111  1111 1111  1111 1110}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(ash -5 -2)        ;  -5  =  @r{1 1111  1111 1111  1111 1111  1111 1011}
+     @result{} -2         ;      =  @r{1 1111  1111 1111  1111 1111  1111 1110}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:927
+This function returns the ``logical and'' of the arguments: the @var{n}th bit is set in the result if, and only if, the @var{n}th bit is set in all the arguments.  (``Set'' means that the value of the bit is 1 rather than 0.)</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie le ``et logique'' des arguments: le @var{n}th
+bit est placé dans le résultat si, et seulement si, le @var{n}th bit
+est placer dans tous arguments. (``Placer'' veut dire que la valeur du
+bit est 1 plutôt que 0.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:934
+For example, using 4-bit binary numbers, the ``logical and'' of 13 and 12 is 12: 1101 combined with 1100 produces 1100.  In both the binary numbers, the leftmost two bits are set (i.e., they are 1's), so the leftmost two bits of the returned value are set.  However, for the rightmost two bits, each is zero in at least one of the arguments, so the rightmost two bits of the returned value are 0's.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Par exemple, en utilisant des nombres binaires de 4 bits, le ``et
+logique'' de 13 et 12 est 12: 1101 combiné avec 1100 produit 1100.
+Dans les deux nombres binaires, les deux bits à l'extrême gauche sont
+placés (c.-à-d., ils sont à 1), ainsi les deux bits à l'extrême gauche
+de la valeur retournée sont placés. Cependant, pour les deux bits à
+l'extrême droite, chacun est à zéro dans au moins un des arguments,
+ainsi les deux bits à l'extrême droite de la valeur retournée sont 0.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:942
+(logand 13 12)
+     @result{} 12</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(logand 13 12)
+     @result{} 12</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:949
+If @code{logand} is not passed any argument, it returns a value of @minus{}1.  This number is an identity element for @code{logand} because its binary representation consists entirely of ones.  If @code{logand} is passed just one argument, it returns that argument.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Si @code{logand} est passé sans argument, il renvoie une valeur
+@minus{}1. Ce nombre est un élément d'identité pour @code{logand}
+parce que sa représentation binaire consiste entièrement de 1. Si
+@code{logand} est passé à juste un argument, il renvoie cet argument.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:95
+To understand how various functions work on integers, especially the bitwise operators (@pxref{Bitwise Operations}), it is often helpful to view the numbers in their binary form.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Pour comprendre comment les diverses fonctions travaillent sur des
+nombres entiers, particulièrement au niveau du bit des opérateurs
+(@pxref{Opérations de bits}), il est souvent utile de regarder les
+nombres sous leur forme binaire.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:957
+(logand 14 13)     ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}
+                   ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}
+     @result{} 12         ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(logand 14 13)     ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}
+                   ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}
+     @result{} 12         ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:964
+(logand 14 13 4)   ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}
+                   ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}
+                   ;  4  =  @r{0 0000  0000 0000  0000 0000  0000 0100}
+     @result{} 4          ;  4  =  @r{0 0000  0000 0000  0000 0000  0000 0100}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(logand 14 13 4)   ; 14  =  @r{0 0000  0000 0000  0000 0000  0000 1110}
+                   ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}
+                   ;  4  =  @r{0 0000  0000 0000  0000 0000  0000 0100}
+     @result{} 4          ;  4  =  @r{0 0000  0000 0000  0000 0000  0000 0100}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:969
+(logand)
+     @result{} -1         ; -1  =  @r{1 1111  1111 1111  1111 1111  1111 1111}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(logand)
+     @result{} -1         ; -1  =  @r{1 1111  1111 1111  1111 1111  1111 1111}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:979
+This function returns the ``inclusive or'' of its arguments: the @var{n}th bit is set in the result if, and only if, the @var{n}th bit is set in at least one of the arguments.  If there are no arguments, the result is zero, which is an identity element for this operation.  If @code{logior} is passed just one argument, it returns that argument.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie le ``ou inclus'' de ses arguments: le
+@var{n}ième bit est placé dans le résultat si, et seulement si, le
+@var{n}ième bit est placé dans au moins un des arguments. S'il n'y a
+aucun argument, le résultat est 0, ce qui est un élément d'identité
+pour cette opération. Si @code{logior} est passé à juste un argument,
+il renvoie cet argument.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:987
+(logior 12 5)      ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 13         ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(logior 12 5)      ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+     @result{} 13         ; 13  =  @r{0 0000  0000 0000  0000 0000  0000 1101}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/numbers.texi:994
+(logior 12 5 7)    ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+                   ;  7  =  @r{0 0000  0000 0000  0000 0000  0000 0111}
+     @result{} 15         ; 15  =  @r{0 0000  0000 0000  0000 0000  0000 1111}</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(logior 12 5 7)    ; 12  =  @r{0 0000  0000 0000  0000 0000  0000 1100}
+                   ;  5  =  @r{0 0000  0000 0000  0000 0000  0000 0101}
+                   ;  7  =  @r{0 0000  0000 0000  0000 0000  0000 0111}
+     @result{} 15         ; 15  =  @r{0 0000  0000 0000  0000 0000  0000 1111}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/objects.texi:17
+A Lisp @dfn{object} is a piece of data used and manipulated by Lisp programs.  For our purposes, a @dfn{type} or @dfn{data type} is a set of possible objects.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Un @dfn{object} List est un morceau de données employées et manipulées
+par les programmes Lisp. Pour nous, un @dfn{type} ou un @dfn{data
+type} est un ensemble d'objets possibles.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/symbols.texi:17
+A @dfn{symbol} is an object with a unique name.  This chapter describes symbols, their components, their property lists, and how they are created and interned.  Separate chapters describe the use of symbols as variables and as function names; see @ref{Variables}, and @ref{Functions}.  For the precise read syntax for symbols, see @ref{Symbol Type}.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Un @dfn{symbole} est un objet avec un nom unique. Ce chapitre décrit les symboles, leurs composants, leurs listes de propriétés et comment ils sont créés et conservés. L'utilisation de symboles comme noms de variables ou de fonctions est décrit dans d'autres chapitres ; consultez @ref{Variables} et @ref{Functions}. Pour la syntaxe exacte des symboles, consultez @ref{Le type symbole}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/symbols.texi:20
+You can test whether an arbitrary Lisp object is a symbol with @code{symbolp}:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Vous pouvez tester si n'importe quel objet Lisp est un symbole avec @code{symbolp} :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/symbols.texi:24
+This function returns @code{t} if @var{object} is a symbol, @code{nil} otherwise.</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie @code{t} si l'@var{objet} est un symbole et autrement @code{nil}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/symbols.texi:268
+This function returns the string that is @var{symbol}'s name.  For example:</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>Cette fonction renvoie la chaîne correspondant au nom du symbole. Par exemple :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-us">
+        <seg>lispref/symbols.texi:273
+(symbol-name 'foo)
+     @result{} "foo"</seg>
+      </tuv>
+      <tuv lang="fr-fr">
+        <seg>(symbol-name 'toto)
+     @result{} "toto"</seg>
       </tuv>
     </tu>
     <tu>
